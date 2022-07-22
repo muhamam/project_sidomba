@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <title>SI-Domba Reborn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Additional CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+
+</head>
+
+<body style="background: #E5E5E5;">
+    <div class="container-fluid navbar navbar-expand  " style="background-color: #3a8bcd">
+
+        <div class="collapse navbar-collapse nav-item dropdown" id="navbarSupportedContent">
+            <ul class="navbar-nav  col-sm">
+                <li class="nav-itemcol-md-6 row" style="color:white ;">
+                    <img class="col-sm" src="images/rsz_1rsz_logodombaputih-removebg-preview.png" alt="">
+
+                    <p class="" style="margin-top: 10px;">SI-DOMBA</p>
+
+                    <div class="garis" style="width: 3px; height: 100%; background-color: white; margin-left: 5px;">
+
+                    </div>
+                    <a href="index_sudah_login.html" style="margin-top: 10px; margin-left: 5px; color: white;">
+                        <p>DASHBOARD</p>
+                    </a>
+                    <div class="garis"
+                        style="width: 3px; height: 60%; background-color: white; margin-left: 5px; margin-top: 4%;">
+
+                    </div>
+
+
+                </li>
+
+
+                <li class="">
+                    <form class="d-flex" style="margin-left: 7%; margin-top: 8px;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="width: 400px; height: 30px ;">
+                        <button class="btn btn-outline-light" type="submit"
+                            style="margin-left:10px; height: 30px;">Search</button>
+                    </form>
+
+                </li>
+                <li class="nav-itemcol-md-6 row mt-2" style="color:white ; margin-left: 7%;  ">
+                    <a href="" class=" mr-2" style="color: white; margin-top: 2px;"><span class="iconify "
+                            data-icon="carbon:notification" data-width="20" data-height="20"></span>
+                    </a>
+                    <a href="" class=" " style="color: white;"><span class="iconify mt-1 mr-2" data-icon="ep:chat-round"
+                            data-width="20" data-height="20"></span>
+                    </a>
+                    <a href="" class=" " style="color: white;"> <span class="iconify mt-1" data-icon="cil:cart"
+                            data-width="20" data-height="20"></span>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="garis ml-3" style="width: 2px; height: 90%; background-color: white; ">
+
+                    </div>
+
+                    <span class="iconify ml-2 mt-2" data-icon="maki:farm" data-width="20" data-height="20"></span>
+
+
+                    <div class=" mt-2 ml-1 dropdown ">
+
+                        <a href="index_investasi.html" class="dropdown-toggle" data-bs-toggle="dropdown"
+                            style="color: white; ">
+                            Peternakan
+                        </a>
+                        <div class="dropdown-menu bg-light " style="margin-left: -100px;">
+                            <center>
+                                <a href="#" class="dropdown-item" style="font-size: 10px;">Anda belum mendaftarkan
+                                    peternakan anda</a>
+                                <a href="#" class="dropdown-item " style="background-color:#3A8BCD ;width: 260px;
+                                height: 30px;border-radius: 8px; color: white;">Daftarkan Peternakan Anda</a>
+                                <a href="#" class="dropdown-item" style="color: #3A8BCD;">Syarat & Ketentuan</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <span><img src="images/investasi.png" alt="" style="width: 16px; height:16px; "
+                            class=" mt-2 ml-3 mr-1">
+                    </span>
+
+                    <div class=" mt-2 ml-1 dropdown ">
+
+                        <a href="index_investasi.html" class="dropdown-toggle" data-bs-toggle="dropdown"
+                            style="color: white; ">
+                            Investasi
+                        </a>
+                        <div class="dropdown-menu bg-light " style="margin-left: -100px;">
+                            <center>
+                                <p href="#" class="dropdown-item" style="font-size: 10px; margin: 0; ">Anda
+                                    belum
+                                    mengaktifkan akun investor anda</p>
+                                <a href="#" class="dropdown-item " style="background-color:#3A8BCD ;width: 220px;
+                                height: 30px;border-radius: 8px; color: white;">Aktifkan Akun Investor</a>
+                                <a href="#" class="dropdown-item" style="color: #3A8BCD;">Syarat & Ketentuan</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <span><img src="images/about-us.jpg" alt="" style="width: 35px; height:35px; "
+                            class="  ml-3 rounded-circle">
+                    </span>
+
+
+
+                    <div class=" mt-2 ml-1 dropdown ">
+
+                        <a href="#" class="dropdown-toggle " data-bs-toggle="dropdown" style="color: white;">
+                            Anas aiman
+                        </a>
+
+                        <div class="dropdown-menu bg-light  " style="margin-left: -100px;">
+                            <a href="#" class="dropdown-item  " style="border-bottom:2px solid #3A8BCD ;">Muhammad
+                                anas <br>
+
+                                <p style="font-size: 9px; margin: 0; padding: 0;">muhammadanasaiman0@gmail.com</p>
+                            </a>
+                            <center>
+                                <div class="dalam ">
+                                    <span class="iconify    " data-icon="icons8:buy" data-width="25" data-height="25"
+                                        style="margin-right: 130px; margin-bottom: -60px;"></span>
+                                    <a href="#" class="dropdown-item ">Pembelian</a>
+                                    <span class="iconify" data-icon="ant-design:star-outlined" data-width="25"
+                                        data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                                    <a href="#" class="dropdown-item ">Wishlist</a>
+                                    <span class="iconify" data-icon="ic:outline-switch-account" data-width="25"
+                                        data-height="25" data-flip="horizontal" style="margin-right: 130px;
+                                        margin-bottom: -60px;"></span>
+                                    <a href="#" class="dropdown-item">Akun</a>
+                                    <span class="iconify" data-icon="ant-design:logout-outlined" data-width="25"
+                                        data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                                    <a href="#" class="dropdown-item">Keluar</a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </li>
+            </ul>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="tengah d-flex d-flex justify-content-center">
+
+        <img src="images/logodomba.png" alt="">
+
+        <div class="garis" style="width: 4px; height: 70px; background-color: black; margin-left: 5px;">
+            <p></p>
+        </div>
+
+
+        <h3 class="" style="margin-top: 10px; margin-left: 10px;">SI-DOMBA</h3>
+
+
+
+    </div>
+
+    <!-- Banner Starts Here -->
+    <div class="banner col-md-10 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <center>
+                        <div class="caption rounded">
+                            <h3>CARI DOMBA IMPIANMU DISINI!</h3>
+
+                            <p>Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
+                                domba-domba dari seluruh peternak domba di Indonesia.</p>
+
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>BELI DOMBA</h3>
+                    <center>
+                        <div class="line-dec"></div>
+                    </center>
+                </div>
+                <div class="col-md-12">
+                    <br>
+                    <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center  rounded" style="background-image: url(images/slide-1.jpg); width: 353px;
+                                    height: 176px;">
+                                    <div class="caption col-sm">
+                                        <h6 class="">Domba Garut</h6>
+                                        <p>
+                                            700 Ekor Siap Di beli
+                                            <br>700 Ekor Siap Di Investasikan
+                                        </p>
+
+                                        <a class="btn btn-primary " href="">Cek Sekarang</a>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/slide-2.jpg); width: 353px;
+                                    height: 176px;">
+                                    <div class="caption col-sm">
+                                        <h6 class="">Domba Garut</h6>
+                                        <p>
+                                            700 Ekor Siap Di beli
+                                            <br>700 Ekor Siap Di Investasikan
+                                        </p>
+
+                                        <a class="btn btn-primary " href="">Cek Sekarang</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/slide-3.jpg); width: 353px;
+                                    height: 176px;">
+                                    <div class="caption col-sm">
+                                        <h6 class="">Domba Garut</h6>
+                                        <p>
+                                            700 Ekor Siap Di beli
+                                            <br>700 Ekor Siap Di Investasikan
+                                        </p>
+
+                                        <a class="btn btn-primary " href="">Cek Sekarang</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/slide-4.jpg); width: 353px;
+                                    height: 176px;">
+                                    <div class="caption col-sm">
+                                        <h6 class="">Domba Garut</h6>
+                                        <p>
+                                            700 Ekor Siap Di beli
+                                            <br>700 Ekor Siap Di Investasikan
+                                        </p>
+
+                                        <a class="btn btn-primary " href="">Cek Sekarang</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/slide-5.jpg); width: 353px;
+                                    height: 176px;">
+                                    <div class="caption col-sm">
+                                        <h6 class="">Domba Garut</h6>
+                                        <p>
+                                            700 Ekor Siap Di beli
+                                            <br>700 Ekor Siap Di Investasikan
+                                        </p>
+
+                                        <a class="btn btn-primary " href="">Cek Sekarang</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/slide-6.jpg); width: 353px;
+                                    height: 176px;">
+                                    <div class="caption col-sm">
+                                        <h6 class="">Domba Garut</h6>
+                                        <p>
+                                            700 Ekor Siap Di beli
+                                            <br>700 Ekor Siap Di Investasikan
+                                        </p>
+
+                                        <a class="btn btn-primary " href="">Cek Sekarang</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Starts Here -->
+    <div class="banner1 col-md-11 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <center>
+                        <div class="caption rounded">
+                            <h3>AYO BERINVESTASI DENGAN DOMBA!</h3>
+
+                            <p>Tidak hanya jual-beli, SI DOMBA juga menyediakan pasar investasi. Anda bisa
+                                menginvestasikan domba dari seluruh peternakan yang ada di Indonesia. Tentunya dengan
+                                profit dan bagi hasil yang telah ditentukan oleh pihak Investor dan Peternak.</p>
+
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+    <br>
+    <div class="col-md-12 text-center">
+        <h3>INVESTASI</h3>
+        <center>
+            <div class="line-dec"></div>
+        </center>
+    </div>
+
+
+    <div class="kotakbesar row justify-content-md-center mt-3">
+        <div class="kotak mr-3  ">
+            <center>
+                <span class="iconify mt-4" data-icon="fluent:handshake-16-regular" data-width="40"
+                    data-height="40"></span>
+                <p class="">Ayo Mulai Investasi</p>
+
+                <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar Sekarang</a>
+            </center>
+        </div>
+
+        <div class="kotak  mr-3 ">
+            <center>
+                <span class="iconify mt-4" data-icon="ant-design:file-protect-outlined" data-width="40"
+                    data-height="40"></span>
+                <p class="">Ayo Mulai Investasi</p>
+
+                <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar Sekarang</a>
+            </center>
+        </div>
+
+        <div class="kotak   ">
+            <center>
+                <span class="iconify mt-4" data-icon="mdi:sheep" data-width="40" data-height="40"></span>
+                <p class="">Ayo Mulai Investasi</p>
+
+                <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar Sekarang</a>
+            </center>
+        </div>
+    </div>
+
+    <!-- Banner Starts Here -->
+    <div class="banner2 col-md-11 mt-5 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <center>
+                        <div class="caption rounded">
+                            <h3>MULAI KARIRMU SEBAGAI PETERNAK DOMBA ONLINE!</h3>
+
+                            <p>Sebagai platform marketplace, SI DOMBA tentunya juga memiliki fitur penjualan, dimana
+                                penjual domba adalah peternak domba itu langsung. Peternak bebas mengatur harga,
+                                investasi, dan kendali penuh atas domba yang dimiliki.</p>
+
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="col-md-12 text-center mt-4">
+        <h3>PETERNAKAN</h3>
+        <center>
+            <div class="line-dec"></div>
+        </center>
+    </div>
+
+
+    <div class="kotakbesar row justify-content-md-center mt-3">
+        <div class="kotak mr-3  ">
+            <center>
+                <span class="iconify mt-4" data-icon="fluent:handshake-16-regular" data-width="40"
+                    data-height="40"></span>
+                <p class="">Ayo Mulai Investasi</p>
+
+                <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar Sekarang</a>
+            </center>
+        </div>
+
+        <div class="kotak  mr-3 ">
+            <center>
+                <span class="iconify mt-4" data-icon="ant-design:file-protect-outlined" data-width="40"
+                    data-height="40"></span>
+                <p class="">Ayo Mulai Investasi</p>
+
+                <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar Sekarang</a>
+            </center>
+        </div>
+
+        <div class="kotak   ">
+            <center>
+                <span class="iconify mt-4" data-icon="mdi:sheep" data-width="40" data-height="40"></span>
+                <p class="">Ayo Mulai Investasi</p>
+
+                <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar Sekarang</a>
+            </center>
+        </div>
+    </div>
+    <center>
+        <div class="dotted mt-5 col-md-10 "></div>
+
+
+
+
+        <div class="dotted mt-5 col-md-10"></div>
+    </center>
+
+    <div class=" row mt-5 ">
+        <div class="col" style="margin-left: 450px; font-size: 20px; "><a class="text-dark" href="#">SI Domba</a></div>
+        <div class="col" style="margin-left: -450px; font-size: 20px;"><a class="text-dark" href="">Bantuan Dan
+                Panduan</a></div>
+        <div class="w-100"></div>
+        <div class="col"><a href="" style=" margin-left: 450px; color: #737373;">Tentang SI Domba</a></div>
+        <div class="col"><a href="" style="color: #737373;">Syarat Dan Ketentuan</a></div>
+        <div class="w-100"></div>
+        <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Karir </a></div>
+        <div class="col"><a href="" style="color: #737373;">Help Center</a></div>
+        <div class="w-100"></div>
+        <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Kemitraan</a></div>
+        <div class="col"><a href="" style="color: #737373;">Komplain</a></div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer Starts Here -->
+    <footer class="text-center" style="background-color: #3a8bcd ; margin-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="copyright-text m-3">
+                        <p class="text-white"> Copyright &copy; 2022 Team SI Domba | <img src="images/logo.png" alt=""
+                                style="width:25px;"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+
+    <!-- <div class="modal" id="exampleModal" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Apakah Anda Ingin Logout</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+
+                    <a class="btn btn-primary" href=""
+                        onclick="event.preventDefault();                                                                                                                                                                                                                                                                                     document.getElementById('logout-form').submit();">
+
+                    </a>
+                    <form id="logout-form" action="" method="POST" class="d-none">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+    <!-- Additional Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
