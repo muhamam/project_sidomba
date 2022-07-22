@@ -184,9 +184,14 @@ Route::get('/view_peternak_diuser', function () {
     return view('user2.view_peternak_diuser');
 });
 
-
+// aman
 Route::get('/view_peternak_investasi_diuser', function () {
     return view('user2.view_peternak_investasi_diuser ');
+});
+
+
+Route::get('/view_peternak_ulasan_diuser', function () {
+    return view('user2.view_peternak_ulasan_diuser ');
 });
 
 
