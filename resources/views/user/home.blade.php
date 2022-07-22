@@ -19,6 +19,10 @@
     </div>
 </div>
 <!-- Banner Ends Here -->
+<center class="mt-3">
+    <h2>Beli Domba</h2>
+    <div class="line-dec"></div>
+</center>
 
 <!-- slide stars -->
 <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
@@ -28,20 +32,18 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" style="margin-left: 60px;">
+
         <div class="carousel-item active ">
-            <center>
-                <h2>Beli Domba</h2>
-                <div class="line-dec"></div>
-            </center>
+
             <br>
-            <div class="item d-flex" alt="First slide">
+            <div class="item d-flex justify-content-around" alt="First slide">
 
                 <div class="work">
                     <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-1.jpg')}}); width: 353px;
                                     height: 176px;">
                         <div class="caption col-sm">
                             <h6 class="">Domba Garut</h6>
-                            <p>
+                            <p style="color: white;">
                                 700 Ekor Siap Di beli
                                 <br>700 Ekor Siap Di Investasikan
                             </p>
@@ -55,7 +57,7 @@
                                     height: 176px;">
                         <div class="caption col-sm">
                             <h6 class="">Domba Garut</h6>
-                            <p>
+                            <p style="color: white;">
                                 700 Ekor Siap Di beli
                                 <br>700 Ekor Siap Di Investasikan
                             </p>
@@ -68,7 +70,7 @@
                                     height: 176px;">
                         <div class="caption_pasar col-sm">
                             <center>
-                                <p>Belum Ketemu? Langsung liat Pasar yuk!</p>
+                                <p style="color: white;">Belum Ketemu? Langsung liat Pasar yuk!</p>
                                 <span class="iconify col-12" data-icon="healthicons:market-stall-outline"
                                     data-width="50" data-height="50"></span>
                                 <a class="btn btn-primary mt-2" href="">kunjungi Pasar</a>
@@ -81,13 +83,13 @@
         </div>
         <div class="carousel-item">
 
-            <div class="item d-flex" alt="Second slide">
+            <div class="item d-flex justify-content-around" alt="Second slide">
                 <div class="work">
                     <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-2.jpg')}}); width: 353px;
                                     height: 176px;">
                         <div class="caption col-sm">
                             <h6 class="">Domba Garut</h6>
-                            <p>
+                            <p style="color: white;">
                                 700 Ekor Siap Di beli
                                 <br>700 Ekor Siap Di Investasikan
                             </p>
@@ -100,7 +102,7 @@
                                     height: 176px;">
                         <div class="caption col-sm">
                             <h6 class="">Domba Garut</h6>
-                            <p>
+                            <p style="color: white;">
                                 700 Ekor Siap Di beli
                                 <br>700 Ekor Siap Di Investasikan
                             </p>
@@ -115,7 +117,7 @@
                                     height: 176px;">
                             <div class="caption_pasar col-sm">
                                 <center>
-                                    <p>Belum Ketemu? Langsung liat Pasar yuk!</p>
+                                    <p style="color: white;">Belum Ketemu? Langsung liat Pasar yuk!</p>
                                     <span class="iconify col-12" data-icon="healthicons:market-stall-outline"
                                         data-width="50" data-height="50"></span>
                                     <a class="btn btn-primary mt-2" href="">kunjungi Pasar</a>
@@ -128,13 +130,13 @@
         </div>
         <div class="carousel-item">
 
-            <div class="item d-flex" alt="Third slide">
+            <div class="item d-flex justify-content-around" alt="Third slide">
                 <div class="work">
                     <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-2.jpg')}}); width: 353px;
                                     height: 176px;">
                         <div class="caption col-sm">
                             <h6 class="">Domba Garut</h6>
-                            <p>
+                            <p style="color: white;">
                                 700 Ekor Siap Di beli
                                 <br>700 Ekor Siap Di Investasikan
                             </p>
@@ -147,7 +149,7 @@
                                     height: 176px;">
                         <div class="caption col-sm">
                             <h6 class="">Domba Garut</h6>
-                            <p>
+                            <p style="color: white;">
                                 700 Ekor Siap Di beli
                                 <br>700 Ekor Siap Di Investasikan
                             </p>
@@ -157,12 +159,12 @@
                 </div>
                 <div class="work">
                     <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-5.jpg')}}); width: 353px;
-                                    height: 176px;">
+                                    height:176px;">
                         <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-3.jpg')}}); width: 353px;
                                     height: 176px;">
                             <div class="caption_pasar col-sm">
                                 <center>
-                                    <p>Belum Ketemu? Langsung liat Pasar yuk!</p>
+                                    <p style="color: white;">Belum Ketemu? Langsung liat Pasar yuk!</p>
                                     <span class="iconify col-12" data-icon="healthicons:market-stall-outline"
                                         data-width="50" data-height="50"></span>
                                     <a class="btn btn-primary mt-2" href="">kunjungi Pasar</a>
@@ -188,14 +190,19 @@
 
 
 <!-- Banner Starts Here -->
-<div class="banner1 col-md-11 rounded mt-5">
-    <div class="container">
+<div class="banner1 col-md-11 rounded mt-5" style="background-image: url(img/banner1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 5%;
+	background-position: center center;">
+    <div class=" container">
         <div class="row">
             <div class="col-md-6 ">
                 <center>
                     <div class="caption rounded ">
                         <h3>AYO BERINVESTASI DENGAN DOMBA!</h3>
-                        <p>Tidak hanya jual-beli, SI DOMBA juga menyediakan pasar investasi. Anda bisa
+                        <p style="color: white;">Tidak hanya jual-beli, SI DOMBA juga menyediakan pasar investasi. Anda
+                            bisa
                             menginvestasikan domba dari seluruh peternakan yang ada di Indonesia. Tentunya dengan
                             profit dan bagi hasil yang telah ditentukan oleh pihak Investor dan Peternak.</p>
                     </div>
@@ -241,14 +248,19 @@
 </div>
 
 <!-- Banner Starts Here -->
-<div class="banner1 col-md-11 mt-5 rounded">
-    <div class="container">
+<div class="banner1 col-md-11 mt-5 rounded" style="background-image: url(img/banner1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 5%;
+	background-position: center center;">
+    <div class=" container">
         <div class="row">
             <div class="col-md-6">
                 <center>
                     <div class="caption rounded">
                         <h3>MULAI KARIRMU SEBAGAI PETERNAK DOMBA ONLINE!</h3>
-                        <p>Sebagai platform marketplace, SI DOMBA tentunya juga memiliki fitur penjualan, dimana
+                        <p style="color:  white;">Sebagai platform marketplace, SI DOMBA tentunya juga memiliki fitur
+                            penjualan, dimana
                             penjual domba adalah peternak domba itu langsung. Peternak bebas mengatur harga,
                             investasi, dan kendali penuh atas domba yang dimiliki.</p>
                     </div>
