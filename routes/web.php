@@ -217,13 +217,30 @@ Route::get('/tulis_ulasan_investasi', function () {
     return view('user2.tulis_ulasan_investasi ');
 });
 
-
+// aman
 Route::get('/ulasan_sudah_diulas_investasi', function () {
     return view('user2.ulasan_sudah_diulas_investasi ');
 });
 
+// aman
 Route::get('/ulasan_sudah_diulas_pembeli', function () {
     return view('user2.ulasan_sudah_diulas_pembeli ');
+});
+
+// aman
+Route::get('/wishlist_pembeli', function () {
+    return view('user2.wishlist_pembeli ');
+});
+
+// aman
+Route::get('/wishlist_investasi', function () {
+    return view('user2.wishlist_investasi ');
+});
+
+
+// aman
+Route::get('/transaksi_user', function () {
+    return view('user2.transaksi_user ');
 });
 
 
@@ -233,20 +250,20 @@ All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
 /*...Search pagination...*/
-Route::any ( '/search', function () {
-    $q = request()->get ( 'q' );
-    if($q != ""){
-    $user = User::where ( 'name', 'LIKE', '%' . $q . '%' )->orWhere ( 'email', 'LIKE', '%' . $q . '%' )->paginate (5)->setPath ( '' );
-    $pagination = $user->appends ( array (
-       'q' => request()->get ( 'q' ) 
-     ) );
-    if (count ( $user ) > 0)
-     return route('admin.total-user',[
-         'Details'=>$user,
-         'Query'=>$q
-     ]);
+Route::any('/search', function () {
+    $q = request()->get('q');
+    if ($q != "") {
+        $user = User::where('name', 'LIKE', '%' . $q . '%')->orWhere('email', 'LIKE', '%' . $q . '%')->paginate(5)->setPath('');
+        $pagination = $user->appends(array(
+            'q' => request()->get('q')
+        ));
+        if (count($user) > 0)
+            return route('admin.total-user', [
+                'Details' => $user,
+                'Query' => $q
+            ]);
     }
-     return route('admin.total-user')->withMessage ( 'No Details found. Try to search again !' );
+    return route('admin.total-user')->withMessage('No Details found. Try to search again !');
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
