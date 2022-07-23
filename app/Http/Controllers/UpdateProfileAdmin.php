@@ -22,24 +22,27 @@ class UpdateProfileAdmin extends Controller
     public function update(Request $request)
     {
         $id = Auth::id();
+        $admin = User::find($id);
 
         $validateData = $request->validate([
             'username'  => 'required|',
             'fullname'  => 'required',
             'email'     => '',
-            'no_HP'     => 'required|integer',
+            'no_HP'     => 'required|numeric|',
             'avatar'    => '|file|image|max:2000',
         ]);
 
-        $extFile = $request->avatar->getClientOriginalExtension();
-        $namaFile = time() . "." . $extFile;
-        $request->avatar->move('image', $namaFile);
-
-        $admin = User::find($id);
+        if ($request->avatar !== null) 
+        {
+            $extFile = $request->avatar->getClientOriginalExtension();
+            $namaFile = time() . "." . $extFile;
+            $request->avatar->move('image', $namaFile);
+            $admin->avatar = $namaFile;
+        }
         $admin->username = $validateData['username'];
         $admin->fullname = $validateData['fullname'];
         $admin->no_HP = $validateData['no_HP'];
-        $admin->avatar = $namaFile;
+        
         $admin->update();
 
         return redirect()->route('accountAdmin.index');
