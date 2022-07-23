@@ -16,7 +16,7 @@
 
     <div class="tombol justify-content-between">
         <a class="rounded-pill d-flex justify-content-center  col-md-2"
-            style="background-color: #979494;  color: #020302; margin-top: 20px;" href="{{route('admin.account')}}">
+            style="background-color: #979494;  color: #020302; margin-top: 20px;" href="{{route('accountAdmin.index')}}">
             <i class="fi fi-rr-arrow-left" style="margin-right: 15px; font-size: 20px;"></i>Kembali
         </a>
     </div>
@@ -41,38 +41,61 @@
                     <h3>Password Saat Ini</h3>
                 </div> -->
 
-                        <form>
+                        <form action="{{route('updatePwAdmin.update')}}" method="POST">
+                            @csrf
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label"
-                                    style="color: black;">Password
-                                    Saat Ini :</label>
-                                <input type="password" class="form-control rounded-pill"
-                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="currentPassword" class="form-label"style="color: black;">
+                                    Password Saat Ini :
+                                </label>
+                                <input type="password" class="form-control @error('currentPassword') is-invalid @enderror rounded-pill" id="currentPassword" name="currentPassword">
+                                @error('currentPassword')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label"
-                                    style="color: black;">Password
-                                    Baru :</label>
-                                <input type="password" class="form-control rounded-pill"
-                                    id="exampleInputPassword1">
+                                <label for="newPassword" class="form-label" style="color: black;">
+                                    Password Baru :
+                                </label>
+                                <input type="password" class="form-control @error('newPassword') is-invalid @enderror rounded-pill" id="newPassword" name="newPassword">
+                                @error('newPassword')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label"
-                                    style="color: black;">Konfirmasi Password :</label>
-                                <input type="password" class="form-control rounded-pill"
-                                    id="exampleInputPassword1">
+                                <label for="confirmPassword" class="form-label" style="color: black;">
+                                    Konfirmasi Password :
+                                </label>
+                                <input type="password" class="form-control @error('confirmPassword') is-invalid @enderror rounded-pill" id="confirmPassword" name="confirmPassword">
+                                @error('confirmPassword')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
-
-
-
                             <center>
+                                <br>
+                                <button type="submit" class="btn btn-primary rounded-pill col-md-5">
+                                    Ubah Password
+                                </button>
 
                                 <br>
-                                <a href="konfirmasipw.html" type="submit"
-                                    class="btn btn-primary rounded-pill col-md-6">Ubah
-                                    Password</a>
-                            </center>
+                                @if(session()->has('error'))
+                                    <span class="text-danger">
+                                        <i>{{ session()->get('error') }}</i>
+                                    </span>
+                                @endif
+                                @if(session()->has('success'))
+                                    <span class="text-success">
+                                        <i>{{ session()->get('success') }}</i>
+                                    </span>
+                                @endif
+                                </center>
                         </form>
+                       
                     </div>
 
 

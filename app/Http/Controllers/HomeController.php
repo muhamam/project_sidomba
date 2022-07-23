@@ -222,11 +222,6 @@ class HomeController extends Controller
         return view('admin.isi-chat');
     }
 
-    public function adminGantiPw()
-    {
-        return view('admin.gantipw');
-    }
-
     public function adminDetailPesanan()
     {
         return view('admin.detailpesanan');

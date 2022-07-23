@@ -307,7 +307,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/gantipw', [UpdatePasswordAdmin::class, 'index'])->name('updatePwAdmin.index');
-    Route::patch('/admin/gantipw', [UpdatePasswordAdmin::class, 'update'])->name('updatePwAdmin.update');
+    Route::post('/admin/gantipw', [UpdatePasswordAdmin::class, 'update'])->name('updatePwAdmin.update');
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {

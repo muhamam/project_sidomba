@@ -61,10 +61,10 @@
                                 <label for="email" class="form-label" style="color: black;">Email</label>
                                 <input type="email" class="form-control @error('email') is-invalid @enderror rounded-pill" id="email" name="email" value="{{ old('email') ?? $admin->email}}" disabled>
                                 @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="no_HP" class="form-label" style="color: black;">No.
