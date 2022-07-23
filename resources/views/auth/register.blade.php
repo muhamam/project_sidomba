@@ -21,9 +21,9 @@
                                 @csrf
         
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">{{ __('Name') }}</label>
-                                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                    @error('name')
+                                    <label for="fullname" class="form-label">{{ __('Nama Lengkap') }}</label>
+                                    <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="fullname" autofocus>
+                                    @error('fullname')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -31,7 +31,7 @@
                                 </div>
         
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                                    <label for="email" class="form-label">{{ __('Email') }}</label>
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">

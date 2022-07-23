@@ -23,8 +23,16 @@ class ChatController extends Controller
         foreach ($temp as $key) {
             $users[] = User::where('id','=',$key)->get();
         }
-        return view('admin.chat-app', ['users' => $users]);
+
+        $id = Auth::id();
+        $admin = User::find($id);
+        
+        return view('admin.chat-app', [
+            'users' => $users,
+            'admin'=>$admin
+        ]);
     }
+
     public function chatStart($id)
     {
         $user = User::find(Auth::id());
@@ -44,6 +52,7 @@ class ChatController extends Controller
         $user->update(['id_chat_to' => $id_chat_to]);
         return redirect('/admin/chat');
     }
+    
     // get all Messages
     public function getMessage($user_id)
     {
@@ -79,7 +88,8 @@ class ChatController extends Controller
         return $this->sendRequest($from, $message, $to);
     }
     public function sendRequest($from, $message, $to){	
-        $users = DB::select("SELECT * FROM messages WHERE messages.to = " . Auth::id() . " ");
+        $users = Message::select("SELECT * FROM messages WHERE messages.to = " . Auth::id() . " ");
+        dd($users);
         if(isset($users)){
             foreach ($users as $p) {
                 $Data = $p->to;

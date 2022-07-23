@@ -5,12 +5,15 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\UpdateProfileAdmin;
+use App\Http\Controllers\AccountAdmin;
+use App\Http\Controllers\UpdatePasswordAdmin;
 use Illuminate\Support\Facades\Request;
 use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes ///dadawd
+| Web Routes 
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -230,20 +233,20 @@ All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
 /*...Search pagination...*/
-Route::any('/search', function () {
-    $q = request()->get('q');
-    if ($q != "") {
-        $user = User::where('name', 'LIKE', '%' . $q . '%')->orWhere('email', 'LIKE', '%' . $q . '%')->paginate(5)->setPath('');
-        $pagination = $user->appends(array(
-            'q' => request()->get('q')
-        ));
-        if (count($user) > 0)
-            return route('admin.total-user', [
-                'Details' => $user,
-                'Query' => $q
-            ]);
+Route::any ( '/search', function () {
+    $q = request()->get ( 'q' );
+    if($q != ""){
+    $user = User::where ( 'name', 'LIKE', '%' . $q . '%' )->orWhere ( 'email', 'LIKE', '%' . $q . '%' )->paginate (5)->setPath ( '' );
+    $pagination = $user->appends ( array (
+       'q' => request()->get ( 'q' ) 
+     ) );
+    if (count ( $user ) > 0)
+     return route('admin.total-user',[
+         'Details'=>$user,
+         'Query'=>$q
+     ]);
     }
-    return route('admin.total-user')->withMessage('No Details found. Try to search again !');
+     return route('admin.total-user')->withMessage ( 'No Details found. Try to search again !' );
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
@@ -253,12 +256,12 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/chat', [ChatController::class, 'index'])->name('admin.chat');
     Route::post('/admin/chat/{id}', [ChatController::class, 'chatStart'])->name('admin.chatStart');
-    Route::get('/admin/message/{id}', 'App\Http\Controllers\ChatController@getMessage')->name('message');
+    Route::get('/message/{id}', 'App\Http\Controllers\ChatController@getMessage')->name('message');
     Route::post('/admin/message', 'App\Http\Controllers\ChatController@sendMessage');
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
-    Route::get('/admin/account', [HomeController::class, 'adminAccount'])->name('admin.account');
+    Route::get('/admin/account', [AccountAdmin::class, 'index'])->name('accountAdmin.index');
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
@@ -303,11 +306,13 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
-    Route::get('/admin/gantipw', [HomeController::class, 'adminGantiPw'])->name('admin.gantipw');
+    Route::get('/admin/gantipw', [UpdatePasswordAdmin::class, 'index'])->name('updatePwAdmin.index');
+    Route::patch('/admin/gantipw', [UpdatePasswordAdmin::class, 'update'])->name('updatePwAdmin.update');
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
-    Route::get('/admin/updateprofil', [HomeController::class, 'adminUpdateProfil'])->name('admin.updateprofil');
+    Route::get('/admin/updateprofil', [UpdateProfileAdmin::class, 'index'])->name('adminUpdateProfil.index');
+    Route::patch('/admin/updateprofil', [UpdateProfileAdmin::class, 'update'])->name('adminUpdateProfil.update');
 });
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {

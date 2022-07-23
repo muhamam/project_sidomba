@@ -125,11 +125,11 @@
                     <div class="d-inline dropdown">
                         <a href="index_akun.html" class="dropdown-toggle " data-bs-toggle="dropdown"
                             style="color: white;">
-                            {{ Auth::user()->name }}
+                            {{ Auth::user()->fullname }}
                         </a>
                         <div class="dropdown-menu bg-light" style="margin-top: 1em; right:0; left:auto;">
                             <div class="dropdown-item" style="border-bottom:2px solid #3A8BCD ;">
-                                <a href="#" class="text-dark">{{ Auth::user()->name }}<br>
+                                <a href="#" class="text-dark">{{ Auth::user()->username }}<br>
                                     <p style="font-size: 0.7em;">{{ Auth::user()->email}}</p>
                                 </a>
                             </div>

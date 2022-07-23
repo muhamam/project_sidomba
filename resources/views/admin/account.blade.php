@@ -25,15 +25,15 @@
 
             <div class="inti row">
                 <div class="image col-md-2 col">
-                    <img class="col-1 rounded-circle col-md-5" src="img/testimonial-1.jpg"
+                    <img class="col-1 rounded-circle col-md-5" src="{{ $admin->avatar === null ? asset('img/boy.png') : asset('image/'.$admin->avatar) }}"
                         style="width: 100px; height: 100px;">
 
                 </div>
                 <div class="tulis col">
-                    <h2 class="col-md-5">Si Tampan</h2>
-                    <h4 style="font-weight: lighter;">sitampan@gmail.com - <span style="font-weight: bold;">
-                            Administrator</span> </h4>
-                    <h4 style="font-weight: lighter;"> 0812 - 3456 - 7890</h4>
+                    <h2 class="col-md-5">{{$admin->name}}</h2>
+                    <h4 style="font-weight: lighter;">{{$admin->email}} - <span style="font-weight: bold;">
+                        {{$admin->type}}</span> </h4>
+                    <h4 style="font-weight: lighter;">{{$admin->no_HP}}</h4>
                 </div>
             </div>
             <div class="garis" style="border-bottom: 3px solid black;"></div>
@@ -55,31 +55,31 @@
 
                         <td>Username</td>
                         <td>:</td>
-                        <td>Sitampan</td>
+                        <td>{{$admin->username}}</td>
                     </tr>
                     <tr>
 
                         <td>Nama Lengkap</td>
                         <td>:</td>
-                        <td>Mikey Sitampan</td>
+                        <td>{{$admin->fullname}}</td>
                     </tr>
                     <tr>
 
                         <td>Email</td>
                         <td>:</td>
-                        <td>sitampan@gmail.com</td>
+                        <td>{{$admin->email}}</td>
                     </tr>
                     <tr>
 
                         <td>No. Telepon</td>
                         <td>:</td>
-                        <td>0812 - 3456 - 7890</td>
+                        <td>{{$admin->no_HP}}</td>
                     </tr>
                     <tr>
 
                         <td>Posisi</td>
                         <td>:</td>
-                        <td>Administrator</td>
+                        <td>{{$admin->type}}  </td>  {{-- masih misteri--}}
                     </tr>
                 </tbody>
             </table>
@@ -92,14 +92,14 @@
 
             <a class="rounded-pill  justify-content-center  col-md-2" style="background-color:
                 #00A3FF; color: #020302; margin-top: 20px; width: 170px;
-                height: 38px;" href="{{route('admin.gantipw')}}">-
+                height: 38px;" href="{{route('updatePwAdmin.index')}}">-
                 <i class="fi fi-rr-arrow-left" style="margin-right: 15px; font-size: large;">Ubah Password</i>
             </a>
 
 
             <a class="rounded-pill  justify-content-center  col-md-2" style="background-color:
                 #00A3FF; color: #020302; margin-top: 20px; width: 170px;
-                height: 38px;" href="{{route('admin.updateprofil')}}">-
+                height: 38px;" href="{{route('adminUpdateProfil.index')}}">-
                 <i class="fi fi-rr-arrow-left" style="margin-right: 15px; font-size: large;">Update Profil</i>
             </a>
         </div>

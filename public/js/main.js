@@ -97,10 +97,14 @@
     var myChart2 = new Chart(ctx2, {
         type: "line",
         data: {
-            labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+            labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu" , "Sep", "Okt", "Nov" , "Des"],
             datasets: [{
                     label: "Salse",
-                    data: [11, 35, 55, 45, 70, 65, 85],
+                    data: [
+                        chart["Jan"],chart["Feb"],chart["Mar"],chart["Apr"],
+                        chart["Mei"],chart["Jun"],chart["Jul"],chart["Agu"],
+                        chart["Sep"],chart["Okt"],chart["Nov"],chart["Des"]
+                    ],
                     backgroundColor: "rgba(0, 156, 255, .5)",
                     fill: true
                 },

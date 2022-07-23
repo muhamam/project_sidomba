@@ -31,6 +31,9 @@
 
                 </div>
             </center>
+            <?php foreach ($chart as $key) {
+                
+            } ?>
 
             <div class="container row d-flex justify-content-strat">
                 
@@ -68,8 +71,8 @@
                             <?php $i=0; ?>
                             @forelse ($allUser as $item)
                             <tr>
-                                <td>{{$item->name}}</td>
-                                <td>{{$item->name}}</td>
+                                <td>{{$item->fullname}}</td>
+                                <td>{{$item->username}}</td>
                                 <td>{{$item->email}}</td>
                                 <td>
                                     {{$item->created_at}}
@@ -295,7 +298,7 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 </div>
 <script>
-   
+var chart = <?php echo json_encode($chart); ?>;
 </script>
 
 @endsection

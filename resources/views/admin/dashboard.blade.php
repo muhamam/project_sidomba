@@ -2,23 +2,23 @@
 
 @section('content')
 
-<div class=" bg-white">
+<div class="container-xxl position-relative bg-white d-flex p-0">
 
     @include('layouts.sidebarAdmin')
 
     <!-- Content Start -->
     <div class="content">
-
+        
         @include('layouts.navbarAdmin')
 
 
         <!-- Sale & Revenue Start -->
 
-        <div class="container ">
+        <div class="container">
 
-            <div class="row  " style="margin-left: 200px; margin-bottom:50px; margin-top:50px;">
+            <div class="kotak">
 
-                <div class="satu col-3" style="margin-right:100px;">
+                <div class="satu">
                     <div class="ms-3">
 
                         <h6>Total User :</h6>
@@ -31,8 +31,8 @@
                     </div>
                 </div>
 
-                <div class="dua col-3">
-                    <div class="">
+                <div class="dua">
+                    <div class="ms-3">
 
                         <h6>Total Peternak :</h6>
                         <h5>1276 User</h5>
@@ -43,12 +43,8 @@
 
                     </div>
                 </div>
-
-            </div>
-
-            <div class="row ">
-                <div class="tiga col-3 " style="margin-right: 50px; ">
-                    <div class="">
+                <div class="tiga">
+                    <div class="ms-3">
 
                         <h6>Total Investor :</h6>
                         <h5>1276 User</h5>
@@ -59,8 +55,8 @@
 
                     </div>
                 </div>
-                <div class="empat col-3">
-                    <div class="">
+                <div class="empat">
+                    <div class="ms-3">
 
                         <h6>Total Transaksi Hari Ini :</h6>
                         <h5>1276 User</h5>
@@ -72,8 +68,8 @@
                     </div>
                 </div>
 
-                <div class="lima col-3" style="margin-top:-140px; margin-left:50px;">
-                    <div class="">
+                <div class="lima">
+                    <div class="ms-3">
 
                         <h6>Total Investasi Hari Ini :</h6>
                         <h5>1276 User</h5>
@@ -84,12 +80,12 @@
 
                     </div>
                 </div>
+
             </div>
 
 
 
-
-            <table class="table" style="color: black; ">
+            <table class="table" style="color: black; position: relative; top: -250px;">
                 <tbody>
                     <tr>
                         <td class="col-md-5">

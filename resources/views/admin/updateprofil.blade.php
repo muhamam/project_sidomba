@@ -14,7 +14,7 @@
         
         <div class="tombol justify-content-between">
             <a class="rounded-pill d-flex justify-content-center  col-md-2"
-                style="background-color: #979494;  color: #020302; margin-top: 20px;" href="{{route('admin.account')}}">
+                style="background-color: #979494;  color: #020302; margin-top: 20px;" href="{{route('accountAdmin.index')}}">
                 <i class="fi fi-rr-arrow-left" style="margin-right: 15px; font-size: 20px;"></i>Kembali
             </a>
         </div>
@@ -23,7 +23,7 @@
 
                 <div class="row">
                     <div class="gambar col-6 ">
-                        <center><img src="img/update.jpeg" alt="" style="width: 261px; height: 261px;">
+                        <center><img src="{{ asset("img/update.jpeg")}}" alt="" style="width: 261px; height: 261px;">
 
                             <h1>Update Profil</h1>
 
@@ -36,37 +36,55 @@
                             <h3>Password Saat Ini</h3>
                         </div> -->
 
-                        <form>
+                        <form action="{{route('adminUpdateProfil.update')}}" method="POST" enctype="multipart/form-data">
+                            @method('PATCH')
+                            @csrf
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label"
-                                    style="color: black;">Username:</label>
-                                <input type="password" class="form-control rounded-pill" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                <label for="username" class="form-label" style="color: black;">Username:</label>
+                                <input type="text" class="form-control @error('username') is-invalid @enderror rounded-pill" id="username" name="username" value="{{ old('username') ?? $admin->username}}">
+                                @error('username')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label" style="color: black;">Nama
-                                    Lengkap</label>
-                                <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+                                <label for="fullname" class="form-label" style="color: black;">Nama Lengkap</label>
+                                <input type="text" class="form-control @error('fullname') is-invalid @enderror rounded-pill" id="fullname" name="fullname" value="{{ old('fullname') ?? $admin->fullname}}">
+                                @error('fullname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label"
-                                    style="color: black;">Email</label>
-                                <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+                                <label for="email" class="form-label" style="color: black;">Email</label>
+                                <input type="email" class="form-control @error('email') is-invalid @enderror rounded-pill" id="email" name="email" value="{{ old('email') ?? $admin->email}}" disabled>
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label" style="color: black;">No.
+                                <label for="no_HP" class="form-label" style="color: black;">No.
                                     Telepon :</label>
-                                <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+                                <input type="text" class="form-control @error('no_HP') is-invalid @enderror rounded-pill" id="no_HP" name="no_HP" value="{{ old('no_HP') ?? $admin->no_HP}}">
+                                @error('no_HP')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label" style="color: black;">Foto
+                                <label for="avatar" class="form-label @error('avatar') is-invalid @enderror" style="color: black;">Foto
                                     Profil :</label>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlFile1">Masukan photo</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                    </div>
-                                </form>
+                                <input type="file" class="form-control-file @error('avatar') is-invalid @enderror" id="avatar" name="avatar">
+                                @error('avatar')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             </div>
 
 
@@ -74,8 +92,9 @@
                             <center>
 
                                 <br>
-                                <button type="submit" class="btn btn-primary rounded-pill col-md-5">Ubah
-                                    Password</button>
+                                <button type="submit" class="btn btn-primary rounded-pill col-md-5">
+                                    Simpan
+                                </button>
                             </center>
                         </form>
                     </div>

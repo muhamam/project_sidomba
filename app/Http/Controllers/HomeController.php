@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -39,9 +40,13 @@ class HomeController extends Controller
             }
         }
 
+        $id = Auth::id();
+        $admin = User::find($id);
+
         return view('admin.dashboard',[
             'userCount'=>$userCount,
-            'sum'=>$sum
+            'sum'=>$sum,
+            'admin'=>$admin
         ]);
     }
 
@@ -79,14 +84,66 @@ class HomeController extends Controller
     {
         // total user
         $totalUser = User::where('type','0')->count();
+        
 
         // jumlah user baru
         $newUser = User::where('type','0')->get();
         $current = Carbon::now();
         $sum = 0;
+        $chart = [
+            "Jan" => 0,"Feb" => 0,"Mar" => 0,"Apr" => 0,
+            "Mei" => 0,"Jun" => 0,"Jul" => 0,"Agu" => 0,
+            "Sep" => 0,"Okt" => 0,"Nov" => 0,"Des" => 0,
+        ];
         for ($i=0; $i < $totalUser; $i++) { 
             if ($newUser[$i]->created_at->addDays(1) >= $current) {
                 $sum++;  
+            }
+
+            // grafik
+            $created_at = []; 
+            $created_at[] = explode('-',$newUser[$i]->created_at);
+
+            switch ($created_at[0][1]) {
+                case '01':
+                    $chart["Jan"]++;
+                    break;
+                case '02':
+                    $chart["Feb"]++;
+                    break;
+                case '03':
+                    $chart["Mar"]++;
+                    break;
+                case '04':
+                    $chart["Apr"]++;
+                    break;
+                case '05':
+                    $chart["Mei"]++;
+                    break;
+                case '06':
+                    $chart["Jun"]++;
+                    break;
+                case '07':
+                    $chart["Jul"]++;
+                    break;
+                case '08':
+                    $chart["Agu"]++;
+                    break;
+                case '09':
+                    $chart["Sep"]++;
+                    break;
+                case '10':
+                    $chart["Okt"]++;
+                    break;
+                case '11':
+                    $chart["Nov"]++;
+                    break;
+                case '12':
+                    $chart["Des"]++;
+                    break;
+                default:
+                    # code...
+                    break;
             }
         }
 
@@ -96,7 +153,8 @@ class HomeController extends Controller
         if ($search != '') {
 
             $allUser = User::where(function ($query) use ($search){
-                $query->where('name', 'like', '%'.$search.'%')
+                $query->where('username', 'like', '%'.$search.'%')
+                    ->orWhere('fullname', 'like', '%'.$search.'%')
                     ->orWhere('email', 'like', '%'.$search.'%');
             })->where('type','0')->paginate($batas);
             
@@ -105,6 +163,9 @@ class HomeController extends Controller
         } else {
             $allUser = User::where('type','0')->paginate($batas);
         }
+
+        $id = Auth::id();
+        $admin = User::find($id);
         
         
         return view('admin.total-user',[
@@ -112,7 +173,9 @@ class HomeController extends Controller
             'sum'=>$sum,
             'allUser'=>$allUser,
             'batas'=>$batas,
-            'search'=>$search
+            'search'=>$search,
+            'chart'=>$chart,
+            'admin'=>$admin
         ]);
     }
 
@@ -162,11 +225,6 @@ class HomeController extends Controller
     public function adminGantiPw()
     {
         return view('admin.gantipw');
-    }
-
-    public function adminUpdateProfil()
-    {
-        return view('admin.updateprofil');
     }
 
     public function adminDetailPesanan()

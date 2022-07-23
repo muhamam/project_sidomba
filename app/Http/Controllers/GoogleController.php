@@ -26,9 +26,12 @@ class GoogleController extends Controller
                 Auth::login($user);
                 return redirect('home');
             } else {
+                $temp_username = explode(" ",$google_user->name);
+                $username = $temp_username[0].rand(10,199);
                 $new_user = User::create([
                     'avatar'=> $google_user->getAvatar(),
-                    'name' => ucwords($google_user->name),
+                    'username' => $username,
+                    'fullname' => ucwords($google_user->name),
                     'email' => $google_user->email,
                     'email_verified_at' => now(),
                     'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
