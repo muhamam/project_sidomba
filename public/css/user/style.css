@@ -61,6 +61,8 @@
 
 /* banner yang ada di folder user2 di file view_peternak_diuser */
 .bannerd23 .caption {
+    width: 800px;
+    
 	background-color: rgba(51, 50, 50, 0.9);
 	color: white;
     margin-top: 10px;

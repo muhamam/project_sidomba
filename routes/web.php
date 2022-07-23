@@ -184,13 +184,44 @@ Route::get('/view_peternak_diuser', function () {
     return view('user2.view_peternak_diuser');
 });
 
-
+// aman
 Route::get('/view_peternak_investasi_diuser', function () {
     return view('user2.view_peternak_investasi_diuser ');
 });
 
+// aman
+Route::get('/view_peternak_ulasan_diuser', function () {
+    return view('user2.view_peternak_ulasan_diuser ');
+});
+
+// aman
+Route::get('/ulasan_belum_diulas_investasi', function () {
+    return view('user2.ulasan_belum_diulas_investasi ');
+});
+
+// aman
+Route::get('/ulasan_belum_diulas_pembelian', function () {
+    return view('user2.ulasan_belum_diulas_pembelian ');
+});
+
+// aman
+Route::get('/tulis_ulasan_pembeli', function () {
+    return view('user2.tulis_ulasan_pembeli ');
+});
+
+// aman
+Route::get('/tulis_ulasan_investasi', function () {
+    return view('user2.tulis_ulasan_investasi ');
+});
 
 
+Route::get('/ulasan_sudah_diulas_investasi', function () {
+    return view('user2.ulasan_sudah_diulas_investasi ');
+});
+
+Route::get('/ulasan_sudah_diulas_pembeli', function () {
+    return view('user2.ulasan_sudah_diulas_pembeli ');
+});
 
 
 /*------------------------------------------

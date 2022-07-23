@@ -1007,8 +1007,8 @@
             </div>
             <br>
         </div>
-</div>
-</section>
+
+    </section>
 
 
 </div>
