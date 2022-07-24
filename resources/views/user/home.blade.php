@@ -14,7 +14,7 @@
     style="background-image: url({{asset('img/banner-bg.jpg')}});background-size: cover;background-repeat:no-repeat;">
     <div class="text-white text-center" style="background:rgba(0,0,0, 0.7);">
         <h3>CARI DOMBA IMPIANMU DISINI!</h3>
-        <p>Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
+        <p style="color: white;">Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
             domba-domba dari seluruh peternak domba di Indonesia.</p>
     </div>
 </div>

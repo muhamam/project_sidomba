@@ -44,6 +44,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 <body>
 
@@ -73,18 +83,18 @@
                             data-width="20" data-height="20"></span>
                     </a>
                 </li>
-                <li class="mx-1 my-auto">
-                    <span class="iconify d-inline ms-2" style="color: white;" data-icon="maki:farm" data-width="20"
-                        data-height="20"></span>
+                <li>
 
-                    <div class="dropdown d-inline">
-                        <a href="index_investasi.html" class="dropdown-toggle" data-bs-toggle="dropdown"
-                            style="color: white; ">
+                    <div class="dropdown ">
+                        <a href="#" class="btn dropdown-toggle" aria-expanded="false" type="button"
+                            data-toggle="dropdown" style="color: white; ">
+                            <span class="iconify d-inline ms-2 " style="color: white;" data-icon="maki:farm"
+                                data-width="20" data-height="20"></span>
                             Peternakan
                         </a>
-                        <div class="dropdown-menu bg-light p-1" style="margin-top: 1em; left:-5em;">
+                        <div class=" dropdown-menu">
                             <center>
-                                <p class="dropdown-item" style="font-size: 0.7em; margin-bottom:0;">Anda belum
+                                <p class="dropdown-item">Anda belum
                                     mendaftarkan
                                     peternakan anda</p>
                                 <a href="#" class="dropdown-item rounded-pill text-white"
@@ -94,14 +104,12 @@
                         </div>
                     </div>
                 </li>
-                <li class="mx-1 my-auto">
-                    <span><img src="{{ asset('img/investasi.png')}}" alt="" style="width: 16px; height:16px; "
-                            class="d-inline ms-2">
-                    </span>
-
-                    <div class="d-inline dropdown">
-                        <a href="index_investasi.html" class="dropdown-toggle" data-bs-toggle="dropdown"
-                            style="color: white; ">
+                <li>
+                    <div class="dropdown">
+                        <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button"
+                            data-toggle="dropdown" style="color: white; ">
+                            <span><img src="{{ asset('img/investasi.png')}}" alt="" style="width: 16px; height:16px; ">
+                            </span>
                             Investasi
                         </a>
                         <div class="dropdown-menu bg-light p-1" style="margin-top: 1em; left:-5em;">
@@ -116,15 +124,16 @@
                         </div>
                     </div>
                 </li>
-                <li class="mx-1 my-auto">
-                    <span><img
-                            src="https://lh3.googleusercontent.com/a-/AOh14GjWJy4eDhbJeMxGKLA-s9yAjqPeZzaqIXCeKC2yfQ=s96-c"
-                            alt="" style="width: 35px; height:35px; " class="rounded-circle d-inline ms-2">
-                    </span>
+                <li class="">
 
-                    <div class="d-inline dropdown">
-                        <a href="index_akun.html" class="dropdown-toggle " data-bs-toggle="dropdown"
-                            style="color: white;">
+
+                    <div class="dropdown">
+                        <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button"
+                            data-toggle="dropdown" style="color: white; ">
+                            <span><img
+                                    src="https://lh3.googleusercontent.com/a-/AOh14GjWJy4eDhbJeMxGKLA-s9yAjqPeZzaqIXCeKC2yfQ=s96-c"
+                                    alt="" style="width: 35px; height:35px; " class="rounded-circle d-inline ms-2">
+                            </span>
                             {{ Auth::user()->fullname }}
                         </a>
                         <div class="dropdown-menu bg-light" style="margin-top: 1em; right:0; left:auto;">
@@ -220,7 +229,7 @@
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
     <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
-    <script src="{{asset('js/js_baru/bootstrap.min.js')}} "></script>
+    <!-- <script src="{{asset('js/js_baru/bootstrap.min.js')}} "></script> -->
     <script src="{{asset('js/js_baru/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/js_baru/main.js')}}"></script>
 
