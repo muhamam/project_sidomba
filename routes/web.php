@@ -244,6 +244,10 @@ Route::get('/transaksi_user', function () {
 });
 
 
+Route::get('/transaksi_user_mp', function () {
+    return view('user2.transaksi_user_mp ');
+});
+
 /*------------------------------------------
 --------------------------------------------
 All Admin Routes List

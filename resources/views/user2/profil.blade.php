@@ -55,7 +55,7 @@
 
 
 
-    <section class="ftco-section col">
+    <section class="ftco-section col" style="margin-top: 100px;">
         <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
 
             <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
