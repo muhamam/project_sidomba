@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-<div class="row  d-flex">
+<div class="row  d-flex" style="margin-top: 100px;">
     <div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
         <div class=" bg-light ">
             <center>
