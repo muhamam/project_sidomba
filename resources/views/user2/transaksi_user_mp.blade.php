@@ -372,7 +372,7 @@
                                     </div>
 
                                 </div>
-
+                                <!-- modal end -->
                             </div>
                         </div>
                     </div>

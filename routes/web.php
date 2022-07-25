@@ -248,7 +248,7 @@ Route::get('/transaksi_user_mp', function () {
     return view('user2.transaksi_user_mp ');
 });
 
-
+// aman
 Route::get('/transaksi_selesai_user', function () {
     return view('user2.transaksi_selesai_user ');
 });
