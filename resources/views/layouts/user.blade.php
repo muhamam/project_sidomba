@@ -158,7 +158,7 @@
                             <div class="dropdown-item my-1">
                                 <span class="iconify me-2" data-icon="ic:outline-switch-account" data-width="25"
                                     data-height="25" data-flip="horizontal" "></span>
-                                <a href=" #" class="text-dark">Akun</a>
+                                <a href="{{route('account.index')}}" class="text-dark">Akun</a>
                             </div>
                             <div class="dropdown-item my-1">
                                 <span class="iconify me-2" data-icon="ant-design:logout-outlined" data-width="25"

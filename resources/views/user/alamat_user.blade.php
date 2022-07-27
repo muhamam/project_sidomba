@@ -11,12 +11,11 @@
                                     class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
-                            <a href="#" class="  " style="color:#000000 ;">Muhammad
-                                anas
+                            <a href="#" class="  " style="color:#000000 ;">{{$user->fullname}}
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
+                            <a href="#" style="font-size:9px;color:#000000 ;">{{$user->email}}</a><br>
 
-                            <a href="#" style="color:#000000 ;">ID Investor : X001</a>
+                            <a href="#" style="color:#000000 ;">ID Investor :</a>
                         </td>
                     </tr>
                     <tr>
@@ -30,7 +29,7 @@
                 <div class="dalam ">
                     <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25"
                         style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="dashboard_investor.html" class="dropdown-item ">Akun</a>
+                    <a href="{{route('account.index')}}" class="dropdown-item ">Akun</a>
                     <span class="iconify" data-icon="bi:chat-text" data-width="25" data-height="25"
                         style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="pasar.html" class="dropdown-item ">Chat</a>
@@ -76,13 +75,13 @@
 
 
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
-                <a class="mt-3" href="investasi_riwayat.html" style="color: #000;">
+                <a class="mt-3" href="{{route('account.index')}}" style="color: #000;">
                     <h5>Biodata</h5>
                 </a>
-                <a class="ml-5 mt-3" href="investasi_negosiasi.html" style="color: #000;">
+                <a class="ml-5 mt-3" href="{{route('password.index')}}" style="color: #000;">
                     <h5> Ubah Password</h5>
                 </a>
-                <a class="ml-5 mt-3" href="investasi_negosiasi.html" style="color: #000;">
+                <a class="ml-5 mt-3" href="{{route('address.index')}}" style="color: #000;">
                     <h5> Alamat</h5>
                 </a>
             </div>
