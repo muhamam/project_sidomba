@@ -89,50 +89,50 @@
             <div class=" mb-3" style="width: 100%; height:1px; background-color: #3A8BCD; "></div>
             <div class="kabeh rounded-lg" style=" height: 380px; ">
                 <center>
-                    <!-- sebelum di ubah pasword -->
-                    <div class="col-4 rounded" style="background-color:#ED818C ;">
-
-                        <h6> <b>PERHATIAN</b> : Anda hanya bisa mengubah password sebanyak 2 kali lagi </h6>
-                    </div>
-                    <!-- sesudah di ubah pasword -->
-                    <div class="col-4 rounded" style="background-color:#44F060 ;">
+                    <!-- sesudah di ubah profil-->
+                    <div class="col-4 rounded p-2" style="background-color:#44F060 ;">
                         <span class="iconify" data-icon="akar-icons:check" data-width="30" data-height="30"></span>
-                        <h6>Password berhasil diganti. Anda bisa mengganti password sebanyak 1 kali lagi. </h6>
+                        <h6>Anda Berhasil Mengubah Profil. </h6>
                     </div>
 
-
+                    <h4>Edit Profil</h4>
 
                     <div class="mb-3 col-6">
-                        <label class="form-label" style="margin-right: 300px;"><b> Password Lama</b></label>
-                        <input type="password" id="berat" class="form-control"
-                            placeholder="Ketikkan password lama anda disini">
+                        <label class="form-label" style="margin-right: 300px;"><b> Nama Lengkap</b></label>
+                        <input type="text" id="berat" class="form-control" placeholder="Ketikkan nama anda di sini">
 
                     </div>
 
                     <div class="mb-3 col-6">
-                        <label class="form-label" style="margin-right: 300px;"><b>Password Baru </b> </label>
-                        <input type="password" id="berat" class="form-control"
-                            placeholder="Ketikkan Password Baru anda disini">
+                        <label class="form-label" style="margin-right: 300px;"><b>Tanggal Lahir </b> </label>
+                        <input type="text" name="tanggal" class="form-control datepicker"
+                            placeholder="Ketikkan Tanggal Lahir anda disini">
 
                     </div>
                     <div class="mb-3 col-6">
-                        <label for="harga" class="form-label" style="margin-right: 250px;"><b> Konfirmasi Password
-                                Baru </b></label>
-                        <input name="harga" type="password" id="harga" class="form-control"
-                            placeholder="Ketikkan password baru anda disini">
-                        <!-- @error('harga')
-            <div class="text-danger">{{ $message }}</div>
-            @enderror -->
+                        <div class="dropdown">
+                            <a class="btn btn-danger dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Jenis Kelamim
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Laki-Laki</a>
+                                <a class="dropdown-item" href="#">Perempuan</a>
+                            </div>
+                        </div>
+
                     </div>
 
                     <center>
-                        <button type="submit" class="btn btn-primary mt-2">Ganti Password</button>
+                        <button type="submit" class="btn btn-primary mt-2">Update Profil</button>
                     </center>
                 </center>
             </div>
             <br>
 
         </div>
+
 </div>
 </section>
 
@@ -142,5 +142,6 @@
 
 
 </div>
+
 
 @endsection

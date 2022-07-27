@@ -72,7 +72,7 @@
 
 
         </div>
-        <div class="container " style="background-color: white; width: 994px; height: 783px;">
+        <div class="container " style="background-color: white; width: 994px; height: 683px;">
 
 
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
@@ -224,25 +224,19 @@
 
                                     <span class="iconify" data-icon="maki:farm" data-width="30" data-height="30"></span>
                                     <h6>Akun Peternak</h6>
-                                    <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
-                                        data-height="40"></span>
+                                    <span class="iconify" data-icon="ant-design:file-search-outlined" data-width="30"
+                                        data-height="30"></span>
                                     <p>Mohon tunggu, data yang Anda masukkan untuk peternakan sedang diverifikasi oleh
                                         admin</p>
-                                    <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi
-                                        Akun</a>
-
                                 </div>
                                 <div class="col-4" style="border: 1px solid black; border-radius:10px;">
                                     <span class="iconify" data-icon="akar-icons:percentage" data-width="30"
                                         data-height="30"></span>
                                     <h6>Akun Investor</h6>
-                                    <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
-                                        data-height="40"></span>
-                                    <p>Maaf, Anda belum mengaktivasi akun investor Anda. Silakan aktivasi dengan
-                                        meng-klik tombol dibawah ini</p>
-                                    <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi
-                                        Akun</a>
-
+                                    <span class="iconify" data-icon="ant-design:file-search-outlined" data-width="30"
+                                        data-height="30"></span>
+                                    <p>Mohon tunggu, data yang Anda masukkan untuk peternakan sedang diverifikasi oleh
+                                        admin</p>
                                 </div>
                             </div>
                         </center>

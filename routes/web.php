@@ -253,6 +253,29 @@ Route::get('/transaksi_selesai_user', function () {
     return view('user.transaksi_selesai_user ');
 });
 
+
+Route::get('/ajukan_komplain', function () {
+    return view('user.ajukan_komplain ');
+});
+
+// aman
+Route::get('/profil_verifikasi', function () {
+    return view('user.profil_verifikasi ');
+});
+
+// aman
+Route::get('/edit_profil', function () {
+    return view('user.edit_profil ');
+});
+
+
+Route::get('/alamat_edit', function () {
+    return view('user.alamat_edit ');
+});
+
+
+
+
 /*------------------------------------------
 --------------------------------------------
 All Admin Routes List

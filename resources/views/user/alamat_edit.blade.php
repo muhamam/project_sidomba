@@ -72,7 +72,7 @@
 
 
         </div>
-        <div class="container " style="background-color: white; width: 994px;">
+        <div class="container " style="background-color: white; width: 994px; height:1000px;">
 
 
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
@@ -89,50 +89,98 @@
             <div class=" mb-3" style="width: 100%; height:1px; background-color: #3A8BCD; "></div>
             <div class="kabeh rounded-lg" style=" height: 380px; ">
                 <center>
-                    <!-- sebelum di ubah pasword -->
-                    <div class="col-4 rounded" style="background-color:#ED818C ;">
-
-                        <h6> <b>PERHATIAN</b> : Anda hanya bisa mengubah password sebanyak 2 kali lagi </h6>
-                    </div>
-                    <!-- sesudah di ubah pasword -->
-                    <div class="col-4 rounded" style="background-color:#44F060 ;">
-                        <span class="iconify" data-icon="akar-icons:check" data-width="30" data-height="30"></span>
-                        <h6>Password berhasil diganti. Anda bisa mengganti password sebanyak 1 kali lagi. </h6>
-                    </div>
-
-
-
+                    <h4>Tambah Alamat</h4>
                     <div class="mb-3 col-6">
-                        <label class="form-label" style="margin-right: 300px;"><b> Password Lama</b></label>
-                        <input type="password" id="berat" class="form-control"
-                            placeholder="Ketikkan password lama anda disini">
-
+                        <label class="form-label" style="margin-right: 300px;"><b> Alamat Lengkap</b></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-
                     <div class="mb-3 col-6">
-                        <label class="form-label" style="margin-right: 300px;"><b>Password Baru </b> </label>
-                        <input type="password" id="berat" class="form-control"
-                            placeholder="Ketikkan Password Baru anda disini">
+                        <div class="dropdown ">
+                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
+                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                Provinsi
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Laki-Laki</a>
+                                <a class="dropdown-item" href="#">Perempuan</a>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="mb-3 col-6">
-                        <label for="harga" class="form-label" style="margin-right: 250px;"><b> Konfirmasi Password
-                                Baru </b></label>
-                        <input name="harga" type="password" id="harga" class="form-control"
-                            placeholder="Ketikkan password baru anda disini">
-                        <!-- @error('harga')
-            <div class="text-danger">{{ $message }}</div>
-            @enderror -->
+                        <div class="dropdown ">
+                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
+                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                Kota / Kabupaten
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Laki-Laki</a>
+                                <a class="dropdown-item" href="#">Perempuan</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 col-6">
+                        <div class="dropdown ">
+                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
+                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                Kecamatan
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Laki-Laki</a>
+                                <a class="dropdown-item" href="#">Perempuan</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 col-6">
+                        <div class="dropdown ">
+                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
+                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                Kelurahan
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Laki-Laki</a>
+                                <a class="dropdown-item" href="#">Perempuan</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 col-6">
+                        <div class="dropdown ">
+                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
+                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                Kode Pos
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Laki-Laki</a>
+                                <a class="dropdown-item" href="#">Perempuan</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h4>Cek Lokasi Mu</h4>
+                    <!-- ini buat alamat nanti pake API -->
+                    <div class="peta mt-4" style="width :600px; height:300px; border:1px solid black;">
+
                     </div>
 
                     <center>
-                        <button type="submit" class="btn btn-primary mt-2">Ganti Password</button>
+                        <button type="submit" class="btn btn-primary mt-2">Update Profil</button>
                     </center>
                 </center>
+
+
             </div>
             <br>
 
         </div>
+
 </div>
 </section>
 
@@ -142,5 +190,6 @@
 
 
 </div>
+
 
 @endsection
