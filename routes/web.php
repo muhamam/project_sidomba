@@ -45,46 +45,46 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // aman
 Route::get('/detail', function () {
-    return view('user.daftar_detail_domba');
+    return view('peternak.daftar_detail_domba');
 });
 
 // aman
 Route::get('/daftar-domba', function () {
-    return view('user.daftar_domba');
+    return view('peternak.daftar_domba');
 });
 
 // aman
 Route::get('/daftar-penjualan-investasi', function () {
-    return view('user.daftar_penjualan_investasi');
+    return view('peternak.daftar_penjualan_investasi');
 });
 
 // aman
 Route::get('/dashboard-peternak', function () {
-    return view('user.dashboard_peternak');
+    return view('peternak.dashboard_peternak');
 });
 
 // aman
 Route::get('/input-domba', function () {
-    return view('user.input_domba');
+    return view('peternak.input_domba');
 });
 
 // aman
 Route::get('/input-investasi-domba', function () {
-    return view('user.input_investasi_domba');
+    return view('peternak.input_investasi_domba');
 });
 
 // aman
 Route::get('/input-investasi-domba2', function () {
-    return view('user.input_investasi_domba2');
+    return view('peternak.input_investasi_domba2');
 });
 // aman
 Route::get('/input-jual-domba', function () {
-    return view('user.input_jual_domba');
+    return view('peternak.input_jual_domba');
 });
 
 // aman
 Route::get('/input-jual-domba2', function () {
-    return view('user.input_jual_domba2');
+    return view('peternak.input_jual_domba2');
 });
 
 // aman
@@ -147,130 +147,130 @@ Route::get('/pasar', function () {
 
 // aman
 Route::get('/profil_user', function () {
-    return view('user2.profil');
+    return view('user.profil');
 });
 
 // aman
 Route::get('/ubah_password', function () {
-    return view('user2.ubah_password');
+    return view('user.ubah_password');
 });
 
 
 // aman
 Route::get('/alamat_user', function () {
-    return view('user2.alamat_user');
+    return view('user.alamat_user');
 });
 
 
 // aman
 Route::get('/pasar_user', function () {
-    return view('user2.pasar_user');
+    return view('user.pasar_user');
 });
 
 // aman
 Route::get('/search_detail_pasar_domba', function () {
-    return view('user2.search_detail_pasar_domba');
+    return view('user.search_detail_pasar_domba');
 });
 
 // aman
 Route::get('/search_detail_pasar_peternak', function () {
-    return view('user2.search_detail_pasar_peternak');
+    return view('user.search_detail_pasar_peternak');
 });
 
 // aman
 Route::get('/pasar_detail_user', function () {
-    return view('user2.pasar_detail_user');
+    return view('user.pasar_detail_user');
 });
 
 // aman
 Route::get('/view_peternak_diuser', function () {
-    return view('user2.view_peternak_diuser');
+    return view('user.view_peternak_diuser');
 });
 
 // aman
 Route::get('/view_peternak_investasi_diuser', function () {
-    return view('user2.view_peternak_investasi_diuser ');
+    return view('user.view_peternak_investasi_diuser ');
 });
 
 // aman
 Route::get('/view_peternak_ulasan_diuser', function () {
-    return view('user2.view_peternak_ulasan_diuser ');
+    return view('user.view_peternak_ulasan_diuser ');
 });
 
 // aman
 Route::get('/ulasan_belum_diulas_investasi', function () {
-    return view('user2.ulasan_belum_diulas_investasi ');
+    return view('user.ulasan_belum_diulas_investasi ');
 });
 
 // aman
 Route::get('/ulasan_belum_diulas_pembelian', function () {
-    return view('user2.ulasan_belum_diulas_pembelian ');
+    return view('user.ulasan_belum_diulas_pembelian ');
 });
 
 // aman
 Route::get('/tulis_ulasan_pembeli', function () {
-    return view('user2.tulis_ulasan_pembeli ');
+    return view('user.tulis_ulasan_pembeli ');
 });
 
 // aman
 Route::get('/tulis_ulasan_investasi', function () {
-    return view('user2.tulis_ulasan_investasi ');
+    return view('user.tulis_ulasan_investasi ');
 });
 
 // aman
 Route::get('/ulasan_sudah_diulas_investasi', function () {
-    return view('user2.ulasan_sudah_diulas_investasi ');
+    return view('user.ulasan_sudah_diulas_investasi ');
 });
 
 // aman
 Route::get('/ulasan_sudah_diulas_pembeli', function () {
-    return view('user2.ulasan_sudah_diulas_pembeli ');
+    return view('user.ulasan_sudah_diulas_pembeli ');
 });
 
 // aman
 Route::get('/wishlist_pembeli', function () {
-    return view('user2.wishlist_pembeli ');
+    return view('user.wishlist_pembeli ');
 });
 
 // aman
 Route::get('/wishlist_investasi', function () {
-    return view('user2.wishlist_investasi ');
+    return view('user.wishlist_investasi ');
 });
 
 
 // aman
 Route::get('/transaksi_user', function () {
-    return view('user2.transaksi_user ');
+    return view('user.transaksi_user ');
 });
 
 // aman
 Route::get('/transaksi_user_mp', function () {
-    return view('user2.transaksi_user_mp ');
+    return view('user.transaksi_user_mp ');
 });
 
 // aman
 Route::get('/transaksi_selesai_user', function () {
-    return view('user2.transaksi_selesai_user ');
+    return view('user.transaksi_selesai_user ');
 });
 
 
 Route::get('/ajukan_komplain', function () {
-    return view('user2.ajukan_komplain ');
+    return view('user.ajukan_komplain ');
 });
 
 // aman
 Route::get('/profil_verifikasi', function () {
-    return view('user2.profil_verifikasi ');
+    return view('user.profil_verifikasi ');
 });
 
 // aman
 Route::get('/edit_profil', function () {
-    return view('user2.edit_profil ');
+    return view('user.edit_profil ');
 });
 
 
 Route::get('/alamat_edit', function () {
-    return view('user2.alamat_edit ');
+    return view('user.alamat_edit ');
 });
 
 
