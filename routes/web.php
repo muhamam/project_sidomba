@@ -8,6 +8,11 @@ use App\Http\Controllers\ChatController;
 use App\Http\Controllers\UpdateProfileAdmin;
 use App\Http\Controllers\AccountAdmin;
 use App\Http\Controllers\UpdatePasswordAdmin;
+use App\Http\Controllers\AccountUser;
+use App\Http\Controllers\EditAccountUser;
+use App\Http\Controllers\UpdatePasswordUser;
+use App\Http\Controllers\AddressUser;
+use App\Http\Controllers\UpdateAddressUser;
 use Illuminate\Support\Facades\Request;
 use App\Models\User;
 
@@ -40,6 +45,14 @@ All Normal Users Routes List
 --------------------------------------------*/
 Route::redirect('/', '/home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::middleware(['auth', 'user-access:user'])->group(function () {
+    Route::get('/user/akun', [AccountUser::class, 'index'])->name('account.index');
+    Route::get('/user/akun/edit', [EditAccountUser::class, 'index'])->name('editaccount.index');
+    Route::get('/user/password', [UpdatePasswordUser::class, 'index'])->name('password.index');
+    Route::get('/user/alamat', [AddressUser::class, 'index'])->name('address.index');
+});
+
 
 //basic route
 
@@ -145,21 +158,21 @@ Route::get('/pasar', function () {
 
 // profil user biasa
 
-// aman
-Route::get('/profil_user', function () {
-    return view('user.profil');
-});
+// // aman
+// Route::get('/profil_user', function () {
+//     return view('user.profil');
+// });
 
-// aman
-Route::get('/ubah_password', function () {
-    return view('user.ubah_password');
-});
+// // aman
+// Route::get('/ubah_password', function () {
+//     return view('user.ubah_password');
+// });
 
 
-// aman
-Route::get('/alamat_user', function () {
-    return view('user.alamat_user');
-});
+// // aman
+// Route::get('/alamat_user', function () {
+//     return view('user.alamat_user');
+// });
 
 
 // aman
@@ -263,10 +276,10 @@ Route::get('/profil_verifikasi', function () {
     return view('user.profil_verifikasi ');
 });
 
-// aman
-Route::get('/edit_profil', function () {
-    return view('user.edit_profil ');
-});
+// // aman
+// Route::get('/edit_profil', function () {
+//     return view('user.edit_profil ');
+// });
 
 
 Route::get('/alamat_edit', function () {

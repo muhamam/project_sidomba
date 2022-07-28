@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
-class AccountUser extends Controller
+class AddressUser extends Controller
 {
     //
     public function index()
@@ -14,7 +14,7 @@ class AccountUser extends Controller
         $id = Auth::id();
         $user = User::find($id);
 
-        return view('user.profil',[
+        return view('user.alamat_user',[
             'user'=>$user
         ]);
     }
