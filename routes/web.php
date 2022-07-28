@@ -159,20 +159,20 @@ Route::get('/pasar', function () {
 // profil user biasa
 
 // // aman
-// Route::get('/profil_user', function () {
-//     return view('user.profil');
-// });
+Route::get('/profil_user', function () {
+    return view('user.profil');
+});
 
 // // aman
-// Route::get('/ubah_password', function () {
-//     return view('user.ubah_password');
-// });
+Route::get('/ubah_password', function () {
+    return view('user.ubah_password');
+});
 
 
 // // aman
-// Route::get('/alamat_user', function () {
-//     return view('user.alamat_user');
-// });
+Route::get('/alamat_user', function () {
+    return view('user.alamat_user');
+});
 
 
 // aman
@@ -266,9 +266,13 @@ Route::get('/transaksi_selesai_user', function () {
     return view('user.transaksi_selesai_user ');
 });
 
+// aman
+Route::get('/ajukan_komplain_pembelian', function () {
+    return view('user.ajukan_komplain_pembelian ');
+});
 
-Route::get('/ajukan_komplain', function () {
-    return view('user.ajukan_komplain ');
+Route::get('/ajukan_komplain_investasi', function () {
+    return view('user.ajukan_komplain_investasi ');
 });
 
 // aman
@@ -277,14 +281,20 @@ Route::get('/profil_verifikasi', function () {
 });
 
 // // aman
-// Route::get('/edit_profil', function () {
-//     return view('user.edit_profil ');
-// });
+Route::get('/edit_profil', function () {
+    return view('user.edit_profil ');
+});
 
-
+// aman
 Route::get('/alamat_edit', function () {
     return view('user.alamat_edit ');
 });
+
+
+Route::get('/edit_kontak', function () {
+    return view('user.edit_kontak ');
+});
+
 
 
 
