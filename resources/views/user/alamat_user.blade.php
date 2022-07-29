@@ -11,9 +11,9 @@
                                     class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
-                            <a href="#" class="  " style="color:#000000 ;">{{$user->fullname}}
+                            <a href="#" class="  " style="color:#000000 ;">{{Auth::user()->fullname}}
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">{{$user->email}}</a><br>
+                            <a href="#" style="font-size:9px;color:#000000 ;">{{Auth::user()->email}}</a><br>
 
                             <a href="#" style="color:#000000 ;">ID Investor :</a>
                         </td>

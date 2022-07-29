@@ -7,13 +7,13 @@
             <center>
                 <table>
                     <tr>
-                        <td> <span><img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset('image/'.Auth::user()->avatar) }}" alt="" style="width: 85px; height:85px; "
+                        <td> <span><img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" alt="" style="width: 85px; height:85px; "
                                     class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
                             <a href="#" class="" style="color:#000000 ;">{{Auth::user()->fullname}}
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">{{Auth::user()->username}}</a><br>
+                            <a href="#" style="font-size:9px;color:#000000 ;">{{Auth::user()->email}}</a><br>
 
                             <a href="#" style="color:#000000 ;">ID Investor :</a>
                         </td>
@@ -76,13 +76,13 @@
                 <div class="row">
                     <div class=" col-md-2 ">
                         <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                            <img class="rounded" src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset('image/'.Auth::user()->avatar) }}" width="200px" height="250px">
+                            <img class="rounded" src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" width="200px" height="250px">
                         </a>
                         <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset('image/'.Auth::user()->avatar) }}" alt="">
+                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" alt="">
                                 </div>
                             </div>
                         </div>
