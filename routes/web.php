@@ -305,7 +305,7 @@ Route::get('/ipk', function () {
     return view('user.ipk ');
 });
 
-
+// aman
 Route::get('/komplain_proses', function () {
     return view('user.komplain_proses ');
 });
