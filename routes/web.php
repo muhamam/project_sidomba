@@ -12,6 +12,7 @@ use App\Http\Controllers\AccountUser;
 use App\Http\Controllers\EditAccountUser;
 use App\Http\Controllers\UpdatePasswordUser;
 use App\Http\Controllers\AddressUser;
+use App\Http\Controllers\EditAddressUser;
 use App\Http\Controllers\UpdateAddressUser;
 use App\Http\Controllers\ContactUser;
 use Illuminate\Support\Facades\Request;
@@ -52,6 +53,7 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/akun/edit', [EditAccountUser::class, 'index'])->name('editaccount.index');
     Route::get('/user/password', [UpdatePasswordUser::class, 'index'])->name('password.index');
     Route::get('/user/alamat', [AddressUser::class, 'index'])->name('address.index');
+    Route::get('/user/edit/alamat', [EditAddressUser::class, 'index'])->name('editaddress.index');
     Route::get('/user/edit/contact', [ContactUser::class, 'index'])->name('contact.index');
 });
 
@@ -288,9 +290,9 @@ Route::get('/edit_profil', function () {
 });
 
 // aman
-Route::get('/alamat_edit', function () {
-    return view('user.alamat_edit ');
-});
+// Route::get('/alamat_edit', function () {
+//     return view('user.alamat_edit ');
+// });
 
 
 // Route::get('/edit_kontak', function () {
