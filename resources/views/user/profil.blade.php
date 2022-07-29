@@ -11,9 +11,9 @@
                                     class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
-                            <a href="#" class="  " style="color:#000000 ;">{{$user->fullname}}
+                            <a href="#" class="  " style="color:#000000 ;">
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">{{$user->username}}</a><br>
+                            <a href="#" style="font-size:9px;color:#000000 ;"></a><br>
 
                             <a href="#" style="color:#000000 ;">ID Investor :</a>
                         </td>
@@ -55,22 +55,6 @@
 
 
     <section class="ftco-section col" style="margin-top: 100px;">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
-
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-
-            <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-                <p></p>
-            </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
-
-        </div>
         <div class="container " style="background-color: white; width: 994px; height: 783px;">
 
 
@@ -103,7 +87,46 @@
                             </div>
                         </div>
                         <div class=" mt-3 ml-4">
-                            <a href="#" class="btn btn-primary ">Edit foto Profile</a>
+                            <!-- Button trigger modal -->
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                                style="color: white;">
+                                Edit foto Profile
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Edit Foto Profil</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col-12">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlFile1">
+                                                            <h6>Upload Foto</h6>
+                                                        </label>
+                                                        <input type="file" class="form-control-file"
+                                                            id="exampleFormControlFile1">
+                                                        <p>(Ukuran foto maksimum adalah 10 MB. Jenis file yang
+                                                            diperbolehkan yaitu .JPG, .JPEG, dan .PNG)</p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Batal</button>
+                                            <button type="button" class="btn btn-primary">Upload Photo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p style="font-size: 11px;">(Ukuran foto maksimum adalah 10 MB. Jenis file yang
                                 diperbolehkan yaitu .JPG, .JPEG, dan
                                 .PNG)</p>
@@ -174,7 +197,8 @@
                                 </tbody>
                             </table>
                         </div>
-                        <center>
+                        <!-- kondisi satu ini ketika siuser belum mengaktifkan investor dan peternak -->
+                        <!-- <center>
                             <div class="col-4 mt-3" style="border: 1px solid black; border-radius:10px;">
                                 <span class="iconify" data-icon="bxs:user" data-width="30" data-height="30"></span>
                                 <h6>Akun User</h6>
@@ -238,8 +262,182 @@
 
                                 </div>
                             </div>
-                        </center>
+                        </center> -->
 
+                        <!-- kondisi dua ketika user berhasil mengaktifkan investor dan peternak -->
+                        <!-- <center>
+                            <div class="col-4 mt-3" style="border: 1px solid black; border-radius:10px;">
+                                <span class="iconify" data-icon="bxs:user" data-width="30" data-height="30"></span>
+                                <h6>Akun User</h6>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td scope="col"></td>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">ID User</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>U00001</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Username</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td colspan="4">Raihan A.</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">Tanggal Gabung</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>10/02/2022</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </center>
+                        <center>
+                            <div class="row d-flex justify-content-around mt-3">
+                                <div class="col-4" style="border: 1px solid black; border-radius:10px;">
+                                    <span class="iconify" data-icon="maki:farm" data-width="30" data-height="30"></span>
+                                    <h6>Akun Peternak</h6>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td scope="col"></td>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4">ID Peternak</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>P00001</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">Nama Peternakan</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>Maju Jaya</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">Aktif Sejak</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>15/02/2022</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="col-4" style="border: 1px solid black; border-radius:10px;">
+                                    <span class="iconify" data-icon="akar-icons:percentage" data-width="30"
+                                        data-height="30"></span>
+                                    <h6>Akun Investor</h6>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td scope="col"></td>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">ID Investor</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>I00001</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Aktif Sejak</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td colspan="4">15/02/2022</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </center> -->
+
+                        <!-- kondisi tiga ketika user gagal mendaftarkan peternak ataupun investor -->
+                        <center>
+                            <div class="col-4 mt-3" style="border: 1px solid black; border-radius:10px;">
+                                <span class="iconify" data-icon="bxs:user" data-width="30" data-height="30"></span>
+                                <h6>Akun User</h6>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td scope="col"></td>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">ID User</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>U00001</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Username</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td colspan="4">Raihan A.</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">Tanggal Gabung</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>10/02/2022</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </center>
+                        <center>
+                            <div class="row d-flex justify-content-around mt-3">
+                                <div class="col-4" style="border: 1px solid black; border-radius:10px;">
+
+                                    <span class="iconify" data-icon="maki:farm" data-width="30" data-height="30"></span>
+                                    <h6>Akun Peternak</h6>
+                                    <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
+                                        data-height="40"></span>
+                                    <p>Maaf, data Anda tidak valid. Silakan aktivasi kembali dengan meng-klik tombol
+                                        dibawah ini</p>
+                                    <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi
+                                        Akun</a>
+
+                                </div>
+                                <div class="col-4" style="border: 1px solid black; border-radius:10px;">
+                                    <span class="iconify" data-icon="akar-icons:percentage" data-width="30"
+                                        data-height="30"></span>
+                                    <h6>Akun Investor</h6>
+                                    <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
+                                        data-height="40"></span>
+                                    <p>Maaf, data Anda tidak valid. Silakan aktivasi kembali dengan meng-klik tombol
+                                        dibawah ini</p>
+                                    <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi
+                                        Akun</a>
+
+                                </div>
+                            </div>
+                        </center>
                     </div>
                 </div>
 
