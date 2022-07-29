@@ -11,9 +11,9 @@
                                     class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
-                            <a href="#" class="  " style="color:#000000 ;">{{$user->fullname}}
+                            <a href="#" class="  " style="color:#000000 ;">
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">{{$user->email}}</a><br>
+                            <a href="#" style="font-size:9px;color:#000000 ;"></a><br>
 
                             <a href="#" style="color:#000000 ;">ID Investor :</a>
                         </td>
@@ -108,20 +108,13 @@
                             placeholder="Ketikkan Tanggal Lahir anda disini">
 
                     </div>
-                    <div class="mb-3 col-6">
-                        <div class="dropdown">
-                            <a class="btn btn-danger dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                aria-expanded="false">
-                                Jenis Kelamim
-                            </a>
-
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Laki-Laki</a>
-                                <a class="dropdown-item" href="#">Perempuan</a>
-                            </div>
-                        </div>
-
-                    </div>
+                    <h6 style="margin-right: 300px;">Jenis Kelamin</h6>
+                    <form class="col-12">
+                        <select name="cars" id="cars" class="col-6">
+                            <option value="volvo">laki-laki</option>
+                            <option value="saab">Perempuan</option>
+                        </select>
+                    </form>
 
                     <center>
                         <button type="submit" class="btn btn-primary mt-2">Update Profil</button>
