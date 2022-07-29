@@ -163,7 +163,7 @@
                                             <td scope="row">Jenis Kelamin</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>Pria</td>
+                                            <td>{{Auth::user()->gender}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -216,19 +216,19 @@
                                             <td scope="row">ID User</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>U00001</td>
+                                            <td>{{Auth::user()->id}}</td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Username</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td colspan="4">Raihan A.</td>
+                                            <td colspan="4">{{Auth::user()->username}}</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4">Tanggal Gabung</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>10/02/2022</td>
+                                            <td>{{Auth::user()->created_at}}</td>
                                         </tr>
 
                                     </tbody>
