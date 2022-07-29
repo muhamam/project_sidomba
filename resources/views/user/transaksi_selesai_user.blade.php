@@ -190,13 +190,13 @@
                                 </div>
                             </center>
                         </div>
+                        <!-- Modal start-->
                         <div class="row d-flex justify-content-center">
                             <a href="#" class="btn btn-primary col-2 mt-3 mr-3" data-toggle="modal"
                                 data-target="#exampleModal-1" style="border-radius:15px; ">Selesaikan</a>
                             <a href="#" class="btn btn-danger col-2 mt-3 mr-3" style="border-radius:15px; ">Ajukan
                                 Komplain</a>
                         </div>
-                        <!-- Modal -->
                         <div class="modal fade" id="exampleModal-1" aria-labelledby="exampleModalLabel">
                             <div class="modal-dialog ">
                                 <div class="modal-content">
@@ -446,9 +446,10 @@
 
                             </div>
                         </div>
+                        <!-- modal end -->
 
                     </div>
-                    <!-- modal end -->
+
                 </div>
             </div>
             <br>
