@@ -13,6 +13,7 @@ use App\Http\Controllers\EditAccountUser;
 use App\Http\Controllers\UpdatePasswordUser;
 use App\Http\Controllers\AddressUser;
 use App\Http\Controllers\UpdateAddressUser;
+use App\Http\Controllers\ContactUser;
 use Illuminate\Support\Facades\Request;
 use App\Models\User;
 
@@ -51,6 +52,7 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/akun/edit', [EditAccountUser::class, 'index'])->name('editaccount.index');
     Route::get('/user/password', [UpdatePasswordUser::class, 'index'])->name('password.index');
     Route::get('/user/alamat', [AddressUser::class, 'index'])->name('address.index');
+    Route::get('/user/edit/contact', [ContactUser::class, 'index'])->name('contact.index');
 });
 
 
@@ -291,9 +293,9 @@ Route::get('/alamat_edit', function () {
 });
 
 
-Route::get('/edit_kontak', function () {
-    return view('user.edit_kontak ');
-});
+// Route::get('/edit_kontak', function () {
+//     return view('user.edit_kontak ');
+// });
 
 
 

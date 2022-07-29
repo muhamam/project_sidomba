@@ -7,13 +7,13 @@
             <center>
                 <table>
                     <tr>
-                        <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; "
+                        <td> <span><img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset('image/'.Auth::user()->avatar) }}" alt="" style="width: 85px; height:85px; "
                                     class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
-                            <a href="#" class="  " style="color:#000000 ;">
+                            <a href="#" class="" style="color:#000000 ;">{{Auth::user()->fullname}}
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;"></a><br>
+                            <a href="#" style="font-size:9px;color:#000000 ;">{{Auth::user()->username}}</a><br>
 
                             <a href="#" style="color:#000000 ;">ID Investor :</a>
                         </td>
@@ -76,13 +76,13 @@
                 <div class="row">
                     <div class=" col-md-2 ">
                         <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                            <img class="rounded" src="{{asset('image/'.$user->avatar)}}" width="200px" height="250px">
+                            <img class="rounded" src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset('image/'.Auth::user()->avatar) }}" width="200px" height="250px">
                         </a>
                         <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <img src="{{asset('image/'.$user->avatar)}}" alt="">
+                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset('image/'.Auth::user()->avatar) }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -151,13 +151,13 @@
                                             <td scope="row">Nama</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{$user->fullname}}</td>
+                                            <td>{{Auth::user()->fullname}}</td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Tanggal Lahir</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{$user->birth_date}}</td>
+                                            <td>{{Auth::user()->birth_date}}</td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Jenis Kelamin</td>
@@ -174,7 +174,7 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <tD scope="col"> <b>Kontak</b> <a href="#">(Edit Kontak)</a></tD>
+                                        <tD scope="col"> <b>Kontak</b> <a href="{{route('contact.index')}}">(Edit Kontak)</a></tD>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
@@ -185,13 +185,13 @@
                                         <td scope="row">Email</td>
                                         <td></td>
                                         <td>:</td>
-                                        <td>{{$user->email}}</td>
+                                        <td>{{Auth::user()->email}}</td>
                                     </tr>
                                     <tr>
                                         <td scope="row">No. Telepon</td>
                                         <td></td>
                                         <td>:</td>
-                                        <td>{{$user->no_HP}}</td>
+                                        <td>{{Auth::user()->no_HP}}</td>
                                     </tr>
 
                                 </tbody>
@@ -391,19 +391,19 @@
                                             <td scope="row">ID User</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>U00001</td>
+                                        <td>{{Auth::user()->id}}</td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Username</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td colspan="4">Raihan A.</td>
+                                            <td colspan="4">{{Auth::user()->username}}</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4">Tanggal Gabung</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>10/02/2022</td>
+                                            <td>{{Auth::user()->created_at}}</td>
                                         </tr>
 
                                     </tbody>
