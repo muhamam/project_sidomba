@@ -290,9 +290,18 @@ Route::get('/alamat_edit', function () {
     return view('user.alamat_edit ');
 });
 
-
+// aman
 Route::get('/edit_kontak', function () {
     return view('user.edit_kontak ');
+});
+
+// aman
+Route::get('/ppk', function () {
+    return view('user.ppk ');
+});
+
+Route::get('/ipk', function () {
+    return view('user.ipk ');
 });
 
 

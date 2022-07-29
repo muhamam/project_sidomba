@@ -198,7 +198,7 @@
                             </table>
                         </div>
                         <!-- kondisi satu ini ketika siuser belum mengaktifkan investor dan peternak -->
-                        <!-- <center>
+                        <center>
                             <div class="col-4 mt-3" style="border: 1px solid black; border-radius:10px;">
                                 <span class="iconify" data-icon="bxs:user" data-width="30" data-height="30"></span>
                                 <h6>Akun User</h6>
@@ -243,8 +243,8 @@
                                     <h6>Akun Peternak</h6>
                                     <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
                                         data-height="40"></span>
-                                    <p>Mohon tunggu, data yang Anda masukkan untuk peternakan sedang diverifikasi oleh
-                                        admin</p>
+                                    <p>Maaf, Anda belum mengaktivasi akun peternak Anda. Silakan aktivasi dengan
+                                        meng-klik tombol dibawah ini</p>
                                     <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi
                                         Akun</a>
 
@@ -262,7 +262,7 @@
 
                                 </div>
                             </div>
-                        </center> -->
+                        </center>
 
                         <!-- kondisi dua ketika user berhasil mengaktifkan investor dan peternak -->
                         <!-- <center>
@@ -373,7 +373,7 @@
                         </center> -->
 
                         <!-- kondisi tiga ketika user gagal mendaftarkan peternak ataupun investor -->
-                        <center>
+                        <!-- <center>
                             <div class="col-4 mt-3" style="border: 1px solid black; border-radius:10px;">
                                 <span class="iconify" data-icon="bxs:user" data-width="30" data-height="30"></span>
                                 <h6>Akun User</h6>
@@ -437,7 +437,7 @@
 
                                 </div>
                             </div>
-                        </center>
+                        </center> -->
                     </div>
                 </div>
 
