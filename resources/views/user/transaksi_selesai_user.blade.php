@@ -297,39 +297,6 @@
                                         <div class="mt-3 mb-1"
                                             style="width: 100%; height:1px; background-color: #3A8BCD;">
                                         </div>
-                                        <!-- <div class="row d-flex justify-content-around">
-                                            <div class="col-4 rounded-lg" style="width:180px ; border: 1px solid #000;">
-                                                <center>
-                                                    <p>Harga Jual</p>
-                                                    <h6>Rp3.700.000,00</h6>
-                                                </center>
-                                            </div>
-                                            <div class="col-4 rounded-lg "
-                                                style="width:180px ; border: 1px solid #000;">
-                                                <center>
-                                                    <p>Bagi Hasil</p>
-                                                    <h6>50%</h6>
-                                                </center>
-                                            </div>
-                                        </div>
-                                        <div class="row d-flex justify-content-around">
-                                            <div class="col-4 rounded-lg" style="width:180px ; border: 1px solid #000;">
-                                                <center>
-                                                    <p>Keuntungan</p>
-                                                    <h6>Rp1.850.000,00</h6>
-                                                </center>
-                                            </div>
-                                            <div class="col-4 rounded-lg "
-                                                style="width:180px ; border: 1px solid #000;">
-                                                <center>
-                                                    <p>Laba Bersih</p>
-                                                    <a href="#">
-                                                        <h6 style="color: rgb(0, 255, 0);">
-                                                            Rp400.000,00</h6>
-                                                    </a>
-                                                </center>
-                                            </div>
-                                        </div> -->
                                         <br>
                                         <center>
                                             <div>
