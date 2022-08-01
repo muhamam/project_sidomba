@@ -315,6 +315,15 @@ Route::get('/komplain_proses', function () {
 });
 
 
+// aman
+Route::get('/aktivasi_investor', function () {
+    return view('user.aktivasi_investor ');
+});
+
+Route::get('/aktivasi_peternakan', function () {
+    return view('user.aktivasi_peternakan ');
+});
+
 
 
 /*------------------------------------------
