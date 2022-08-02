@@ -8,15 +8,22 @@
             <center>
                 <table>
                     <tr>
-                        <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; " class="  ml-3 rounded-circle">
+                        <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; "
+                                    class="  ml-3 rounded-circle">
                             </span></td>
                         <td>
                             <a href="#" class="  " style="color:#000000 ;">Muhammad
                                 anas
                             </a>
                             <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-
-                            <a href="#" style="color:#000000 ;">ID Investor : X001</a>
+                            <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
+                                <li>
+                                    <span style="color: black;">Peternakan</span>
+                                </li>
+                                <li class="ml-4">
+                                    <span style="color: black;">Investasi</span>
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>
@@ -28,17 +35,23 @@
                     <p></p>
                 </div>
                 <div class="dalam ">
-                    <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                    <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25"
+                        style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="dashboard_investor.html" class="dropdown-item ">Akun</a>
-                    <span class="iconify" data-icon="bi:chat-text" data-width="25" data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                    <span class="iconify" data-icon="bi:chat-text" data-width="25" data-height="25"
+                        style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="pasar.html" class="dropdown-item ">Chat</a>
-                    <span class="iconify" data-icon="carbon:star-review" data-width="25" data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                    <span class="iconify" data-icon="carbon:star-review" data-width="25" data-height="25"
+                        style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="investasi_saya_semua.html" class="dropdown-item">Ulasan</a>
-                    <span class="iconify" data-icon="carbon:warning" data-width="25" data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                    <span class="iconify" data-icon="carbon:warning" data-width="25" data-height="25"
+                        style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="investasi_riwayat.html" class="dropdown-item">Komplain</a>
-                    <span class="iconify" data-icon="bi:list-stars" data-width="25" data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                    <span class="iconify" data-icon="bi:list-stars" data-width="25" data-height="25"
+                        style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="#" class="dropdown-item ml-3">Wishlist</a>
-                    <span class="iconify" data-icon="carbon:money" data-width="25" data-height="25" style="margin-right: 130px; margin-bottom: -60px;"></span>
+                    <span class="iconify" data-icon="carbon:money" data-width="25" data-height="25"
+                        style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="#" class="dropdown-item ml-3 ">Transaksi</a>
                 </div>
 
@@ -51,7 +64,8 @@
 
             <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
 
-            <div class="garis" style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
+            <div class="garis"
+                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
                 <p></p>
             </div>
 
@@ -97,7 +111,8 @@
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                                 <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
                             </a>
-                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <img src="../img/1.jpg" alt="">
@@ -155,7 +170,8 @@
                             <center>
                                 <div class=" ">
                                     <h5 style="">Selesaikan Pembayaran Dalam</h5>
-                                    <h4 style="border: 1px solid black; border-radius:30px;"><a class="ml-3" href="#" style="color:#F77E21;">22 : 30 : 00</a>
+                                    <h4 style="border: 1px solid black; border-radius:30px;"><a class="ml-3" href="#"
+                                            style="color:#F77E21;">22 : 30 : 00</a>
                                     </h4>
                                 </div>
                                 <div class=" ">
@@ -172,14 +188,17 @@
                                 <div class="col-11">
                                     <center>
                                         <div class="" style="border: 1px solid black; border-radius:20px;">
-                                            <span class="iconify" data-icon="icon-park-outline:disabled-picture" data-width="70" data-height="70"></span>
-                                            <h3><a class="ml-1" href="#" style=" font-size:15px; color:rgb(60, 255, 0);">Anda belum
+                                            <span class="iconify" data-icon="icon-park-outline:disabled-picture"
+                                                data-width="70" data-height="70"></span>
+                                            <h3><a class="ml-1" href="#"
+                                                    style=" font-size:15px; color:rgb(60, 255, 0);">Anda belum
                                                     mengajukan bukti transfer</a>
                                             </h3>
                                         </div>
 
                                         <!-- Button trigger modal -->
-                                        <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal-1" style="">Detail</a>
+                                        <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal"
+                                            data-target="#exampleModal-1" style="">Detail</a>
                                     </center>
                                 </div>
 
@@ -189,14 +208,17 @@
                                         <div class="modal-content">
 
                                             <div class="modal-body">
-                                                <div class="row justify-content-center ml-3 modal-title" id="exampleModalLabel">
+                                                <div class="row justify-content-center ml-3 modal-title"
+                                                    id="exampleModalLabel">
                                                     <div class="row gutters-sm mt-2">
                                                         <div class="" style="width:100px; height:300px;">
                                                             <div class="">
                                                                 <div class="">
                                                                     <div class="">
-                                                                        <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                                                            <img class="rounded" src="../img/1.jpg" width="200px" height="200px">
+                                                                        <a href="btn" data-bs-toggle="modal"
+                                                                            data-bs-target="#exampleModalinti">
+                                                                            <img class="rounded" src="../img/1.jpg"
+                                                                                width="200px" height="200px">
                                                                         </a>
 
                                                                     </div>
@@ -206,7 +228,8 @@
 
                                                         <div class="">
 
-                                                            <div class=" " style="margin-left: 250px; margin-top:-320px;">
+                                                            <div class=" "
+                                                                style="margin-left: 250px; margin-top:-320px;">
                                                                 <h4>Domba Suffolk</h4>
                                                                 <h5>Data Domba</h5>
                                                                 <div class="row">
@@ -247,7 +270,8 @@
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
-                                                                    <div class="" style="width: 100%; height:1px; background-color: #3A8BCD;">
+                                                                    <div class=""
+                                                                        style="width: 100%; height:1px; background-color: #3A8BCD;">
                                                                     </div>
                                                                     <div class="D">
                                                                         <h5>Data
@@ -257,11 +281,21 @@
                                                                         <p class="">
                                                                             Soreang, Bandung
                                                                         </p>
-                                                                        <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                        <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                        <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                        <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                        <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
+                                                                        <span class="iconify"
+                                                                            data-icon="flat-color-icons:rating"
+                                                                            data-width="25" data-height="25"></span>
+                                                                        <span class="iconify"
+                                                                            data-icon="flat-color-icons:rating"
+                                                                            data-width="25" data-height="25"></span>
+                                                                        <span class="iconify"
+                                                                            data-icon="flat-color-icons:rating"
+                                                                            data-width="25" data-height="25"></span>
+                                                                        <span class="iconify"
+                                                                            data-icon="flat-color-icons:rating"
+                                                                            data-width="25" data-height="25"></span>
+                                                                        <span class="iconify"
+                                                                            data-icon="flat-color-icons:rating"
+                                                                            data-width="25" data-height="25"></span>
                                                                         <br>
                                                                         <a href="#(link menju peternak)">Lihat
                                                                             Peternakan</a>
@@ -277,13 +311,15 @@
                                                         </div>
 
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                            <div class="q rounded-lg"
+                                                                style="width:180px ; border: 1px solid #000;">
                                                                 <center>
                                                                     <p>Harga Jual</p>
                                                                     <h6>Rp3.700.000,00</h6>
                                                                 </center>
                                                             </div>
-                                                            <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                            <div class="q rounded-lg "
+                                                                style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                                 <center>
                                                                     <p>Bagi Hasil</p>
                                                                     <h6>50%</h6>
@@ -292,13 +328,15 @@
 
                                                         </div>
                                                         <div class="d-flex justify-content-between mt-5">
-                                                            <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                            <div class="q rounded-lg"
+                                                                style="width:180px ; border: 1px solid #000;">
                                                                 <center>
                                                                     <p>Keuntungan</p>
                                                                     <h6>Rp1.850.000,00</h6>
                                                                 </center>
                                                             </div>
-                                                            <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                            <div class="q rounded-lg "
+                                                                style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                                 <center>
                                                                     <p>Laba Bersih</p>
                                                                     <a href="#">
@@ -311,17 +349,20 @@
                                                         </div>
                                                         <br>
 
-                                                        <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
+                                                        <div class=" "
+                                                            style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
                                                         </div>
                                                         <center>
                                                             <div class="mt-4">
                                                                 <h5 style="margin-left:120px;"><b> Nominasi
                                                                         Investasi</b></h5>
-                                                                <h3 style="margin-left:120px;"><a href="#">Rp1.450.000,00</a></h3>
+                                                                <h3 style="margin-left:120px;"><a
+                                                                        href="#">Rp1.450.000,00</a></h3>
                                                             </div>
                                                         </center>
 
-                                                        <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;">
+                                                        <div class=" "
+                                                            style="width: 95%; height: 2px; background-color: #3A8BCD;">
                                                         </div>
                                                         <br>
 
@@ -330,7 +371,8 @@
                                                 </div>
                                             </div>
                                             <center>
-                                                <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary mb-3"
+                                                    data-dismiss="modal">Close</button>
                                             </center>
                                         </div>
                                     </div>
@@ -357,7 +399,8 @@
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                                 <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
                             </a>
-                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <img src="../img/1.jpg" alt="">
@@ -413,12 +456,14 @@
                             <center>
                                 <div class=" ">
                                     <h5 style="">Status Pembayaran</h5>
-                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-danger"><a href="#" style="color:white;">Tidak Valid</a>
+                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-danger"><a href="#"
+                                            style="color:white;">Tidak Valid</a>
                                     </h4>
                                 </div>
                                 <div class=" ">
                                     <h5 style="">Harap ajukan bukti transfer lain yang valid dalam</h5>
-                                    <h4 style="border: 1px solid black; border-radius:30px;"><a class="ml-3" href="#" style="color:black;">22 : 30 : 00</a>
+                                    <h4 style="border: 1px solid black; border-radius:30px;"><a class="ml-3" href="#"
+                                            style="color:black;">22 : 30 : 00</a>
                                 </div>
                             </center>
                         </div>
@@ -428,7 +473,8 @@
                             <div class="col-11">
                                 <center>
                                     <div class="" style="">
-                                        <img src="../img/transaksi.jpg" alt="" width="180px" height="100px" style="border-radius: 15px;">
+                                        <img src="../img/transaksi.jpg" alt="" width="180px" height="100px"
+                                            style="border-radius: 15px;">
                                         <h6><a class=" ml-1" href="#" style=" ">
                                                 Bukti Transfer yang diajukan
                                             </a>
@@ -436,7 +482,8 @@
                                     </div>
 
                                     <!-- Button trigger modal -->
-                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal-1" style="">Detail</a>
+                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal"
+                                        data-target="#exampleModal-1" style="">Detail</a>
                                 </center>
                             </div>
 
@@ -446,14 +493,17 @@
                                     <div class="modal-content">
 
                                         <div class="modal-body">
-                                            <div class="row justify-content-center ml-3 modal-title" id="exampleModalLabel">
+                                            <div class="row justify-content-center ml-3 modal-title"
+                                                id="exampleModalLabel">
                                                 <div class="row gutters-sm mt-2">
                                                     <div class="" style="width:100px; height:300px;">
                                                         <div class="">
                                                             <div class="">
                                                                 <div class="">
-                                                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                                                        <img class="rounded" src="../img/1.jpg" width="200px" height="200px">
+                                                                    <a href="btn" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModalinti">
+                                                                        <img class="rounded" src="../img/1.jpg"
+                                                                            width="200px" height="200px">
                                                                     </a>
 
                                                                 </div>
@@ -504,7 +554,8 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <div class="" style="width: 100%; height:1px; background-color: #3A8BCD;">
+                                                                <div class=""
+                                                                    style="width: 100%; height:1px; background-color: #3A8BCD;">
                                                                 </div>
                                                                 <div class="D">
                                                                     <h5>Data
@@ -514,11 +565,21 @@
                                                                     <p class="">
                                                                         Soreang, Bandung
                                                                     </p>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
                                                                     <br>
                                                                     <a href="#(link menju peternak)">Lihat
                                                                         Peternakan</a>
@@ -534,13 +595,15 @@
                                                     </div>
 
                                                     <div class="d-flex justify-content-between">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Harga Jual</p>
                                                                 <h6>Rp3.700.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Bagi Hasil</p>
                                                                 <h6>50%</h6>
@@ -549,13 +612,15 @@
 
                                                     </div>
                                                     <div class="d-flex justify-content-between mt-5">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Keuntungan</p>
                                                                 <h6>Rp1.850.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Laba Bersih</p>
                                                                 <a href="#">
@@ -568,17 +633,20 @@
                                                     </div>
                                                     <br>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
                                                     </div>
                                                     <center>
                                                         <div class="mt-4">
                                                             <h5 style="margin-left:120px;"><b> Nominasi
                                                                     Investasi</b></h5>
-                                                            <h3 style="margin-left:120px;"><a href="#">Rp1.450.000,00</a></h3>
+                                                            <h3 style="margin-left:120px;"><a
+                                                                    href="#">Rp1.450.000,00</a></h3>
                                                         </div>
                                                     </center>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;">
                                                     </div>
                                                     <br>
 
@@ -587,7 +655,8 @@
                                             </div>
                                         </div>
                                         <center>
-                                            <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary mb-3"
+                                                data-dismiss="modal">Close</button>
                                         </center>
                                     </div>
                                 </div>
@@ -612,7 +681,8 @@
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                                 <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
                             </a>
-                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <img src="../img/1.jpg" alt="">
@@ -668,7 +738,8 @@
                             <center>
                                 <div>
                                     <h5>Status Pembayaran</h5>
-                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-primary"><a href="#" style="color:white;">Sedang Diverifikas</a>
+                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-primary"><a href="#"
+                                            style="color:white;">Sedang Diverifikas</a>
                                 </div>
                                 <div>
                                     <h5><a href="#">Nominal Pembayaran</a></h5>
@@ -683,7 +754,8 @@
                             <div class="col-11">
                                 <center>
                                     <div class="">
-                                        <img src="../img/transaksi.jpg" alt="" width="180px" height="100px" style="border-radius: 15px;">
+                                        <img src="../img/transaksi.jpg" alt="" width="180px" height="100px"
+                                            style="border-radius: 15px;">
                                         <h6><a class=" ml-1" href="#" style=" ">
                                                 Bukti Transfer yang diajukan
                                             </a>
@@ -691,7 +763,8 @@
                                     </div>
 
                                     <!-- Button trigger modal -->
-                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal-1" style="">Detail</a>
+                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal"
+                                        data-target="#exampleModal-1" style="">Detail</a>
                                 </center>
                             </div>
 
@@ -701,14 +774,17 @@
                                     <div class="modal-content">
 
                                         <div class="modal-body">
-                                            <div class="row justify-content-center ml-3 modal-title" id="exampleModalLabel">
+                                            <div class="row justify-content-center ml-3 modal-title"
+                                                id="exampleModalLabel">
                                                 <div class="row gutters-sm mt-2">
                                                     <div class="" style="width:100px; height:300px;">
                                                         <div class="">
                                                             <div class="">
                                                                 <div class="">
-                                                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                                                        <img class="rounded" src="../img/1.jpg" width="200px" height="200px">
+                                                                    <a href="btn" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModalinti">
+                                                                        <img class="rounded" src="../img/1.jpg"
+                                                                            width="200px" height="200px">
                                                                     </a>
 
                                                                 </div>
@@ -759,7 +835,8 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <div class="" style="width: 100%; height:1px; background-color: #3A8BCD;">
+                                                                <div class=""
+                                                                    style="width: 100%; height:1px; background-color: #3A8BCD;">
                                                                 </div>
                                                                 <div class="D">
                                                                     <h5>Data
@@ -769,11 +846,21 @@
                                                                     <p class="">
                                                                         Soreang, Bandung
                                                                     </p>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
                                                                     <br>
                                                                     <a href="#(link menju peternak)">Lihat
                                                                         Peternakan</a>
@@ -789,13 +876,15 @@
                                                     </div>
 
                                                     <div class="d-flex justify-content-between">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Harga Jual</p>
                                                                 <h6>Rp3.700.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Bagi Hasil</p>
                                                                 <h6>50%</h6>
@@ -804,13 +893,15 @@
 
                                                     </div>
                                                     <div class="d-flex justify-content-between mt-5">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Keuntungan</p>
                                                                 <h6>Rp1.850.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Laba Bersih</p>
                                                                 <a href="#">
@@ -823,17 +914,20 @@
                                                     </div>
                                                     <br>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
                                                     </div>
                                                     <center>
                                                         <div class="mt-4">
                                                             <h5 style="margin-left:120px;"><b> Nominasi
                                                                     Investasi</b></h5>
-                                                            <h3 style="margin-left:120px;"><a href="#">Rp1.450.000,00</a></h3>
+                                                            <h3 style="margin-left:120px;"><a
+                                                                    href="#">Rp1.450.000,00</a></h3>
                                                         </div>
                                                     </center>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;">
                                                     </div>
                                                     <br>
 
@@ -842,7 +936,8 @@
                                             </div>
                                         </div>
                                         <center>
-                                            <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary mb-3"
+                                                data-dismiss="modal">Close</button>
                                         </center>
                                     </div>
                                 </div>
@@ -867,7 +962,8 @@
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                                 <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
                             </a>
-                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <img src="../img/1.jpg" alt="">
@@ -923,7 +1019,8 @@
                             <center>
                                 <div class=" ">
                                     <h5 style="">Status Pembayaran</h5>
-                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-success"><a href="#" style="color:white;">Valid</a>
+                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-success"><a href="#"
+                                            style="color:white;">Valid</a>
                                     </h4>
                                 </div>
                                 <div class=" ">
@@ -944,7 +1041,8 @@
                                     </div>
 
                                     <!-- Button trigger modal -->
-                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal-1" style="">Detail</a>
+                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal"
+                                        data-target="#exampleModal-1" style="">Detail</a>
                                 </center>
                             </div>
 
@@ -954,14 +1052,17 @@
                                     <div class="modal-content">
 
                                         <div class="modal-body">
-                                            <div class="row justify-content-center ml-3 modal-title" id="exampleModalLabel">
+                                            <div class="row justify-content-center ml-3 modal-title"
+                                                id="exampleModalLabel">
                                                 <div class="row gutters-sm mt-2">
                                                     <div class="" style="width:100px; height:300px;">
                                                         <div class="">
                                                             <div class="">
                                                                 <div class="">
-                                                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                                                        <img class="rounded" src="../img/1.jpg" width="200px" height="200px">
+                                                                    <a href="btn" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModalinti">
+                                                                        <img class="rounded" src="../img/1.jpg"
+                                                                            width="200px" height="200px">
                                                                     </a>
 
                                                                 </div>
@@ -1012,7 +1113,8 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <div class="" style="width: 100%; height:1px; background-color: #3A8BCD;">
+                                                                <div class=""
+                                                                    style="width: 100%; height:1px; background-color: #3A8BCD;">
                                                                 </div>
                                                                 <div class="D">
                                                                     <h5>Data
@@ -1022,11 +1124,21 @@
                                                                     <p class="">
                                                                         Soreang, Bandung
                                                                     </p>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
                                                                     <br>
                                                                     <a href="#(link menju peternak)">Lihat
                                                                         Peternakan</a>
@@ -1042,13 +1154,15 @@
                                                     </div>
 
                                                     <div class="d-flex justify-content-between">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Harga Jual</p>
                                                                 <h6>Rp3.700.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Bagi Hasil</p>
                                                                 <h6>50%</h6>
@@ -1057,13 +1171,15 @@
 
                                                     </div>
                                                     <div class="d-flex justify-content-between mt-5">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Keuntungan</p>
                                                                 <h6>Rp1.850.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Laba Bersih</p>
                                                                 <a href="#">
@@ -1076,17 +1192,20 @@
                                                     </div>
                                                     <br>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
                                                     </div>
                                                     <center>
                                                         <div class="mt-4">
                                                             <h5 style="margin-left:120px;"><b> Nominasi
                                                                     Investasi</b></h5>
-                                                            <h3 style="margin-left:120px;"><a href="#">Rp1.450.000,00</a></h3>
+                                                            <h3 style="margin-left:120px;"><a
+                                                                    href="#">Rp1.450.000,00</a></h3>
                                                         </div>
                                                     </center>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;">
                                                     </div>
                                                     <br>
 
@@ -1095,7 +1214,8 @@
                                             </div>
                                         </div>
                                         <center>
-                                            <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary mb-3"
+                                                data-dismiss="modal">Close</button>
                                         </center>
                                     </div>
                                 </div>
@@ -1120,7 +1240,8 @@
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                                 <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
                             </a>
-                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <img src="../img/1.jpg" alt="">
@@ -1176,7 +1297,8 @@
                             <center>
                                 <div class=" ">
                                     <h5 style="">Status Pembayaran</h5>
-                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-warning"><a href="#" style="color:white;">Kadaluarsa</a>
+                                    <h4 style=" border-radius:30px; width:100%;" class="btn btn-warning"><a href="#"
+                                            style="color:white;">Kadaluarsa</a>
                                 </div>
                                 <div class=" ">
                                     <h5 style="">Nominal Investasi</h5>
@@ -1198,7 +1320,8 @@
                                     </div>
 
                                     <!-- Button trigger modal -->
-                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal-1" style="">Detail</a>
+                                    <a type="button" href="#" class="btn btn-primary mt-3" data-toggle="modal"
+                                        data-target="#exampleModal-1" style="">Detail</a>
                                 </center>
                             </div>
 
@@ -1208,14 +1331,17 @@
                                     <div class="modal-content">
 
                                         <div class="modal-body">
-                                            <div class="row justify-content-center ml-3 modal-title" id="exampleModalLabel">
+                                            <div class="row justify-content-center ml-3 modal-title"
+                                                id="exampleModalLabel">
                                                 <div class="row gutters-sm mt-2">
                                                     <div class="" style="width:100px; height:300px;">
                                                         <div class="">
                                                             <div class="">
                                                                 <div class="">
-                                                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                                                        <img class="rounded" src="../img/1.jpg" width="200px" height="200px">
+                                                                    <a href="btn" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModalinti">
+                                                                        <img class="rounded" src="../img/1.jpg"
+                                                                            width="200px" height="200px">
                                                                     </a>
 
                                                                 </div>
@@ -1266,7 +1392,8 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <div class="" style="width: 100%; height:1px; background-color: #3A8BCD;">
+                                                                <div class=""
+                                                                    style="width: 100%; height:1px; background-color: #3A8BCD;">
                                                                 </div>
                                                                 <div class="D">
                                                                     <h5>Data
@@ -1276,11 +1403,21 @@
                                                                     <p class="">
                                                                         Soreang, Bandung
                                                                     </p>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
-                                                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
+                                                                    <span class="iconify"
+                                                                        data-icon="flat-color-icons:rating"
+                                                                        data-width="25" data-height="25"></span>
                                                                     <br>
                                                                     <a href="#(link menju peternak)">Lihat
                                                                         Peternakan</a>
@@ -1296,13 +1433,15 @@
                                                     </div>
 
                                                     <div class="d-flex justify-content-between">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Harga Jual</p>
                                                                 <h6>Rp3.700.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Bagi Hasil</p>
                                                                 <h6>50%</h6>
@@ -1311,13 +1450,15 @@
 
                                                     </div>
                                                     <div class="d-flex justify-content-between mt-5">
-                                                        <div class="q rounded-lg" style="width:180px ; border: 1px solid #000;">
+                                                        <div class="q rounded-lg"
+                                                            style="width:180px ; border: 1px solid #000;">
                                                             <center>
                                                                 <p>Keuntungan</p>
                                                                 <h6>Rp1.850.000,00</h6>
                                                             </center>
                                                         </div>
-                                                        <div class="q rounded-lg " style="width:180px ; border: 1px solid #000; margin-left: 100px;">
+                                                        <div class="q rounded-lg "
+                                                            style="width:180px ; border: 1px solid #000; margin-left: 100px;">
                                                             <center>
                                                                 <p>Laba Bersih</p>
                                                                 <a href="#">
@@ -1330,17 +1471,20 @@
                                                     </div>
                                                     <br>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;margin-top: -190px;">
                                                     </div>
                                                     <center>
                                                         <div class="mt-4">
                                                             <h5 style="margin-left:120px;"><b> Nominasi
                                                                     Investasi</b></h5>
-                                                            <h3 style="margin-left:120px;"><a href="#">Rp1.450.000,00</a></h3>
+                                                            <h3 style="margin-left:120px;"><a
+                                                                    href="#">Rp1.450.000,00</a></h3>
                                                         </div>
                                                     </center>
 
-                                                    <div class=" " style="width: 95%; height: 2px; background-color: #3A8BCD;">
+                                                    <div class=" "
+                                                        style="width: 95%; height: 2px; background-color: #3A8BCD;">
                                                     </div>
                                                     <br>
 
@@ -1349,7 +1493,8 @@
                                             </div>
                                         </div>
                                         <center>
-                                            <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary mb-3"
+                                                data-dismiss="modal">Close</button>
                                         </center>
                                     </div>
                                 </div>

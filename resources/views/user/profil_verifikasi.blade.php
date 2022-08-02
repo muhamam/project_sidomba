@@ -15,8 +15,14 @@
                                 anas
                             </a>
                             <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-
-                            <a href="#" style="color:#000000 ;">ID Investor : X001</a>
+                            <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
+                                <li>
+                                    <span style="color: black;">Peternakan</span>
+                                </li>
+                                <li class="ml-4">
+                                    <span style="color: black;">Investasi</span>
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>

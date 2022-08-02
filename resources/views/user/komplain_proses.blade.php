@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="row">
-    <div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
-        <div class=" bg-light ">
+    <div class="col-3 " style="margin-left: 30px; margin-top:50px; width: 300px;">
+        <div class=" bg-light " style="border-radius: 15px;">
             <center>
                 <table>
                     <tr>
@@ -16,8 +16,14 @@
                                 anas
                             </a>
                             <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-
-                            <a href="#" style="color:#000000 ;">ID Investor : X001</a>
+                            <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
+                                <li>
+                                    <span style="color: black;">Peternakan</span>
+                                </li>
+                                <li class="ml-4">
+                                    <span style="color: black;">Investasi</span>
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>
@@ -51,8 +57,8 @@
             </center>
         </div>
     </div>
-    <section class="ftco-section col " style="margin-top: 165px;">
-        <div class="container " style="background-color: white; width: 994px; ">
+    <section class="ftco-section col " style="margin-top: 50px;">
+        <div class="container " style="background-color: white; width: 994px; border-radius: 15px;">
             <!-- Notifikasi komplain Start -->
             <center>
                 <div class="col-4 rounded p-2 mb-3" style="background-color:#44F060 ;">

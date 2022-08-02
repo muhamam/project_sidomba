@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-
+    <link rel="shortcut icon" href="../img/domba.png">
     <!-- Google Font 'Open Sans' feel free to change -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- jQuery CDN for smooth scroll, adding mobile to nav -->

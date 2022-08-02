@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="row ">
-    <div class="col" style="margin-left: 30px; margin-top:170px; width: 300px;">
+    <div class="col-3" style="margin-left: 30px; margin-top:170px; width: 300px;">
         <div class=" bg-light  ">
             <center>
                 <table>
@@ -15,8 +15,8 @@
                             <a href="#" class="  " style="color:#000000 ;">Muhammad
                                 anas
                             </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-
+                            <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a>
+                            <br>
                             <a href="#" style="color:#000000 ;">ID Investor : X001</a>
                         </td>
                     </tr>
@@ -55,7 +55,7 @@
 
 
 
-    <section class="ftco-section col " style="margin-left: 0px;">
+    <section class="ftco-section col " style="margin-left: 0px; margin-top:95px;">
         <div class="tengah d-flex d-flex justify-content-center "
             style="margin-bottom: 20px; margin-top:-50px; margin-left: -300px;">
 

@@ -331,9 +331,13 @@ Route::get('/chat_user', function () {
     return view('user.chat_user ');
 });
 
-
+// aman
 Route::get('/keranjang', function () {
     return view('user.keranjang ');
+});
+
+Route::get('/pembayaran_user', function () {
+    return view('user.pembayaran_user ');
 });
 
 /*------------------------------------------

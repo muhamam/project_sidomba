@@ -3,8 +3,9 @@
 @section('content')
 
 <div class="row">
-    <div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
-        <div class=" bg-light ">
+    <div class="col-3 " style="margin-left: 30px; margin-top:180px; width: 300px;">
+        <div class=" bg-light " style="border-radius: 15px;">
+            <br>
             <center>
                 <table>
                     <tr>
@@ -16,8 +17,14 @@
                                 anas
                             </a>
                             <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-
-                            <a href="#" style="color:#000000 ;">ID Investor : X001</a>
+                            <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
+                                <li>
+                                    <span style="color: black;">Peternakan</span>
+                                </li>
+                                <li class="ml-4">
+                                    <span style="color: black;">Investasi</span>
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>
@@ -29,6 +36,7 @@
                     <p></p>
                 </div>
                 <div class="dalam ">
+
                     <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25"
                         style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="dashboard_investor.html" class="dropdown-item ">Akun</a>
@@ -50,11 +58,13 @@
                 </div>
 
             </center>
+            <br>
         </div>
 
     </div>
     <section class="ftco-section col " style="margin-top: 165px;">
-        <div class="container " style="background-color: white; width: 994px; height:1800px;">
+        <div class="container " style="background-color: white; width: 994px; height:1800px; border-radius: 15px;">
+            <br>
             <div class="d-flex flex-row " style=" margin-left:20px;">
                 <a class="" href="investasi_riwayat.html" style="color: #000;">
                     <h5>Diproses</h5>
