@@ -19,7 +19,7 @@
 
     <!-- Banner Starts Here -->
     <div class="col-md-10 rounded mx-auto p-5"
-        style="background-image: url({{asset('img/banner-bg.jpg')}});background-size: cover;background-repeat:no-repeat;">
+        style="background-image: url({{asset('img/banner-bg.jpg')}});background-size:cover; background-repeat:no-repeat;">
         <div class="text-white text-center" style="background:rgba(0,0,0, 0.7);">
             <h2>SELANGKAH LAGI MENJADI SEORANG INVESTOR DOMBA HANDAL!</h2>
             <p style="color: white;">Dengan SI-Domba, kami membuka peluang investasi dalam bentuk ternak domba. Hanya

@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="row">
-    <div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
+    <div class="col-3 " style="margin-left: 30px; margin-top:180px; width: 300px;">
         <div class=" bg-light ">
             <center>
                 <table>
@@ -48,12 +48,11 @@
                         style="margin-right: 130px; margin-bottom: -60px;"></span>
                     <a href="#" class="dropdown-item ml-3 ">Transaksi</a>
                 </div>
-
             </center>
         </div>
 
     </div>
-    <section class="ftco-section col " style="margin-top: 95px;">
+    <section class="ftco-section col-8 " style="margin-top: 95px;">
         <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
 
             <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
@@ -62,19 +61,13 @@
                 style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
                 <p></p>
             </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
-
+            <h3 style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
         </div>
-        <div class="container " style="background-color: white; width: 994px;">
+        <div class="container col-12" style="background-color: white; ">
 
 
             <div class="d-flex flex-row " style=" margin-left:20px;">
-                <a class="" href="investasi_riwayat.html" style="color: #000;">
+                <a href="investasi_riwayat.html" style="color: #000;">
                     <h5>Belum Diulas</h5>
                 </a>
                 <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
@@ -96,7 +89,7 @@
                     </div>
                     <div class=" mb-3" style="width: 100%; height:1px; background-color: #000000; "></div>
                     <div class="row ml-5">
-                        <h6 class="col-2">Peternakan Udin</h6>
+                        <h6 class="col-3">Peternakan Udin</h6>
                         <a href="#" class="btn btn-outline-primary rounded col-2" style="font-size: 10px;"> Sedang
                             Berlangsung</a>
                     </div>
@@ -161,45 +154,32 @@
                         </div>
 
                         <div class="col-5 row" style="margin-left:-35px;">
-
                             <div class="col ">
                                 <h5 style="font-size: 15px;"> Nominasi Investasi</h5>
                                 <h3 style="font-size: 15px;"><a class="ml-3" href="#"
                                         style="font-size: 15px;">Rp1.450.000,00</a>
                                 </h3>
-
-
                             </div>
                             <div class="col  ">
                                 <h5 style="font-size: 15px;">Bagi Hasil</h5>
                                 <h3 style="font-size: 15px;"><a class="ml-3" href="#" style="font-size: 15px;">50%</a>
                                 </h3>
-
-
                             </div>
-
                             <div class=" row">
                                 <div class="col  ">
                                     <h5 style="font-size: 15px;" class="ml-2">Harga Jual</h5>
                                     <h3 style="font-size: 15px;"><a class="mr-2" href="#"
                                             style="font-size: 15px;">Rp3.700.000,00</a>
                                     </h3>
-
-
                                 </div>
                                 <div class="col ">
                                     <h5 style="font-size: 15px;" class="ml-3">Keuntungan</h5>
                                     <h3 style="font-size: 15px;"><a class="ml-3" href="#"
                                             style="font-size: 15px;">Rp1.850.000,00</a>
                                     </h3>
-
-
                                 </div>
                             </div>
-
                         </div>
-
-
                         <div class="col-2 " style="padding:0;">
                             <div class="">
                                 <div class="">
@@ -406,7 +386,7 @@
                     </div>
                     <div class=" mb-3" style="width: 100%; height:1px; background-color: #000000; "></div>
                     <div class="row ml-5">
-                        <h6 class="col-2">Peternakan Udin</h6>
+                        <h6 class="col-3">Peternakan Udin</h6>
                         <a href="#" class="btn btn-outline-primary rounded col-2" style="font-size: 10px;"> Sedang
                             Berlangsung</a>
                     </div>
@@ -711,7 +691,7 @@
                     </div>
                     <div class=" mb-3" style="width: 100%; height:1px; background-color: #000000; "></div>
                     <div class="row ml-5">
-                        <h6 class="col-2">Peternakan Udin</h6>
+                        <h6 class="col-3">Peternakan Udin</h6>
                         <a href="#" class="btn btn-outline-primary rounded col-2" style="font-size: 10px;"> Sedang
                             Berlangsung</a>
                     </div>

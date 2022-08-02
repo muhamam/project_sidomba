@@ -55,7 +55,10 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <body>
@@ -134,8 +137,9 @@
                         <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button"
                             data-toggle="dropdown" style="color: white; ">
                             <span><img
-                                    src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" {{-- need redesign system --}}
-                                    alt="" style="width: 35px; height:35px; " class="rounded-circle d-inline ms-2">
+                                    src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                    {{-- need redesign system --}} alt="" style="width: 35px; height:35px; "
+                                    class="rounded-circle d-inline ms-2">
                             </span>
                             {{ Auth::user()->fullname }}
                         </a>
@@ -158,7 +162,7 @@
                             <div class="dropdown-item my-1">
                                 <span class="iconify me-2" data-icon="ic:outline-switch-account" data-width="25"
                                     data-height="25" data-flip="horizontal" "></span>
-                                <a href="{{route('account.index')}}" class="text-dark">Akun</a>
+                                <a href=" {{route('account.index')}}" class="text-dark">Akun</a>
                             </div>
                             <div class="dropdown-item my-1">
                                 <span class="iconify me-2" data-icon="ant-design:logout-outlined" data-width="25"

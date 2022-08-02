@@ -321,11 +321,20 @@ Route::get('/aktivasi_investor', function () {
     return view('user.aktivasi_investor ');
 });
 
+// aman
 Route::get('/aktivasi_peternakan', function () {
     return view('user.aktivasi_peternakan ');
 });
 
+// aman
+Route::get('/chat_user', function () {
+    return view('user.chat_user ');
+});
 
+
+Route::get('/keranjang', function () {
+    return view('user.keranjang ');
+});
 
 /*------------------------------------------
 --------------------------------------------
