@@ -4,8 +4,8 @@
 <div class="row  d-flex">
     @include('layouts.sidebarUser')
 
-    <section class="ftco-section col-3" style="margin-top: 100px;">
-        <div class="container " style="background-color: white; width: 994px; height: 803px; border-radius:20px;">
+    <section class="ftco-section col" style="margin-top: 100px;">
+        <div class="container " style="background-color: white;  height: 803px; border-radius:20px;">
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
                 <a class="mt-3" href="{{route('account.index')}}" style="color: #000;">
                     <h5>Biodata</h5>
