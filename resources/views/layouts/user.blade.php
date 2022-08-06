@@ -53,7 +53,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -66,12 +65,14 @@
     <div class="container-fluid navbar navbar-expand  " style="background-color: #3a8bcd">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="" style="color:white;">
+                <li style="color:white;">
                     <img class="m-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
-                    <p class="d-inline fw-bold me-3">SI-Domba</p>
-                    <p class="d-inline">Dashboard</p>
+                    <h6 class="d-inline border-right"> SI-Domba</h6>
+
+                    <h6 class="d-inline border-left">Dashboard</h6>
                 </li>
-                <li class="ms-5 my-auto">
+
+                <li class="ml-3">
                     <form class="input-group input-group-md">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search" size="40">
                         <button class="btn btn-outline-light" type="submit">Search</button>
@@ -246,11 +247,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </body>
 
 </html>
