@@ -3,7 +3,7 @@
 @section('content')
 <div class="row  d-flex" style="margin-top: 100px;">
     @include('layouts.sidebarUser')
-    <section class="ftco-section col">
+    <section class="ftco-section col mt-5">
         <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
 
             <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
@@ -20,7 +20,7 @@
 
 
         </div>
-        <div class="container " style="background-color: white; width: 994px;">
+        <div class="container " style="background-color: white; border-radius:15px; height:600px;">
 
 
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
@@ -81,14 +81,10 @@
             <br>
 
         </div>
+
+
+    </section>
 </div>
-</section>
 
-
-</div>
-
-
-
-</div>
 
 @endsection
