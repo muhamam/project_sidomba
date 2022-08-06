@@ -4,10 +4,8 @@
 <div class="row  d-flex">
     @include('layouts.sidebarUser')
 
-    <section class="ftco-section col" style="margin-top: 100px;">
-        <div class="container " style="background-color: white; width: 994px; height: 783px;">
-
-
+    <section class="ftco-section col-3" style="margin-top: 100px;">
+        <div class="container " style="background-color: white; width: 994px; height: 803px; border-radius:20px;">
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
                 <a class="mt-3" href="{{route('account.index')}}" style="color: #000;">
                     <h5>Biodata</h5>
@@ -26,13 +24,16 @@
                 <div class="row">
                     <div class=" col-md-2 ">
                         <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                            <img class="rounded" src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" width="200px" height="250px">
+                            <img class="rounded"
+                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                width="200px" height="250px">
                         </a>
                         <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" alt="">
+                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -124,7 +125,8 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <tD scope="col"> <b>Kontak</b> <a href="{{route('contact.index')}}">(Edit Kontak)</a></tD>
+                                        <tD scope="col"> <b>Kontak</b> <a href="{{route('contact.index')}}">(Edit
+                                                Kontak)</a></tD>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
@@ -395,14 +397,10 @@
             <br>
 
         </div>
-</div>
-</section>
-
-
+    </section>
 </div>
 
 
 
-</div>
 
 @endsection

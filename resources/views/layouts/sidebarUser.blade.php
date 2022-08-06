@@ -1,10 +1,11 @@
-<div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
-    <div class=" bg-light ">
+<div class="col-3" style="margin-left: 30px; margin-top:110px;">
+    <div class=" bg-light " style=" border-radius:15px;">
         <center>
             <table>
                 <tr>
-                    <td> <span><img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" alt="" style="width: 85px; height:85px; "
-                                class="  ml-3 rounded-circle">
+                    <td> <span><img
+                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                alt="" style="width: 85px; height:85px; " class="  ml-3 rounded-circle">
                         </span></td>
                     <td>
                         <a href="#" class="" style="color:#000000 ;">{{Auth::user()->fullname}}
