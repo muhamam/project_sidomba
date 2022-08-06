@@ -5,25 +5,8 @@
     @include('layouts.sidebarUser')
 
     <section class="ftco-section col" style="margin-top: 100px;">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
 
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-
-            <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-                <p></p>
-            </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
-
-        </div>
-        <div class="container " style="background-color: white;height:770px; width: 994px;">
-
-
+        <div class="container " style="background-color: white;height:700px; border-radius:15px;">
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
                 <a class="mt-3" href="{{route('account.index')}}" style="color: #000;">
                     <h5>Biodata</h5>
@@ -68,16 +51,10 @@
 
             </div>
             <br>
-
         </div>
-</div>
-</section>
-
-
+    </section>
 </div>
 
 
-
-</div>
 
 @endsection

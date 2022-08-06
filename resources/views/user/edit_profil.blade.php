@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-<div class="row  d-flex" style="margin-top: 100px;">
+<div class="row  d-flex" style="margin-top: 50px;">
     @include('layouts.sidebarUser')
 
     <section class="ftco-section col mt-5">
