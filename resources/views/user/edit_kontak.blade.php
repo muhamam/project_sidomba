@@ -1,12 +1,10 @@
 @extends('layouts.user')
 
 @section('content')
-<div class="row  d-flex" style="margin-top: 100px;">
+<div class="row  d-flex">
     @include('layouts.sidebarUser')
-    <section class="ftco-section col" style="margin-top: 165px;">
-        <div class="container " style="background-color: white; width: 994px;">
-
-
+    <section class="ftco-section col" style="margin-top: 100px; ">
+        <div class="container " style="background-color: white; border-radius:15px;">
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
                 <a class="mt-3" href="{{route('account.index')}}" style="color: #000;">
                     <h5>Biodata</h5>
@@ -32,7 +30,8 @@
                     <h6>Email</h6>
                     <div class="input-group mb-3 col-6">
 
-                        <input type="email" class="form-control" placeholder="Email" value="{{Auth::user()->email}}" disabled>
+                        <input type="email" class="form-control" placeholder="Email" value="{{Auth::user()->email}}"
+                            disabled>
                     </div>
 
                     <center>
@@ -41,18 +40,12 @@
                 </center>
             </div>
             <br>
-
         </div>
-
-</div>
-</section>
-
-
+    </section>
 </div>
 
 
 
-</div>
 
 
 @endsection

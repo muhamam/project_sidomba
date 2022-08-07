@@ -1,27 +1,11 @@
 @extends('layouts.user')
 
 @section('content')
-<div class="row  d-flex" style="margin-top: 100px;">
+<div class="row  d-flex">
     @include('layouts.sidebarUser')
 
-    <section class="ftco-section col">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
-
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-
-            <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-                <p></p>
-            </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
-
-        </div>
-        <div class="container " style="background-color: white; width: 994px; height:1000px;">
+    <section class="ftco-section col" style="margin-top: 100px;">
+        <div class="container " style="background-color: white; border-radius:15px; height:950px;">
 
 
             <div class="d-flex flex-row   ml-3 mb-3 mt-3">
@@ -39,74 +23,74 @@
             <div class="kabeh rounded-lg" style=" height: 380px; ">
                 <center>
                     <h4>Tambah Alamat</h4>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-9">
                         <label class="form-label" style="margin-right: 300px;"><b> Alamat Lengkap</b></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-9">
                         <div class="dropdown ">
-                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
-                                role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
                                 Provinsi
                             </a>
 
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu col-12">
                                 <a class="dropdown-item" href="#">Laki-Laki</a>
                                 <a class="dropdown-item" href="#">Perempuan</a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-9">
                         <div class="dropdown ">
-                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
-                                role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
                                 Kota / Kabupaten
                             </a>
 
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu col-12">
                                 <a class="dropdown-item" href="#">Laki-Laki</a>
                                 <a class="dropdown-item" href="#">Perempuan</a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-9">
                         <div class="dropdown ">
-                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
-                                role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
                                 Kecamatan
                             </a>
 
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu col-12">
                                 <a class="dropdown-item" href="#">Laki-Laki</a>
                                 <a class="dropdown-item" href="#">Perempuan</a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-9">
                         <div class="dropdown ">
-                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
-                                role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
                                 Kelurahan
                             </a>
 
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu col-12">
                                 <a class="dropdown-item" href="#">Laki-Laki</a>
                                 <a class="dropdown-item" href="#">Perempuan</a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-9">
                         <div class="dropdown ">
-                            <a class="btn  dropdown-toggle col-12" style="background-color:#B8B8B8;" href="#"
-                                role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
                                 Kode Pos
                             </a>
 
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu col-12">
                                 <a class="dropdown-item" href="#">Laki-Laki</a>
                                 <a class="dropdown-item" href="#">Perempuan</a>
                             </div>
@@ -130,14 +114,7 @@
 
         </div>
 
-</div>
-</section>
-
-
-</div>
-
-
-
+    </section>
 </div>
 
 
