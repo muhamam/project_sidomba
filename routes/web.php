@@ -52,6 +52,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/akun', [AccountUser::class, 'index'])->name('account.index');
     Route::get('/user/akun/edit', [EditAccountUser::class, 'index'])->name('editaccount.index');
+    Route::post('/user/akun/edit', [EditAccountUser::class, 'update'])->name('editaccount.update');
     Route::get('/user/password', [UpdatePasswordUser::class, 'index'])->name('password.index');
     Route::get('/user/alamat', [AddressUser::class, 'index'])->name('address.index');
     Route::get('/user/edit/alamat', [EditAddressUser::class, 'index'])->name('editaddress.index');
