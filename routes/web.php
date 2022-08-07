@@ -57,6 +57,7 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/alamat', [AddressUser::class, 'index'])->name('address.index');
     Route::get('/user/edit/alamat', [EditAddressUser::class, 'index'])->name('editaddress.index');
     Route::get('/user/edit/contact', [ContactUser::class, 'index'])->name('contact.index');
+    Route::post('/user/edit/contact', [ContactUser::class, 'update'])->name('contact.update');
 });
 
 
