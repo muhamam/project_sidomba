@@ -97,7 +97,7 @@
         </div>
     </nav>
 
-    <main class="py-5" style="background-color: #E5E5E5; backround-image:url(asset('/img/2.jpg');">
+    <main class="py-5" style="background-color: #E5E5E5;">
         @yield('content')
     </main>
 

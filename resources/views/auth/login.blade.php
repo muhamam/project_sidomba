@@ -12,15 +12,15 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{asset('/img/1.jpg')}}" class="d-block w-100"
+                                    <img src="{{asset('/img/1.jpg')}}" class="d-block w-100 h-300"
                                         style="border-radius: 25px;">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{asset('/img/2.jpg')}}" class="d-block w-100"
+                                    <img src="{{asset('/img/2.jpg')}}" class="d-block w-100 h-300"
                                         style="border-radius: 25px;">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{asset('/img/3.jpg')}}" class="d-block w-100"
+                                    <img src="{{asset('/img/3.jpg')}}" class="d-block w-100 h-300"
                                         style="border-radius: 25px;">
                                 </div>
                             </div>
