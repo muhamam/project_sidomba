@@ -82,7 +82,7 @@
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
+                                                document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
@@ -97,7 +97,7 @@
         </div>
     </nav>
 
-    <main class="py-5" style="background-color: #E5E5E5;">
+    <main class="py-5" style="background-color: #E5E5E5; backround-image:url(asset('/img/2.jpg');">
         @yield('content')
     </main>
 

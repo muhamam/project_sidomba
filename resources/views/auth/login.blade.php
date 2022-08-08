@@ -102,8 +102,19 @@
                                 </div>
                             </div>
                             <br>
-                            <a class="btn btn-primary col-4" href="{{ url('login/google') }}" role="button">
-                                Google</a>
+                            <center>
+                                <h4>- Login Menggunakan -</h4>
+                            </center>
+                            <br>
+                            <div class="row d-flex justify-content-around">
+                                <a class="btn btn-dark bg-light col-4" style="color: black;"
+                                    href="{{ url('login/google') }}" role="button">
+                                    Google</a>
+                                <a class="btn btn-dark bg-light col-4" style="color: black;"
+                                    href="{{ url('login/google') }}" role="button">
+                                    Facebook</a>
+                            </div>
+
                         </form>
                     </div>
                 </div>
