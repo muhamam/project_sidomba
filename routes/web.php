@@ -336,9 +336,34 @@ Route::get('/keranjang', function () {
     return view('user.keranjang ');
 });
 
+// aman
 Route::get('/pembayaran_user', function () {
     return view('user.pembayaran_user ');
 });
+
+// aman
+Route::get('/upload_done_user', function () {
+    return view('user.upload_done_user ');
+});
+
+// aman
+Route::get('/upload_verifikasi_done_user', function () {
+    return view('user.upload_verifikasi_done_user ');
+});
+
+// aman
+Route::get('/upload_novalid_done_user', function () {
+    return view('user.upload_novalid_done_user ');
+});
+
+
+Route::get('/upload_kadaluarsa_user', function () {
+    return view('user.upload_kadaluarsa_user ');
+});
+
+
+
+
 
 /*------------------------------------------
 --------------------------------------------
