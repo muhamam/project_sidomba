@@ -155,10 +155,18 @@ Route::get('/pasar_detail_domba', function () {
     return view('investor.pasar_detail_domba');
 });
 
-// aman tinggal dropdowns yang di filter samping
+// aman 
 Route::get('/pasar', function () {
     return view('investor.pasar');
 });
+
+
+Route::get('/pembayaran_investor', function () {
+    return view('investor.pembayaran_investor');
+});
+
+
+
 
 
 // profil user biasa
