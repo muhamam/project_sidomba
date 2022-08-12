@@ -1,20 +1,25 @@
 @extends('layouts.user')
 
 @section('content')
-<div class="container">
-    <div class=" d-flex d-flex justify-content-center mt-5" style="margin-bottom: 20px;">
-        <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-        <div class="garis"
-            style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-            <p></p>
+<div class="row  d-flex">
+    @include('layouts.sidebarbayarInvest')
+
+    <section class="ftco-section col" style="margin-top: 100px;">
+        <div class=" d-flex d-flex justify-content-center">
+            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
+            <div class="garis"
+                style="width: 2px; height: 85px; background-color: black; margin-left: 10px; margin-right: 20px;">
+                <p></p>
+            </div>
+            <h3 class="" style="text-center">SI-DOMBA <br>Investasi</h3>
         </div>
-        <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
-    </div>
-    <div class="d-flex justify-content-center">
-        <div class="bg-light col-10" style="border-radius: 15px;">
-            <br>
-            <h4>SETATUS PEMBAYARAN</h4>
-            <br>
+        <div class="container bg-light" style="background-color: white; border-radius:20px;">
+            <div class="d-flex flex-row   ml-3 mb-3 mt-3">
+                <a class="mt-3" style="color: #000;">
+                    <h5>Status Pembayaran</h5>
+                </a>
+
+            </div>
             <center>
                 <div class="col-7" style="border-radius: 15px; border:1px solid black;">
                     <span class="iconify" data-icon="ant-design:clock-circle-outlined" data-width="30"
@@ -92,6 +97,7 @@
                 </div>
             </div>
             <br>
+
             <div class="d-flex justify-content-center">
                 <div class="col-10" style="border-radius:10px; border: 1px solid #000; height: 380px; ">
                     <div class="row mt-3">
@@ -306,7 +312,6 @@
                 </div>
             </div>
             <br>
-
             <div class="dotted  col-12"></div>
             <div class="d-flex justify-content-end ">
                 <div class="row col-6  mt-4 mr-4" style="height: 50px;">
@@ -318,7 +323,16 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
+
+</div>
+<br>
+
+</div>
+</section>
+</div>
+
+
+
 
 @endsection

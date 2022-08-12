@@ -67,9 +67,7 @@
             <ul class="navbar-nav">
                 <li style="color:white;">
                     <img class="m-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
-                    <h6 class="d-inline border-right"> SI-Domba</h6>
-
-                    <h6 class="d-inline border-left">Dashboard</h6>
+                    <h6 class="d-inline" style="font-size: 20px">SI-Domba</h6>
                 </li>
 
                 <li class="ml-3">
