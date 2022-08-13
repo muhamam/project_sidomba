@@ -2,75 +2,17 @@
 
 @section('content')
 <div class="row  d-flex">
-    <div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
-        <div class=" bg-light ">
-            <center>
-                <table>
-                    <tr>
-                        <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; "
-                                    class="  ml-3 rounded-circle">
-                            </span></td>
-                        <td>
-                            <a href="#" class="  " style="color:#000000 ;">Muhammad
-                                anas
-                            </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-
-                            <a href="#" style="color:#000000 ;">ID Investor : X001</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
-                <div class="garis" style="width: 95%; height: 2px; background-color: black; margin-left: 5px; margin-right:
-                        5px;">
-                    <p></p>
-                </div>
-                <div class="dalam ">
-                    <span class="iconify" data-icon="eva:home-outline" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-
-                    <a href="dashboard_investor.html" class="dropdown-item ">Beranda</a>
-                    <span class="iconify" data-icon="healthicons:market-stall-outline" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="pasar.html" class="dropdown-item ">Pasar</a>
-                    <span class="iconify" data-icon="mdi:sheep" data-width="25" data-height="25" style="margin-right: 130px;
-                                        margin-bottom: -60px;"></span>
-                    <a href="investasi_saya_semua.html" class="dropdown-item">Invstasi Saya</a>
-                    <span class="iconify" data-icon="ant-design:history-outlined" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-
-                    <a href="investasi_riwayat.html" class="dropdown-item">Riwayat</a>
-                    <span class="iconify" data-icon="mdi:account-cash" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="#" class="dropdown-item ml-3">Pencairan Dana</a>
-                </div>
-
-            </center>
-        </div>
-
-    </div>
-
-
-
-    <section class="ftco-section col">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
-
+    @include('layouts.sidebarInvestor')
+    <section class="ftco-section col" style="margin-top: 100px;">
+        <div class=" d-flex d-flex justify-content-center">
             <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-
             <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
+                style="width: 2px; height: 85px; background-color: black; margin-left: 10px; margin-right: 20px;">
                 <p></p>
             </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
-
+            <h3 class="" style="text-center">SI-DOMBA <br>Investasi</h3>
         </div>
+        <br>
         <div class="container " style="background-color: white; width: 994px;">
 
 
@@ -83,6 +25,9 @@
                 </a>
                 <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
                     <h5> Dalam Negosiasi</h5>
+                </a>
+                <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
+                    <h5> Menunggu Pembayaran</h5>
                 </a>
 
 

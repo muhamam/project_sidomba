@@ -1,3 +1,36 @@
 12/08/2022 - Rlynnchx007
-- Buat File "views/investor/sidebarbayarInvestor.blade.php"
+- Buat File "views/layout/sidebarbayarInvestor.blade.php"
 - Page Pembayaran Investasi Domba Done
+
+13/08/2022 - RlynnchX007
+- Buat File "views/investor/upload_done_investor.blade.php"
+- Tambah Codingan "routes/web.php" untuk panggil file "views/investor/upload_done_investor.blade.php"
+- Buat File "views/investor/verifikasi_done_investor.blade.php"
+- Tambah Codingan "routes/web.php" untuk panggil file "views/investor/verifikasi_done_investor.blade.php"
+- Buat File "views/investor/verifikasi_gagal_investor.blade.php"
+- Tambah Codingan "routes/web.php" untuk panggil file "views/investor/verifikasi_gagal_investor.blade.php"
+- Buat File "views/investor/verifikasi_kadaluarsa_investor.blade.php"
+- Tambah Codingan "routes/web.php" untuk panggil file "views/investor/verifikasi_kadaluarsa_investor.blade.php"
+- Edit File "views/investor/detail_investasi_domba.blade.php" 
+- Edit File "views/investor/detail_investasi_domba.blade.php"
+- Edit File "views/investor/pasar_detail_domba.blade.php"
+- Edit File "views/investor/dashboard.blade.php"
+- Edit File "views/investor/detail_investasi_domba.blade.php"
+- Edit File "views/investor/negosiasi.blade.php"
+- Edit File "views/investor/negosiasi_berhasil.blade.php"
+- Edit File "views/investor/investasi_saya_negosiasi.blade.php"
+- Edit File "views/investor/investasi_saya_selesai.blade.php"
+- Edit File "views/investor/investasi_saya_semua.blad.php"
+- Edit File "views/investor/investasi-negosiasi.blade.php"
+- Edit File "views/investor/investasi-riwayat.blade.php"
+- Buat File "views/investor/pasar_investasi_sekarang.blade.php"
+- Buat File "views/investor/investasi_saya_menunggu_pembayaran.blade.php"
+- Buat File "views/investor/pencairan_dana_investor.blade.php"
+- Buat File "views/investor/proses_pencairan_dana.blade.php"
+- Buat File "views/investor/cairkan_dana.blade.php"
+- Buat File "views/investor/riwayat_pencairan_dana.blade.php"
+
+
+
+
+

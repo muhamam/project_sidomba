@@ -39,6 +39,7 @@
                 <span class="iconify" data-icon="emojione-monotone:money-bag" data-width="25" data-height="25"
                     style="margin-right: 130px; margin-bottom: -60px;"></span>
                 <a href="#" class="dropdown-item ml-3">Pencairan Dana</a>
+                <br>
             </div>
 
         </center>

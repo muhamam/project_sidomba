@@ -105,68 +105,120 @@ Route::get('/input-jual-domba2', function () {
     return view('peternak.input_jual_domba2');
 });
 
-// aman
+
+// INVESTOR PAGE - RlynnchX007
+
+// DONE Edited 
 Route::get('/dashboard-investor', function () {
     return view('investor.dashboard');
 });
 
-// aman tinggal grafik dan rating js
+// DONEs Edited tinggal grafik dan rating js
 Route::get('/detail-investasi-domba', function () {
     return view('investor.detail_investasi_domba');
 });
 
-// aman
+// DONE Edited
 Route::get('/investasi-negosiasi', function () {
     return view('investor.investasi-negosiasi');
 });
 
-// aman
+// Done Edited
 Route::get('/investasi-riwayat', function () {
     return view('investor.investasi-riwayat');
 });
 
-// aman
+// DONE Edited
 Route::get('/investasi_saya_negosiasi', function () {
     return view('investor.investasi_saya_negosiasi');
 });
 
-// aman
+// DONE Edited
 Route::get('/investasi_saya_selesai', function () {
     return view('investor.investasi_saya_selesai');
 });
 
-// aman
+// DONE Edited
 Route::get('/investasi_saya_semua', function () {
     return view('investor.investasi_saya_semua');
 });
 
-// aman tinggal rating js
+// DONE Edited tinggal rating js
 Route::get('/negosiasi_berhasil', function () {
     return view('investor.negosiasi_berhasil');
 });
 
-// aman
+// DONE Edited
 Route::get('/negosiasi', function () {
     return view('investor.negosiasi');
 });
 
-// aman tinggal rating js
+// DONE  Edited tinggal rating js 
 Route::get('/pasar_detail_domba', function () {
     return view('investor.pasar_detail_domba');
 });
 
-// aman 
+// DONE Edited
 Route::get('/pasar', function () {
     return view('investor.pasar');
 });
 
-
+// DONE 
 Route::get('/pembayaran_investor', function () {
     return view('investor.pembayaran_investor');
 });
 
+// DONE 
+Route::get('/upload_done_investor', function () {
+    return view('investor.upload_done_investor');
+});
 
+// DONE
+Route::get('/verifikasi_done_investor', function () {
+    return view('investor.verifikasi_done_investor');
+});
 
+// DONE
+Route::get('/verifikasi_gagal_investor', function () {
+    return view('investor.verifikasi_gagal_investor');
+});
+
+// DONE
+Route::get('/verifikasi_kadaluarsa_investor', function () {
+    return view('investor.verifikasi_kadaluarsa_investor');
+});
+
+// DONE
+Route::get('/pasar_investasi_sekarang', function () {
+    return view('investor.pasar_investasi_sekarang');
+});
+
+// DONE
+Route::get('/investasi_saya_cek_status', function () {
+    return view('investor.investasi_saya_menunggu_pembayaran');
+});
+
+// DONE
+Route::get('/pencairan-dana', function () {
+    return view('investor.pencairan_dana_investor');
+});
+
+// DONE
+Route::get('/proses-pencairan-dana', function () {
+    return view('investor.proses_pencairan_dana');
+});
+
+// DONE
+Route::get('/cairkan-dana', function () {
+    return view('investor.cairkan_dana');
+});
+
+// DONE
+Route::get('/riwayat-pencairan', function () {
+    return view('investor.riwayat_pencairan_dana');
+});
+
+// AKHIR PAGE INVESTOR
 
 
 // profil user biasa

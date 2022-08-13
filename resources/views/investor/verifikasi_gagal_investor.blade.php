@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row  d-flex">
-    @include('layouts.sidebarInvestor')
+    @include('layouts.sidebarbayarInvest')
 
     <section class="ftco-section col" style="margin-top: 100px;">
         <div class=" d-flex d-flex justify-content-center">
@@ -21,83 +21,31 @@
 
             </div>
             <center>
-                <div class="col-7" style="border-radius: 15px; border:1px solid black;">
-                    <span class="iconify" data-icon="ant-design:clock-circle-outlined" data-width="30"
-                        data-height="30"></span>
-                    <h6>Silahkan selesaikan pembayaran anda dalam</h6>
-                    <h6>23 : 59 : 59</h6>
+                <div class="form-group col-6" style="border: 1px solid black; border-radius:15px;">
+                    <span class="iconify" data-icon="charm:notes-cross" data-width="70" data-height="70"></span>
+                    <br>
+                    <br>
+                    <h6>Maaf, bukti transfer Anda tidak valid, harap mengajukan bukti transfer lain yang valid dalam
+                    </h6>
+                    <a href="#">11 : 59 : 59</a>
                 </div>
                 <br>
-                <h6>Transfer ke rekening SIDOMBA OFFICIAL</h6>
+                <h5>Upload Bukti Bayar</h5>
                 <br>
-            </center>
-            <div class="d-flex justify-content-center">
-                <div class=" col-10" style="border-radius: 15px; border:1px solid black;">
-                    <label for="basic-url" class="col-10">No Rekening :</label>
-                    <div class="input-group mb-3 col-10">
-                        <select class="form-control col-3" id="exampleFormControlSelect1">
-                            <option>Mandiri</option>
-                            <option>BSI</option>
-                            <option>BRI</option>
-                            <option>BTN</option>
-                            <option>BCA</option>
-                        </select>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                    </div>
-                    <label for="basic-url" class="col-10">Jumlah Yang di bayarkan :</label>
-                    <div class="input-group mb-3 col-10">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Rp</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="d-flex justify-content-center ">
-                <div class="col-10" style="border: 1px solid black; border-radius: 15px; ">
-                    <center>
-                        <ol style="">
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Cari ATM Mandiri terdekat</li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Masukkan kartu debit Mandiri Anda ke dalam ATM
-                            </li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Masukkan nomor PIN Anda</li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Pilih menu Transfer, kemudian Transfer Sesama
-                                Mandiri
-                            </li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Masukkan Nomor Rekening <b>
-                                    1400-241255-2152421</b>
-                            </li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Masukkan Nomor Rekening <b> Rp1.450.000,00</b>
-                            </li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Pastikan nomor rekening dan nominal sudah sesuai
-                            </li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Konfirmasi dan selesaikan transfer</li>
-                            <br>
-                            <li style="border-bottom:solid 1px black;">Upload foto resi bukti transfer telah dilakukan
-                            </li>
-                            <br>
-                        </ol>
-                        <div class="form-group " style="border: 1px solid black; border-radius:15px;">
-                            <label for="file-input"> <span class="iconify" data-icon="ant-design:cloud-upload-outlined"
-                                    data-width="100" data-height="100"></span></label>
-                            <input id="file-input" type="file" style="display:none;">
-                            <h6>Bukti resi berupa file gambar dengan ekstensi .jpg, .jpeg, atau .png</h6>
-                            <a href="#" class="btn btn-primary mb-4">Upload Gambar</a>
-                        </div>
-                    </center>
-                </div>
-            </div>
-            <br>
+                <div class="col-10" style="border: 1px solid black; border-radius:15px;">
+                    <br>
+                    <span class="iconify mb-2" data-icon="emojione:cross-mark" data-width="70" data-height="70"></span>
 
+                    <h6>Maaf, bukti transfer yang anda ajukan tidak valid. Harap mengajukan bukti lain yang valid</h6>
+                    <p>Bukti Transfer</p>
+                    <label for="file-input"> <span class="iconify" data-icon="ant-design:cloud-upload-outlined"
+                            data-width="100" data-height="100"></span></label>
+                    <input id="file-input" type="file" style="display:none;">
+                    <h6>Bukti resi berupa file gambar dengan ekstensi .jpg, .jpeg, atau .png</h6>
+                    <a href="#" class="btn btn-primary mb-4">Upload Gambar</a>
+                </div>
+            </center>
+            <br>
             <div class="d-flex justify-content-center">
                 <div class="col-10" style="border-radius:10px; border: 1px solid #000; height: 380px; ">
                     <div class="row mt-3">
@@ -312,6 +260,7 @@
                 </div>
             </div>
             <br>
+
             <div class="dotted  col-12"></div>
             <div class="d-flex justify-content-end ">
                 <div class="row col-6  mt-4 mr-4" style="height: 50px;">
@@ -324,7 +273,6 @@
             </div>
         </div>
 </div>
-
 </div>
 <br>
 
