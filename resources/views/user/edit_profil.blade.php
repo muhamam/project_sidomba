@@ -34,37 +34,49 @@
             <div class=" mb-3" style="width: 100%; height:1px; background-color: #3A8BCD; "></div>
             <div class="kabeh rounded-lg" style=" height: 380px; ">
                 <center>
-                    <!-- sesudah di ubah profil-->
-                    <div class="col-4 rounded p-2" style="background-color:#44F060 ;">
-                        <span class="iconify" data-icon="akar-icons:check" data-width="30" data-height="30"></span>
-                        <h6>Anda Berhasil Mengubah Profil. </h6>
-                    </div>
+                    
+                    @if(session()->has('pesan'))
+                        <!-- sesudah di ubah profil-->
+                        <div class="col-4 rounded p-2" style="background-color:#44F060 ;">
+                            <span class="iconify" data-icon="akar-icons:check" data-width="30" data-height="30"></span>
+                            <h6>Anda Berhasil Mengubah Profil. </h6>
+                        </div>
+                    @endif
 
                     <h4>Edit Profil</h4>
-
+                    <form class="col-12" action="{{route('editaccount.update')}}" method="POST">
+                        @csrf
                     <div class="mb-3 col-6">
                         <label class="form-label" style="margin-right: 300px;"><b> Nama Lengkap</b></label>
-                        <input type="text" id="berat" class="form-control" placeholder="Ketikkan nama anda di sini">
-
+                        <input type="text" name="fullname" id="berat" class="form-control @error('fullname') is-invalid @enderror rounded-pill" id="fullname" name="fullname" value="{{ old('fullname') ?? Auth::user()->fullname}}">
+                        @error('fullname')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
 
                     <div class="mb-3 col-6">
                         <label class="form-label" style="margin-right: 300px;"><b>Tanggal Lahir </b> </label>
-                        <input type="text" name="tanggal" class="form-control datepicker"
-                            placeholder="Ketikkan Tanggal Lahir anda disini">
-
+                        <input type="date" name="birth_date" class="form-control @error('birth_date') is-invalid @enderror rounded-pill" id="birth_date" name="birth_date" value="{{ old('birth_date') ?? Auth::user()->birth_date}}">
+                        @error('birth_date')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <h6 style="margin-right: 300px;">Jenis Kelamin</h6>
-                    <form class="col-12">
-                        <select name="cars" id="cars" class="col-6">
-                            <option value="volvo">laki-laki</option>
-                            <option value="saab">Perempuan</option>
+
+                        <select name="gender" id="gender" class="col-6">
+                            <option value="Pria" {{ old('gender') ?? Auth::user()->gender =='Pria' ? 'selected': '' }}>Pria</option>
+                            <option value="Wanita" {{ old('gender') ?? Auth::user()->gender =='Wanita' ? 'selected': '' }}>Wanita</option>
                         </select>
-                    </form>
+                    
 
                     <center>
                         <button type="submit" class="btn btn-primary mt-2">Update Profil</button>
                     </center>
+                </form>
                 </center>
             </div>
             <br>

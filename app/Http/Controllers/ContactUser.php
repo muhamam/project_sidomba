@@ -11,11 +11,23 @@ class ContactUser extends Controller
     //
     public function index()
     {
+        return view('user.edit_kontak');
+    }
+
+    public function update(Request $request)
+    {
         $id = Auth::id();
         $user = User::find($id);
 
-        return view('user.edit_kontak',[
-            'user'=>$user
+        $validateData = $request->validate([
+            'no_HP'  => 'required|numeric',
         ]);
+
+        $user->no_HP = $validateData['no_HP'];
+        
+        $user->update();
+
+        $request->session()->flash('pesan');
+        return redirect()->route('contact.index');
     }
 }
