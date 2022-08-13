@@ -5,7 +5,7 @@
 
 
     <div class="row ">
-        <div class="col " style="margin-left: 30px; margin-top:150px; width: 300px;">
+        <div class="col-3 " style="margin-left: 30px; margin-top:150px;">
             <div class=" bg-light  ">
                 <center>
                     <table>
@@ -57,7 +57,7 @@
 
 
 
-        <section class="ftco-section col " style="margin-left: 0px;">
+        <section class="ftco-section col-8 ">
             <div class=" d-flex d-flex justify-content-center "
                 style="margin-bottom: 20px; margin-top:50px; margin-left: -300px;">
 
@@ -76,181 +76,171 @@
 
             </div>
             <div class="container">
-                <div class="row" style="background-color: white; width: 1000px">
-                    <div class="row gutters-sm mt-5" style="padding: 0;">
-                        <div class="col-md-5">
-                            <div class="ml-3">
-                                <div class="d-flex flex-column  text-center ">
-                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                        <img class="rounded" src="../img/1.jpg" width="90%" height="250px">
+                <div class="row" style="background-color: white; ">
+                    <div class="row  mt-5">
+                        <div class="col-5">
+                            <div class="d-flex flex-column  text-center ">
+                                <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
+                                    <img class="rounded" src="../img/1.jpg" width="90%" height="250px">
+                                </a>
+                                <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <img src="../img/1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col d-flex justify-content-between " style="margin-left: -30px;">
+                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                        <img class="slide1 rounded ml-3" src="../img/2.jpg" alt="" width="80"
+                                            height="70">
                                     </a>
-                                    <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
+                                    <div class="modal fade mt-5" id="exampleModal1" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
-                                                <img src="../img/1.jpg" alt="">
+                                                <img src="../img/2.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
-
-                                    <br>
-
-                                    <div class="col d-flex justify-content-between">
-                                        <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                            <img class="slide1 rounded ml-3" src="../img/2.jpg" alt="" width="80"
-                                                height="70">
-                                        </a>
-                                        <div class="modal fade mt-5" id="exampleModal1" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <img src="../img/2.jpg" alt="">
-                                                </div>
+                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <img class="slide2 rounded " src="../img/3.jpg" alt="" width="80" height="70">
+                                    </a>
+                                    <div class="modal fade mt-5" id="exampleModal2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <img src="../img/3.jpg" alt="">
                                             </div>
                                         </div>
-                                        <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                            <img class="slide2 rounded " src="../img/3.jpg" alt="" width="80"
-                                                height="70">
-                                        </a>
-                                        <div class="modal fade mt-5" id="exampleModal2" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <img src="../img/3.jpg" alt="">
-                                                </div>
+                                    </div>
+                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                        <img class="slide3 rounded mr-1" src="../img/4.jpg" alt="" width="80"
+                                            height="70">
+                                    </a>
+                                    <div class="modal fade mt-5" id="exampleModal3" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <img src="../img/4.jpg" alt="">
                                             </div>
                                         </div>
-                                        <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                                            <img class="slide3 rounded mr-1" src="../img/4.jpg" alt="" width="80"
-                                                height="70">
-                                        </a>
-                                        <div class="modal fade mt-5" id="exampleModal3" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <img src="../img/4.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                                            <img class="slide4 rounded mr-4 " src="../img/5.jpg" alt="" width="80"
-                                                height="70">
-                                        </a>
-                                        <div class="modal fade mt-5" id="exampleModal4" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <img src="../img/5.jpg" alt="">
-                                                </div>
+                                    </div>
+                                    <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        <img class="slide4 rounded mr-4 " src="../img/5.jpg" alt="" width="80"
+                                            height="70">
+                                    </a>
+                                    <div class="modal fade mt-5" id="exampleModal4" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <img src="../img/5.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col row " style="padding: 0;">
-                            <div class="col row" style="">
-                                <h4>Domba Suffolk</h4>
+                        <div class="col-7 ">
+                            <h4>Domba Suffolk</h4>
+                            <div class="row">
+                                <div class="col-4">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="3">
+                                                    <h6>Data Peternakan</h6>
+                                                </th>
 
-                                <div class="col row" style="padding:0;">
-                                    <div class="col" style="  ">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"></th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th colspan="3">
-                                                        <h6 style="">Data Peternakan</h6>
-                                                    </th>
-
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="4"> <a href="#">Peternakan Udin</a></th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="4">
-                                                        <p class=""> Soreang, Bandung
-                                                        </p>
-                                                    </th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="4">
-                                                        <a href="#"> 500+ </a>Investasi
-                                                        berhasil
-                                                    </th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="4">
-                                                        <a href="#">1k</a> Domba Telah
-                                                        Terjual
-                                                    </th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="col" style="  padding:0;">
-                                        <table>
-                                            <thead>
-                                                <tr>
-
-                                                    <th colspan="4">DATA DOMBA</th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">ID</th>
-                                                    <td>:</td>
-                                                    <td></td>
-                                                    <td>DS123</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Berat</th>
-                                                    <td>:</td>
-                                                    <td></td>
-                                                    <td>23Kg</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Umur</th>
-                                                    <td>:</td>
-                                                    <td></td>
-                                                    <td>3 Bulan (21/02/2022)</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Jenis Kelamin</th>
-                                                    <td>:</td>
-                                                    <td></td>
-                                                    <td>Jantan </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4"> <a href="#">Peternakan Udin</a></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4">
+                                                    <p class=""> Soreang, Bandung
+                                                    </p>
+                                                </th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4">
+                                                    <a href="#"> 500+ </a>Investasi
+                                                    berhasil
+                                                </th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4">
+                                                    <a href="#">1k</a> Domba Telah
+                                                    Terjual
+                                                </th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-4">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th colspan="4">DATA DOMBA</th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">ID</th>
+                                                <td>:</td>
+                                                <td></td>
+                                                <td>DS123</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Berat</th>
+                                                <td>:</td>
+                                                <td></td>
+                                                <td>23Kg</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Umur</th>
+                                                <td>:</td>
+                                                <td></td>
+                                                <td>3 Bulan (21/02/2022)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Jenis Kelamin</th>
+                                                <td>:</td>
+                                                <td></td>
+                                                <td>Jantan </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class=" "
                                     style="width: 90%; height: 2px; background-color: #3A8BCD;margin-top: 30px;">
                                 </div>
-                                <table class="col-md-12">
+                                <table class="col-12">
                                     <h5 class="mt-2"><b> Pengajuan Investasi</b></h5>
                                     <thead>
                                         <tr>
@@ -299,11 +289,9 @@
                                     </tbody>
                                 </table>
                                 <br>
-                                <div class="c" style="margin-left:100px ;">
+                                <div class="" style="margin-left:100px ;">
                                     <h5 class="ml-5"><b> Nominasi Investasi</b></h5>
                                     <h3 class="ml-5"><a href="#">Rp1.450.000,00</a></h3>
-
-
                                 </div>
                             </div>
                         </div>
@@ -347,7 +335,7 @@
                                 <div class="table-responsive-sm">
                                     <table class="table">
                                         <thead>
-                                            <th>Margin Harga</th>
+                                            <th colspan="4">Margin Harga</th>
                                             <th></th>
                                             <th></th>
                                         </thead>
@@ -546,94 +534,89 @@
         </section>
 
 
-    </div>
 
 
+        <script>
+        $(function() {
 
-    </div>
+            $('.slide1').mouseenter(function() {
+                $('.slide1').css('width', '100px');
+            });
+            $('.slide1').mouseleave(function() {
+                $('.slide1').css('width', '80');
+            });
+            $('.slide2').mouseenter(function() {
+                $('.slide2').css('width', '100px');
+            });
+            $('.slide2').mouseleave(function() {
+                $('.slide2').css('width', '80');
+            });
+            $('.slide3').mouseenter(function() {
+                $('.slide3').css('width', '100px');
+            });
+            $('.slide3').mouseleave(function() {
+                $('.slide3').css('width', '80');
+            });
+            $('.slide4').mouseenter(function() {
+                $('.slide4').css('width', '100px');
+            });
+            $('.slide4').mouseleave(function() {
+                $('.slide4').css('width', '80');
+            });
+        });
+        </script>
 
-
-    <script>
-$(function() {
-
-    $('.slide1').mouseenter(function() {
-        $('.slide1').css('width', '100px');
-    });
-    $('.slide1').mouseleave(function() {
-        $('.slide1').css('width', '80');
-    });
-    $('.slide2').mouseenter(function() {
-        $('.slide2').css('width', '100px');
-    });
-    $('.slide2').mouseleave(function() {
-        $('.slide2').css('width', '80');
-    });
-    $('.slide3').mouseenter(function() {
-        $('.slide3').css('width', '100px');
-    });
-    $('.slide3').mouseleave(function() {
-        $('.slide3').css('width', '80');
-    });
-    $('.slide4').mouseenter(function() {
-        $('.slide4').css('width', '100px');
-    });
-    $('.slide4').mouseleave(function() {
-        $('.slide4').css('width', '80');
-    });
-});
-    </script>
-
-    <script>
-var ctx2 = $("#berat").get(0).getContext("2d");
-var myChart2 = new Chart(ctx2, {
-    type: "line",
-    data: {
-        labels: ["Juni 2022", "Juli 2022", "Agustus 2022", "September 2022", "Oktober 2022",
-            "November 2022"
-        ],
-        datasets: [{
-                label: "Salse",
-                data: [15, 30, 55, 45, 70, 65, 85],
-                backgroundColor: "rgba(0, 156, 255, .5)",
-                fill: true
+        <script>
+        var ctx2 = $("#berat").get(0).getContext("2d");
+        var myChart2 = new Chart(ctx2, {
+            type: "line",
+            data: {
+                labels: ["Juni 2022", "Juli 2022", "Agustus 2022", "September 2022", "Oktober 2022",
+                    "November 2022"
+                ],
+                datasets: [{
+                        label: "Salse",
+                        data: [15, 30, 55, 45, 70, 65, 85],
+                        backgroundColor: "rgba(0, 156, 255, .5)",
+                        fill: true
+                    },
+                    // {
+                    // label: "Revenue",
+                    // data: [99, 135, 170, 130, 190, 180, 270],
+                    // backgroundColor: "rgba(0, 156, 255, .3)",
+                    // fill: true
+                    // }
+                ]
             },
-            // {
-            // label: "Revenue",
-            // data: [99, 135, 170, 130, 190, 180, 270],
-            // backgroundColor: "rgba(0, 156, 255, .3)",
-            // fill: true
-            // }
-        ]
-    },
-    options: {
-        responsive: true
-    }
-});
-var ctx2 = $("#m-harga").get(0).getContext("2d");
-var myChart2 = new Chart(ctx2, {
-    type: "line",
-    data: {
-        labels: ["Rp250.000,00", "Rp500.000,00", "Rp750.000,00", "Rp1.000.000,00", "Rp1.250.000,00",
-            "Rp1.500.000,00"
-        ],
-        datasets: [{
-                label: "Salse",
-                data: [15, 30, 55, 45, 70, 65, 85],
-                backgroundColor: "rgba(0, 156, 255, .5)",
-                fill: true
+            options: {
+                responsive: true
+            }
+        });
+        var ctx2 = $("#m-harga").get(0).getContext("2d");
+        var myChart2 = new Chart(ctx2, {
+            type: "line",
+            data: {
+                labels: ["Rp250.000,00", "Rp500.000,00", "Rp750.000,00", "Rp1.000.000,00", "Rp1.250.000,00",
+                    "Rp1.500.000,00"
+                ],
+                datasets: [{
+                        label: "Salse",
+                        data: [15, 30, 55, 45, 70, 65, 85],
+                        backgroundColor: "rgba(0, 156, 255, .5)",
+                        fill: true
+                    },
+                    // {
+                    // label: "Revenue",
+                    // data: [99, 135, 170, 130, 190, 180, 270],
+                    // backgroundColor: "rgba(0, 156, 255, .3)",
+                    // fill: true
+                    // }
+                ]
             },
-            // {
-            // label: "Revenue",
-            // data: [99, 135, 170, 130, 190, 180, 270],
-            // backgroundColor: "rgba(0, 156, 255, .3)",
-            // fill: true
-            // }
-        ]
-    },
-    options: {
-        responsive: true
-    }
-});
-    </script>
+            options: {
+                responsive: true
+            }
+        });
+        </script>
 
-    @endsection
+        @endsection
