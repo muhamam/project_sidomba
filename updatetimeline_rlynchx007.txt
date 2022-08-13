@@ -1,5 +1,5 @@
 12/08/2022 - Rlynnchx007
-- Buat File "views/layout/sidebarbayarInvestor.blade.php"
+- Buat File "views/layout/sidebarInvestoror.blade.php"
 - Page Pembayaran Investasi Domba Done
 
 13/08/2022 - RlynnchX007

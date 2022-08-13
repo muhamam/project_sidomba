@@ -957,9 +957,4 @@
 
 
 </div>
-
-
-
-</div>
-
 @endsection

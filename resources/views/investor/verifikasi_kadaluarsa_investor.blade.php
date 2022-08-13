@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row  d-flex">
-    @include('layouts.sidebarbayarInvest')
+    @include('layouts.sidebarInvestor')
 
     <section class="ftco-section col" style="margin-top: 100px;">
         <div class=" d-flex d-flex justify-content-center">
@@ -35,13 +35,9 @@
             <br>
 
         </div>
+    </section>
 </div>
-</div>
-<br>
 
-</div>
-</section>
-</div>
 
 
 

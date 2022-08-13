@@ -154,13 +154,12 @@
 
                     </div>
 
-                    <div class="col ml-2" style="">
+                    <div class="col " style="">
                         <h5 class="ml-4">Status Negosiasi</h5>
-                        <button class="btn ml-4 rounded-pill" style="  background-color: #ff0000; color: #ffffff;">Tidak
+                        <button class="btn ml-5 rounded-pill" style="  background-color: #ff0000; color: #ffffff;">Tidak
                             Disetujui</button>
                         <center>
-                            <div class="p mt-3 rounded-lg"
-                                style="width:155px; height:135px ; border: 1px solid #000; font-size:13px;">
+                            <div class="col-11 mt-2 rounded-lg" style=" border: 1px solid #000; font-size:12px;">
                                 <p>Maaf, negosiasi anda tidak disetujui oleh pihak peternak. Silahkan
                                     mencari investasi lainnya di laman pasar. Terimakasih atas
                                     perhatiannya</p>
@@ -299,7 +298,7 @@
 
                     <div class="col ml-2" style="">
                         <h5 class="ml-4">Status Negosiasi</h5>
-                        <button class="btn ml-4 rounded-pill" style="  background-color: #F77E21; color: #ffffff;">Belum
+                        <button class="btn ml-5 rounded-pill" style="  background-color: #F77E21; color: #ffffff;">Belum
                             Disetujui</button>
                         <center>
                             <div class="p mt-3 rounded-lg" style="width:135px; border: 1px solid #000;">
@@ -441,10 +440,9 @@
                         <button class="btn ml-5 rounded-pill"
                             style="  background-color: #3ACD52; color: #ffffff;">Disetujui</button>
                         <center>
-                            <div class="p mt-3 rounded-lg"
-                                style="width:155px; height:135px ; border: 1px solid #000; font-size:13px;">
+                            <div class="col-11 mt-2 rounded-lg" style=" border: 1px solid #000; font-size:13px;">
                                 <p>Selamat! Negosiasi Anda telah disetujui oleh pihak peternak. Silakan cek di laman
-                                    investasi saya pada bagian berjalan. Terimakasih atas perhatiannya!</p>
+                                    investasi saya pada bagian berjalan. </p>
                             </div>
                         </center>
                     </div>
@@ -456,10 +454,5 @@
 </section>
 
 
-</div>
-
-
-
-</div>
 
 @endsection

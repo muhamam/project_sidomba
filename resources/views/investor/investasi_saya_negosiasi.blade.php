@@ -3,7 +3,7 @@
 @section('content')
 <div class="row  d-flex">
     @include('layouts.sidebarInvestor')
-    <section class="ftco-section col" style="margin-top: 100px;">
+    <section class="ftco-section col" style="margin-top: 50px;">
         <div class=" d-flex d-flex justify-content-center">
             <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
             <div class="garis"
