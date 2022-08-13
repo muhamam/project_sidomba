@@ -19,13 +19,20 @@
             <div class=" mb-3" style="width: 100%; height:1px; background-color: #3A8BCD; "></div>
             <div class="kabeh rounded-lg" style="height: 380px; ">
                 <center>
+                    <form class="col-12" action="{{route('contact.index')}}" method="POST">
+                        @csrf
                     <h6>Nomor Handphone</h6>
                     <div class="input-group mb-3 col-6">
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">+62</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username">
+                        <input type="text" class="form-control @error('no_HP') is-invalid @enderror" id="no_HP" name="no_HP" value="{{ old('no_HP') ?? Auth::user()->no_HP}}">
+                        @error('no_HP')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <h6>Email</h6>
                     <div class="input-group mb-3 col-6">
@@ -37,6 +44,7 @@
                     <center>
                         <button type="submit" class="btn btn-primary mt-2">Update Kontak</button>
                     </center>
+                    </form>
                 </center>
             </div>
             <br>

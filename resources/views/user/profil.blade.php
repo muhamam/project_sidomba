@@ -55,26 +55,27 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body">
-                                            <div class="col-12">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlFile1">
-                                                            <h6>Upload Foto</h6>
-                                                        </label>
-                                                        <input type="file" class="form-control-file"
-                                                            id="exampleFormControlFile1">
-                                                        <p>(Ukuran foto maksimum adalah 10 MB. Jenis file yang
-                                                            diperbolehkan yaitu .JPG, .JPEG, dan .PNG)</p>
-                                                    </div>
-                                                </form>
+                                        <form action="{{route('avatar.update')}}" method="post" enctype="multipart/form-data">
+                                            @method('PATCH')
+                                            @csrf
+                                            <div class="modal-body">
+                                                <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlFile1">
+                                                                <h6>Upload Foto</h6>
+                                                            </label>
+                                                            <input type="file" class="form-control-file @error('avatar') is-invalid @enderror" id="avatar" name="avatar" >
+                                                            <p>(Ukuran foto maksimum adalah 10 MB. Jenis file yang
+                                                                diperbolehkan yaitu .JPG, .JPEG, dan .PNG)</p>
+                                                        </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Batal</button>
-                                            <button type="button" class="btn btn-primary">Upload Photo</button>
-                                        </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-primary">Upload Photo</button>    
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
