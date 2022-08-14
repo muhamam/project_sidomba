@@ -1,13 +1,16 @@
 <div class="col-3" style="margin-left: 30px; margin-top:110px;">
     <div class=" bg-light " style=" border-radius:15px;">
         <center>
+            <br>
             <table>
                 <tr>
                     <td> <span><img
-                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}" 
-                                alt="" style="width: 85px; height:85px; " class="  ml-3 rounded-circle"> <!-- need redesign avatar -->
+                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                alt="" style="width: 85px; height:85px; " class="  ml-3 rounded-circle">
+                            <!-- need redesign avatar -->
                         </span></td>
                     <td>
+
                         <a href="#" class="" style="color:#000000 ;">{{Auth::user()->fullname}}
                         </a>
                         <a href="#" style="font-size:9px;color:#000000 ;">{{Auth::user()->email}}</a><br>
@@ -24,6 +27,7 @@
                 <p></p>
             </div>
             <div class="dalam ">
+
                 <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25"
                     style="margin-right: 130px; margin-bottom: -60px;"></span>
                 <a href="{{route('account.index')}}" class="dropdown-item ">Akun</a>
@@ -42,6 +46,7 @@
                 <span class="iconify" data-icon="carbon:money" data-width="25" data-height="25"
                     style="margin-right: 130px; margin-bottom: -60px;"></span>
                 <a href="#" class="dropdown-item ml-3 ">Transaksi</a>
+                <br>
             </div>
 
         </center>

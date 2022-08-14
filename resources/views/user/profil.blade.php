@@ -55,25 +55,28 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <form action="{{route('avatar.update')}}" method="post" enctype="multipart/form-data">
+                                        <form action="{{route('avatar.update')}}" method="post"
+                                            enctype="multipart/form-data">
                                             @method('PATCH')
                                             @csrf
                                             <div class="modal-body">
                                                 <div class="col-12">
-                                                        <div class="form-group">
-                                                            <label for="exampleFormControlFile1">
-                                                                <h6>Upload Foto</h6>
-                                                            </label>
-                                                            <input type="file" class="form-control-file @error('avatar') is-invalid @enderror" id="avatar" name="avatar" >
-                                                            <p>(Ukuran foto maksimum adalah 10 MB. Jenis file yang
-                                                                diperbolehkan yaitu .JPG, .JPEG, dan .PNG)</p>
-                                                        </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlFile1">
+                                                            <h6>Upload Foto</h6>
+                                                        </label>
+                                                        <input type="file"
+                                                            class="form-control-file @error('avatar') is-invalid @enderror"
+                                                            id="avatar" name="avatar">
+                                                        <p>(Ukuran foto maksimum adalah 10 MB. Jenis file yang
+                                                            diperbolehkan yaitu .JPG, .JPEG, dan .PNG)</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-dismiss="modal">Batal</button>
-                                                <button type="submit" class="btn btn-primary">Upload Photo</button>    
+                                                <button type="submit" class="btn btn-primary">Upload Photo</button>
                                             </div>
                                         </form>
                                     </div>
@@ -103,24 +106,25 @@
                                             <td scope="row">Nama</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{Auth::user()->fullname}}</td>
+                                            <td><b>{{Auth::user()->fullname}}</b></td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Tanggal Lahir</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{Auth::user()->birth_date}}</td>
+                                            <td><b>{{Auth::user()->birth_date}}</b></td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Jenis Kelamin</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{Auth::user()->gender}}</td>
+                                            <td><b>{{Auth::user()->gender}}</b></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                        <br>
                         <div class=" mb-3 ml-5" style="width: 90%; height:1px; background-color: #3A8BCD; "></div>
                         <div class=" " style="margin-left: 55px;">
                             <table>
@@ -138,13 +142,13 @@
                                         <td scope="row">Email</td>
                                         <td></td>
                                         <td>:</td>
-                                        <td>{{Auth::user()->email}}</td>
+                                        <td><b>{{Auth::user()->email}}</b></td>
                                     </tr>
                                     <tr>
                                         <td scope="row">No. Telepon</td>
                                         <td></td>
                                         <td>:</td>
-                                        <td>{{Auth::user()->no_HP}}</td>
+                                        <td><b>{{Auth::user()->no_HP}}</b></td>
                                     </tr>
 
                                 </tbody>
@@ -152,7 +156,7 @@
                         </div>
                         <!-- kondisi satu ini ketika siuser belum mengaktifkan investor dan peternak -->
                         <center>
-                            <div class="col-4 mt-3" style="border: 1px solid black; border-radius:10px;">
+                            <div class="col-6 mt-3" style="border: 1px solid black; border-radius:10px;">
                                 <span class="iconify" data-icon="bxs:user" data-width="30" data-height="30"></span>
                                 <h6>Akun User</h6>
                                 <table>
@@ -169,19 +173,20 @@
                                             <td scope="row">ID User</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{Auth::user()->id}}</td>
+                                            <td><b>{{Auth::user()->id}}</b></td>
                                         </tr>
                                         <tr>
                                             <td scope="row">Username</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td colspan="4">{{Auth::user()->username}}</td>
+                                            <td colspan="5"><b>{{Auth::user()->username}}</b></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4">Tanggal Gabung</td>
+                                            <td scope="row">Tanggal Gabung</td>
                                             <td></td>
                                             <td>:</td>
-                                            <td>{{Auth::user()->created_at}}</td>
+                                            <td><b><a style="color: green">{{Auth::user()->created_at}}</b></a>
+                                            </td>
                                         </tr>
 
                                     </tbody>
@@ -194,8 +199,8 @@
 
                                     <span class="iconify" data-icon="maki:farm" data-width="30" data-height="30"></span>
                                     <h6>Akun Peternak</h6>
-                                    <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
-                                        data-height="40"></span>
+                                    <span class="iconify" data-icon="akar-icons:circle-x" style="color: red;"
+                                        data-width="40" data-height="40"></span>
                                     <p>Maaf, Anda belum mengaktivasi akun peternak Anda. Silakan aktivasi dengan
                                         meng-klik tombol dibawah ini</p>
                                     <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi
@@ -206,8 +211,8 @@
                                     <span class="iconify" data-icon="akar-icons:percentage" data-width="30"
                                         data-height="30"></span>
                                     <h6>Akun Investor</h6>
-                                    <span class="iconify" data-icon="akar-icons:circle-x" data-width="40"
-                                        data-height="40"></span>
+                                    <span class="iconify" data-icon="akar-icons:circle-x" style="color: red;"
+                                        data-width="40" data-height="40"></span>
                                     <p>Maaf, Anda belum mengaktivasi akun investor Anda. Silakan aktivasi dengan
                                         meng-klik tombol dibawah ini</p>
                                     <a href="#" class="btn btn-primary mb-3" style="border-radius: 10px;"> Aktivasi

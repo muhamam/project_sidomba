@@ -4,16 +4,16 @@
 
 <div class="d-flex d-flex justify-content-center my-5">
     <img src="{{ asset('img/logodomba.png')}}" alt="" width="70">
-    <div class="garis" style="width: 4px; height: 70px; background-color: black; margin-left: 5px;">
+    <div class="garis" style="width: 3px; height: 70px; background-color: black; margin-left: 10px;">
     </div>
-    <h3 class="" style="margin-top: 10px; margin-left: 10px;">SI-DOMBA</h3>
+    <h3 class="" style="margin-top: 15px; margin-left: 10px;">SI-DOMBA</h3>
 </div>
 
 <!-- Banner Starts Here -->
 <div class="col-md-10 rounded mx-auto p-5"
     style="background-image: url({{asset('img/banner-bg.jpg')}});background-size: cover;background-repeat:no-repeat;">
     <div class="text-white text-center" style="background:rgba(0,0,0, 0.7);">
-        <h3>CARI DOMBA IMPIANMU DISINI!</h3>
+        <h3>CARI DOMBA IMPIANMU DISINI !</h3>
         <p style="color: white;">Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
             domba-domba dari seluruh peternak domba di Indonesia.</p>
     </div>
@@ -31,7 +31,7 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner" style="margin-left: 60px;">
+    <div class="carousel-inner">
 
         <div class="carousel-item active ">
 
@@ -187,17 +187,17 @@
     </a>
 </div>
 <!-- slide end -->
-
-
+<br>
 <!-- Banner Starts Here -->
 <div class="banner1 col-md-11 rounded mt-5" style="background-image: url(img/banner1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-left: 5%;
+    margin-top: 1rem;
 	background-position: center center;">
     <div class=" container">
         <div class="row">
-            <div class="col-md-6 ">
+            <div class="col-md-6">
                 <center>
                     <div class="caption rounded ">
                         <h3>AYO BERINVESTASI DENGAN DOMBA!</h3>
@@ -211,9 +211,10 @@
         </div>
     </div>
 </div>
+
 <!-- Banner Ends Here -->
 <br>
-<div class="col-md-12 text-center">
+<div class="col-md-12 text-center" style="margin-top: 1rem;">
     <h3>INVESTASI</h3>
     <center>
         <div class="line-dec"></div>

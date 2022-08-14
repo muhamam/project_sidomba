@@ -66,22 +66,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li style="color:white;">
-                    <img class="m-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
-                    <h6 class="d-inline" style="font-size: 20px">SI-Domba</h6>
+                    <img class="my-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
+                    <h6 class="d-inline my-1" style="font-size: 20px">SI-Domba</h6>
                 </li>
 
-                <li class="ml-3">
+                <li class="ml-3 mt-1">
                     <form class="input-group input-group-md">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search" size="40">
                         <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </li>
                 @auth
-                <li class="my-auto">
-                    <a href="" class="ms-5 me-2" style="color: white;"><span class="iconify"
-                            data-icon="carbon:notification" data-width="20" data-height="20"></span>
+                <li class="ml-3 mt-2">
+                    <a href="" class="me-2" style="color: white;"><span class="iconify" data-icon="carbon:notification"
+                            data-width="20" data-height="20"></span>
                     </a>
-                    <a href="" class="me-2" style="color: white;"><span class="iconify mr-2" data-icon="ep:chat-round"
+                    <a href="" class="me-2" style="color: white;"><span class="iconify" data-icon="ep:chat-round"
                             data-width="20" data-height="20"></span>
                     </a>
                     <a href="" class="me-2" style="color: white;"> <span class="iconify" data-icon="cil:cart"
@@ -137,7 +137,7 @@
                             data-toggle="dropdown" style="color: white; ">
                             <span><img
                                     src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
-                                    {{-- need redesign system --}} alt="" style="width: 35px; height:35px; "
+                                    {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
                                     class="rounded-circle d-inline ms-2">
                             </span>
                             {{ Auth::user()->fullname }}

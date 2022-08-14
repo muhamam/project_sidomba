@@ -9,6 +9,7 @@
     <div class="body d-md-flex align-items-center justify-content-between">
 
         <div class="box-1">
+
             <div class="text-center" style="margin-top: 8rem;">
                 <br><br>
                 <a style="color: white; font-size:25px;"><b> Whatss app, Bro...</b></a>
@@ -24,7 +25,7 @@
         </div>
         <div class=" box-2 d-flex flex-column h-100">
             <div class="mt-3">
-                <p class="ms-5 mb-1 h-1">Create Account</p>
+                <p class="text-center h-1">Create Account</p>
                 <div class="d-flex flex-column ">
                     <div class="d-flex align-items-center">
                         <a href="#" class="box me-2 selectio">
@@ -57,6 +58,9 @@
                             </svg>
 
                         </a>
+                    </div>
+                    <div class="text-center">
+                        <b><small> or use your account</small></b>
                     </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
