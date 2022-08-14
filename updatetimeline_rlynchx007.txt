@@ -30,7 +30,9 @@
 - Buat File "views/investor/cairkan_dana.blade.php"
 - Buat File "views/investor/riwayat_pencairan_dana.blade.php"
 
-
+14/08/2022 - RlynnchX007
+- Buat File "resources/css/auth.css"
+- Edit File "views/auth/register.blade.php"
 
 
 

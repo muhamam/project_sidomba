@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -101,7 +102,7 @@
         @yield('content')
     </main>
 
-    <footer class="bg-white border-top text-center text-lg-start mt-4 ">
+    <footer class="bg-white border-top text-center text-lg-start ">
         <!-- Copyright -->
         <div class="text-center p-3">
             Copyright 2022 &copy;
