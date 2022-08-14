@@ -21,7 +21,11 @@ use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
+<<<<<<< HEAD
 | Web Routes test / MR
+=======
+| Web Routes test testv lgi
+>>>>>>> 9113ed1ce48c3d769a9f20d9c28f2b61d9670e99
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
