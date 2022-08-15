@@ -67,7 +67,7 @@
             <ul class="navbar-nav">
                 <li style="color:white;">
                     <img class="my-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
-                    <h6 class="d-inline my-1" style="font-size: 20px">SI-Domba</h6>
+                    <a class="d-inline my-1 text-white" style="font-size: 20px" href="{{ route('home') }}">SI-Domba</a>
                 </li>
 
                 <li class="ml-3 mt-1">
@@ -136,11 +136,14 @@
                         <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button"
                             data-toggle="dropdown" style="color: white; ">
                             <span><img
-                                    src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                                    {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
+                                    src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}" alt="" style="width: 25px; height: 25px; "
                                     class="rounded-circle d-inline ms-2">
-                            </span>
-                            {{ Auth::user()->fullname }}
+                            </span> 
+                            <?php
+                            $firstname = [];
+                            $firstname[] =  explode(" ",Auth::user()->fullname);
+                            echo $firstname[0][0];
+                            ?>
                         </a>
                         <div class="dropdown-menu bg-light" style="margin-top: 1em; right:0; left:auto;">
                             <div class="dropdown-item" style="border-bottom:2px solid #3A8BCD ;">
