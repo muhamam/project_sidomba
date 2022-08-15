@@ -3,20 +3,16 @@
 @section('content')
 
 <!-- Banner Starts Here -->
-<div class="bannerd col-md-10 rounded" style="margin-top:30px ; ">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <center>
-                    <div class="caption rounded ml-4">
-                        <h3>PETERNAKAN MUNDUR JAYA</h3>
-                        <p>Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
-                            domba-domba dari seluruh peternak domba di Indonesia.</p>
-                    </div>
-                </center>
-            </div>
+<div class="banner col-12 rounded"
+    style="background-image: url({{asset('img/banner-bg.jpg')}});background-repeat:no-repeat;">
+    <center>
+        <div class=" rounded col-7" style="background-color: rgba(51, 50, 50, 0.9); color:white;">
+            <h3>PETERNAKAN MUNDUR JAYA</h3>
+            <h5 style="color: white;">Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat
+                informasi mengenai
+                domba-domba dari seluruh peternak domba di Indonesia.</h5>
         </div>
-    </div>
+    </center>
 </div>
 <!-- Banner Ends Here -->
 
@@ -25,7 +21,7 @@
 <section class="ftco-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-12 text-center mt-4">
                 <h3>DAFTAR DOMBA</h3>
                 <center>
                     <div class="line-dec"></div>
@@ -365,5 +361,13 @@
 
     </div>
 </section>
+
+<style>
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+</style>
 
 @endsection

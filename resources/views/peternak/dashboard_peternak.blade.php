@@ -2,8 +2,9 @@
 
 @section('content')
 <!-- Banner Starts Here -->
-<div class="bannerd col-md-10 rounded" style="margin-top:30px ; ">
-    <div class="container">
+<div class="banner col-12 rounded"
+    style="background-image: url({{asset('img/banner-bg.jpg')}});background-repeat:no-repeat;">
+    <div class=" container">
         <div class="row">
             <div class="col-md-6">
                 <center>

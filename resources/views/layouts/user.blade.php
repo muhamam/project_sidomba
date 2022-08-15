@@ -79,241 +79,188 @@
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <img class="logodomba" src="{{asset('img/logodombaputih.png')}}" alt="" width="50">
-            <a class="navbar-brand navbar-logo" href="#">SI-Domba</a>
-            <!-- NOTIF -->
-            <a class="ml-3">
-                <form class="input-group input-group-md">
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" size="20">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-            </a>
-            @auth
-            <a class="ml-3">
-                <a href="javascript:void(0);" class="me-4 proses" style="color: white;"><span class="iconify"
-                        data-icon="carbon:notification" data-width="22" data-height="25"></span>
-                </a>
-                <a href="javascript:void(0);" class="me-4 proses2" style="color: white;"><span class="iconify"
-                        data-icon="ep:chat-round" data-width="22" data-height="25"></span>
-                </a>
-                <a href="javascript:void(0);" class="me-4 proses3" style="color: white;"><span class="iconify"
-                        data-icon="cil:cart" data-width="22" data-height="25"></span>
-                </a>
-            </a>
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="left"></div>
-                    <div class="right"></div>
-                </div>
-
-                <!-- MENU -->
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link peternakan" href="javascript:void(0);"><i class="iconify d-inline"
-                            data-icon="maki:farm" data-width="20" data-height="20"></i>
-                        Peternakan</a>
+            <ul class="navbar-nav">
+                <li style="color:white;">
+                    <img class="my-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
+                    <h6 class="d-inline my-1" style="font-size: 20px">SI-Domba</h6>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link investasi" href="javascript:void(0);"><i class="iconify d-inline"
-                            data-icon="fluent-emoji-high-contrast:money-bag" data-width="20" data-height="20"></i>
-                        Investasi</a>
+                <li class="ml-3 mt-1">
+                    <form class="input-group input-group-md">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search" size="40">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
                 </li>
-                <li class="nav-item">
-                    <a href="javascript:void(0);" class="chatbox-open" aria-expanded="false" type="button">
-                        <i class="iconify d-inline" data-icon="line-md:account" data-width="20" data-height="20"></i>
-                        Account</a>
+                @auth
+                <li class="ml-3 mt-2">
+                    <a href="" class="me-2" style="color: white;"><span class="iconify" data-icon="carbon:notification"
+                            data-width="20" data-height="20"></span>
                     </a>
-                    <Center><button class="chatbox-close">
-                            <i class="iconify" data-icon="bi:x" data-width="35" data-height="35"></i>
-                        </button></center>
-                </li>
-
-
-
-                <!-- KOSONGKAN INI -->
-                <a class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);">
+                    <a href="" class="me-2" style="color: white;"><span class="iconify" data-icon="ep:chat-round"
+                            data-width="20" data-height="20"></span>
                     </a>
-                </a>
-                <!------------------->
+                    <a href="" class="me-2" style="color: white;"> <span class="iconify" data-icon="cil:cart"
+                            data-width="20" data-height="20"></span>
+                    </a>
+                </li>
+                <li>
 
-            </ul>
-
-        </div>
-        </div>
-
-    </nav>
-
-    <section class="chatbox-popup">
-        <header class="chatbox-popup__header">
-            <center>
-                <aside style="flex:3">
-                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
-                        {{-- need redesign system --}} alt="" style="width: 50px; height: 50px; "
-                        class="rounded-circle d-inline">
-                    <br>
-                    <b style="font-size: 1em;">{{ Auth::user()->fullname}}</b>
-                    <p style="font-size: 0.7em;">{{ Auth::user()->username}}</p>
-                    <a style="font-size: 0.7em;">{{ Auth::user()->email}}</a>
-
-                </aside>
-            </center>
-
-
-        </header>
-        <main class="chatbox-popup__main">
-            <aside style="flex:1;color:#888;text-align:left;">
-                <a href="#" class="text-dark"><span class="iconify me-2" data-icon="icons8:buy" data-width="25"
-                        data-height="25"></span>
-                    Pembelian</a>
-                <p></p>
-                <a href="#" class="text-dark"><span class="iconify me-2" data-icon="ant-design:star-outlined"
-                        data-width="25" data-height="25"></span>
-                    Wishlist</a>
-                <p></p>
-                <a href=" {{route('account.index')}}" class="text-dark"><span class="iconify me-2"
-                        data-icon="ic:outline-switch-account" data-width="25" data-height="25"
-                        data-flip="horizontal"></span>
-                    Akun</a>
-                <p></p>
-                <a href="{{ route('logout') }}" class="text-dark"><span class="iconify me-2"
-                        data-icon="ant-design:logout-outlined" data-width="25" data-height="25"></span>
-                    Keluar</a>
-            </aside>
-        </main>
-
-
-    </section>
-    <!-- ==== -->
-    @else
-    <div class="ms-auto me-5">
-        <a class="btn btn-light" aria-current="page" href="{{ route('register') }}">Daftar</a>
-        <a class="btn btn-outline-light" aria-current="page" href="{{ route('login') }}">Masuk</a>
-    </div>
-    @endauth
-
-    </div>
-    </div>
-
-    <div class="row me-0" style="background: #E5E5E5; ">
-        {{-- content --}}
-        @yield('content')
-        <center>
-            <div class="dotted mt-5 col-md-10 "></div>
-            <div class="dotted mt-5 col-md-10"></div>
-        </center>
-
-        <div class=" row mt-5 ">
-            <div class="col" style="margin-left: 450px; font-size: 20px; "><a class="text-dark" href="#">SI
-                    Domba</a>
-            </div>
-            <div class="col" style="margin-left: -450px; font-size: 20px;"><a class="text-dark" href="">Bantuan Dan
-                    Panduan</a></div>
-            <div class="w-100"></div>
-            <div class="col"><a href="" style=" margin-left: 450px; color: #737373;">Tentang SI Domba</a></div>
-            <div class="col"><a href="" style="color: #737373;">Syarat Dan Ketentuan</a></div>
-            <div class="w-100"></div>
-            <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Karir </a></div>
-            <div class="col"><a href="" style="color: #737373;">Help Center</a></div>
-            <div class="w-100"></div>
-            <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Kemitraan</a></div>
-            <div class="col"><a href="" style="color: #737373;">Komplain</a></div>
-
-        </div>
-
-
-
-
-        <!-- Footer Starts Here -->
-        <footer class="text-center" style="background-color: #3a8bcd ; margin-top: 20px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="copyright-text m-3">
-                            <p class="text-white"> Copyright &copy; 2022 Team SI Domba | <img
-                                    src="{{asset('img/logodombaputih.png')}}" alt="" style="width:25px;"></p>
+                    <div class="dropdown ">
+                        <a href="#" class="btn dropdown-toggle" aria-expanded="false" type="button"
+                            data-toggle="dropdown" style="color: white; ">
+                            <span class="iconify d-inline ms-2 " style="color: white;" data-icon="maki:farm"
+                                data-width="20" data-height="20"></span>
+                            Peternakan
+                        </a>
+                        <div class=" dropdown-menu">
+                            <center>
+                                <p class="dropdown-item">Anda belum
+                                    mendaftarkan
+                                    peternakan anda</p>
+                                <a href="#" class="dropdown-item rounded-pill text-white"
+                                    style="background-color:#3A8BCD;">Daftarkan Peternakan Anda</a>
+                                <a href="#" class="dropdown-item" style="color: #3A8BCD;">Syarat & Ketentuan</a>
+                            </center>
                         </div>
                     </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button"
+                            data-toggle="dropdown" style="color: white; ">
+                            <span><img src="{{ asset('img/investasi.png')}}" alt="" style="width: 16px; height:16px; ">
+                            </span>
+                            Investasi
+                        </a>
+                        <div class="dropdown-menu bg-light p-1" style="margin-top: 1em; left:-5em;">
+                            <center>
+                                <p class="dropdown-item" style="font-size: 0.7em; margin-bottom:0;">
+                                    Anda belum mengaktifkan akun investor anda
+                                </p>
+                                <a href="#" class="dropdown-item rounded-pill text-white"
+                                    style="background-color:#3A8BCD ;">Aktifkan Akun Investor</a>
+                                <a href="#" class="dropdown-item" style="color: #3A8BCD;">Syarat & Ketentuan</a>
+                            </center>
+                        </div>
+                    </div>
+                </li>
 
+
+                <div class="dropdown">
+                    <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button" data-toggle="dropdown"
+                        style="color: white; ">
+                        <span><img
+                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
+                                class="rounded-circle d-inline ms-2">
+                        </span>
+                        {{ Auth::user()->fullname }}
+                    </a>
+                    <div class="dropdown-menu bg-light" style="margin-top: 1em; right:0; left:auto;">
+                        <div class="dropdown-item" style="border-bottom:2px solid #3A8BCD ;">
+                            <a href="#" class="text-dark">{{ Auth::user()->username }}<br>
+                                <p style="font-size: 0.7em;">{{ Auth::user()->email}}</p>
+                            </a>
+                        </div>
+                        <div class="dropdown-item my-1">
+                            <span class="iconify me-2" data-icon="icons8:buy" data-width="25" data-height="25"></span>
+                            <a href="#" class="text-dark">Pembelian</a>
+                        </div>
+                        <div class="dropdown-item my-1">
+                            <span class="iconify me-2" data-icon="ant-design:star-outlined" data-width="25"
+                                data-height="25"></span>
+                            <a href="#" class="text-dark">Wishlist</a>
+                        </div>
+                        <div class="dropdown-item my-1">
+                            <span class="iconify me-2" data-icon="ic:outline-switch-account" data-width="25"
+                                data-height="25" data-flip="horizontal" "></span>
+                                <a href=" {{route('account.index')}}" class="text-dark">Akun</a>
+                        </div>
+                        <div class="dropdown-item my-1">
+                            <span class="iconify me-2" data-icon="ant-design:logout-outlined" data-width="25"
+                                data-height="25"></span>
+                            <a href="{{ route('logout') }}" class="text-dark">Keluar</a>
+                        </div>
+                    </div>
                 </div>
+                </li>
+                @else
+            </ul>
+            <div class="ms-auto">
+                <a class="btn btn-light" aria-current="page" href="{{ route('register') }}">Daftar</a>
+                <a class="btn btn-outline-light" aria-current="page" href="{{ route('login') }}">Masuk</a>
             </div>
-        </footer>
-    </div>
-    <!-- SCRIPT MANUAL -->
-    <script type="text/javascript">
-    document.querySelector(".peternakan").addEventListener("click", function() {
-        Swal.fire({
-            title: "Anda belum mendaftarkan peternakan anda",
-            text: "Silahkan daftarkan terlebih dahulu peternakan anda",
-            icon: "error",
-            footer: '<a href="#">Daftarkan Peternakan Anda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
-        });
-    });
-    document.querySelector(".investasi").addEventListener("click", function() {
-        Swal.fire({
-            title: "Anda belum mengaktifkan akun investor anda",
-            text: "Silahkan daftarkan terlebih dahulu akun investor anda",
-            icon: "error",
-            footer: '<a href="#">Aktifkan Akun Investor</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
-        });
-    });
-    document.querySelector(".proses").addEventListener("click", function() {
-        swal({
-            title: "Sedang Dalam Proses",
-            text: "Masih Proses Pengembangan Bro >_<",
-            icon: "info",
-            confirmButtonText: "OKAY",
-            confirmButtonColor: "#00ff55",
-            reverseButtons: true,
-        });
-    });
-    document.querySelector(".proses2").addEventListener("click", function() {
-        swal({
-            title: "Sedang Dalam Proses",
-            text: "Masih Proses Pengembangan Bro >_<",
-            icon: "info",
-            confirmButtonText: "OKAY",
-            confirmButtonColor: "#00ff55",
-            reverseButtons: true,
-        });
-    });
-    document.querySelector(".proses3").addEventListener("click", function() {
-        swal({
-            title: "Sedang Dalam Proses",
-            text: "Masih Proses Pengembangan Bro >_<",
-            icon: "info",
-            confirmButtonText: "OKAY",
-            confirmButtonColor: "#00ff55",
-            reverseButtons: true,
-        });
-    });
-    </script>
-    <!-- Bootstrap core JavaScript -->
+            @endauth
+        </div>
+        </div>
 
-    <!-- Additional Scripts -->
-    <script src="{{asset('js/popup.js')}} "></script>
-    <script src="{{asset('js/navbar.js')}} "></script>
-    <script src="{{asset('js/jquery.min.js')}} "></script>
-    <script src="{{asset('js/popper.js')}} "></script>
-    <script src="{{asset('js/bootstrap.min.js')}} "></script>
-    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('js/main.js')}}"></script>
-    <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
-    <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
-    <!-- <script src="{{asset('js/js_baru/bootstrap.min.js')}} "></script> -->
-    <script src="{{asset('js/js_baru/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('js/js_baru/main.js')}}"></script>
+        <div class="row me-0" style="background: #E5E5E5; ">
+            {{-- content --}}
+            @yield('content')
+            <center>
+                <div class="dotted mt-5 col-md-10 "></div>
+                <div class="dotted mt-5 col-md-10"></div>
+            </center>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+            <div class=" row mt-5 ">
+                <div class="col" style="margin-left: 450px; font-size: 20px; "><a class="text-dark" href="#">SI
+                        Domba</a>
+                </div>
+                <div class="col" style="margin-left: -450px; font-size: 20px;"><a class="text-dark" href="">Bantuan Dan
+                        Panduan</a></div>
+                <div class="w-100"></div>
+                <div class="col"><a href="" style=" margin-left: 450px; color: #737373;">Tentang SI Domba</a></div>
+                <div class="col"><a href="" style="color: #737373;">Syarat Dan Ketentuan</a></div>
+                <div class="w-100"></div>
+                <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Karir </a></div>
+                <div class="col"><a href="" style="color: #737373;">Help Center</a></div>
+                <div class="w-100"></div>
+                <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Kemitraan</a></div>
+                <div class="col"><a href="" style="color: #737373;">Komplain</a></div>
+
+            </div>
+
+
+
+
+            <!-- Footer Starts Here -->
+            <footer class="text-center" style="background-color: #3a8bcd ; margin-top: 20px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="copyright-text m-3">
+                                <p class="text-white"> Copyright &copy; 2022 Team SI Domba | <img
+                                        src="{{asset('img/logodombaputih.png')}}" alt="" style="width:25px;"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+
+        <!-- Additional Scripts -->
+        <script src="{{asset('js/popup.js')}} "></script>
+        <script src="{{asset('js/navbar.js')}} "></script>
+        <script src="{{asset('js/jquery.min.js')}} "></script>
+        <script src="{{asset('js/popper.js')}} "></script>
+        <script src="{{asset('js/bootstrap.min.js')}} "></script>
+        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('js/main.js')}}"></script>
+        <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
+        <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
+        <!-- <script src="{{asset('js/js_baru/bootstrap.min.js')}} "></script> -->
+        <script src="{{asset('js/js_baru/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('js/js_baru/main.js')}}"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
