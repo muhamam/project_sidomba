@@ -80,7 +80,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <img class="logodomba" src="{{asset('img/logodombaputih.png')}}" alt="" width="50">
-            <a class="navbar-brand navbar-logo" href="#">SI-Domba</a>
+            <a class="navbar-brand navbar-logo" href="{{ route('home') }}">SI-Domba</a>
             <!-- NOTIF -->
             <a class="ml-3">
                 <form class="input-group input-group-md">
@@ -152,7 +152,7 @@
         <header class="chatbox-popup__header">
             <center>
                 <aside style="flex:3">
-                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
                         {{-- need redesign system --}} alt="" style="width: 50px; height: 50px; "
                         class="rounded-circle d-inline">
                     <br>
