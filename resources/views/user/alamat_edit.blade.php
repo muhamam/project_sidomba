@@ -27,76 +27,39 @@
                         <label class="form-label" style="margin-right: 300px;"><b> Alamat Lengkap</b></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <div class="mb-3 col-9">
-                        <div class="dropdown ">
-                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
-                                data-toggle="dropdown" aria-expanded="false">
-                                Provinsi
-                            </a>
-
-                            <div class="dropdown-menu col-12">
-                                <a class="dropdown-item" href="#">Laki-Laki</a>
-                                <a class="dropdown-item" href="#">Perempuan</a>
+                    <form class="form-horizontal" action="#" method="post">            
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Provinsi</label>
+                            <div class="col-sm-6">
+                                <select id="provinsi" class="form-control" name="provinsi"></select>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="mb-3 col-9">
-                        <div class="dropdown ">
-                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
-                                data-toggle="dropdown" aria-expanded="false">
-                                Kota / Kabupaten
-                            </a>
-
-                            <div class="dropdown-menu col-12">
-                                <a class="dropdown-item" href="#">Laki-Laki</a>
-                                <a class="dropdown-item" href="#">Perempuan</a>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Kabupaten</label>
+                            <div class="col-sm-6">
+                                <select id="kabupaten" class="form-control" name="kabupaten"></select>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="mb-3 col-9">
-                        <div class="dropdown ">
-                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
-                                data-toggle="dropdown" aria-expanded="false">
-                                Kecamatan
-                            </a>
-
-                            <div class="dropdown-menu col-12">
-                                <a class="dropdown-item" href="#">Laki-Laki</a>
-                                <a class="dropdown-item" href="#">Perempuan</a>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Kecamatan</label>
+                            <div class="col-sm-6">
+                                <select id="kecamatan" class="form-control" name="kecamatan"></select>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="mb-3 col-9">
-                        <div class="dropdown ">
-                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
-                                data-toggle="dropdown" aria-expanded="false">
-                                Kelurahan
-                            </a>
-
-                            <div class="dropdown-menu col-12">
-                                <a class="dropdown-item" href="#">Laki-Laki</a>
-                                <a class="dropdown-item" href="#">Perempuan</a>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Kelurahan</label>
+                            <div class="col-sm-6">
+                                <select id="kelurahan" class="form-control" name="kelurahan"></select>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="mb-3 col-9">
-                        <div class="dropdown ">
-                            <a class="btn btn-primary  dropdown-toggle col-12" href="#" role="button"
-                                data-toggle="dropdown" aria-expanded="false">
-                                Kode Pos
-                            </a>
-
-                            <div class="dropdown-menu col-12">
-                                <a class="dropdown-item" href="#">Laki-Laki</a>
-                                <a class="dropdown-item" href="#">Perempuan</a>
+                        <div class="form-group">
+                            <label class="col-sm-3">&nbsp;</label>
+                            <div class="col-sm-6">
+                                <button type="button" id="show">GET DATA JSON</button>
                             </div>
                         </div>
-
-                    </div>
+                        <div id="output"></div>
+                    </form>
                     <h4>Cek Lokasi Mu</h4>
                     <!-- ini buat alamat nanti pake API -->
                     <div class="peta mt-4" style="width :600px; height:300px; border:1px solid black;">
@@ -117,5 +80,15 @@
     </section>
 </div>
 
+{{-- api maps --}}
+<script src="http://api.iksgroup.co.id/apijs/lokasiapi.js"></script>
+<script>
+var render=createwidgetlokasi("provinsi","kabupaten","kecamatan","kelurahan");
+$(document).ready(function(){
+                $("#show").click(function(){
+                    $("#output").html(trackdatalokasi);
+                });            
+            });
+</script>
 
 @endsection
