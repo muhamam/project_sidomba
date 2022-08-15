@@ -64,20 +64,21 @@
 
     <div class="container-fluid navbar navbar-expand  " style="background-color: #3a8bcd">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li style="color:white;">
-                    <img class="my-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
-                    <h6 class="d-inline my-1" style="font-size: 20px">SI-Domba</h6>
-                </li>
-
-                <li class="ml-3 mt-1">
+            <ul class="utama navbar-nav">
+                <div class="utama-logo">
+                    <li style="color:white;">
+                        <img class="my-1" src="{{asset('img/logodombaputih.png')}}" alt="" width="40">
+                        <h6 class="d-inline my-1" style="font-size: 20px">SI-Domba</h6>
+                    </li>
+                </div>
+                <li class="search-navbar ml-3 mt-1">
                     <form class="input-group input-group-md">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search" size="40">
                         <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </li>
                 @auth
-                <li class="ml-3 mt-2">
+                <li class="icon-navbar ml-3 mt-2">
                     <a href="" class="me-2" style="color: white;"><span class="iconify" data-icon="carbon:notification"
                             data-width="20" data-height="20"></span>
                     </a>
@@ -224,6 +225,24 @@
             </div>
         </footer>
     </div>
+    <!-- footer end -->
+    <style>
+    @media only screen and (max-width: 600px) {
+        .utama-logo {
+            width: 300px;
+            height: 30px;
+        }
+
+        .icon-navbar {
+            width: 200px;
+        }
+
+        .search-navbar {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    </style>
 
     <!-- Bootstrap core JavaScript -->
 

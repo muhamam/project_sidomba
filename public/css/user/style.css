@@ -3,11 +3,11 @@
 /* Banner Style */
 
 .banner {
-    margin-top: 20px;
-	background-image: url(../images/banner-bg.jpg);
+    margin-top: ;
+	background-image: url({{asset('img/banner-bg.jpg')}});
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-left: 10%;
+	margin-left: ;
 	background-position: center center;
 }
 
@@ -166,11 +166,10 @@ border-radius: 7px;
 
     position: relative;
     width: 290px;
-   
-    left: 10%;
-    top: 70px;
 
-   background: linear-gradient(180deg, #73FD50 0%, #AAF8B2 100%);
+    left: 10%;
+    top: 50px;
+   background: linear-gradient(180deg, #5061fd 0%, #a0d4ff 100%);
     border-radius: 5px;
 
 
@@ -195,7 +194,7 @@ border-radius: 7px;
     top: -112px;
     margin-left: 20%;
 
-   background: linear-gradient(90deg, #AAF8B2 0%, #73FD50 100.02%);
+   background: linear-gradient(90deg, #5061fd 0%, #a0d4ff 100%);
     border-radius: 5px;
 }
 
@@ -208,7 +207,7 @@ border-radius: 7px;
         top: -285px;
         margin-left: 40%;
 
-      background: linear-gradient(180deg, #AAF8B2 0%, #73FD50 100%);
+      background: linear-gradient(180deg, #5061fd 0%, #a0d4ff 100%);
         border-radius: 5px;
 
 }
@@ -221,7 +220,7 @@ border-radius: 7px;
     left: 20%;
     top: -240px;
 
-    background: linear-gradient(248.31deg, #73FD50 -0.01%, #AAF8B2 100%);
+    background: linear-gradient(248.31deg, #5061fd 0%, #a0d4ff 100%);
     border-radius: 5px;
 
 }
@@ -234,7 +233,7 @@ border-radius: 7px;
     left: 60%;
     top: -410px;
 
-   background: linear-gradient(248.31deg, #73FD50 -0.01%, #AAF8B2 100%);
+   background: linear-gradient(248.31deg, #5061fd 0%, #a0d4ff 100%);
     border-radius: 5px;
 
 }
