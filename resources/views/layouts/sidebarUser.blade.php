@@ -5,7 +5,7 @@
             <table>
                 <tr>
                     <td> <span><img
-                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
                                 alt="" style="width: 85px; height:85px; " class="  ml-3 rounded-circle">
                             <!-- need redesign avatar -->
                         </span></td>

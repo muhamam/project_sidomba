@@ -136,7 +136,7 @@
                         <a href="" class="btn dropdown-toggle" aria-expanded="false" type="button"
                             data-toggle="dropdown" style="color: white; ">
                             <span><img
-                                    src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                    src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
                                     {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
                                     class="rounded-circle d-inline ms-2">
                             </span>

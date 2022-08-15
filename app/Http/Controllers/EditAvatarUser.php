@@ -19,7 +19,7 @@ class EditAvatarUser extends Controller
         ]);
 
         $extFile = $request->avatar->getClientOriginalExtension();
-        $namaFile = time() . "." . $extFile;
+        $namaFile = "img/" . time() . "." . $extFile;
         $request->avatar->move('img', $namaFile);
         $user->avatar = $namaFile;
         

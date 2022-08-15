@@ -25,14 +25,14 @@
                     <div class=" col-md-2 ">
                         <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                             <img class="rounded"
-                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
                                 width="200px" height="250px">
                         </a>
                         <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : Auth::user()->avatar }}"
+                                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
                                         alt="">
                                 </div>
                             </div>
