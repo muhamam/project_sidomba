@@ -172,27 +172,27 @@ Route::get('/pasar', function () {
 
 // DONE 
 Route::get('/pembayaran_investor', function () {
-    return view('investor.pembayaran_investor');
+    return view('investor.pembayaran');
 });
 
 // DONE 
 Route::get('/upload_done_investor', function () {
-    return view('investor.upload_done_investor');
+    return view('investor.upload_done');
 });
 
 // DONE
 Route::get('/verifikasi_done_investor', function () {
-    return view('investor.verifikasi_done_investor');
+    return view('investor.verifikasi_done');
 });
 
 // DONE
 Route::get('/verifikasi_gagal_investor', function () {
-    return view('investor.verifikasi_gagal_investor');
+    return view('investor.verifikasi_gagal');
 });
 
 // DONE
 Route::get('/verifikasi_kadaluarsa_investor', function () {
-    return view('investor.verifikasi_kadaluarsa_investor');
+    return view('investor.verifikasi_kadaluarsa');
 });
 
 // DONE
@@ -223,6 +223,16 @@ Route::get('/cairkan-dana', function () {
 // DONE
 Route::get('/riwayat-pencairan', function () {
     return view('investor.riwayat_pencairan_dana');
+});
+
+// aman
+Route::get('/pembelian_pengajuan_komplain', function () {
+    return view('investor.pembelian_pengajuan_komplain ');
+});
+
+// aman
+Route::get('/investasi_pengajuan_komplain', function () {
+    return view('investor.investasi_pengajuan_komplain ');
 });
 
 // AKHIR PAGE INVESTOR
@@ -367,15 +377,7 @@ Route::get('/edit_profil', function () {
 //     return view('user.edit_kontak ');
 // });
 
-// aman
-Route::get('/ppk', function () {
-    return view('user.ppk ');
-});
 
-// aman
-Route::get('/ipk', function () {
-    return view('user.ipk ');
-});
 
 // aman
 Route::get('/komplain_proses', function () {

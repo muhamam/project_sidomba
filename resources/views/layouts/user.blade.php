@@ -2,71 +2,25 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <link rel="shortcut icon" href="../img/domba.png">
-    <!-- Google Font 'Open Sans' feel free to change -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <!-- jQuery CDN for smooth scroll, adding mobile to nav -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" defer></script>
-    <script src="https://kit.fontawesome.com/71cd5983fb.js" crossorigin="anonymous"></script>
-
     <title>Sidomba</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="{{ asset('css/user/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css')}}">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+    {{-- costum --}}
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/akun-user.css')}}">
 
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{asset('css/user/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/user/akun-user.css')}}">
-    <link rel="stylesheet" href="{{asset('css/user/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/user/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/user/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{asset('css/user/owl.css')}}">
-
-    <link rel="stylesheet" href="{{asset('css/user/style.css')}}">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {{-- boostrap --}}
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
-
 
 <body>
 
@@ -131,16 +85,6 @@
                             <i class="iconify" data-icon="bi:x" data-width="35" data-height="35"></i>
                         </button></center>
                 </li>
-
-
-
-                <!-- KOSONGKAN INI -->
-                <a class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);">
-                    </a>
-                </a>
-                <!------------------->
-
             </ul>
 
         </div>
@@ -243,78 +187,32 @@
             </div>
         </footer>
     </div>
-    <!-- SCRIPT MANUAL -->
-    <script type="text/javascript">
-    document.querySelector(".peternakan").addEventListener("click", function() {
-        Swal.fire({
-            title: "Anda belum mendaftarkan peternakan anda",
-            text: "Silahkan daftarkan terlebih dahulu peternakan anda",
-            icon: "error",
-            footer: '<a href="#">Daftarkan Peternakan Anda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
-        });
-    });
-    document.querySelector(".investasi").addEventListener("click", function() {
-        Swal.fire({
-            title: "Anda belum mengaktifkan akun investor anda",
-            text: "Silahkan daftarkan terlebih dahulu akun investor anda",
-            icon: "error",
-            footer: '<a href="#">Aktifkan Akun Investor</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
-        });
-    });
-    document.querySelector(".proses").addEventListener("click", function() {
-        swal({
-            title: "Sedang Dalam Proses",
-            text: "Masih Proses Pengembangan Bro >_<",
-            icon: "info",
-            confirmButtonText: "OKAY",
-            confirmButtonColor: "#00ff55",
-            reverseButtons: true,
-        });
-    });
-    document.querySelector(".proses2").addEventListener("click", function() {
-        swal({
-            title: "Sedang Dalam Proses",
-            text: "Masih Proses Pengembangan Bro >_<",
-            icon: "info",
-            confirmButtonText: "OKAY",
-            confirmButtonColor: "#00ff55",
-            reverseButtons: true,
-        });
-    });
-    document.querySelector(".proses3").addEventListener("click", function() {
-        swal({
-            title: "Sedang Dalam Proses",
-            text: "Masih Proses Pengembangan Bro >_<",
-            icon: "info",
-            confirmButtonText: "OKAY",
-            confirmButtonColor: "#00ff55",
-            reverseButtons: true,
-        });
-    });
-    </script>
+    
+    {{-- switch allert --}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
 
-    <!-- Additional Scripts -->
-    <script src="{{asset('js/popup.js')}} "></script>
+    <!-- js costum -->
     <script src="{{asset('js/navbar.js')}} "></script>
-    <script src="{{asset('js/jquery.min.js')}} "></script>
-    <script src="{{asset('js/popper.js')}} "></script>
-    <script src="{{asset('js/bootstrap.min.js')}} "></script>
-    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
-    <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
-    <script src="{{asset('js/js_baru/jquery.min.js')}} "></script>
-    <!-- <script src="{{asset('js/js_baru/bootstrap.min.js')}} "></script> -->
-    <script src="{{asset('js/js_baru/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('js/js_baru/main.js')}}"></script>
+    <script src="{{asset('js/sweet_alert.js')}}"></script>
+    
+    {{-- bundle --}}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+    {{-- Separate --}}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+
+    {{-- Iconify --}}
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
 </body>
 
 </html>

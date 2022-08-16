@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Banner Starts Here -->
-    <div class="bannerd col-md-10 rounded" style="margin-top:30px ; ">
+    <div class="banner col-md-10 rounded" style="margin-top:30px ; ">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -12,8 +12,6 @@
 
                             <p>Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
                                 domba-domba dari seluruh peternak domba di Indonesia.</p>
-
-
                         </div>
                     </center>
                 </div>
