@@ -4,14 +4,13 @@
         <center>
             <table>
                 <tr>
-                    <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; "
+                    <td> <span><img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}" alt="" style="width: 85px; height:85px; "
                                 class="  ml-3 rounded-circle">
                         </span></td>
                     <td>
-                        <a href="#" class="  " style="color:#000000 ;">Muhammad
-                            anas
+                        <a href="#" class="  " style="color:#000000 ;">{{ Auth::user()->fullname}}
                         </a>
-                        <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
+                        <a href="#" style="font-size:9px;color:#000000 ;">{{ Auth::user()->email}}</a><br>
                         <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
                             <li>
                                 <span style="color: black;">Peternakan</span>

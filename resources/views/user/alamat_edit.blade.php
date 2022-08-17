@@ -81,10 +81,12 @@
 </div>
 
 {{-- api maps --}}
+<script src="http://api.iksgroup.co.id/assets//jquery.min.js"></script>
+<script src="http://api.iksgroup.co.id/assets//js/bootstrap.min.js"></script>
 <script src="http://api.iksgroup.co.id/apijs/lokasiapi.js"></script>
-<script>
-var render=createwidgetlokasi("provinsi","kabupaten","kecamatan","kelurahan");
-$(document).ready(function(){
+            <script>
+            var render=createwidgetlokasi("provinsi","kabupaten","kecamatan","kelurahan");
+            $(document).ready(function(){
                 $("#show").click(function(){
                     $("#output").html(trackdatalokasi);
                 });            
