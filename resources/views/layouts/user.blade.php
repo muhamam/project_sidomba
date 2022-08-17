@@ -1,218 +1,366 @@
+<!-- 
+    LAST EDIT : RlynnchX007 
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+        name='viewport' />
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="../img/domba.png">
-    <title>Sidomba</title>
+    <title>Si-Domba</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- KHUSUS CSS -->
     <link rel="stylesheet" href="{{ asset('css/navbar.css')}}">
-
-    {{-- costum --}}
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/akun-user.css')}}">
-
-    {{-- boostrap --}}
-    
+    <!-- <link rel="stylesheet" href="{{asset('css/style.css')}}"> TIDAK DIPANGGIL -->
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('css/akun-user.css')}}"> TIDAK DIPANGGIL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--------------------------------------------------------------------------------------------------------->
 
-<body>
+    <!-- KHUSUS JAVASCRIPT -->
+    <script src="{{asset('js/main.js')}}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <nav class="navbar-expand-custom navbar-mainbg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!---------------------------------------------------------------------------------------------------------->
 
-        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
+    <!-- HALAMAN BODY -->
+
+    <!--[ <body> open ]-->
+
+<body class='onIndex onHome' id='mainContent'>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <img class="logodomba" src="{{asset('img/logodombaputih.png')}}" alt="" width="50">
-            <a class="navbar-brand navbar-logo" href="{{ route('home') }}">SI-Domba</a>
-            <!-- NOTIF -->
-            <a class="ml-3">
-                <form class="input-group input-group-md">
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" size="20">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-            </a>
-            @auth
-            <a class="ml-3">
-                <a href="javascript:void(0);" class="me-4 proses" style="color: white;"><span class="iconify"
-                        data-icon="carbon:notification" data-width="22" data-height="25"></span>
-                </a>
-                <a href="javascript:void(0);" class="me-4 proses2" style="color: white;"><span class="iconify"
-                        data-icon="ep:chat-round" data-width="22" data-height="25"></span>
-                </a>
-                <a href="javascript:void(0);" class="me-4 proses3" style="color: white;"><span class="iconify"
-                        data-icon="cil:cart" data-width="22" data-height="25"></span>
-                </a>
-            </a>
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="left"></div>
-                    <div class="right"></div>
+    <!--[ Active function ]-->
+    <input class='profInput hidden' id='offprofile-box' type='checkbox' />
+    <input class='navInput hidden' id='offnav-input' type='checkbox' />
+    <div class='mainWrapper'>
+
+        <!--[ Header section ]-->
+        <header class='header' id='header'>
+            <!--[ Header Notification ]-->
+            <div class='no-items section' id='header-notif'>
+            </div>
+            <!--[ Header content ]-->@auth
+            <div class='headerContent'>
+                <div class='headerDiv headerLeft'>
+                    <!--[ Header button and icon ]-->
+                    <div class='headerIcon'>
+                        <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodomba.png')}}"
+                                title='SI-DOMBA' alt="" width="50" /></a>
+                    </div>
+                    <!--[ Header widget ]-->
+                    <div class='section' id='header-widget'>
+                        <div class='widget Header' data-version='2' id='Header1'>
+                            <b>SI-DOMBA</b>
+                        </div>
+
+                    </div>
                 </div>
 
-                <!-- MENU -->
+                <div class='headerDiv headerRight'>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link peternakan" href="javascript:void(0);"><i class="iconify d-inline"
-                            data-icon="maki:farm" data-width="20" data-height="20"></i>
-                        Peternakan</a>
-                </li>
+                    <!--[ Header Search ]-->
+                    <div class='headerSearch'>
+                        <!--[ Search Form ]-->
+                        <form class="input-group input-group-md">
+                            <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
+                                placeholder='Search...' type='text' />
+                            <button aria-label='Search button' class='searchButton' type='submit'>
+                                <svg class='linem' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.000000, 2.000000)'>
+                                        <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'></circle>
+                                        <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'></line>
+                                    </g>
+                                </svg>
+                            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link investasi" href="javascript:void(0);"><i class="iconify d-inline"
-                            data-icon="fluent-emoji-high-contrast:money-bag" data-width="20" data-height="20"></i>
-                        Investasi</a>
-                </li>
-                <li class="nav-item">
-                    <a href="javascript:void(0);" class="chatbox-open" aria-expanded="false" type="button">
-                        <i class="iconify d-inline" data-icon="line-md:account" data-width="20" data-height="20"></i>
-                        Account</a>
-                    </a>
-                    <Center><button class="chatbox-close">
-                            <i class="iconify" data-icon="bi:x" data-width="35" data-height="35"></i>
-                        </button></center>
-                </li>
-            </ul>
+                            <button aria-label='Search close' class='close' type='reset'>
+                                <!--[ Close icon ]-->
+                                <svg class='line' viewBox='0 0 24 24'>
+                                    <line x1='18' x2='6' y1='6' y2='18'></line>
+                                    <line x1='6' x2='18' y1='6' y2='18'></line>
+                                </svg>
+                            </button>
+                            <span class='fullClose search'></span>
+                        </form>
+                    </div>
+                    <!--[ Dark mode button ]-->
+                    <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'>
+                        <svg class='linem icho' viewBox='0 0 24 24'>
+                            <g class='d2'>
+                                <path
+                                    d='M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z'
+                                    transform='translate(-169.3959 -166.45548)'></path>
+                            </g>
+                            <g class='d1'>
+                                <path class='fill'
+                                    d='M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z'>
+                                </path>
+                                <path
+                                    d='M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z'
+                                    stroke-width='2'></path>
+                            </g>
+                        </svg>
+                    </span>
+                    <!--[ Fullscreen ]-->
+                    <span class='noscript'><button aria-label='Mode Fullscreen' id='openfull'
+                            onclick='openFullscreen();' style='display: block;'><svg viewBox='0 0 24 24'>
+                                <path
+                                    d='M5,5H10V7H7V10H5V5M14,5H19V10H17V7H14V5M17,14H19V19H14V17H17V14M10,17V19H5V14H7V17H10Z'>
+                                </path>
+                            </svg></button>
+                        <button aria-label='Mode Tidak Fullscreen' id='exitfull' onclick='closeFullscreen();'
+                            style='display: none;'><svg viewBox='0 0 24 24'>
+                                <path
+                                    d='M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,8V10H14V5H16V8H19Z'>
+                                </path>
 
-        </div>
-        </div>
+                            </svg></button></span> <small>ini kemanain ?</small>
 
-    </nav>
+                    <!--[ Header button and icon ]-->
+                    <div class='headerIcon'>
 
-    <section class="chatbox-popup">
-        <header class="chatbox-popup__header">
-            <center>
-                <aside style="flex:3">
-                    <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                        {{-- need redesign system --}} alt="" style="width: 50px; height: 50px; "
-                        class="rounded-circle d-inline">
-                    <br>
-                    <b style="font-size: 1em;">{{ Auth::user()->fullname}}</b>
-                    <p style="font-size: 0.7em;">{{ Auth::user()->username}}</p>
-                    <a style="font-size: 0.7em;">{{ Auth::user()->email}}</a>
+                        <!-- MENU ICON -->
+                        <a href="javascript:void(0);" class="proses"><span class="iconify"
+                                data-icon="carbon:notification" data-width="22" data-height="25"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="proses2"><span class="iconify" data-icon="ep:chat-round"
+                                data-width="22" data-height="25"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="proses3"><span class="iconify" data-icon="cil:cart"
+                                data-width="22" data-height="25"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"
+                                data-width="22" data-height="25"></span>
+                        </a>
+                        <a class="peternakan mt-2 ms-2 me-2" href="javascript:void(0);"><i class="iconify d-inline mb-1"
+                                data-icon="maki:farm" data-width="20" data-height="20"></i>
+                            Peternakan</a>
+                        <a class="investasi mt-2 ms-2 me-2" href="javascript:void(0);"><i class="iconify d-inline mb-1"
+                                data-icon="fluent-emoji-high-contrast:money-bag" data-width="20" data-height="20"></i>
+                            Investasi</a>
+                        <label href="javascript:void(0);" aria-label='profile' class='navProfile mt-3 ms-2 me-2'
+                            for='offprofile-box' type="button">
+                            <i class="iconify d-inline mb-2" data-icon="line-md:account" data-width="20"
+                                data-height="20"></i>
+                            Account</label>
+                        <!------------------------------------------------------------------------------------------------->
 
-                </aside>
-            </center>
+                        <!--[ Profile widget ]-->
 
+                        <div class='headerProfile'>
+                            <div class='section' id='profile-widget'>
+                                <div class='widget Profile' data-version='2' id='Profile00'>
+                                    <div class='profileHeader'>
+                                        <label data-text='Kembali' for='offprofile-box'>
+                                            <svg class='line' viewBox='0 0 24 24'>
+                                                <g
+                                                    transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                                    <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                                                </g>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div class='widget-content solo hasLocation'>
+                                        <div class='profileImage' style='margin-bottom:1px'>
+                                            <div class='profileImg lazyloaded'>
+                                                <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                                    {{-- need redesign system --}} alt=""
+                                                    style="width: 50px; height: 50px; " class="rounded-circle d-inline">
+                                            </div>
 
+                                        </div>
+                                        <div class='profileInfo'>
+                                            <h6>{{ Auth::user()->fullname}}</h6>
+                                            <div class='profileLink' style='margin-bottom:5px;font-family:sans-serif'>
+                                                Member</div>
+                                            <div class='profileText'><b>Username :</b>
+                                                {{ Auth::user()->fullname}}<br />
+                                                <b>Email :</b>
+                                                {{ Auth::user()->email}}
+                                            </div>
+
+                                        </div>
+                                        <ul class='socialLink' style='display:flex;'>
+                                            <li>
+                                                <a href="#" class="text-dark"><span class="iconify me-2"
+                                                        data-icon="icons8:buy" data-width="25" data-height="25"></span>
+                                                    Pembelian</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark"><span class="iconify me-2"
+                                                        data-icon="ant-design:star-outlined" data-width="25"
+                                                        data-height="25"></span>
+                                                    Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href=" {{route('account.index')}}" class="text-dark"><span
+                                                        class="iconify me-2" data-icon="ic:outline-switch-account"
+                                                        data-width="25" data-height="25" data-flip="horizontal"></span>
+                                                    Akun</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('logout') }}" class="text-dark"><span
+                                                        class="iconify me-2" data-icon="ant-design:logout-outlined"
+                                                        data-width="25" data-height="25"></span>
+                                                    Keluar</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='widget LinkList' data-version='2' id='LinkList001'>
+
+                                </div>
+                            </div>
+                        </div>
+                        <label class='fullClose closeProfile' for='offprofile-box'></label>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main class="chatbox-popup__main">
-            <aside style="flex:1;color:#888;text-align:left;">
-                <a href="#" class="text-dark"><span class="iconify me-2" data-icon="icons8:buy" data-width="25"
-                        data-height="25"></span>
-                    Pembelian</a>
-                <p></p>
-                <a href="#" class="text-dark"><span class="iconify me-2" data-icon="ant-design:star-outlined"
-                        data-width="25" data-height="25"></span>
-                    Wishlist</a>
-                <p></p>
-                <a href=" {{route('account.index')}}" class="text-dark"><span class="iconify me-2"
-                        data-icon="ic:outline-switch-account" data-width="25" data-height="25"
-                        data-flip="horizontal"></span>
-                    Akun</a>
-                <p></p>
-                <a href="{{ route('logout') }}" class="text-dark"><span class="iconify me-2"
-                        data-icon="ant-design:logout-outlined" data-width="25" data-height="25"></span>
-                    Keluar</a>
-            </aside>
-        </main>
+        <!--[ Mobile Menu ]-->
+        <div class='notranslate section' id='mobile-menu'>
+            <div class='widget LinkList' data-version='2' id='LinkList003'>
+                <ul class='mobileMenu mHome'>
+                    <li>
+                        <a aria-label='Home' role='button' style='color:#48525c'>
+                            <svg class='line' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                                <g>
+                                    <line class='svg-c' x1='14.71978' x2='9.28022' y1='15.00368' y2='15.00368'></line>
+                                    <path
+                                        d='M100.28571,274.70685h-10a5,5,0,0,1-5-5v-5.00916a5,5,0,0,1,1.601-3.667l5.6798-5.2648a4,4,0,0,1,5.43845,0l5.67981,5.2648a5,5,0,0,1,1.601,3.667v5.00916A5,5,0,0,1,100.28571,274.70685Z'
+                                        transform='translate(-83.28571 -252.70317)'></path>
+                                </g>
+                            </svg>
+                            <span class='mobiletext'>Home</span>
+                        </a>
+                    </li>
+                    <li class='mSearch'>
+                        <label for='searchInput'>
+                            <svg class='linem' viewBox='0 0 24 24'>
+                                <g transform='translate(2.000000, 2.000000)'>
+                                    <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'></circle>
+                                    <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'></line>
+                                </g>
+                            </svg>
+                            <span class='mobiletext'>Search</span></label>
+                    </li>
 
-
-    </section>
-    <!-- ==== -->
-    @else
-    <div class="ms-auto me-5">
-        <a class="btn btn-light" aria-current="page" href="{{ route('register') }}">Daftar</a>
-        <a class="btn btn-outline-light" aria-current="page" href="{{ route('login') }}">Masuk</a>
-    </div>
-    @endauth
-
-    </div>
-    </div>
-
-    <div class="row me-0" style="background: #E5E5E5; ">
+                    <li class='mDark'>
+                        <div onclick='darkMode()'>
+                            <svg class='linem icho' viewBox='0 0 24 24'>
+                                <g class='d2'>
+                                    <path
+                                        d='M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z'
+                                        transform='translate(-169.3959 -166.45548)'></path>
+                                </g>
+                                <g class='d1'>
+                                    <path class='fill'
+                                        d='M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z'>
+                                    </path>
+                                    <path
+                                        d='M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z'
+                                        stroke-width='2'></path>
+                                </g>
+                            </svg>
+                            <span class='mobiletext' data-text='Dark' data-text1='Light'></span>
+                        </div>
+                    </li>
+                    <li class='mTop'>
+                        <div onclick='window.scrollTo({top: 0});'>
+                            <svg class='linem' viewBox='0 0 24 24'>
+                                <g transform='translate(2.500000, 3.000000)'>
+                                    <path class='fill'
+                                        d='M9.5,18 C3.00557739,18 0.456662548,17.5386801 0.0435259337,15.2033146 C-0.36961068,12.8679491 2.27382642,8.47741935 3.08841712,7.02846996 C5.81256986,2.18407813 7.66371927,0 9.5,0 C11.3362807,0 13.1874301,2.18407813 15.9115829,7.02846996 C16.7261736,8.47741935 19.3696107,12.8679491 18.9564741,15.2033146 C18.5443995,17.5386801 15.9944226,18 9.5,18 Z'>
+                                    </path>
+                                </g>
+                            </svg>
+                            <span class='mobiletext'>Top</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        @else
+        <!-- JIKA TIDAK LOGIN TAMPIL TOMBOL INI -->
+        <div class="ms-auto">
+            <a class="btn btn-light" aria-current="page" href="{{ route('register') }}">Daftar</a>
+            <a class="btn btn-light" aria-current="page" href="{{ route('login') }}">Masuk</a>
+        </div>
+        <!-------------------------------------------->
+        @endauth
+        <!-- MEMANGGIL KONTEN -->
         {{-- content --}}
         @yield('content')
-        <center>
-            <div class="dotted mt-5 col-md-10 "></div>
-            <div class="dotted mt-5 col-md-10"></div>
-        </center>
-
-        <div class=" row mt-5 ">
-            <div class="col" style="margin-left: 450px; font-size: 20px; "><a class="text-dark" href="#">SI
-                    Domba</a>
-            </div>
-            <div class="col" style="margin-left: -450px; font-size: 20px;"><a class="text-dark" href="">Bantuan Dan
-                    Panduan</a></div>
-            <div class="w-100"></div>
-            <div class="col"><a href="" style=" margin-left: 450px; color: #737373;">Tentang SI Domba</a></div>
-            <div class="col"><a href="" style="color: #737373;">Syarat Dan Ketentuan</a></div>
-            <div class="w-100"></div>
-            <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Karir </a></div>
-            <div class="col"><a href="" style="color: #737373;">Help Center</a></div>
-            <div class="w-100"></div>
-            <div class="col"><a href="" style="margin-left: 450px; color: #737373;">Kemitraan</a></div>
-            <div class="col"><a href="" style="color: #737373;">Komplain</a></div>
-
-        </div>
-
-
-
-
-        <!-- Footer Starts Here -->
-        <footer class="text-center" style="background-color: #3a8bcd ; margin-top: 20px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="copyright-text m-3">
-                            <p class="text-white"> Copyright &copy; 2022 Team SI Domba | <img
-                                    src="{{asset('img/logodombaputih.png')}}" alt="" style="width:25px;"></p>
-                        </div>
+        <!-- BATAS MANGGIL KONTEN -->
+        <!--[ Footer section ]-->
+        <footer class='sectionInner'>
+            <!--[ Credit ]-->
+            <div class='creditInner'>
+                <div class=" row mt-5 ">
+                    <div class="col"><a class="text-dark" href="#">SI
+                            Domba</a>
                     </div>
+                    <div class="col"><a class="text-dark" href="">Bantuan
+                            Dan
+                            Panduan</a></div>
+                    <div class="w-100"></div>
+                    <div class="col"><a href="">Tentang SI Domba</a></div>
+                    <div class="col"><a href="">Syarat Dan Ketentuan</a></div>
+                    <div class="w-100"></div>
+                    <div class="col"><a href="">Karir </a></div>
+                    <div class="col"><a href="">Help Center</a></div>
+                    <div class="w-100"></div>
+                    <div class="col"><a href="">Kemitraan</a></div>
+                    <div class="col"><a href="">Komplain</a></div>
 
+                </div>
+                <!--[ Back top button ]-->
+                <div class='toTop' onclick='window.scrollTo({top: 0});'>
+                    <!--[ Arrow up icon ]-->
+                    <svg class='line' viewBox='0 0 24 24'>
+                        <g
+                            transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                            <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </footer>
     </div>
-    
-    {{-- switch allert --}}
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-    <!-- js costum -->
+    <!-- FUNSGIONAL JAVASCRIPT -->
+    <script src="{{asset('js/sweet_alert.js')}}"></script>
+    <script src="{{asset('js/fungsional.js')}}"></script>
     <script src="{{asset('js/navbar.js')}} "></script>
     <script src="{{asset('js/main.js')}}"></script>
-    <script src="{{asset('js/sweet_alert.js')}}"></script>
-    
-    {{-- bundle --}}
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    {{-- Separate --}}
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-
-
-    {{-- Iconify --}}
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
-
+    <!-- BATAS FUNGSIONAL JAVASCRIPT -->
 </body>
 
 </html>

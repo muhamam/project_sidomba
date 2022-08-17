@@ -1,56 +1,66 @@
+/*  
+ * Code By    : SI - DombaTeam
+ * Date Edit  : 17 - 08 - 2022
+ * Created With Boostrap 4, And With Love âť¤
+ * Contact Person :
+                => Email     : master@rlynch.xyz                                
+ */
+
 (function ($) {
     "use strict";
 
     // Spinner
     var spinner = function () {
         setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
+            if ($("#spinner").length > 0) {
+                $("#spinner").removeClass("show");
             }
         }, 1);
     };
     spinner();
 
-
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
+            $(".back-to-top").fadeIn("slow");
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $(".back-to-top").fadeOut("slow");
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1500, 'easeInOutExpo');
+    $(".back-to-top").click(function () {
+        $("html, body").animate(
+            {
+                scrollTop: 0,
+            },
+            1500,
+            "easeInOutExpo"
+        );
         return false;
     });
-
 
     // Sidebar Toggler
-    $('.sidebar-toggler').click(function () {
-        $('.sidebar, .content').toggleClass("open");
+    $(".sidebar-toggler").click(function () {
+        $(".sidebar, .content").toggleClass("open");
         return false;
     });
 
-
     // Progress Bar
-    $('.pg-bar').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {
-        offset: '80%'
-    });
-
+    $(".pg-bar").waypoint(
+        function () {
+            $(".progress .progress-bar").each(function () {
+                $(this).css("width", $(this).attr("aria-valuenow") + "%");
+            });
+        },
+        {
+            offset: "80%",
+        }
+    );
 
     // Calender
-    $('#calender').datetimepicker({
+    $("#calender").datetimepicker({
         inline: true,
-        format: 'L'
+        format: "L",
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -59,9 +69,8 @@
         items: 1,
         dots: true,
         loop: true,
-        nav: false
+        nav: false,
     });
-
 
     // Worldwide Sales Chart
     // var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
@@ -91,22 +100,44 @@
     //     }
     // });
 
-
     // Salse & Revenue Chart
     var ctx2 = $("#salse-revenue").get(0).getContext("2d");
     var myChart2 = new Chart(ctx2, {
         type: "line",
         data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu" , "Sep", "Okt", "Nov" , "Des"],
-            datasets: [{
+            labels: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Agu",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des",
+            ],
+            datasets: [
+                {
                     label: "Salse",
                     data: [
-                        chart["Jan"],chart["Feb"],chart["Mar"],chart["Apr"],
-                        chart["Mei"],chart["Jun"],chart["Jul"],chart["Agu"],
-                        chart["Sep"],chart["Okt"],chart["Nov"],chart["Des"]
+                        chart["Jan"],
+                        chart["Feb"],
+                        chart["Mar"],
+                        chart["Apr"],
+                        chart["Mei"],
+                        chart["Jun"],
+                        chart["Jul"],
+                        chart["Agu"],
+                        chart["Sep"],
+                        chart["Okt"],
+                        chart["Nov"],
+                        chart["Des"],
                     ],
                     backgroundColor: "rgba(0, 156, 255, .5)",
-                    fill: true
+                    fill: true,
                 },
                 // {
                 //     label: "Revenue",
@@ -114,14 +145,12 @@
                 //     backgroundColor: "rgba(0, 156, 255, .3)",
                 //     fill: true
                 // }
-            ]
+            ],
         },
         options: {
-            responsive: true
-        }
+            responsive: true,
+        },
     });
-
-
 
     // Single Line Chart
     var ctx3 = $("#line-chart").get(0).getContext("2d");
@@ -129,18 +158,19 @@
         type: "line",
         data: {
             labels: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
-            datasets: [{
-                label: "Salse",
-                fill: false,
-                backgroundColor: "rgba(10, 156, 255, .3)",
-                data: [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]
-            }]
+            datasets: [
+                {
+                    label: "Salse",
+                    fill: false,
+                    backgroundColor: "rgba(10, 156, 255, .3)",
+                    data: [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15],
+                },
+            ],
         },
         options: {
-            responsive: true
-        }
+            responsive: true,
+        },
     });
-
 
     // Single Bar Chart
     // var ctx4 = $("#bar-chart").get(0).getContext("2d");
@@ -164,7 +194,6 @@
     //     }
     // });
 
-
     // Pie Chart
     // var ctx5 = $("#pie-chart").get(0).getContext("2d");
     // var myChart5 = new Chart(ctx5, {
@@ -187,7 +216,6 @@
     //     }
     // });
 
-
     // Doughnut Chart
     // var ctx6 = $("#doughnut-chart").get(0).getContext("2d");
     // var myChart6 = new Chart(ctx6, {
@@ -209,50 +237,64 @@
     //         responsive: true
     //     }
     // });
-
-
 })(jQuery);
 
-(function($) {
+(function ($) {
+    "use strict";
 
-	"use strict";
+    var fullHeight = function () {
+        $(".js-fullheight").css("height", $(window).height());
+        $(window).resize(function () {
+            $(".js-fullheight").css("height", $(window).height());
+        });
+    };
+    fullHeight();
 
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
-
-	};
-	fullHeight();
-
-	var carousel = function() {
-		$('.featured-carousel').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:30,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:true,
-	    dots: true,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:2
-	      },
-	      1000:{
-	        items:3
-	      }
-	    }
-		});
-
-	};
-	carousel();
-
+    var carousel = function () {
+        $(".featured-carousel").owlCarousel({
+            loop: true,
+            autoplay: true,
+            margin: 30,
+            animateOut: "fadeOut",
+            animateIn: "fadeIn",
+            nav: true,
+            dots: true,
+            autoplayHoverPause: false,
+            items: 1,
+            navText: [
+                "<span class='ion-ios-arrow-back'></span>",
+                "<span class='ion-ios-arrow-forward'></span>",
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
+        });
+    };
+    carousel();
 })(jQuery);
+
+// DARK MODE
+localStorage.getItem("mode") === "darkmode"
+    ? document.querySelector("#mainContent").classList.add("darkMode")
+    : document.querySelector("#mainContent").classList.remove("darkMode");
+// BATAS DARK MODE
+
+// LIST MODE
+localStorage.getItem("list") === "listmode"
+    ? document.querySelector("#mainContent").classList.add("listMode")
+    : document.querySelector("#mainContent").classList.remove("listMode");
+// BATAS LIST MODE
+
+// MENGAMBIL TAHUN
+var d = new Date();
+var n = d.getFullYear();
+document.getElementById("getYear").innerHTML = n;
+// BATAS MENGAMBIL TAHUN
