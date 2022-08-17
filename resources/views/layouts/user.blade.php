@@ -16,7 +16,7 @@
     <title>Si-Domba</title>
 
     <!-- KHUSUS CSS -->
-    <link rel="stylesheet" href="{{ asset('css/navbar.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('css/style.css')}}"> TIDAK DIPANGGIL -->
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('css/akun-user.css')}}"> TIDAK DIPANGGIL -->
