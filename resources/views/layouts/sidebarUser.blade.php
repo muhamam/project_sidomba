@@ -2,7 +2,6 @@
 
     <div class="floating-button-menu-links">
 
-
         <ul id="menu">
             <li>
                 <a href="#" class="first">
