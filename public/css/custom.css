@@ -28,7 +28,7 @@
     --icon-sec: #767676;
     --header-text: #48525c;
     --header-title: 17px;
-    --header-bg: #fefefe;
+    --header-bg: #3A8BCD;
     --header-icon: #262d3d;
     --header-height: 60px;
     --notif-height: 45px;
@@ -49,7 +49,7 @@
     --nav-border: 1px;
     --nav-text: #262d3d;
     --nav-icon: #48525c;
-    --nav-bg: #fefefe;
+    --nav-bg: #3A8BCD;
     --font-head: sans-serif;
     --font-body: sans-serif;
     --font-code: monospace;
@@ -69,6 +69,8 @@
     --dark-bg: #1e1e1e;
     --dark-bgAlt: #2d2d30;
     --dark-bgSec: #252526;
+    --font-black: black;
+    --font-white: white;
 }
 
 /* ---------------------------- BATAS VARIABLE WARNA ---------------------------- */
@@ -488,17 +490,20 @@ body {
 header {
     width: 100%;
     background-color: var(--header-bg);
-    color: var(--header-text);
+    color: var(--font-white);
     z-index: 10;
     transition: var(--transition-1);
     border-bottom: 1px solid var(--content-border);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    padding: 5px 0px 5px 0px;
 }
 header a {
     color: inherit;
 }
+
+
 header svg {
     width: 20px;
     height: 20px;
@@ -567,15 +572,19 @@ header svg .line {
 }
 .headerSearch {
     width: 100%;
-    max-width: 550px;
+    max-width: 350px;
+    border-radius: 30px;
+    margin-right: 20px;
+    
 }
 .headerSearch form {
     position: relative;
     width: 100%;
     font-size: 95%;
-    max-width: 400px;
+    color: var(--font-white);
 }
 .headerSearch input[type="text"] {
+    color: var(--font-black);
     display: block;
     width: 100%;
     outline: 0;
@@ -583,12 +592,15 @@ header svg .line {
     border-radius: 10px;
     background-color: var(--transparent-bg);
     padding: 10px 48px;
+    
 }
 .headerSearch input[type="text"]:focus ~ .close {
     opacity: 1;
     visibility: visible;
 }
 .headerSearch button {
+    
+    color: var(--font-white);
     background: transparent;
     border: 0;
     outline: 0;
@@ -5145,6 +5157,9 @@ footer .toTop svg {
     }
 }
 @media screen and (max-width: 1100px) {
+    .floating-button-menu{
+        display:none;
+    }
     .blogContent .sidebar {
         flex: 0 0 300px;
         width: 300px;

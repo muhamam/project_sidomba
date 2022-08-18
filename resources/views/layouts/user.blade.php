@@ -61,7 +61,7 @@
     <div class='mainWrapper'>
 
         <!--[ Header section ]-->
-        <header class='header' id='header'>
+        <header class='header ' id='header'>
             <!--[ Header Notification ]-->
             <div class='no-items section' id='header-notif'>
             </div>
@@ -85,7 +85,7 @@
                 <div class='headerDiv headerRight'>
 
                     <!--[ Header Search ]-->
-                    <div class='headerSearch'>
+                    <div class='headerSearch' style="background-color: white;">
                         <!--[ Search Form ]-->
                         <form class="input-group input-group-md">
                             <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
