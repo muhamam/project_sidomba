@@ -309,31 +309,31 @@
             </div>
         </div>
         @else
+
         <!-- JIKA TIDAK LOGIN TAMPIL INI -->
 
-
-        <!--[ Active function ]-->
+        <!--[ Active function TIDAK LOGIN ]-->
 
         <div class='mainWrapper'>
 
-            <!--[ Header section ]-->
+            <!--[ Header section TIDAK LOGIN ]-->
 
-            <!--[ Header Notification ]-->
+            <!--[ Header Notification TIDAK LOGIN ]-->
             <div class='no-items section' id='header-notif'>
             </div>
-            <!--[ Header content ]-->
+            <!--[ Header content TIDAK LOGIN ]-->
 
             <div class='headerContent'>
                 <div class='headerDiv headerLeft'>
-                    <!--[ Header button and icon ]-->
+                    <!--[ Header button and icon TIDAK LOGIN ]-->
                     <div class='headerIcon'>
-                        <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodomba.png')}}"
-                                title='SI-DOMBA' alt="" width="50" /></a>
+                        <a href="{{ route('home') }}"><img class="hide" alt='SI-DOMBA'
+                                src="{{ asset('img/logodomba.png')}}" title='SI-DOMBA' alt="" width="50" />
                     </div>
-                    <!--[ Header widget ]-->
+                    <!--[ Header widget TIDAK LOGIN ]-->
                     <div class='section' id='header-widget'>
                         <div class='widget Header' data-version='2' id='Header1'>
-                            <b>SI-DOMBA</b>
+                            <b>SI-DOMBA</b></a>
                         </div>
 
                     </div>
@@ -341,9 +341,9 @@
 
                 <div class='headerDiv headerRight'>
 
-                    <!--[ Header Search ]-->
+                    <!--[ Header Search TIDAK LOGIN ]-->
                     <div class='headerSearch' style="background-color: white;">
-                        <!--[ Search Form ]-->
+                        <!--[ Search Form TIDAK LOGIN ]-->
                         <form class="input-group input-group-md">
                             <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
                                 placeholder='Search...' type='text' />
@@ -359,7 +359,7 @@
                             </button>
 
                             <button aria-label='Search close' class='close' type='reset'>
-                                <!--[ Close icon ]-->
+                                <!--[ Close icon TIDAK LOGIN ]-->
                                 <svg class='line' viewBox='0 0 24 24'>
                                     <line x1='18' x2='6' y1='6' y2='18'></line>
                                     <line x1='6' x2='18' y1='6' y2='18'></line>
@@ -368,55 +368,28 @@
                             <span class='fullClose search'></span>
                         </form>
                     </div>
-                    <!--[ Dark mode button ]-->
-                    <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'>
-                        <svg class='linem icho' viewBox='0 0 24 24'>
-                            <g class='d2'>
-                                <path
-                                    d='M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z'
-                                    transform='translate(-169.3959 -166.45548)'></path>
-                            </g>
-                            <g class='d1'>
-                                <path class='fill'
-                                    d='M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z'>
-                                </path>
-                                <path
-                                    d='M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z'
-                                    stroke-width='2'></path>
-                            </g>
-                        </svg>
-                    </span>
-                    <!--[ Fullscreen ]-->
-                    <span class='noscript'><button aria-label='Mode Fullscreen' id='openfull'
-                            onclick='openFullscreen();' style='display: block;'><svg viewBox='0 0 24 24'>
-                                <path
-                                    d='M5,5H10V7H7V10H5V5M14,5H19V10H17V7H14V5M17,14H19V19H14V17H17V14M10,17V19H5V14H7V17H10Z'>
-                                </path>
-                            </svg></button>
-                        <button aria-label='Mode Tidak Fullscreen' id='exitfull' onclick='closeFullscreen();'
-                            style='display: none;'><svg viewBox='0 0 24 24'>
-                                <path
-                                    d='M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,8V10H14V5H16V8H19Z'>
-                                </path>
 
-                            </svg></button></span> <small>ini kemanain ?</small>
 
-                    <!--[ Header button and icon ]-->
+
+                    <!--[ Header button and icon TIDAK LOGIN]-->
                     <div class='headerIcon'>
-
-                        <!-- MENU ICON -->
-                        <a class="btn btn-light" aria-current="page" href="{{ route('register') }}">Daftar</a>
-                        <a class="btn btn-light" aria-current="page" href="{{ route('login') }}">Masuk</a>
+                        <!-- MENU ICON TIDAK LOGIN -->
+                        <a href="{{ route('register') }}">
+                            <i class="iconify mb-1" data-icon="line-md:account-add" data-width="25"
+                                data-height="25"></i>
+                            Daftar</span>
+                        </a>
+                        <i class="iconify" data-icon="ci:line-xl" data-width="25" data-height="25"></i>
+                        <a href="{{ route('login') }}">
+                            <i class="iconify" data-icon="mdi:account-arrow-right-outline" data-width="25"
+                                data-height="25"></i>
+                            Masuk</span>
+                        </a>
                         <!------------------------------------------------------------------------------------------------->
-
-                        <!--[ Profile widget ]-->
-
-
                     </div>
                 </div>
             </div>
-
-            <!--[ Mobile Menu ]-->
+            <!--[ Mobile Menu TIDAK LOGIN ]-->
             <div class='notranslate section' id='mobile-menu'>
                 <div class='widget LinkList' data-version='2' id='LinkList003'>
                     <ul class='mobileMenu mHome'>
@@ -434,7 +407,7 @@
                                 <span class='mobiletext'>Home</span>
                             </a>
                         </li>
-                        <li class='mSearch'>
+                        <li class='mSearch' style='color:#48525c'>
                             <label for='searchInput'>
                                 <svg class='linem' viewBox='0 0 24 24'>
                                     <g transform='translate(2.000000, 2.000000)'>
@@ -446,7 +419,7 @@
                                 <span class='mobiletext'>Search</span></label>
                         </li>
 
-                        <li class='mDark'>
+                        <li class='mDark' style='color:#48525c'>
                             <div onclick='darkMode()'>
                                 <svg class='linem icho' viewBox='0 0 24 24'>
                                     <g class='d2'>
@@ -466,7 +439,7 @@
                                 <span class='mobiletext' data-text='Dark' data-text1='Light'></span>
                             </div>
                         </li>
-                        <li class='mTop'>
+                        <li class='mTop' style='color:#48525c'>
                             <div onclick='window.scrollTo({top: 0});'>
                                 <svg class='linem' viewBox='0 0 24 24'>
                                     <g transform='translate(2.500000, 3.000000)'>
