@@ -72,12 +72,12 @@
                     <!--[ Header button and icon ]-->
                     <div class='headerIcon'>
                         <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodomba.png')}}"
-                                title='SI-DOMBA' alt="" width="50" /></a>
+                                title='SI-DOMBA' alt="" width="50" />
                     </div>
                     <!--[ Header widget ]-->
                     <div class='section' id='header-widget'>
                         <div class='widget Header' data-version='2' id='Header1'>
-                            <b>SI-DOMBA</b>
+                            <b>SI-DOMBA</b></a>
                         </div>
 
                     </div>
