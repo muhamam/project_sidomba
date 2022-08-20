@@ -16,7 +16,7 @@
     <title>Si-Domba</title>
 
     <!-- KHUSUS CSS -->
-    <link rel="stylesheet" href="{{ asset('css/navbar.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('css/style.css')}}"> TIDAK DIPANGGIL -->
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('css/akun-user.css')}}"> TIDAK DIPANGGIL -->
@@ -61,11 +61,12 @@
     <div class='mainWrapper'>
 
         <!--[ Header section ]-->
-        <header class='header' id='header'>
+        <header class='header ' id='header'>
             <!--[ Header Notification ]-->
             <div class='no-items section' id='header-notif'>
             </div>
             <!--[ Header content ]-->@auth
+
             <div class='headerContent'>
                 <div class='headerDiv headerLeft'>
                     <!--[ Header button and icon ]-->
@@ -85,7 +86,7 @@
                 <div class='headerDiv headerRight'>
 
                     <!--[ Header Search ]-->
-                    <div class='headerSearch'>
+                    <div class='headerSearch' style="background-color: white;">
                         <!--[ Search Form ]-->
                         <form class="input-group input-group-md">
                             <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
@@ -308,51 +309,198 @@
             </div>
         </div>
         @else
-        <!-- JIKA TIDAK LOGIN TAMPIL TOMBOL INI -->
-        <div class="ms-auto">
-            <a class="btn btn-light" aria-current="page" href="{{ route('register') }}">Daftar</a>
-            <a class="btn btn-light" aria-current="page" href="{{ route('login') }}">Masuk</a>
-        </div>
-        <!-------------------------------------------->
-        @endauth
-        <!-- MEMANGGIL KONTEN -->
-        {{-- content --}}
-        @yield('content')
-        <!-- BATAS MANGGIL KONTEN -->
-        <!--[ Footer section ]-->
-        <footer class='sectionInner'>
-            <!--[ Credit ]-->
-            <div class='creditInner'>
-                <div class=" row mt-5 ">
-                    <div class="col"><a class="text-dark" href="#">SI
-                            Domba</a>
-                    </div>
-                    <div class="col"><a class="text-dark" href="">Bantuan
-                            Dan
-                            Panduan</a></div>
-                    <div class="w-100"></div>
-                    <div class="col"><a href="">Tentang SI Domba</a></div>
-                    <div class="col"><a href="">Syarat Dan Ketentuan</a></div>
-                    <div class="w-100"></div>
-                    <div class="col"><a href="">Karir </a></div>
-                    <div class="col"><a href="">Help Center</a></div>
-                    <div class="w-100"></div>
-                    <div class="col"><a href="">Kemitraan</a></div>
-                    <div class="col"><a href="">Komplain</a></div>
 
+        <!-- JIKA TIDAK LOGIN TAMPIL INI -->
+
+        <!--[ Active function TIDAK LOGIN ]-->
+
+        <div class='mainWrapper'>
+
+            <!--[ Header section TIDAK LOGIN ]-->
+
+            <!--[ Header Notification TIDAK LOGIN ]-->
+            <div class='no-items section' id='header-notif'>
+            </div>
+            <!--[ Header content TIDAK LOGIN ]-->
+
+            <div class='headerContent'>
+                <div class='headerDiv headerLeft'>
+                    <!--[ Header button and icon TIDAK LOGIN ]-->
+                    <div class='headerIcon'>
+                        <a href="{{ route('home') }}"><img class="hide" alt='SI-DOMBA'
+                                src="{{ asset('img/logodombaputih.png')}}" title='SI-DOMBA' alt="" width="50" />
+                    </div>
+                    <!--[ Header widget TIDAK LOGIN ]-->
+                    <div class='section' id='header-widget'>
+                        <div class='widget Header' data-version='2' id='Header1'>
+                            <b>SI-DOMBA</b></a>
+                        </div>
+
+                    </div>
                 </div>
-                <!--[ Back top button ]-->
-                <div class='toTop' onclick='window.scrollTo({top: 0});'>
-                    <!--[ Arrow up icon ]-->
-                    <svg class='line' viewBox='0 0 24 24'>
-                        <g
-                            transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
-                            <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                        </g>
-                    </svg>
+
+                <div class='headerDiv headerRight'>
+
+                    <!--[ Header Search TIDAK LOGIN ]-->
+                    <div class='headerSearch' style="background-color: white;">
+                        <!--[ Search Form TIDAK LOGIN ]-->
+                        <form class="input-group input-group-md">
+                            <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
+                                placeholder='Search...' type='text' />
+                            <button aria-label='Search button' class='searchButton' type='submit'>
+                                <svg class='linem' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.000000, 2.000000)'>
+                                        <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'>
+                                        </circle>
+                                        <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'>
+                                        </line>
+                                    </g>
+                                </svg>
+                            </button>
+
+                            <button aria-label='Search close' class='close' type='reset'>
+                                <!--[ Close icon TIDAK LOGIN ]-->
+                                <svg class='line' viewBox='0 0 24 24'>
+                                    <line x1='18' x2='6' y1='6' y2='18'></line>
+                                    <line x1='6' x2='18' y1='6' y2='18'></line>
+                                </svg>
+                            </button>
+                            <span class='fullClose search'></span>
+                        </form>
+                    </div>
+
+
+
+                    <!--[ Header button and icon TIDAK LOGIN]-->
+                    <div class='headerIcon'>
+                        <!-- MENU ICON TIDAK LOGIN -->
+                        <a href="{{ route('register') }}">
+                            <i class="iconify mb-1" data-icon="line-md:account-add" data-width="25"
+                                data-height="25"></i>
+                            Daftar</span>
+                        </a>
+                        <i class="iconify" data-icon="ci:line-xl" data-width="25" data-height="25"></i>
+                        <a href="{{ route('login') }}">
+                            <i class="iconify" data-icon="mdi:account-arrow-right-outline" data-width="25"
+                                data-height="25"></i>
+                            Masuk</span>
+                        </a>
+                        <!------------------------------------------------------------------------------------------------->
+                    </div>
                 </div>
             </div>
-        </footer>
+            <!--[ Mobile Menu TIDAK LOGIN ]-->
+            <div class='notranslate section' id='mobile-menu'>
+                <div class='widget LinkList' data-version='2' id='LinkList003'>
+                    <ul class='mobileMenu mHome'>
+                        <li>
+                            <a aria-label='Home' role='button' style='color:#48525c'>
+                                <svg class='line' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                                    <g>
+                                        <line class='svg-c' x1='14.71978' x2='9.28022' y1='15.00368' y2='15.00368'>
+                                        </line>
+                                        <path
+                                            d='M100.28571,274.70685h-10a5,5,0,0,1-5-5v-5.00916a5,5,0,0,1,1.601-3.667l5.6798-5.2648a4,4,0,0,1,5.43845,0l5.67981,5.2648a5,5,0,0,1,1.601,3.667v5.00916A5,5,0,0,1,100.28571,274.70685Z'
+                                            transform='translate(-83.28571 -252.70317)'></path>
+                                    </g>
+                                </svg>
+                                <span class='mobiletext'>Home</span>
+                            </a>
+                        </li>
+                        <li class='mSearch' style='color:#48525c'>
+                            <label for='searchInput'>
+                                <svg class='linem' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.000000, 2.000000)'>
+                                        <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'></circle>
+                                        <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'>
+                                        </line>
+                                    </g>
+                                </svg>
+                                <span class='mobiletext'>Search</span></label>
+                        </li>
+
+                        <li class='mDark' style='color:#48525c'>
+                            <div onclick='darkMode()'>
+                                <svg class='linem icho' viewBox='0 0 24 24'>
+                                    <g class='d2'>
+                                        <path
+                                            d='M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z'
+                                            transform='translate(-169.3959 -166.45548)'></path>
+                                    </g>
+                                    <g class='d1'>
+                                        <path class='fill'
+                                            d='M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z'>
+                                        </path>
+                                        <path
+                                            d='M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z'
+                                            stroke-width='2'></path>
+                                    </g>
+                                </svg>
+                                <span class='mobiletext' data-text='Dark' data-text1='Light'></span>
+                            </div>
+                        </li>
+                        <li class='mTop' style='color:#48525c'>
+                            <div onclick='window.scrollTo({top: 0});'>
+                                <svg class='linem' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.500000, 3.000000)'>
+                                        <path class='fill'
+                                            d='M9.5,18 C3.00557739,18 0.456662548,17.5386801 0.0435259337,15.2033146 C-0.36961068,12.8679491 2.27382642,8.47741935 3.08841712,7.02846996 C5.81256986,2.18407813 7.66371927,0 9.5,0 C11.3362807,0 13.1874301,2.18407813 15.9115829,7.02846996 C16.7261736,8.47741935 19.3696107,12.8679491 18.9564741,15.2033146 C18.5443995,17.5386801 15.9944226,18 9.5,18 Z'>
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class='mobiletext'>Top</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-------------------------------------------->
+
+    @endauth
+    <!-- MEMANGGIL KONTEN -->
+    {{-- content --}}
+    @yield('content')
+    <!-- BATAS MANGGIL KONTEN -->
+    <!--[ Footer section ]-->
+    <footer class='sectionInner'>
+        <!--[ Credit ]-->
+        <div class='creditInner'>
+            <div class=" row mt-5 ">
+                <div class="col"><a class="text-dark" href="#">SI
+                        Domba</a>
+                </div>
+                <div class="col"><a class="text-dark" href="">Bantuan
+                        Dan
+                        Panduan</a></div>
+                <div class="w-100"></div>
+                <div class="col"><a href="">Tentang SI Domba</a></div>
+                <div class="col"><a href="">Syarat Dan Ketentuan</a></div>
+                <div class="w-100"></div>
+                <div class="col"><a href="">Karir </a></div>
+                <div class="col"><a href="">Help Center</a></div>
+                <div class="w-100"></div>
+                <div class="col"><a href="">Kemitraan</a></div>
+                <div class="col"><a href="">Komplain</a></div>
+
+            </div>
+
+            <!--[ Back top button ]-->
+            <div class='toTop' onclick='window.scrollTo({top: 0});'>
+                <!--[ Arrow up icon ]-->
+                <svg class='line' viewBox='0 0 24 24'>
+                    <g
+                        transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </footer>
     </div>
     <!-- FUNSGIONAL JAVASCRIPT -->
     <script src="{{asset('js/sweet_alert.js')}}"></script>
@@ -361,6 +509,7 @@
     <script src="{{asset('js/main.js')}}"></script>
 
     <!-- BATAS FUNGSIONAL JAVASCRIPT -->
+
 </body>
 
 </html>

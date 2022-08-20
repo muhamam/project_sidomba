@@ -28,7 +28,7 @@
     --icon-sec: #767676;
     --header-text: #48525c;
     --header-title: 17px;
-    --header-bg: #fefefe;
+    --header-bg: #3a8bcd;
     --header-icon: #262d3d;
     --header-height: 60px;
     --notif-height: 45px;
@@ -49,7 +49,7 @@
     --nav-border: 1px;
     --nav-text: #262d3d;
     --nav-icon: #48525c;
-    --nav-bg: #fefefe;
+    --nav-bg: #3a8bcd;
     --font-head: sans-serif;
     --font-body: sans-serif;
     --font-code: monospace;
@@ -69,6 +69,8 @@
     --dark-bg: #1e1e1e;
     --dark-bgAlt: #2d2d30;
     --dark-bgSec: #252526;
+    --font-black: black;
+    --font-white: white;
 }
 
 /* ---------------------------- BATAS VARIABLE WARNA ---------------------------- */
@@ -220,6 +222,195 @@ svg .c-2 {
     content: "New!";
 }
 
+.buttoneffect {
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    box-shadow: inset 0 0 0 2px #525050;
+    color: #525050;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+}
+.buttoneffect::before,
+.buttoneffect::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.draw {
+    transition: color 0.25s;
+}
+.draw::before,
+.draw::after {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 0;
+    height: 0;
+}
+.draw::before {
+    top: 0;
+    left: 0;
+}
+.draw::after {
+    bottom: 0;
+    right: 0;
+}
+.draw:hover {
+    color: #60daaa;
+}
+.draw:hover::before,
+.draw:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.draw:hover::before {
+    border-radius: 10px;
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+    border-radius: 10px;
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+        height 0.25s ease-out 0.75s;
+}
+
+.meet:hover {
+    color: #fbca67;
+}
+.meet::after {
+    top: 0;
+    left: 0;
+}
+.meet:hover::before {
+    border-radius: 10px;
+    border-top-color: #fbca67;
+    border-right-color: #fbca67;
+}
+.meet:hover::after {
+    border-radius: 10px;
+    border-bottom-color: #fbca67;
+    border-left-color: #fbca67;
+    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}
+
+.center:hover {
+    color: black;
+}
+.center::before,
+.center::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+}
+.center::before {
+    border-radius: 10px;
+    border-top: 2px solid var(--highlight-red);
+    border-bottom: 2px solid var(--highlight-red);
+    transform: scale3d(0, 1, 1);
+}
+.center::after {
+    border-radius: 10px;
+    border-left: 2px solid var(--highlight-red);
+    border-right: 2px solid var(--highlight-red);
+    transform: scale3d(1, 0, 1);
+}
+.center:hover::before,
+.center:hover::after {
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.5s;
+}
+
+.spin {
+    width: 5em;
+    height: 5em;
+    padding: 0;
+}
+.spin:hover {
+    color: #0eb7da;
+}
+.spin::before,
+.spin::after {
+    top: 0;
+    left: 0;
+}
+.spin::before {
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+.spin:hover::before {
+    border-radius: 10px;
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    border-bottom-color: #0eb7da;
+    transition: border-top-color 0.15s linear,
+        border-right-color 0.15s linear 0.1s,
+        border-bottom-color 0.15s linear 0.2s;
+}
+.spin::after {
+    border-radius: 10px;
+    border: 0 solid transparent;
+}
+.spin:hover::after {
+    border-radius: 10px;
+    border-top: 2px solid #0eb7da;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+}
+
+.circle {
+    border-radius: 100%;
+    box-shadow: none;
+}
+.circle::before,
+.circle::after {
+    border-radius: 100%;
+}
+
+.thick {
+    color: #f45e61;
+}
+.thick:hover {
+    color: #fff;
+    font-weight: 700;
+}
+.thick::before {
+    border: 2.5em solid transparent;
+    z-index: -1;
+}
+.thick::after {
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+.thick:hover::before {
+    background: #f45e61;
+    border-top-color: #f45e61;
+    border-right-color: #f45e61;
+    border-bottom-color: #f45e61;
+    transition: background 0s linear 0.4s, border-top-color 0.15s linear,
+        border-right-color 0.15s linear 0.15s,
+        border-bottom-color 0.15s linear 0.25s;
+}
+.thick:hover::after {
+    border-top: 2.5em solid #f45e61;
+    border-left-width: 2.5em;
+    border-right-width: 2.5em;
+}
+
 /* ---------------------------- BATAS STANDART CSS ---------------------------- */
 
 /* ---------------------------- MAIN ELEMENT ---------------------------- */
@@ -299,17 +490,19 @@ body {
 header {
     width: 100%;
     background-color: var(--header-bg);
-    color: var(--header-text);
+    color: var(--font-white);
     z-index: 10;
     transition: var(--transition-1);
     border-bottom: 1px solid var(--content-border);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    padding: 5px 0px 5px 0px;
 }
 header a {
     color: inherit;
 }
+
 header svg {
     width: 20px;
     height: 20px;
@@ -378,15 +571,18 @@ header svg .line {
 }
 .headerSearch {
     width: 100%;
-    max-width: 550px;
+    max-width: 350px;
+    border-radius: 30px;
+    margin-right: 20px;
 }
 .headerSearch form {
     position: relative;
     width: 100%;
     font-size: 95%;
-    max-width: 400px;
+    color: var(--font-white);
 }
 .headerSearch input[type="text"] {
+    color: var(--font-black);
     display: block;
     width: 100%;
     outline: 0;
@@ -400,6 +596,7 @@ header svg .line {
     visibility: visible;
 }
 .headerSearch button {
+    color: var(--font-white);
     background: transparent;
     border: 0;
     outline: 0;
@@ -4956,6 +5153,9 @@ footer .toTop svg {
     }
 }
 @media screen and (max-width: 1100px) {
+    .floating-button-menu {
+        display: none;
+    }
     .blogContent .sidebar {
         flex: 0 0 300px;
         width: 300px;
@@ -5327,6 +5527,11 @@ footer .toTop svg {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .hide {
+        display: none;
+    }
+}
 /* Related Posts */
 .relatedPosts {
     margin: 40px 0 0;
