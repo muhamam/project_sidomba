@@ -328,7 +328,7 @@
                     <!--[ Header button and icon TIDAK LOGIN ]-->
                     <div class='headerIcon'>
                         <a href="{{ route('home') }}"><img class="hide" alt='SI-DOMBA'
-                                src="{{ asset('img/logodomba.png')}}" title='SI-DOMBA' alt="" width="50" />
+                                src="{{ asset('img/logodombaputih.png')}}" title='SI-DOMBA' alt="" width="50" />
                     </div>
                     <!--[ Header widget TIDAK LOGIN ]-->
                     <div class='section' id='header-widget'>
