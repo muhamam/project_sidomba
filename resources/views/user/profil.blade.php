@@ -14,15 +14,16 @@
                     <div class="card-body">
                         <div class="d-flex flex-row">
                             <a class="mt-3" href="{{route('account.index')}}" style="color: #000;">
-                                <p>Biodata</p>
+                                <p class="marker">Biodata</p>
                             </a>
                             <a class="ml-5 mt-3" href="{{route('password.index')}}" style="color: #000;">
-                                <p> Ubah Password</p>
+                                <p class="marker"> Ubah Password</p>
                             </a>
                             <a class="ml-5 mt-3" href="{{route('address.index')}}" style="color: #000;">
-                                <p> Alamat</p>
+                                <p class="marker"> Alamat</p>
                             </a>
                         </div>
+
                         <div class="e-profile mt-1">
                             <div class="row">
                                 <div class="col-12 col-sm-auto">
