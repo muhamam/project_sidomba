@@ -16,6 +16,11 @@ use App\Http\Controllers\EditAddressUser;
 use App\Http\Controllers\EditAvatarUser;
 use App\Http\Controllers\UpdateAddressUser;
 use App\Http\Controllers\ContactUser;
+use App\Http\Controllers\ChatUser;
+use App\Http\Controllers\UlasanUser;
+use App\Http\Controllers\KomplainUser;
+use App\Http\Controllers\WishlistUser;
+use App\Http\Controllers\TransaksiUser;
 use Illuminate\Support\Facades\Request;
 use App\Models\User;
 
@@ -63,6 +68,12 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/edit/contact', [ContactUser::class, 'index'])->name('contact.index');
     Route::post('/user/edit/contact', [ContactUser::class, 'update'])->name('contact.update');
     Route::patch('/user/edit/avatar', [EditAvatarUser::class, 'update'])->name('avatar.update');
+    Route::get('/user/chat', [ChatUser::class, 'index'])->name('chat.index');
+    Route::get('/user/ulasan', [UlasanUser::class, 'index'])->name('ulasan.index');
+    Route::get('/user/komplain', [KomplainUser::class, 'index'])->name('komplain.index');
+    Route::get('/user/wishlist', [WishlistUser::class, 'index'])->name('wishlist.index');
+    Route::get('/user/transaksi', [TransaksiUser::class, 'index'])->name('transaksi.index');
+
 });
 
 
@@ -298,11 +309,6 @@ Route::get('/ulasan_belum_diulas_investasi', function () {
 });
 
 // aman
-Route::get('/ulasan_belum_diulas_pembelian', function () {
-    return view('user.ulasan_belum_diulas_pembelian ');
-});
-
-// aman
 Route::get('/tulis_ulasan_pembeli', function () {
     return view('user.tulis_ulasan_pembeli ');
 });
@@ -323,19 +329,8 @@ Route::get('/ulasan_sudah_diulas_pembeli', function () {
 });
 
 // aman
-Route::get('/wishlist_pembeli', function () {
-    return view('user.wishlist_pembeli ');
-});
-
-// aman
 Route::get('/wishlist_investasi', function () {
     return view('user.wishlist_investasi ');
-});
-
-
-// aman
-Route::get('/transaksi_user', function () {
-    return view('user.transaksi_user ');
 });
 
 // aman
@@ -346,11 +341,6 @@ Route::get('/transaksi_user_mp', function () {
 // aman
 Route::get('/transaksi_selesai_user', function () {
     return view('user.transaksi_selesai_user ');
-});
-
-// aman
-Route::get('/ajukan_komplain_pembelian', function () {
-    return view('user.ajukan_komplain_pembelian ');
 });
 
 Route::get('/ajukan_komplain_investasi', function () {
@@ -393,11 +383,6 @@ Route::get('/aktivasi_investor', function () {
 // aman
 Route::get('/aktivasi_peternakan', function () {
     return view('user.aktivasi_peternakan ');
-});
-
-// aman
-Route::get('/chat_user', function () {
-    return view('user.chat_user ');
 });
 
 // aman

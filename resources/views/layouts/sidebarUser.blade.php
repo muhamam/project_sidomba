@@ -21,33 +21,33 @@
                         <!-- END SIDEBAR USER TITLE -->
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link px-2 active" href="#"><i class="iconify"
+                                <a class="nav-link px-2 active" href="{{route('account.index')}}"><i class="iconify"
                                         data-icon="ic:baseline-account-box" data-width="25"
                                         data-height="25"></i></i><span>
                                         Akun</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="#" target="__blank"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('chat.index')}}"><i class="iconify"
                                         data-icon="bi:chat-text" data-width="25" data-height="25"></i>
                                     <span> Chat</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="#" target="__blank"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('ulasan.index')}}"><i class="iconify"
                                         data-icon="carbon:star-review" data-width="25" data-height="25"></i><span>
                                         Ulasan</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="#" target="__blank"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('komplain.index')}}"><i class="iconify"
                                         data-icon="carbon:warning" data-width="25" data-height="25"></i><span>
                                         Komplain</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="#" target="__blank"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('wishlist.index')}}"><i class="iconify"
                                         data-icon="bi:list-stars" data-width="25" data-height="25"></i><span>
                                         Wistlist</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="#" target="__blank"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('transaksi.index')}}"><i class="iconify"
                                         data-icon="carbon:money" data-width="25" data-height="25"></i><span>
                                         Transaksi</span></a>
                             </li>
