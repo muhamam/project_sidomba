@@ -20,6 +20,7 @@
     <!-- <link rel="stylesheet" href="{{asset('css/style.css')}}"> TIDAK DIPANGGIL -->
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('css/akun-user.css')}}"> TIDAK DIPANGGIL -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -71,7 +72,7 @@
                 <div class='headerDiv headerLeft'>
                     <!--[ Header button and icon ]-->
                     <div class='headerIcon'>
-                        <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodomba.png')}}"
+                        <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodombaputih.png')}}"
                                 title='SI-DOMBA' alt="" width="50" />
                     </div>
                     <!--[ Header widget ]-->
@@ -174,7 +175,7 @@
 
                         <!--[ Profile widget ]-->
 
-                        <div class='headerProfile'>
+                        <div class='headerProfile' style="color: #000;">
                             <div class='section' id='profile-widget'>
                                 <div class='widget Profile' data-version='2' id='Profile00'>
                                     <div class='profileHeader'>
@@ -190,7 +191,8 @@
                                     <div class='widget-content solo hasLocation'>
                                         <div class='profileImage' style='margin-bottom:1px'>
                                             <div class='profileImg lazyloaded'>
-                                                <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                                <img src="
+                            {{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
                                                     {{-- need redesign system --}} alt=""
                                                     style="width: 50px; height: 50px; " class="rounded-circle d-inline">
                                             </div>
