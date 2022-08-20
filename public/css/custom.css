@@ -1323,6 +1323,8 @@ g.d1 path.fill {
 
 .slide-card{
     background-image: url(https://bit.ly/3A7uvLz);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 353px;
     height: 176px;
     margin-top: 30px;
