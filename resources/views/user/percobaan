@@ -1,0 +1,216 @@
+<div id=" carouselExampleControlsNoTouching" class="slide-2 carousel slide" data-touch="True" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item   active">
+            <div class="row d-flex justify-content-between">
+                <div class="work slide-card1 ">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Merino</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <a href="#">
+                                <p><a href="#">
+                                        <p>CEK SEKARANG</p>
+                                    </a></p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card2">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Garut</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card3">
+                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Suffolk</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card1">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Merino</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item slide-card ">
+            <div class="row d-flex justify-content-between">
+
+                <div class="work slide-card2">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Garut</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card1 ">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Merino</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card1">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Merino</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card3">
+                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Suffolk</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="carousel-item slide-card ">
+            <div class="row d-flex justify-content-between">
+
+                <div class="work slide-card2">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Garut</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card1">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Merino</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card3">
+                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Suffolk</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work slide-card1 ">
+                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                        <div class=" col-sm">
+                            <h6 class="">Domba Merino</h6>
+                            <p>
+                                harga mulai dari
+                            </p>
+                            <h5>Rp1.2Jt</h5>
+                            <p><a href="#">
+                                    <p>CEK SEKARANG</p>
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching"
+        data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching"
+        data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+</div>

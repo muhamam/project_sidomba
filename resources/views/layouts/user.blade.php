@@ -217,7 +217,7 @@
                                                     Pembelian</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="text-dark"><span class="iconify me-2"
+                                                <a href="{{route('wishlist.index')}}" class="text-dark"><span class="iconify me-2"
                                                         data-icon="ant-design:star-outlined" data-width="25"
                                                         data-height="25"></span>
                                                     Wishlist</a>

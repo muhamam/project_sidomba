@@ -572,8 +572,8 @@
 
                                 <div class="item col">
                                     <div class="work1" style="border: 1px solid #000000; ">
-                                        <div class="img d-flex align-items-center  rounded" style="background-image: url(../img/4.jpg); width: 100%;
-                                height: 180px; ">
+                                        <div class="img d-flex align-items-center  rounded"
+                                            style="background-image: url(../img/4.jpg); width: 100%;height: 180px; ">
                                         </div>
                                         <div class="caption1 col-sm">
                                             <center>
@@ -599,8 +599,8 @@
 
                                 <div class="item col">
                                     <div class="work1" style="border: 1px solid #000000; ">
-                                        <div class="img d-flex align-items-center  rounded" style="background-image: url(../img/5.jpg); width: 100%;
-                                height: 180px; ">
+                                        <div class="img d-flex align-items-center  rounded"
+                                            style="background-image: url(../img/5.jpg); width: 100%;height: 180px; ">
                                         </div>
                                         <div class="caption1 col-sm">
                                             <center>
@@ -623,9 +623,6 @@
 
                                     </div>
                                 </div>
-
-
-
                             </div>
 
                         </div>
@@ -1066,7 +1063,7 @@
                                     </div>
                                 </div>
                                 <div class="item col">
-                                    <<div class="work1"
+                                    <div class="work1"
                                         style="border: 1px solid #000000; width: 390px; margin-left: 50px;">
                                         <div class="img d-flex align-items-center  rounded"
                                             style="background-image: url(../img/1.jpg); width: 100%;height: 198px; ">
@@ -1141,163 +1138,168 @@
                                             <br>
                                         </div>
 
+                                    </div>
                                 </div>
+
                             </div>
 
                         </div>
-
                     </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"
-                    style="background-color: black; width: 40px; height: 50px; margin-top: 300px;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next"
-                    style="background-color: black;width: 40px; height: 50px; margin-top:
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"
+                        style="background-color: black; width: 40px; height: 50px; margin-top: 300px;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next"
+                        style="background-color: black;width: 40px; height: 50px; margin-top:
                             300px;">
-                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: black;"></span>
+                    </a>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-md-3 " style="margin-left: 30px; margin-top:-1550px; ">
+        <div class="row">
+            <span class="iconify col-2" data-icon="ant-design:filter-outlined" data-width="35" data-height="35"></span>
+            <h4 class="col">Filter</h4>
+        </div>
+        <div class=" bg-light  ">
+
+            <h6 class="ml-4"><b> Jenis Domba</b></h6>
+            <div class="dropdown ml-4">
+                <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="width: 250px; border: 1px solid #000000;">
+                    Semua Domba
                 </a>
-                <br>
 
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </div>
+            <center>
+                <div class="dotted mb-3 mt-2 col-md-11"></div>
+            </center>
+            <h6 class="ml-4"><b> Semua Lokasi</b></h6>
+            <center>
+                <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Semua Lokasi" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+
+                </div>
+            </center>
+            <center>
+                <div class="dotted mb-3 mt-2 col-md-11"></div>
+            </center>
+            <h6 class="ml-4"><b>Harga Investasi</b></h6>
+            <center>
+                <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
+                    <span class="input-group-text" id="addon-wrapping">Rp.</span>
+                    <input type="text" class="form-control" placeholder="Harga Minimun" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+
+                </div>
+                <div class="input-group flex-nowrap rounded mr-3 mt-2"
+                    style="width:  255px; border: 1px solid #000000;">
+                    <span class="input-group-text" id="addon-wrapping">Rp.</span>
+                    <input type="text" class="form-control" placeholder="Harga Maximum" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+
+                </div>
+            </center>
+            <center>
+                <div class="dotted mb-3 mt-2 col-md-11"></div>
+            </center>
+            <h6 class="ml-4"><b>Bagi Hasil</b></h6>
+            <center>
+                <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Persentase Peternakan" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">%</span>
+
+                </div>
+                <div class="input-group flex-nowrap rounded mr-3 mt-2"
+                    style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Persentase Investo" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">%</span>
+                </div>
+            </center>
+            <center>
+                <div class="dotted mb-3 mt-2 col-md-11"></div>
+            </center>
+            <h6 class="ml-4"><b> Jenis Kelamin</b></h6>
+            <center>
+                <div class="form-check ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Jantan
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Betina
+                    </label>
+                </div>
+            </center>
+            <center>
+                <div class="dotted mb-3 mt-2 col-md-11"></div>
+            </center>
+            <h6 class="ml-4"><b>Berat</b></h6>
+            <center>
+                <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Berat Minimum" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">Kg</span>
+
+                </div>
+                <div class="input-group flex-nowrap rounded mr-3 mt-2"
+                    style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Berat Maksimum" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">Kg</span>
+                </div>
+            </center>
+            <center>
+                <div class="dotted mb-3 mt-2 col-md-11"></div>
+            </center>
+            <h6 class="ml-4"><b>Umur</b></h6>
+            <center>
+                <div class="input-group flex-nowrap rounded mr-3 " style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Umur Minimum" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">Thn</span>
+
+                </div>
+                <div class="input-group flex-nowrap rounded mr-3 mt-2 "
+                    style="width:  255px; border: 1px solid #000000;">
+
+                    <input type="text" class="form-control" placeholder="Umur Maksimum" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">Thn</span>
+                </div>
+            </center>
+            <br>
+
+
+
+
+
+
         </div>
-    </div>
-</div>
-<div class=" col-md-3 " style="margin-left: 30px; margin-top:-1550px; ">
-    <div class="row">
-        <span class="iconify col-2" data-icon="ant-design:filter-outlined" data-width="35" data-height="35"></span>
-        <h4 class="col">Filter</h4>
-    </div>
-    <div class=" bg-light  ">
-
-        <h6 class="ml-4"><b> Jenis Domba</b></h6>
-        <div class="dropdown ml-4">
-            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                aria-expanded="false" style="width: 250px; border: 1px solid #000000;">
-                Semua Domba
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-        <center>
-            <div class="dotted mb-3 mt-2 col-md-11"></div>
-        </center>
-        <h6 class="ml-4"><b> Semua Lokasi</b></h6>
-        <center>
-            <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Semua Lokasi" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-
-            </div>
-        </center>
-        <center>
-            <div class="dotted mb-3 mt-2 col-md-11"></div>
-        </center>
-        <h6 class="ml-4"><b>Harga Investasi</b></h6>
-        <center>
-            <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
-                <span class="input-group-text" id="addon-wrapping">Rp.</span>
-                <input type="text" class="form-control" placeholder="Harga Minimun" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-
-            </div>
-            <div class="input-group flex-nowrap rounded mr-3 mt-2" style="width:  255px; border: 1px solid #000000;">
-                <span class="input-group-text" id="addon-wrapping">Rp.</span>
-                <input type="text" class="form-control" placeholder="Harga Maximum" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-
-            </div>
-        </center>
-        <center>
-            <div class="dotted mb-3 mt-2 col-md-11"></div>
-        </center>
-        <h6 class="ml-4"><b>Bagi Hasil</b></h6>
-        <center>
-            <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Persentase Peternakan" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-                <span class="input-group-text" id="addon-wrapping">%</span>
-
-            </div>
-            <div class="input-group flex-nowrap rounded mr-3 mt-2" style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Persentase Investo" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-                <span class="input-group-text" id="addon-wrapping">%</span>
-            </div>
-        </center>
-        <center>
-            <div class="dotted mb-3 mt-2 col-md-11"></div>
-        </center>
-        <h6 class="ml-4"><b> Jenis Kelamin</b></h6>
-        <center>
-            <div class="form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Jantan
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                    Betina
-                </label>
-            </div>
-        </center>
-        <center>
-            <div class="dotted mb-3 mt-2 col-md-11"></div>
-        </center>
-        <h6 class="ml-4"><b>Berat</b></h6>
-        <center>
-            <div class="input-group flex-nowrap rounded mr-3" style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Berat Minimum" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-                <span class="input-group-text" id="addon-wrapping">Kg</span>
-
-            </div>
-            <div class="input-group flex-nowrap rounded mr-3 mt-2" style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Berat Maksimum" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-                <span class="input-group-text" id="addon-wrapping">Kg</span>
-            </div>
-        </center>
-        <center>
-            <div class="dotted mb-3 mt-2 col-md-11"></div>
-        </center>
-        <h6 class="ml-4"><b>Umur</b></h6>
-        <center>
-            <div class="input-group flex-nowrap rounded mr-3 " style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Umur Minimum" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-                <span class="input-group-text" id="addon-wrapping">Thn</span>
-
-            </div>
-            <div class="input-group flex-nowrap rounded mr-3 mt-2 " style="width:  255px; border: 1px solid #000000;">
-
-                <input type="text" class="form-control" placeholder="Umur Maksimum" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-                <span class="input-group-text" id="addon-wrapping">Thn</span>
-            </div>
-        </center>
-        <br>
-
-
-
-
-
 
     </div>
-
-</div>
 </div>
 
 

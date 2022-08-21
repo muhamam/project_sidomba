@@ -1354,6 +1354,9 @@ g.d1 path.fill {
 /* ---------------------------- KONTEN POST ---------------------------- */
 
 /* ini slide untuk header di dashboard utama  */
+
+/* slide-user biasa start */
+/* slide header */
 .slide-content {
     background-color: rgba(85, 139, 47, 0.75);
     height: 100%;
@@ -1367,14 +1370,39 @@ g.d1 path.fill {
 .slide-header p {
     border-bottom: 1px solid white;
 }
+/* slide header end-------------------------------------------------- */
+
 
 /* ini slide card di bawah header */
-
-.slide-card {
+.judul{
+    border-bottom: 1px solid black;
+}
+.slide-card a{
+color: white;
+}
+.slide-card1 {
     background-image: url(https://bit.ly/3A7uvLz);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 353px;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card2 {
+    background-image: url(https://bit.ly/3wi5bRK);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card3 {
+    background-image: url(https://bit.ly/3QTvUMk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
     height: 176px;
     margin-top: 30px;
 }
@@ -1382,31 +1410,152 @@ g.d1 path.fill {
 .slide-caption1 {
     background-color: rgba(190, 185, 150, 0.85);
     height: 100%;
-    width: 50%;
-    margin-right: 5px;
+    width: 55%;
+    
 }
 .slide-caption2 {
     background-color: rgba(49, 50, 58, 0.85);
     height: 100%;
-    width: 50%;
-    margin-right: 5px;
+    width: 55%;
+    
 }
 .slide-caption3 {
     background-color: rgba(180, 121, 93, 0.85);
     height: 100%;
-    width: 50%;
-    margin-right: 5px;
+    width: 55%;
+    
 }
 
+/* ini untuk style font di class slide-caption */
 .slide-caption1 h6 {
     color: white;
+    border-bottom: 1px solid white;
 }
 .slide-caption2 h6 {
     color: white;
+    border-bottom: 1px solid white;
 }
 .slide-caption3 h6 {
     color: white;
+    border-bottom: 1px solid white;
 }
+
+.slide-caption1 p, h5 {
+    color: white;
+    
+}
+.slide-caption2 p, h5 {
+    color: white;
+    
+}
+.slide-caption3 p, h5 {
+    color: white;
+    
+}
+/* slide-caption end------------------------- */
+
+/* slide card end -------------------------------------- */
+/* slide-detail-beli start */
+.slide-detail-beli{
+    border: 1px solid #000000; 
+    width: 300px;
+    height: 450px;
+    font-size: 11px;
+}
+
+.gambar-atas1{
+    background-image: url(https://bit.ly/3wj74hi);
+    background-size: cover;
+    
+    height:50%;
+}
+.gambar-atas2{
+    background-image: url(https://bit.ly/3CmndGC);
+    background-size: cover;
+    
+    height:50%;
+}
+.gambar-atas3{
+    background-image: url(https://bit.ly/3QDG04h);
+    background-size: cover;
+    
+    height:50%;
+}
+.gambar-atas4{
+    background-image: url(https://bit.ly/3wj5f3E);
+    background-size: cover;
+    
+    height:50%;
+}
+
+/* slide-detail-beli end---------------------------*/
+
+/* slide-peternak start */
+
+/* untuk class caption2 ada di slide-detail-beli dan juga dlide peternak */
+.caption2 h5{
+    color: black;
+}
+
+.gambar-peternakan1{
+    background-image: url(https://bit.ly/3AfJ3bQ);
+    background-size: cover;
+    width: 100%;
+    height:50%;
+}
+.gambar-peternakan2{
+    background-image: url(https://bit.ly/3K9XzGQ);
+    background-size: cover;
+    width: 100%;
+    height:50%;
+}
+.gambar-peternakan3{
+    background-image: url(https://bit.ly/3c787dp);
+    background-size: cover;
+    width: 100%;
+    height:50%;
+}
+
+.slide-peternakan {
+    border: 1px solid #000000; 
+    width: 310px;
+    height: 480px;
+    font-size: 12px;
+}
+
+
+/* slide-peternak-end----------------------------- */
+
+/* slide-user biasa end------------------------------------- */
+
+
+
+/* slide investor start */
+
+/* slide-header-investor start*/
+.slide-header-investor{
+    background-image: url(https://bit.ly/3T5yTmZ);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.slide-content-investor{
+    background-color: rgba(197, 152, 178, 0.95);
+    height: 100%;
+    color: white;
+}
+.slide-header-investor h4, h3, a{
+    color: white;
+}
+
+.slide-header-investor p {
+    border-bottom: 1px solid white;
+}
+
+
 
 /* ----------------------------------------------------------------- */
 
