@@ -28,7 +28,7 @@
             <!--[ Main content ]-->
             <main class='mainbar'>
                 <div class='section' id='top-widget'>
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="slide-header  carousel-item active ">
                                 <article class='item slide-content col-5'>
@@ -76,12 +76,12 @@
                                 </article>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls6"
                             data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls6"
                             data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
@@ -89,58 +89,72 @@
                     </div>
                 </div>
 
-                <!-- slide stars -->
-
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false"
+                <!-- slide-card stars -->
+                <div id="carouselExampleControlsNoTouching" class="carousel slide slide-card" data-touch="false"
                     data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item   active">
-                            <div class="row ">
-                                <div class="work slide-card col-3 ">
-                                    <div class="d-flex align-items-center slide-caption1 rounded">
+                            <div class="row d-flex justify-content-between">
+                                <div class="work slide-card1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
                                         <div class=" col-sm">
                                             <h6 class="">Domba Merino</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
+                                            <p>
+                                                harga mulai dari
                                             </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <a href="#">
+                                                <p><a href="#">
+                                                        <p>CEK SEKARANG</p>
+                                                    </a></p>
+                                            </a>
 
                                         </div>
                                     </div>
                                 </div>
-                                <div class="work slide-card col-3">
-                                    <div class="d-flex align-items-center slide-caption2 rounded">
+                                <div class="work slide-card2">
+                                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
                                         <div class=" col-sm">
                                             <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
+                                            <p>
+                                                harga mulai dari
                                             </p>
-
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="work slide-card col-3">
-                                    <div class="d-flex align-items-center slide-caption3 rounded">
+                                <div class="work slide-card3">
+                                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
                                         <div class=" col-sm">
-                                            <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
+                                            <h6 class="">Domba Suffolk</h6>
+                                            <p>
+                                                harga mulai dari
                                             </p>
-
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="work slide-card col-3">
-                                    <div class="d-flex align-items-center slide-caption1 rounded">
-                                        <div class="caption col-sm">
-                                            <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
-                                            </p>
+                                <div class="work slide-card1">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
 
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -148,309 +162,2372 @@
                             </div>
                         </div>
                         <div class="carousel-item slide-card ">
+                            <div class="row d-flex justify-content-between">
 
+                                <div class="work slide-card2">
+                                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Garut</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card3">
+                                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Suffolk</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                         <div class="carousel-item slide-card ">
+                            <div class="row d-flex justify-content-between">
 
+                                <div class="work slide-card2">
+                                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Garut</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card3">
+                                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Suffolk</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching"
                         data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                            style="background-color: black; width: 40px; height: 50px; "></span>
                         <span class="sr-only">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching"
                         data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: black; width: 40px; height: 50px; "></span>
                         <span class="sr-only">Next</span>
                     </button>
                 </div>
-
-
-                <!-- <div id="carouselExampleIndicators1" class="carousel slide1" data-ride="carousel">
+                <!-- slide-card end -->
+                <br>
+                <h2 class="judul col-5">Ayo Beli Dombamu Sekarang!</h2>
+                <br>
+                <!-- slide-detail-beli star -->
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-
-                        <div class="carousel-item active ">
-
-                            <br>
-                            <div class="item d-flex justify-content-around" alt="First slide">
-
-                                <br>
-
-                                <br>
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-6.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption_pasar col-sm">
-                                            <center>
-                                                <p style="color: white;">Belum Ketemu? Langsung liat Pasar yuk!</p>
-                                                <span class="iconify col-12" data-icon="healthicons:market-stall-outline" data-width="50" data-height="50"></span>
-                                                <a class="btn btn-primary mt-2" href="">kunjungi Pasar</a>
-                                            </center>
-                                        </div>
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas1">
                                     </div>
-                                </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
 
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas4">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas1">
+
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas4">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas1">
+
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5>Domba Texel </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis mt-1"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <h5 class="">Biaya Investasi</h5>
+                                        <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas4">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis mt-1"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <h5 class="">Biaya Investasi</h5>
+                                        <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
                             </div>
 
                         </div>
-                        <div class="carousel-item active ">
-                            <br>
-                            <div class="item d-flex justify-content-around" alt="second slide">
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-1.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption col-sm">
-                                            <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
-                                            </p>
-                                            <a class="btn btn-primary " href="">Cek Sekarang</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-6.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption col-sm">
-                                            <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
-                                            </p>
-                                            <a class="btn btn-primary " href="">Cek Sekarang</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-6.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption_pasar col-sm">
-                                            <center>
-                                                <p style="color: white;">Belum Ketemu? Langsung liat Pasar yuk!</p>
-                                                <span class="iconify col-12" data-icon="healthicons:market-stall-outline" data-width="50" data-height="50"></span>
-                                                <a class="btn btn-primary mt-2" href="">kunjungi Pasar</a>
-                                            </center>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="carousel-item active ">
-
-                            <br>
-                            <div class="item d-flex justify-content-around" alt="third slide">
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-1.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption col-sm">
-                                            <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
-                                            </p>
-                                            <a class="btn btn-primary " href="">Cek Sekarang</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-6.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption col-sm">
-                                            <h6 class="">Domba Garut</h6>
-                                            <p style="color: white;">
-                                                700 Ekor Siap Di beli
-                                                <br>700 Ekor Siap Di Investasikan
-                                            </p>
-                                            <a class="btn btn-primary " href="">Cek Sekarang</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="work">
-                                    <div class="img d-flex align-items-center  rounded" style="background-image: url({{asset('img/slide-6.jpg')}}); width: 353px;
-                                    height: 176px;">
-                                        <div class="caption_pasar col-sm">
-                                            <center>
-                                                <p style="color: white;">Belum Ketemu? Langsung liat Pasar yuk!</p>
-                                                <span class="iconify col-12" data-icon="healthicons:market-stall-outline" data-width="50" data-height="50"></span>
-                                                <a class="btn btn-primary mt-2" href="">kunjungi Pasar</a>
-                                            </center>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"
+                        style="background-color: black; width: 40px; height: 50px; margin-top: 200px;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next"
+                        style="background-color: black;width: 40px; height: 50px; margin-top:
+                            200px;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: black;"></span>
+                    </a>
+
+                </div>
+                <!-- slide-detail-beli -->
+                <br>
+                <h2 class="judul col-5">Peternakan Populer Saat Ini</h2>
+                <br>
+                <!-- slide-peternak star -->
+                <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="3" class="active"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-between" alt="Second slide">
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-between" alt="Third slide">
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-peternakan item ">
+                                    <div class="gambar-peternakan1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Peternakan Udin</b> </h5>
+                                            <p><span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung</p>
+                                        </center>
+                                        <ul>
+                                            <li><a href="#">300+</a> investor berinvestasi pada domba peternakan ini
+                                            </li>
+                                            <li><a href="#">Domba Garut</a> jenis paling diminati di peternakan ini
+                                            </li>
+                                            <li><a href="#">35%</a> rata - rata persentasi bagi hasil investor</li>
+                                            <li><a href="#">100+</a> investasi domba yang berhasil</li>
+                                        </ul>
+                                        <center>
+                                            <a class="btn btn-primary " href="pasar_detail_domba.html">Cek
+                                                Sekarang</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev"
+                        style="background-color: black; width: 40px; height: 50px; margin-top: 200px;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next"
+                        style="background-color: black;width: 40px; height: 50px; margin-top:
+                            200px;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: black;"></span>
+                    </a>
+
+                </div>
+                <!-- slide-peternak -->
+
+                <div class='section' id='top-widget'>
+                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="slide-header-investor d-flex  carousel-item active ">
+                                <article class='item slide-content-investor  align-items-sm-center col-5'>
+                                    <div class="d-flex d-flex justify-content-center ">
+                                        <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
+                                        <div class="mt-3 " style="border-left: 2px solid white;">
+                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Investasi</h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-white text-center">
+                                        <h3>CARA BARU UNTUK BERINVESTASI!</h3>
+                                        <p>Jadikan domba sebagai sarana investasi Anda dengan keuntungan return yang
+                                            relatif besar!</p>
+                                        <a href="#">
+                                            <h3>MULAI INVESTASI</h3>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slide-header-investor  carousel-item">
+                                <article class='item slide-content-investor col-4'>
+                                    <div class="d-flex d-flex justify-content-center ">
+                                        <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
+                                        <div class="mt-3 " style="border-left: 2px solid white;">
+                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Investasi</h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-white text-center">
+                                        <h3>AYO BELI DOMBAMU SEKARANG JUGA!</h3>
+                                        <p>Mulai dari Domba Garut
+                                            sampai Domba Texel, disini semua
+                                            ada!</p>
+                                        <h3>BELI SEKARANG</h3>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slide-header-investor  carousel-item">
+                                <article class='item slide-content-investor col-4'>
+                                    <div class="d-flex d-flex justify-content-center ">
+                                        <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
+                                        <div class="mt-3 " style="border-left: 2px solid white;">
+                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Investasi</h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-white text-center">
+                                        <h3>AYO BELI DOMBAMU SEKARANG JUGA!</h3>
+                                        <p>Mulai dari Domba Garut
+                                            sampai Domba Texel, disini semua
+                                            ada!</p>
+                                        <h3>BELI SEKARANG</h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls2"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls2"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- slide-card stars -->
+                <div id="carouselExampleControlsNoTouching2" class="carousel slide slide-card" data-touch="false"
+                    data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item   active">
+                            <div class="row d-flex justify-content-between">
+                                <div class="work slide-card1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <a href="#">
+                                                <p><a href="#">
+                                                        <p>CEK SEKARANG</p>
+                                                    </a></p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card2">
+                                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Garut</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card3">
+                                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Suffolk</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item slide-card ">
+                            <div class="row d-flex justify-content-between">
+
+                                <div class="work slide-card2">
+                                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Garut</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card3">
+                                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Suffolk</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item slide-card ">
+                            <div class="row d-flex justify-content-between">
+
+                                <div class="work slide-card2">
+                                    <div class="d-flex align-items-sm-center slide-caption2 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Garut</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card3">
+                                    <div class="d-flex align-items-sm-center slide-caption3 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Suffolk</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption1 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Domba Merino</h6>
+                                            <p>
+                                                harga mulai dari
+                                            </p>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-target="#carouselExampleControlsNoTouching2" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                            style="background-color: black; width: 40px; height: 50px; "></span>
                         <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-target="#carouselExampleControlsNoTouching2" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: black; width: 40px; height: 50px; "></span>
                         <span class="sr-only">Next</span>
+                    </button>
+                </div>
+                <!-- slide-card end -->
+                <br>
+                <h2 class="judul col-5">Ayo Beli Dombamu Sekarang!</h2>
+                <br>
+                <!-- slide-detail-beli star -->
+                <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas1">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas4">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas1">
+
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas4">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-between" alt="First slide">
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas1">
+
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5>Domba Texel </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item  ">
+                                    <div class="gambar-atas2">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+
+                                                23 Kg
+                                            </p>
+
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis "
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <center>
+                                            <h5 class="">Biaya Investasi</h5>
+                                            <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        </center>
+
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas3">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis mt-1"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <h5 class="">Biaya Investasi</h5>
+                                        <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                                <div class="slide-detail-beli item ">
+                                    <div class="gambar-atas4">
+                                    </div>
+                                    <div class="caption2 col-sm">
+                                        <center>
+                                            <h5 class=""><b>Domba Texel</b> </h5>
+                                        </center>
+                                        <div class="row">
+                                            <p class="col-6">
+                                                <span class="iconify  " data-icon="maki:farm" data-width="20"
+                                                    data-height="20"></span>
+                                                Peternakan Udin
+                                            </p>
+
+                                            <p class="col-6">
+                                                <span class="iconify " data-icon="akar-icons:location" data-width="25"
+                                                    data-height="25"></span>
+                                                Soreang, Bandung
+                                            </p>
+                                        </div>
+
+                                        <div class="garis"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <br>
+
+
+                                        <div class="row">
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="mdi:weight-kilogram" data-width="25"
+                                                    data-height="25"></span>
+                                                23 Kg
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify" data-icon="bi:hourglass-bottom" data-width="25"
+                                                    data-height="25"></span>
+                                                6 Bulan
+                                            </p>
+                                            <p class="col-4">
+                                                <span class="iconify " data-icon="bi:gender-male" data-width="25"
+                                                    data-height="25"></span>
+                                                Jantan
+                                            </p>
+                                        </div>
+
+                                        <div class="garis mt-1"
+                                            style="width: 100%; height: 2px; background-color: #000000; margin-top: -10px;">
+                                        </div>
+                                        <h5 class="">Biaya Investasi</h5>
+                                        <h4><a href="#">Rp1.450.000,00</a></h4>
+                                        <center>
+                                            <a class="btn btn-primary " href="">Lihat</a>
+                                        </center>
+                                        <br>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev"
+                        style="background-color: black; width: 40px; height: 50px; margin-top: 200px;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
-                </div> -->
-                <!-- slide end -->
-                <hr>
-                <br><br>
-                <!-- Banner Starts Here -->
-                <article class='item'
-                    style="background-image: url(img/banner1.jpg);background-size: 100%;background-repeat:no-repeat;">
-                    <div class="text-white text-center">
-                        <h3 style="color: white;">AYO BERINVESTASI DENGAN DOMBA!</h3>
-                        <p style="color: white;">Tidak hanya jual-beli, SI DOMBA juga menyediakan pasar investasi. Anda
-                            bisa
-                            menginvestasikan domba dari seluruh peternakan yang ada di Indonesia. Tentunya dengan
-                            profit dan bagi hasil yang telah ditentukan oleh pihak Investor dan Peternak.</p>
-                    </div>
-                </article>
-                <div class='section' id='main-widget'>
-                    <div class='widget Blog' data-version='2' id='Blog1'>
-                        <div class='blogTitle'>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next"
+                        style="background-color: black;width: 40px; height: 50px; margin-top:
+                            200px;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: black;"></span>
+                    </a>
 
-
-                        </div>
-                        <div class='blogPosts'>
-                            <div class="col-md-12 text-center" style="margin-top: 1rem;">
-                                <h3>INVESTASI</h3>
-                                <center>
-                                    <div class="line-dec"></div>
-                                </center>
-                            </div>
-                            <article class='hentry'>
-                                <div class="kotakbesar row justify-content-md-center mt-3">
-                                    <div class="kotak mr-3  ">
-                                        <center>
-                                            <span class="iconify mt-4" data-icon="fluent:handshake-16-regular"
-                                                data-width="40" data-height="40"></span>
-                                            <p class="">Ayo mulai investasi domba Anda sekarang!</p>
-                                            <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar
-                                                Sekarang</a>
-                                        </center>
-                                    </div>
-                            </article>
-                            <article class='hentry'>
-                                <div class="kotakbesar row justify-content-md-center mt-3">
-                                    <div class="kotak mr-3  ">
-                                        <center>
-                                            <span class="iconify mt-4" data-icon="ant-design:file-protect-outlined"
-                                                data-width="40" data-height="40"></span>
-                                            <p class="">Bagi kalian yang masih ragu, boleh cek regulasi dan aturan
-                                                investasi disini!</p>
-                                            <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar
-                                                Sekarang</a>
-                                        </center>
-                                    </div>
-                            </article>
-
-                            <article class='hentry'>
-                                <div class="kotakbesar row justify-content-md-center mt-3">
-                                    <div class="kotak mr-3  ">
-                                        <center>
-                                            <span class="iconify mt-4" data-icon="mdi:sheep" data-width="40"
-                                                data-height="40"></span>
-                                            <p class="">List domba-domba yang dibuka untuk investasi, liat yuk!</p>
-                                            <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar
-                                                Sekarang</a>
-                                        </center>
-                                    </div>
-                            </article>
-
-
-                        </div>
-
-                    </div>
                 </div>
-                <!-- Banner Starts Here -->
-                <article class='item'
-                    style="background-image: url(img/banner1.jpg);background-size: 100%;background-repeat:no-repeat;">
-                    <div class="text-white text-center">
-                        <h3 style="color: white;">MULAI KARIRMU SEBAGAI PETERNAK DOMBA ONLINE!</h3>
-                        <p style="color: white;">Sebagai platform marketplace, SI DOMBA tentunya juga memiliki fitur
-                            penjualan, dimana
-                            penjual domba adalah peternak domba itu langsung. Peternak bebas mengatur harga,
-                            investasi, dan kendali penuh atas domba yang dimiliki.</p>
-                    </div>
-                </article>
-                <div class='section' id='main-widget'>
-                    <div class='widget Blog' data-version='2' id='Blog1'>
-                        <div class='blogTitle'>
 
-
-                        </div>
-                        <div class='blogPosts'>
-                            <div class="col-md-12 text-center" style="margin-top: 1rem;">
-                                <h3>PETERNAKAN</h3>
-                                <center>
-                                    <div class="line-dec"></div>
-                                </center>
-                            </div>
-                            <article class='hentry'>
-                                <div class="kotakbesar row justify-content-md-center mt-3">
-                                    <div class="kotak mr-3  ">
-                                        <center>
-                                            <span class="iconify mt-4" data-icon="iconoir:farm" data-width="50"
-                                                data-height="50"></span>
-                                            <p class="">Ayo mulai beternak domba Anda sekarang!</p>
-                                            <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar
-                                                Sekarang</a>
-                                        </center>
-                                    </div>
-                            </article>
-                            <article class='hentry'>
-                                <div class="kotakbesar row justify-content-md-center mt-3">
-                                    <div class="kotak mr-3  ">
-                                        <center>
-                                            <span class="iconify mt-4" data-icon="ant-design:file-protect-outlined"
-                                                data-width="40" data-height="40"></span>
-                                            <p class="">Bagi kalian yang masih ragu, boleh cek regulasi dan aturan
-                                                investasi disini!</p>
-                                            <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar
-                                                Sekarang</a>
-                                        </center>
-                                    </div>
-                            </article>
-
-                            <article class='hentry'>
-                                <div class="kotakbesar row justify-content-md-center mt-3">
-                                    <div class="kotak mr-3  ">
-                                        <center>
-                                            <span class="iconify mt-4" data-icon="mdi:sheep" data-width="40"
-                                                data-height="40"></span>
-                                            <p class="">List domba-domba yang dibuka untuk investasi, liat yuk!</p>
-                                            <a class="btn btn-primary" href="#" style="font-size:10px ;">Daftar
-                                                Sekarang</a>
-                                        </center>
-                                    </div>
-                            </article>
-
-
-                        </div>
-
-                    </div>
-                </div>
             </main>
-
-            <!--[ Sidebar content ]-->
-
         </div>
     </div>
+
 </div>
+
+
 
 
 @endsection
