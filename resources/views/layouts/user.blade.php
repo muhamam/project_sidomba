@@ -162,15 +162,16 @@
                         </a>
                         <a class="peternakan mt-2 ms-2 me-2" href="javascript:void(0);"><i class="iconify d-inline mb-1"
                                 data-icon="maki:farm" data-width="20" data-height="20"></i>
-                            Peternakan</a>
+                            &nbsp;Peternakan</a>
                         <a class="investasi mt-2 ms-2 me-2" href="javascript:void(0);"><i class="iconify d-inline mb-1"
                                 data-icon="fluent-emoji-high-contrast:money-bag" data-width="20" data-height="20"></i>
-                            Investasi</a>
+                            &nbsp;Investasi</a>
                         <label href="javascript:void(0);" aria-label='profile' class='navProfile mt-3 ms-2 me-2'
                             for='offprofile-box' type="button">
-                            <i class="iconify d-inline mb-2" data-icon="line-md:account" data-width="20"
-                                data-height="20"></i>
-                            Account</label>
+                            <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                {{-- need redesign system --}} alt="" style="width: 20px; height: 20px; "
+                                class="rounded-circle d-inline mb-1 ms-2 me-2">
+                            &nbsp;{{ Auth::user()->fullname}}</label>
                         <!------------------------------------------------------------------------------------------------->
 
                         <!--[ Profile widget ]-->
