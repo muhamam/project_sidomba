@@ -29,11 +29,11 @@
                                 <div class="col-12 col-sm-auto">
                                     <div class="mx-auto" style="width: 200px;">
                                         <div class="d-flex justify-content-center align-items-center rounded mt-3"
-                                            style="height: 200px; background-color: rgb(233, 236, 239);">
+                                            style="height: 200px;">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
                                                 <img class="rounded"
                                                     src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                                                    width="200px" height="200px">
+                                                    style="width: 220px;height:220px;">
                                             </a>
                                         </div>
                                         <center>
