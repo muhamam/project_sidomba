@@ -64,10 +64,12 @@
         </div>
         <div class="container " style="background-color: white; width: 994px;">
             <div class="d-flex flex-row " style=" margin-left:20px;">
-                <a class="" href="investasi_riwayat.html" style="color: #000;">
+                {{-- klo di edit href nya bawa --}}
+                <a class="" href="{{route('ulasan.indexBelumDiulas')}}" style="color: #000;">
                     <h5>Belum Diulas</h5>
                 </a>
-                <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
+                {{-- klo di edit href nya bawa --}}
+                <a class="ml-4" href="{{route('ulasan.indexSudahDiulas')}}" style="color: #000;">
                     <h5>Ulasan Saya</h5>
                 </a>
             </div>
@@ -182,8 +184,7 @@
                                             style=" font-size:15px; color:rgb(60, 255, 0);">Rp1.450.000,00</a>
                                     </h3>
                                     <!-- Button trigger modal -->
-                                    <a type="button" href="#" class="btn btn-primary " data-toggle="modal"
-                                        data-target="#exampleModal-1" style=" font-size:11px;">Ulas Sekarang</a>
+                                    <a type="button" href="{{route('ulasan.indexTulisUlasan')}}" class="btn btn-primary " style=" font-size:11px;">Ulas Sekarang</a>
                                 </div>
 
                                 <!-- Modal -->

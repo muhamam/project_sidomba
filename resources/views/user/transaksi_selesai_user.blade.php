@@ -87,13 +87,14 @@
             </center>
             <!-- end notif -->
             <div class="d-flex flex-row " style=" margin-left:20px;">
-                <a class="" href="investasi_riwayat.html" style="color: #000;">
+                {{-- klo diedit bawa href nya --}}
+                <a class="" href="{{route('transaksi.indexDiproses')}}" style="color: #000;">
                     <h5>Diproses</h5>
                 </a>
-                <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
+                <a class="ml-4" href="{{route('transaksi.indexMenungguPembayaran')}}" style="color: #000;">
                     <h5>Menunggu Pembayaran</h5>
                 </a>
-                <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
+                <a class="ml-4" href="{{route('transaksi.indexSelesai')}}" style="color: #000;">
                     <h5>Selesai</h5>
                 </a>
             </div>

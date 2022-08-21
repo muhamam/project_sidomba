@@ -80,10 +80,12 @@
 
 
             <div class="d-flex flex-row " style=" margin-left:20px;">
-                <a class="" href="investasi_riwayat.html" style="color: #000;">
+                {{-- klo di edit href nya bawa --}}
+                <a class="" href="{{route('ulasan.indexBelumDiulas')}}" style="color: #000;">
                     <h5>Belum Diulas</h5>
                 </a>
-                <a class="ml-4" href="investasi_negosiasi.html" style="color: #000;">
+                {{-- klo di edit href nya bawa --}}
+                <a class="ml-4" href="{{route('ulasan.indexSudahDiulas')}}" style="color: #000;">
                     <h5>Ulasan Saya</h5>
                 </a>
             </div>

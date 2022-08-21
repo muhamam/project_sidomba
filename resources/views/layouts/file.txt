@@ -1,3 +1,8 @@
+    
+    ////////////////////////////////////
+    /// buat codingan yang tabrakan ////
+    ////////////////////////////////////
+    
     <ul id="menu">
         <li>
             <a href="{{route('account.index')}}" class="first">

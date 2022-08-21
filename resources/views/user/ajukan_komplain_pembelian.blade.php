@@ -62,6 +62,7 @@
     <section class="ftco-section col " style="margin-top:50px;">
         <div class="container " style="background-color: white; width: 994px;  border-radius:15px;">
             <br>
+            {{-- beda sama figma nya :(  --}}
             <div class="d-flex flex-row " style=" margin-left:20px; ">
                 <a class="" href="investasi_riwayat.html" style="color: #000;">
                     <h5>Diproses</h5>

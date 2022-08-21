@@ -151,10 +151,10 @@
                         <a href="javascript:void(0);" class="proses"><span class="iconify"
                                 data-icon="carbon:notification" data-width="22" data-height="25"></span>
                         </a>
-                        <a href="javascript:void(0);" class="proses2"><span class="iconify" data-icon="ep:chat-round"
+                        <a href="{{route('chat.index')}}" class=""><span class="iconify" data-icon="ep:chat-round"
                                 data-width="22" data-height="25"></span>
                         </a>
-                        <a href="javascript:void(0);" class="proses3"><span class="iconify" data-icon="cil:cart"
+                        <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify" data-icon="cil:cart"
                                 data-width="22" data-height="25"></span>
                         </a>
                         <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"

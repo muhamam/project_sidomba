@@ -21,6 +21,9 @@ use App\Http\Controllers\UlasanUser;
 use App\Http\Controllers\KomplainUser;
 use App\Http\Controllers\WishlistUser;
 use App\Http\Controllers\TransaksiUser;
+use App\Http\Controllers\AktivasiInvestor;
+use App\Http\Controllers\AktivasiPeternak;
+use App\Http\Controllers\KeranjangUser;
 use Illuminate\Support\Facades\Request;
 use App\Models\User;
 
@@ -59,21 +62,54 @@ Route::redirect('/', '/home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth', 'user-access:user'])->group(function () {
+    // tampilan awal menu akun
     Route::get('/user/akun', [AccountUser::class, 'index'])->name('account.index');
+
+    // edit profil user
     Route::get('/user/akun/edit', [EditAccountUser::class, 'index'])->name('editaccount.index');
     Route::post('/user/akun/edit', [EditAccountUser::class, 'update'])->name('editaccount.update');
+
+    // edit password user
     Route::get('/user/password', [UpdatePasswordUser::class, 'index'])->name('password.index');
+
+    // edit alamat user
     Route::get('/user/alamat', [AddressUser::class, 'index'])->name('address.index');
     Route::get('/user/edit/alamat', [EditAddressUser::class, 'index'])->name('editaddress.index');
+
+    // edit contact user
     Route::get('/user/edit/contact', [ContactUser::class, 'index'])->name('contact.index');
     Route::post('/user/edit/contact', [ContactUser::class, 'update'])->name('contact.update');
-    Route::patch('/user/edit/avatar', [EditAvatarUser::class, 'update'])->name('avatar.update');
-    Route::get('/user/chat', [ChatUser::class, 'index'])->name('chat.index');
-    Route::get('/user/ulasan', [UlasanUser::class, 'index'])->name('ulasan.index');
-    Route::get('/user/komplain', [KomplainUser::class, 'index'])->name('komplain.index');
-    Route::get('/user/wishlist', [WishlistUser::class, 'index'])->name('wishlist.index');
-    Route::get('/user/transaksi', [TransaksiUser::class, 'index'])->name('transaksi.index');
 
+    // edit photo profil user
+    Route::patch('/user/edit/avatar', [EditAvatarUser::class, 'update'])->name('avatar.update');
+
+    // tampilan chat user
+    Route::get('/user/chat', [ChatUser::class, 'index'])->name('chat.index');
+
+    // tampilan keranjang user
+    Route::get('/user/keranjang', [KeranjangUser::class, 'index'])->name('keranjang.index');
+
+    // ulasan user
+    Route::get('/user/ulasan/belum-diulas', [UlasanUser::class, 'indexBelumDiulas'])->name('ulasan.indexBelumDiulas');
+    Route::get('/user/ulasan/ulasan-saya', [UlasanUser::class, 'indexSudahDiulas'])->name('ulasan.indexSudahDiulas');
+    Route::get('/user/ulasan/tulis-ulasan', [UlasanUser::class, 'indexTulisUlasan'])->name('ulasan.indexTulisUlasan');
+
+    // komplain user
+    Route::get('/user/komplain', [KomplainUser::class, 'index'])->name('komplain.index');
+
+    // wishlist user
+    Route::get('/user/wishlist', [WishlistUser::class, 'index'])->name('wishlist.index');
+
+    // transaksi user
+    Route::get('/user/transaksi-diproses', [TransaksiUser::class, 'indexDiproses'])->name('transaksi.indexDiproses');
+    Route::get('/user/transaksi-menunggu-pembayaran', [TransaksiUser::class, 'indexMenungguPembayaran'])->name('transaksi.indexMenungguPembayaran');
+    Route::get('/user/transaksi-selesai', [TransaksiUser::class, 'indexSelesai'])->name('transaksi.indexSelesai');
+
+    // aktivasi investor
+    Route::get('/user/aktivasi/investor', [AktivasiInvestor::class, 'index'])->name('aktivasiInvestor.index');
+
+    // aktivasi peternak
+    Route::get('/user/aktivasi/peternak', [AktivasiPeternak::class, 'index'])->name('aktivasiPeternak.index');
 });
 
 
@@ -324,23 +360,8 @@ Route::get('/ulasan_sudah_diulas_investasi', function () {
 });
 
 // aman
-Route::get('/ulasan_sudah_diulas_pembeli', function () {
-    return view('user.ulasan_sudah_diulas_pembeli ');
-});
-
-// aman
 Route::get('/wishlist_investasi', function () {
     return view('user.wishlist_investasi ');
-});
-
-// aman
-Route::get('/transaksi_user_mp', function () {
-    return view('user.transaksi_user_mp ');
-});
-
-// aman
-Route::get('/transaksi_selesai_user', function () {
-    return view('user.transaksi_selesai_user ');
 });
 
 Route::get('/ajukan_komplain_investasi', function () {
@@ -358,36 +379,8 @@ Route::get('/edit_profil', function () {
 });
 
 // aman
-// Route::get('/alamat_edit', function () {
-//     return view('user.alamat_edit ');
-// });
-
-
-// Route::get('/edit_kontak', function () {
-//     return view('user.edit_kontak ');
-// });
-
-
-
-// aman
 Route::get('/komplain_proses', function () {
     return view('user.komplain_proses ');
-});
-
-
-// aman
-Route::get('/aktivasi_investor', function () {
-    return view('user.aktivasi_investor ');
-});
-
-// aman
-Route::get('/aktivasi_peternakan', function () {
-    return view('user.aktivasi_peternakan ');
-});
-
-// aman
-Route::get('/keranjang', function () {
-    return view('user.keranjang ');
 });
 
 // aman

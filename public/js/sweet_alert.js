@@ -4,7 +4,7 @@
             title: "Anda belum mendaftarkan peternakan anda",
             text: "Silahkan daftarkan terlebih dahulu peternakan anda",
             icon: "error",
-            footer: '<a href="#">Daftarkan Peternakan Anda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
+            footer: "<a href='/user/aktivasi/peternak'>Daftarkan Peternakan Anda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>Syarat & Ketentuan</a>",
         });
     });
     document.querySelector(".investasi").addEventListener("click", function() {
@@ -12,7 +12,7 @@
             title: "Anda belum mengaktifkan akun investor anda",
             text: "Silahkan daftarkan terlebih dahulu akun investor anda",
             icon: "error",
-            footer: '<a href="#">Aktifkan Akun Investor</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
+            footer: '<a href="/user/aktivasi/investor">Aktifkan Akun Investor</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Syarat & Ketentuan</a>',
         });
     });
     document.querySelector(".proses").addEventListener("click", function() {

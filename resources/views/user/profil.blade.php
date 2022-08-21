@@ -167,7 +167,7 @@
                                                         aktivasi
                                                         dengan
                                                         meng-klik tombol dibawah ini</p>
-                                                    <a href="#" class="btn btn-primary mb-3"
+                                                    <a href="{{route('aktivasiPeternak.index')}}" class="btn btn-primary mb-3"
                                                         style="border-radius: 10px;">
                                                         Aktivasi
                                                         Akun</a>
@@ -184,7 +184,7 @@
                                                     <p>Maaf, Anda belum mengaktivasi akun investor Anda. Silakan
                                                         aktivasi dengan
                                                         meng-klik tombol dibawah ini</p>
-                                                    <a href="#" class="btn btn-primary mb-3"
+                                                    <a href="{{route('aktivasiInvestor.index')}}" class="btn btn-primary mb-3"
                                                         style="border-radius: 10px;">
                                                         Aktivasi
                                                         Akun</a>

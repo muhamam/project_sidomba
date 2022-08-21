@@ -32,7 +32,7 @@
                                     <span> Chat</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="{{route('ulasan.index')}}"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('ulasan.indexBelumDiulas')}}"><i class="iconify"
                                         data-icon="carbon:star-review" data-width="25" data-height="25"></i><span>
                                         Ulasan</span></a>
                             </li>
@@ -47,7 +47,7 @@
                                         Wistlist</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="{{route('transaksi.index')}}"><i class="iconify"
+                                <a class="nav-link px-2" href="{{route('transaksi.indexDiproses')}}"><i class="iconify"
                                         data-icon="carbon:money" data-width="25" data-height="25"></i><span>
                                         Transaksi</span></a>
                             </li>
