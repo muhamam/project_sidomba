@@ -1,0 +1,5 @@
+revisi plis
+
+Dashboard :
+- Header : arah panah nya sesuaiin dengan figma, teksnya taruh ditengah sesuai dengan figma
+- Class card : tombol panahnya sesuaiin figma
