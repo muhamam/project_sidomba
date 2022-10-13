@@ -76,13 +76,13 @@
                                 </article>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls6" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <button class="carousel-control-prev " id="tombol-header" type="button" data-target="#carouselExampleControls6" data-slide="prev" style="">
+                            <span class="iconify" data-icon="akar-icons:chevron-left" data-width="30" data-height="30" style="color:black; "></span>
                             <span class="sr-only">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls6" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                        <button class="carousel-control-next " id="tombol-header" type="button" data-target="#carouselExampleControls6" data-slide="next">
+                            <span class="iconify" data-icon="akar-icons:chevron-right" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only ">Next</span>
                         </button>
                     </div>
                 </div>
@@ -293,14 +293,14 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black; width: 40px; height: 50px; "></span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black; width: 40px; height: 50px; "></span>
-                        <span class="sr-only">Next</span>
-                    </button>
+                        <button class="carousel-control-prev " id="tombol-caption" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev" style="">
+                            <span class="iconify" data-icon="akar-icons:chevron-left" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next " id="tombol-caption" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
+                            <span class="iconify" data-icon="akar-icons:chevron-right" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only ">Next</span>
+                        </button>
                 </div>
                 <!-- slide-card end -->
                 <br>
@@ -1574,16 +1574,14 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching2" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true" style="background: #E5E5E5; width: 59.73px;
-height: 72px; "></span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching2" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true" style="background: #E5E5E5; width: 59.73px;
-height: 72px; "></span>
-                        <span class="sr-only">Next</span>
-                    </button>
+                    <button class="carousel-control-prev " id="tombol-caption" type="button" data-target="#carouselExampleControlsNoTouching2" data-slide="prev" style="">
+                            <span class="iconify" data-icon="akar-icons:chevron-left" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next " id="tombol-caption" type="button" data-target="#carouselExampleControlsNoTouching2" data-slide="next">
+                            <span class="iconify" data-icon="akar-icons:chevron-right" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only ">Next</span>
+                        </button>
                 </div>
                 <!-- slide-card end -->
                 <br>
@@ -2222,6 +2220,147 @@ height: 72px; "></span>
 
                 </div>
 
+                <div class='section' id='top-widget'>
+                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="slide-header-peternak d-flex  carousel-item active ">
+                                <article class='item slide-content-peternak  align-items-sm-center col-5'>
+                                    <div class="d-flex d-flex justify-content-center ">
+                                        <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
+                                        <div class="mt-3 " style="border-left: 2px solid white;">
+                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Peternakan</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-white ml-5 mt-3 col-sm">
+                                        <h3>SAATNYA BETERNAK SECARA ONLINE!</h3>
+                                        <p class="mr-5">Pasarkan domba Anda dalam SI DOMBA untuk mendapatkan pelanggan lebih banyak!</p>
+                                        <a href="#">
+                                            <h4>DAFTAR PETERNAKAN
+                                                <span class="iconify" data-icon="akar-icons:circle-chevron-right"></span>
+                                            </h4>
+
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slide-header-peternak  carousel-item">
+                                <article class='item slide-content-peternak col-4'>
+                                    <div class="d-flex d-flex justify-content-center ">
+                                        <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
+                                        <div class="mt-3 " style="border-left: 2px solid white;">
+                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Peternakan</h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-white ml-5 mt-3 col-sm">
+                                        <h3>SAATNYA BETERNAK SECARA ONLINE!</h3>
+                                        <p class="mr-5">Pasarkan domba Anda dalam SI DOMBA untuk mendapatkan pelanggan lebih banyak!</p>
+                                        <a href="#">
+                                            <h4>DAFTAR PETERNAKAN
+                                                <span class="iconify" data-icon="akar-icons:circle-chevron-right"></span>
+                                            </h4>
+
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slide-header-peternak  carousel-item">
+                                <article class='item slide-content-peternak col-4'>
+                                    <div class="d-flex d-flex justify-content-center ">
+                                        <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
+                                        <div class="mt-3 " style="border-left: 2px solid white;">
+                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Peternakan</h4>
+                                        </div>
+                                    </div>
+                                    <div class="text-white ml-5 mt-3 col-sm">
+                                        <h3>SAATNYA BETERNAK SECARA ONLINE!</h3>
+                                        <p class="mr-5">Pasarkan domba Anda dalam SI DOMBA untuk mendapatkan pelanggan lebih banyak!</p>
+                                        <a href="#">
+                                            <h4>DAFTAR PETERNAKAN
+                                                <span class="iconify" data-icon="akar-icons:circle-chevron-right"></span>
+                                            </h4>
+
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev " id="tombol-header" type="button" data-target="#carouselExampleControls3" data-slide="prev" style="">
+                            <span class="iconify" data-icon="akar-icons:chevron-left" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next " id="tombol-header" type="button" data-target="#carouselExampleControls3" data-slide="next">
+                            <span class="iconify" data-icon="akar-icons:chevron-right" data-width="30" data-height="30" style="color:black; "></span>
+                            <span class="sr-only ">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- slide-card-investor stars -->
+                 <div id="" class="carousel slide slide-card-investor" data-touch="false" data-interval="false">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item   active">
+                            <div class="row d-flex justify-content-between">
+                                <div class="work slide-card-peternak1 ">
+                                    <div class="d-flex align-items-sm-center slide-caption-peternakan1  rounded ">
+                                        <div class=" col-sm">
+                                            <h6 class="">Lebih dari 500+ peternakan telah mendaftar!</h6>
+
+                                            <a href="#">
+                                                <p><a href="#">
+
+                                                        <p>CEK SEKARANG</p>
+                                                    </a></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card-peternak2">
+                                    <div class="d-flex align-items-sm-center slide-caption-peternakan2 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Keuntungan perbulan rata-rata</h6>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card-peternak3">
+                                    <div class="d-flex align-items-sm-center slide-caption-peternakan3 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Menjual atau Menginvestasikan, terserah Anda!</h6>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work slide-card-peternak4">
+                                    <div class="d-flex align-items-sm-center slide-caption-peternakan4 rounded ">
+
+                                        <div class=" col-sm">
+                                            <h6 class="">Organisir domba Anda secara online!</h6>
+                                            <h5>Rp1.2Jt</h5>
+                                            <p><a href="#">
+                                                    <p>CEK SEKARANG</p>
+                                                </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide-card end -->
+                
+               
+                 
             </main>
         </div>
     </div>

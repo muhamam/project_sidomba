@@ -21,7 +21,7 @@
     --head-color: #262d3d;
     --body-color: #48525c;
     --body-altColor: #767676;
-    --body-bg: #f5f5f5;
+    --body-bg: #E5E5E5;
     --link-color: #0b57cf;
     --link-bg: #204ecf;
     --icon-color: #48525c;
@@ -1565,6 +1565,13 @@ color: white;
     height: 72px;
     margin-top:200px;
 }
+#tombol-caption{
+    background-color: white; 
+    width: 50px;
+    height: 50px;
+    margin-top:6%;
+    border-radius:100%
+}
 
 /* slide-investor-header end */
 
@@ -1623,7 +1630,94 @@ color: white;
     
 }
 
+.tombol-card{
+    color:#000
+}
+
 /* slide-card-investor end */
+
+/* slide-header-peternak start*/
+.slide-header-peternak{
+    background-image: url(https://bit.ly/3T5yTmZ);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.slide-card-peternak1 {
+    background-image: url(https://bit.ly/3POgNTu);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card-peternak2 {
+    background-image: url(https://bit.ly/3wi5bRK);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card-peternak3 {
+    background-image: url(https://bit.ly/3QTvUMk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+.slide-card-peternak4 {
+    background-image: url(https://bit.ly/3QTvUMk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+.slide-content-peternak{
+    background-color: rgba(48, 93, 144, 0.85);
+    height: 100%;
+    color: white;
+}
+.slide-header-peternak h4, h3, a{
+    color: white;
+}
+
+.slide-header-peternak p {
+    border-bottom: 1px solid white;
+}
+.slide-caption-peternakan1 {
+    background-color: rgba(214, 6, 40, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-peternakan2 {
+    background-color: rgba(239, 143, 138, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-peternakan3 {
+    background-color: rgba(159, 129, 105, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-peternakan4 {
+    background-color: rgba(111, 170, 200, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+
+/* slide-peternak-header end */
 /* ----------------------------------------------------------------- */
 
 .blogContent .widget .title {
