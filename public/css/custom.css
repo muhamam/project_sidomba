@@ -1638,7 +1638,7 @@ color: white;
 
 /* slide-header-peternak start*/
 .slide-header-peternak{
-    background-image: url(https://bit.ly/3T5yTmZ);
+    background-image: url(https://bit.ly/3gdEg4z);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1647,7 +1647,7 @@ color: white;
 }
 
 .slide-card-peternak1 {
-    background-image: url(https://bit.ly/3POgNTu);
+    background-image: url(https://bit.ly/3S6FKuG);
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px;
@@ -1665,7 +1665,7 @@ color: white;
 }
 
 .slide-card-peternak3 {
-    background-image: url(https://bit.ly/3QTvUMk);
+    background-image: url(https://bit.ly/3TnFfgQ);
     background-size: cover;
     background-repeat: no-repeat;
     width: 290px;
@@ -1719,6 +1719,28 @@ color: white;
 
 /* slide-peternak-header end */
 /* ----------------------------------------------------------------- */
+
+/* css-user-peternak start */
+
+.banner{
+    background-image: url(https://bit.ly/3S8h3y1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption-peternakan {
+    background: rgba(45, 45, 45, 0.6);
+    
+    
+}
+.caption-peternakan, h1{
+    color: white;
+    border-bottom: 2px solid white;
+}
+.caption-peternakan, .coba{
+    border-left: 2px solid white;
+}
+
+/* css-user-peternak end */
 
 .blogContent .widget .title {
     display: flex;

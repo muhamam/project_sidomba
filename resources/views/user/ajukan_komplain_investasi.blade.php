@@ -1132,7 +1132,5 @@
         <br>
 </div>
 
-</section>
-</div>
 
 @endsection
