@@ -2,22 +2,26 @@
 
 @section('content')
 
-    <div class="row">
+    <div class="row ml-4 mt-5">
 
-        <div class="col ml-3 mt-4" >
-            <div class=" bg-light ">
-
+        <div class="col-sm-3  ml-4 bg-light mr-2 rounded border " >
                 <center>
                     <table>
                         <tr>
-                            <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; "
-                                        class="  ml-3 rounded-circle">
-                                </span></td>
+                            <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; border-radius:100%;"
+                                        class="  ">
+                                </span>
+                            </td>
                             <td>
-                                <a href="#" class="  " style="color:#000000 ;">Muhammad
-                                    anas
-                                </a>
-                                <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
+                                <ul>
+                                    <a href="#" class="" style="color:#000000 ;">Muhammad
+                                        anas
+                                    </a>
+                                </ul>
+                                
+                                <ul>
+                                    <a href="#" class="" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a>
+                                </ul>
                                 <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
                                     <li>
                                         <span style="color: black;">Peternakan</span>
@@ -36,35 +40,33 @@
                             5px;">
                         <p></p>
                     </div>
-                    <div class="dalam ">
-                        <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25"
-                            style="margin-right: 130px; margin-bottom: -60px;"></span>
-                        <a href="dashboard_investor.html" class="dropdown-item ">Akun</a>
-                        <span class="iconify" data-icon="bi:chat-text" data-width="25" data-height="25"
-                            style="margin-right: 130px; margin-bottom: -60px;"></span>
-                        <a href="pasar.html" class="dropdown-item ">Chat</a>
-                        <span class="iconify" data-icon="carbon:star-review" data-width="25" data-height="25"
-                            style="margin-right: 130px; margin-bottom: -60px;"></span>
-                        <a href="investasi_saya_semua.html" class="dropdown-item">Ulasan</a>
-                        <span class="iconify" data-icon="carbon:warning" data-width="25" data-height="25"
-                            style="margin-right: 130px; margin-bottom: -60px;"></span>
-                        <a href="investasi_riwayat.html" class="dropdown-item">Komplain</a>
-                        <span class="iconify" data-icon="bi:list-stars" data-width="25" data-height="25"
-                            style="margin-right: 130px; margin-bottom: -60px;"></span>
-                        <a href="#" class="dropdown-item ml-3">Wishlist</a>
-                        <span class="iconify" data-icon="carbon:money" data-width="25" data-height="25"
-                            style="margin-right: 130px; margin-bottom: -60px;"></span>
-                        <a href="#" class="dropdown-item ml-3 ">Transaksi</a>
+                    <div class="mt-4    ">
+                        <table>
+                            <tr>
+                                <td> <iconify-icon icon="bx:home-alt" width="25" height="25"></iconify-icon></td>
+                                <td><a href="dashboard_investor.html" class="dropdown-item ">Beranda</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="iconify mt-3" data-icon="bi:chat-text" data-width="25" data-height="25"></span></td>
+                                <td> <a href="pasar.html" class="dropdown-item mt-3">Chat</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="iconify mt-3" data-icon="carbon:star-review" data-width="25" data-height="25"></span></td>
+                                <td><a href="investasi_saya_semua.html" class="dropdown-item mt-3">Ternak</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="iconify mt-3" data-icon="carbon:warning" data-width="25" data-height="25"></span></td>
+                                <td><a href="investasi_riwayat.html" class="dropdown-item mt-3">Pesanan</a></td>
+                            </tr>
+                        </table>
                     </div>
 
                 </center>
-            </div>
-
         </div>
-        <div class="col-9">
+        <div class="col-7 bg-light  ml-4 rounded ">
             <!-- Banner Starts Here -->
             <center>
-            <div class=" banner .container-sm col-10 rounded " style="margin-top:30px ; ">
+            <div class=" banner .container-sm col-11 rounded " style="margin-top:30px ; ">
                         <div class="col-md-10 p-3">
                             <center>
                                 <div class="caption-peternakan rounded ">
@@ -96,7 +98,7 @@
             </center>
             <!-- Banner Ends Here -->
             <center>
-            <div class="col-9 row ">
+            <div class="col-11 row ">
 
                         <div class="col-md-12 text-center">
                             <h3>DAFTAR DOMBA</h3>
@@ -152,7 +154,7 @@
                         </table>
             </div>
             </center>
-        </div>
+        </div>  
                 
     </div>
     @endsection

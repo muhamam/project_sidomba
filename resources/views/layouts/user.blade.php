@@ -47,6 +47,7 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <!---------------------------------------------------------------------------------------------------------->
 
     <!-- HALAMAN BODY -->
