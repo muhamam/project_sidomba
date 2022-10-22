@@ -7,7 +7,6 @@
 <div class="container">
     @include('layouts.sidebarUser')
 
-    <div class="col">
         <div class="row">
             <div class="col mb-3">
                 <div class="card">
@@ -248,17 +247,9 @@
 
                         </div>
                     </div>
-                    </ul>
-
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
 @endsection
