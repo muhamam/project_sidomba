@@ -31,34 +31,35 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Provinsi</label>
                             <div class="col-sm-6">
-                                <select id="provinsi" class="form-control" name="provinsi"></select>
+                                <select id="provinsi" class="form-control" name="provinsi">
+                                    <option class="provinsi_option" value="-">-</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-3">Kabupaten</label>
+                            <label class="control-label col-sm-3">Kota / Kabupaten</label>
                             <div class="col-sm-6">
-                                <select id="kabupaten" class="form-control" name="kabupaten"></select>
+                                <select id="kota-or-kabupaten" class="form-control" name="kabupaten">
+                                    <option class="kota_option" value="-">-</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Kecamatan</label>
                             <div class="col-sm-6">
-                                <select id="kecamatan" class="form-control" name="kecamatan"></select>
+                                <select id="kecamatan" class="form-control" name="kecamatan">
+                                    <option class="kecamatan_option" value="-">-</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Kelurahan</label>
                             <div class="col-sm-6">
-                                <select id="kelurahan" class="form-control" name="kelurahan"></select>
+                                <select id="kelurahan" class="form-control" name="kelurahan">
+                                    <option class="kelurahan_option" value="-">-</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-3">&nbsp;</label>
-                            <div class="col-sm-6">
-                                <button type="button" id="show">GET DATA JSON</button>
-                            </div>
-                        </div>
-                        <div id="output"></div>
                     </form>
                     <h4>Cek Lokasi Mu</h4>
                     <!-- ini buat alamat nanti pake API -->
@@ -81,16 +82,6 @@
 </div>
 
 {{-- api maps --}}
-<script src="http://api.iksgroup.co.id/assets//jquery.min.js"></script>
-<script src="http://api.iksgroup.co.id/assets//js/bootstrap.min.js"></script>
-<script src="http://api.iksgroup.co.id/apijs/lokasiapi.js"></script>
-            <script>
-            var render=createwidgetlokasi("provinsi","kabupaten","kecamatan","kelurahan");
-            $(document).ready(function(){
-                $("#show").click(function(){
-                    $("#output").html(trackdatalokasi);
-                });            
-            });
-</script>
+<script src="{{asset('js/api_alamat_user.js')}}"></script>
 
 @endsection
