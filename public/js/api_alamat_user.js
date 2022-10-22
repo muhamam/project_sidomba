@@ -16,6 +16,8 @@ $.ajax({
 
 $('#provinsi').on('change', function () {
     $('.kota_option').remove();
+    $('.kecamatan_option').remove();
+    $('.kelurahan_option').remove();
     tmpProvince = $('#provinsi').val();
     console.log('ok');
     $.ajax({
@@ -39,6 +41,7 @@ $('#provinsi').on('change', function () {
 
 $('#kota-or-kabupaten').on('change', function () {
     $('.kecamatan_option').remove();
+    $('.kelurahan_option').remove();
     tmpKotaOrKabupaten = $('#kota-or-kabupaten').val();
     console.log('ok');
     $.ajax({
