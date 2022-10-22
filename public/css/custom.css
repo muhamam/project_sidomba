@@ -21,7 +21,6 @@
     --head-color: #262d3d;
     --body-color: #48525c;
     --body-altColor: #767676;
-    --body-bg: #E5E5E5;
     --link-color: #0b57cf;
     --link-bg: #204ecf;
     --icon-color: #48525c;
@@ -64,7 +63,7 @@
     --highlight-green: #54790d;
     --highlight-red: #f15a5a;
     --highlight-comment: #656e77;
-    --dark-text: #fefefe;
+    --dark-text: #000000;
     --dark-textAlt: #989b9f;
     --dark-link: #005af0;
     --dark-bg: #1e1e1e;
@@ -1352,6 +1351,40 @@ g.d1 path.fill {
 /* ---------------------------- BATAS JUDUL POST ---------------------------- */
 
 /* ---------------------------- KONTEN POST ---------------------------- */
+
+/* css login start */
+
+.body-login{
+    background-color: #3A8BCD;
+    
+}
+/* .body-login11{
+    height: 100%;
+    background-image: url(https://bit.ly/3wgqpzq);
+    background-size: cover;
+} */
+
+.tombol-login{
+    width: 150px;
+}
+.garis-login{
+    width: 150px;
+    height: 2px;
+    background-color: #000;
+}
+.body-login2{
+    background-color: rgb(255, 255, 255);
+    height: 150%;
+    width:50%;
+    
+}
+.body-login3{
+    background-color: white;
+    
+}
+
+
+/* css login end */
 
 /* ini slide untuk header di dashboard utama  */
 

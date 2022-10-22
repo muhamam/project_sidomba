@@ -13,16 +13,7 @@
                                 </span>
                             </td>
                             <td>
-                                <ul>
-                                    <a href="#" class="" style="color:#000000 ;">Muhammad
-                                        anas
-                                    </a>
-                                </ul>
-                                
-                                <ul>
-                                    <a href="#" class="" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a>
-                                </ul>
-                                <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
+                                <ul>cnt-size:12px;">
                                     <li>
                                         <span style="color: black;">Peternakan</span>
                                     </li>

@@ -73,13 +73,13 @@
                 <div class='headerDiv headerLeft'>
                     <!--[ Header button and icon ]-->
                     <div class='headerIcon'>
-                        <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodombaputih.png')}}"
-                                title='SI-DOMBA' alt="" width="50" />
+                        <a href="{{ route('home') }}"><img alt='CARIBI' src="{{ asset('img/logodombaputih.png')}}"
+                                title='CARIBI' alt="" width="50" />
                     </div>
                     <!--[ Header widget ]-->
                     <div class='section' id='header-widget'>
                         <div class='widget Header' data-version='2' id='Header1'>
-                            <b>SI-DOMBA</b></a>
+                            <b>CARIBI</b></a>
                         </div>
 
                     </div>
@@ -331,13 +331,13 @@
                 <div class='headerDiv headerLeft'>
                     <!--[ Header button and icon TIDAK LOGIN ]-->
                     <div class='headerIcon'>
-                        <a href="{{ route('home') }}"><img class="hide" alt='SI-DOMBA'
-                                src="{{ asset('img/logodombaputih.png')}}" title='SI-DOMBA' alt="" width="50" />
+                        <a href="{{ route('home') }}"><img class="hide" alt='CARIBI'
+                                src="{{ asset('img/logodombaputih.png')}}" title='CARIBI' alt="" width="50" />
                     </div>
                     <!--[ Header widget TIDAK LOGIN ]-->
                     <div class='section' id='header-widget'>
                         <div class='widget Header' data-version='2' id='Header1'>
-                            <b>SI-DOMBA</b></a>
+                            <b>CARIBI</b></a>
                         </div>
 
                     </div>

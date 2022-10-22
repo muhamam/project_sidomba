@@ -15,7 +15,7 @@
                         <div class="d-flex d-flex justify-content-center">
                             <img src="{{ asset('img/logodomba.png')}}" alt="" width="70">
                             <div class="mt-3 ml-3" style="border-left: 2px solid black;">
-                                <h3 class="ml-2" style="color:black;"><b>SI-DOMBA</b></h3>
+                                <h3 class="ml-2" style="color:black;"><b>CARIBI</b></h3>
                             </div>
 
                         </div>
@@ -34,7 +34,7 @@
                                 <article class='item slide-content col-5'>
                                     <div class="d-flex d-flex justify-content-center">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="70">
-                                        <h3 class="mt-3"><b>SI-DOMBA</b></h3>
+                                        <h3 class="mt-3"><b>CARIBI</b></h3>
                                     </div>
                                     <div class="text-white text-center">
                                         <h3>AYO BELI DOMBAMU SEKARANG JUGA!</h3>
@@ -49,7 +49,7 @@
                                 <article class='item slide-content col-5'>
                                     <div class="d-flex d-flex justify-content-center">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="70">
-                                        <h3 class="mt-3"><b>SI-DOMBA</b></h3>
+                                        <h3 class="mt-3"><b>CARIBI</b></h3>
                                     </div>
                                     <div class="text-white text-center">
                                         <h3>AYO BELI DOMBAMU SEKARANG JUGA!</h3>
@@ -64,7 +64,7 @@
                                 <article class='item slide-content col-5'>
                                     <div class="d-flex d-flex justify-content-center">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="70">
-                                        <h3 class="mt-3"><b>SI-DOMBA</b></h3>
+                                        <h3 class="mt-3"><b>CARIBI</b></h3>
                                     </div>
                                     <div class="text-white text-center">
                                         <h3>AYO BELI DOMBAMU SEKARANG JUGA!</h3>
@@ -1301,7 +1301,7 @@
                                     <div class="d-flex d-flex justify-content-center ">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
                                         <div class="mt-3 " style="border-left: 2px solid white;">
-                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Investasi</h4>
+                                            <h4 class="mt-3 ml-2" style="text-center">CARIBI <br>Investasi</h4>
                                         </div>
                                     </div>
 
@@ -1323,7 +1323,7 @@
                                     <div class="d-flex d-flex justify-content-center ">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
                                         <div class="mt-3 " style="border-left: 2px solid white;">
-                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Investasi</h4>
+                                            <h4 class="mt-3 ml-2" style="text-center">CARIBI <br>Investasi</h4>
                                         </div>
                                     </div>
                                     <div class="text-white ml-5 mt-3 col-sm">
@@ -1344,7 +1344,7 @@
                                     <div class="d-flex d-flex justify-content-center ">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
                                         <div class="mt-3 " style="border-left: 2px solid white;">
-                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Investasi</h4>
+                                            <h4 class="mt-3 ml-2" style="text-center">CARIBI <br>Investasi</h4>
                                         </div>
                                     </div>
                                     <div class="text-white ml-5 mt-3 col-sm">
@@ -2228,7 +2228,7 @@
                                     <div class="d-flex d-flex justify-content-center ">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
                                         <div class="mt-3 " style="border-left: 2px solid white;">
-                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Peternakan</h4>
+                                            <h4 class="mt-3 ml-2" style="text-center">CARIBI <br>Peternakan</h4>
                                         </div>
                                     </div>
 
@@ -2249,7 +2249,7 @@
                                     <div class="d-flex d-flex justify-content-center ">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
                                         <div class="mt-3 " style="border-left: 2px solid white;">
-                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Peternakan</h4>
+                                            <h4 class="mt-3 ml-2" style="text-center">CARIBI <br>Peternakan</h4>
                                         </div>
                                     </div>
                                     <div class="text-white ml-5 mt-3 col-sm">
@@ -2269,7 +2269,7 @@
                                     <div class="d-flex d-flex justify-content-center ">
                                         <img src="https://bit.ly/3Ci4ZG4" alt="" width="90">
                                         <div class="mt-3 " style="border-left: 2px solid white;">
-                                            <h4 class="mt-3 ml-2" style="text-center">SI-DOMBA <br>Peternakan</h4>
+                                            <h4 class="mt-3 ml-2" style="text-center">CARIBI <br>Peternakan</h4>
                                         </div>
                                     </div>
                                     <div class="text-white ml-5 mt-3 col-sm">
