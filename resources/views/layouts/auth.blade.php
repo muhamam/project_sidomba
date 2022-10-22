@@ -52,82 +52,13 @@
 
     <!--[ <body> open ]-->
 
-<body class='onIndex onHome' id='mainContent'>
+<body class='body-login' >
+        <div class="body-login11 mr-5">
 
+             @yield('content')
 
-    <!--[ Active function ]-->
-    <input class='profInput hidden' id='offprofile-box' type='checkbox' />
-    <input class='navInput hidden' id='offnav-input' type='checkbox' />
-    <div class='mainWrapper'>
-
-        <!--[ Header section ]-->
-        <header class='header ' id='header'>
-            <!--[ Header Notification ]-->
-            <div class='no-items section' id='header-notif'>
-            </div>
-            <!--[ Header content ]-->
-
-            <div class='headerContent'>
-                <div class='headerDiv headerLeft'>
-                    <!--[ Header button and icon ]-->
-                    <div class='headerIcon'>
-                        <a href="{{ route('home') }}"><img alt='SI-DOMBA' src="{{ asset('img/logodomba.png')}}"
-                                title='SI-DOMBA' alt="" width="50" />
-                    </div>
-                    <!--[ Header widget ]-->
-                    <div class='section' id='header-widget'>
-                        <div class='widget Header' data-version='2' id='Header1'>
-                            <b>SI-DOMBA</b></a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class='headerDiv headerRight'>
-
-
-
-                    <!--[ Header button and icon ]-->
-                    <div class='headerIcon'>
-
-                        <a href="{{ route('register') }}">
-                            <i class="iconify mb-1" data-icon="line-md:account-add" data-width="25"
-                                data-height="25"></i>
-                            Daftar</span>
-                        </a>
-
-
-                        <i class="iconify" data-icon="ci:line-xl" data-width="25" data-height="25"></i>
-
-
-                        <a href="{{ route('login') }}">
-                            <i class="iconify" data-icon="mdi:account-arrow-right-outline" data-width="25"
-                                data-height="25"></i>
-                            Masuk</span>
-                        </a>
-
-                        <!------------------------------------------------------------------------------------------------->
-
-                    </div>
-                </div>
-            </div>
-        </header>
-
-
-
-
-        <main class="py-5" style="background-color: #E5E5E5;">
-            @yield('content')
-        </main>
-
-        <footer class="bg-white border-top text-center">
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                Copyright 2022 &copy;
-                <a class="text-dark" href="">Team Si Domba</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+        </div>
+           
 </body>
 
 </html>

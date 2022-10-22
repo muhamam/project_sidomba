@@ -13,7 +13,7 @@
         </div>
 
 
-        <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
+        <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">CARIBI</h3>
         <h4 class="" style="margin-top: 40px; margin-left: -125px;">Peternakan</h4>
     </div>
 

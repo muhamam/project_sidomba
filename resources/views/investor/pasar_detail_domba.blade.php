@@ -10,7 +10,7 @@
                 style="width: 2px; height: 85px; background-color: black; margin-left: 10px; margin-right: 20px;">
                 <p></p>
             </div>
-            <h3 class="" style="text-center">SI-DOMBA <br>Investasi</h3>
+            <h3 class="" style="text-center">CARIBI <br>Investasi</h3>
         </div>
         <br>
         <div class="container bg-light" style="background-color: white; border-radius:20px;">

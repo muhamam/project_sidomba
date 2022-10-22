@@ -21,7 +21,6 @@
     --head-color: #262d3d;
     --body-color: #48525c;
     --body-altColor: #767676;
-    --body-bg: #f5f5f5;
     --link-color: #0b57cf;
     --link-bg: #204ecf;
     --icon-color: #48525c;
@@ -64,7 +63,7 @@
     --highlight-green: #54790d;
     --highlight-red: #f15a5a;
     --highlight-comment: #656e77;
-    --dark-text: #fefefe;
+    --dark-text: #000000;
     --dark-textAlt: #989b9f;
     --dark-link: #005af0;
     --dark-bg: #1e1e1e;
@@ -1353,6 +1352,40 @@ g.d1 path.fill {
 
 /* ---------------------------- KONTEN POST ---------------------------- */
 
+/* css login start */
+
+.body-login{
+    background-color: #3A8BCD;
+    
+}
+/* .body-login11{
+    height: 100%;
+    background-image: url(https://bit.ly/3wgqpzq);
+    background-size: cover;
+} */
+
+.tombol-login{
+    width: 150px;
+}
+.garis-login{
+    width: 150px;
+    height: 2px;
+    background-color: #000;
+}
+.body-login2{
+    background-color: rgb(255, 255, 255);
+    height: 150%;
+    width:50%;
+    
+}
+.body-login3{
+    background-color: white;
+    
+}
+
+
+/* css login end */
+
 /* ini slide untuk header di dashboard utama  */
 
 /* slide-user biasa start */
@@ -1459,7 +1492,7 @@ color: white;
 .slide-detail-beli{
     border: 1px solid #000000; 
     width: 300px;
-    height: 450px;
+    height: 350px;
     font-size: 11px;
 }
 
@@ -1488,11 +1521,16 @@ color: white;
     height:50%;
 }
 
+.keterangan{
+    border-top:1px solid black;
+    border-bottom: 1px solid black;
+}
+
 /* slide-detail-beli end---------------------------*/
 
 /* slide-peternak start */
 
-/* untuk class caption2 ada di slide-detail-beli dan juga dlide peternak */
+/* untuk class caption2 ada di slide-detail-beli dan juga slide peternak */
 .caption2 h5{
     color: black;
 }
@@ -1516,7 +1554,7 @@ color: white;
     height:50%;
 }
 
-.slide-peternakan {
+.slide-peternakan-user {
     border: 1px solid #000000; 
     width: 310px;
     height: 480px;
@@ -1524,7 +1562,7 @@ color: white;
 }
 
 
-/* slide-peternak-end----------------------------- */
+/* slide-peternak-user end----------------------------- */
 
 /* slide-user biasa end------------------------------------- */
 
@@ -1554,10 +1592,188 @@ color: white;
 .slide-header-investor p {
     border-bottom: 1px solid white;
 }
+#tombol-header {
+    background: #E5E5E5; 
+    width: 59.73px;
+    height: 72px;
+    margin-top:200px;
+}
+#tombol-caption{
+    background-color: white; 
+    width: 50px;
+    height: 50px;
+    margin-top:6%;
+    border-radius:100%
+}
 
+/* slide-investor-header end */
 
+/* slide-card-investor start */
+.slide-card-investor a{
+color: white;
+}
+.slide-card-investor1 {
+    background-image: url(https://bit.ly/3POgNTu);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 176px;
+    margin-top: 30px;
+}
 
+.slide-card-investor2 {
+    background-image: url(https://bit.ly/3wi5bRK);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card-investor3 {
+    background-image: url(https://bit.ly/3QTvUMk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-caption-investor1 {
+    background-color: rgba(183, 151, 136, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-investor1, h6{
+    color:white;
+    border-bottom: 1px solid white;
+
+}
+.slide-caption-investor2 {
+    background-color: rgba(49, 50, 58, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-investor3 {
+    background-color: rgba(180, 121, 93, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+
+.tombol-card{
+    color:#000
+}
+
+/* slide-card-investor end */
+
+/* slide-header-peternak start*/
+.slide-header-peternak{
+    background-image: url(https://bit.ly/3gdEg4z);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.slide-card-peternak1 {
+    background-image: url(https://bit.ly/3S6FKuG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card-peternak2 {
+    background-image: url(https://bit.ly/3wi5bRK);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+
+.slide-card-peternak3 {
+    background-image: url(https://bit.ly/3TnFfgQ);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+.slide-card-peternak4 {
+    background-image: url(https://bit.ly/3QTvUMk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 176px;
+    margin-top: 30px;
+}
+.slide-content-peternak{
+    background-color: rgba(48, 93, 144, 0.85);
+    height: 100%;
+    color: white;
+}
+.slide-header-peternak h4, h3, a{
+    color: white;
+}
+
+.slide-header-peternak p {
+    border-bottom: 1px solid white;
+}
+.slide-caption-peternakan1 {
+    background-color: rgba(214, 6, 40, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-peternakan2 {
+    background-color: rgba(239, 143, 138, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-peternakan3 {
+    background-color: rgba(159, 129, 105, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+.slide-caption-peternakan4 {
+    background-color: rgba(111, 170, 200, 0.85);
+    height: 100%;
+    width: 55%;
+    
+}
+
+/* slide-peternak-header end */
 /* ----------------------------------------------------------------- */
+
+/* css-user-peternak start */
+
+.banner{
+    background-image: url(https://bit.ly/3S8h3y1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption-peternakan {
+    background: rgba(45, 45, 45, 0.6);
+    
+    
+}
+.caption-peternakan, h1{
+    color: white;
+    border-bottom: 2px solid white;
+}
+.caption-peternakan, .coba{
+    border-left: 2px solid white;
+}
+
+/* css-user-peternak end */
 
 .blogContent .widget .title {
     display: flex;
