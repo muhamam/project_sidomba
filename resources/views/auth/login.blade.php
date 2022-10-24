@@ -88,12 +88,23 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <form>
+                                            <div class="form-group">
+                                                <center>
+                                                    <h5 class="text-dark">Lupa Password</h5>
+                                                </center>
+                                                <p>Link untuk mengubah password akan dikirimkan ke email yang telah
+                                                    terdaftar pada akun SIDOMBA Anda :</p>
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share
+                                                    your email with anyone else.</small>
+                                            </div>
+                                            <center>
+                                                <button type="submit" class="btn btn-primary">Kirim link</button>
+                                            </center>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
