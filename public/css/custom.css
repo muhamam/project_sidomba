@@ -1355,15 +1355,26 @@ g.d1 path.fill {
 /* css login start */
 
 .body-login{
-    background-color: #3A8BCD;
+    background-color: #3A8BCD; 
+    height: 900px;
     
 }
-/* .body-login11{
-    height: 100%;
+.body-login11{
+    height: 500px;
     background-image: url(https://bit.ly/3wgqpzq);
     background-size: cover;
-} */
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+}
 
+.body-login2{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width:50%;
+    bottom: 500px;
+    z-index: 2;
+}
 .tombol-login{
     width: 150px;
 }
@@ -1372,16 +1383,20 @@ g.d1 path.fill {
     height: 2px;
     background-color: #000;
 }
-.body-login2{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    width:50%;
-    
-}
+
 .body-login3{
     background-color: white;
     
 }
+.bulat{
+    border-radius: 100%;
+    width:100px;
+    height:100px;
+    background-color: white;
+    left:100%;
+}
+
+
 
 
 /* css login end */

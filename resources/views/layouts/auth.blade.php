@@ -52,13 +52,15 @@
 
     <!--[ <body> open ]-->
 
-<body class='body-login' >
-        <div class="body-login11 mr-5">
-
-             @yield('content')
-
+<body class='body-login ' >
+    <div class="row">
+        <div class="body-login11 mr-5 col-10">
         </div>
-           
+        <div class="bulat"></div>
+    </div>
+         @yield('content')
+
+    
 </body>
 
 </html>
