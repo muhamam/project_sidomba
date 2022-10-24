@@ -994,6 +994,7 @@ header svg .line {
     margin: 0;
     padding: 0;
     list-style: none;
+    border-bottom: 1px solid black;
 }
 .socialLink li:not(:last-child) {
     margin-right: 10px;
@@ -1365,7 +1366,7 @@ g.d1 path.fill {
     background-size: cover;
     top: 200px;
     left: 100px;
-    z-index: 1;
+    
 }
 
 .body-login2{
@@ -1373,7 +1374,7 @@ g.d1 path.fill {
     height: 100%;
     width:50%;
     bottom: 500px;
-    z-index: 2;
+    
 }
 .tombol-login{
     width: 150px;
@@ -1395,8 +1396,9 @@ g.d1 path.fill {
     background-color: white;
     left:100%;
 }
-
-
+.google{
+    margin-left: 130px;
+}
 
 
 /* css login end */

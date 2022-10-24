@@ -46,21 +46,25 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <!---------------------------------------------------------------------------------------------------------->
 
     <!-- HALAMAN BODY -->
 
     <!--[ <body> open ]-->
 
-<body class='body-login ' >
+<body class='body-login '>
     <div class="row">
         <div class="body-login11 mr-5 col-10">
         </div>
-        <div class="bulat"></div>
-    </div>
-         @yield('content')
+        <div class="bulat">
 
-    
+        </div>
+
+    </div>
+    @yield('content')
+
+
 </body>
 
 </html>

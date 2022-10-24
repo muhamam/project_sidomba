@@ -155,8 +155,8 @@
                         <a href="{{route('chat.index')}}" class=""><span class="iconify" data-icon="ep:chat-round"
                                 data-width="22" data-height="25"></span>
                         </a>
-                        <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify" data-icon="cil:cart"
-                                data-width="22" data-height="25"></span>
+                        <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify"
+                                data-icon="cil:cart" data-width="22" data-height="25"></span>
                         </a>
                         <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"
                                 data-width="22" data-height="25"></span>
@@ -218,9 +218,9 @@
                                                     Pembelian</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('wishlist.index')}}" class="text-dark"><span class="iconify me-2"
-                                                        data-icon="ant-design:star-outlined" data-width="25"
-                                                        data-height="25"></span>
+                                                <a href="{{route('wishlist.index')}}" class="text-dark"><span
+                                                        class="iconify me-2" data-icon="ant-design:star-outlined"
+                                                        data-width="25" data-height="25"></span>
                                                     Wishlist</a>
                                             </li>
                                             <li>
@@ -237,6 +237,15 @@
                                             </li>
 
                                         </ul>
+                                        <div class="row ml-1">
+                                            <iconify-icon icon="ph:coin-thin" width="40" height="40">
+                                            </iconify-icon>
+                                            <h5 class="mt-2 text-dark">Saldo</h5>
+                                            <a href="#" class="col-7 mt-2 text-dark pr-0">
+                                                <h5 class="text-dark"> Rp100.000.000</h5>
+                                            </a>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class='widget LinkList' data-version='2' id='LinkList001'>
