@@ -11,7 +11,7 @@
                 style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
                 <p></p>
             </div>
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">SI-DOMBA</h3>
+            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">CARIBI</h3>
             <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
 
 
