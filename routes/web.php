@@ -112,6 +112,9 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/aktivasi/peternak', [AktivasiPeternak::class, 'index'])->name('aktivasiPeternak.index');
 });
 
+Route::get('/ubah', function () {
+    return view('auth.ubah');
+});
 
 //basic route
 

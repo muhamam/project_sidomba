@@ -1357,23 +1357,28 @@ g.d1 path.fill {
 
 .body-login{
     background-color: #3A8BCD; 
-    height: 900px;
+    height: 600px;
     
 }
 .body-login11{
-    height: 500px;
+    height: 700px;
     background-image: url(https://bit.ly/3wgqpzq);
     background-size: cover;
-    top: 200px;
+    top: 100px;
     left: 100px;
+    z-index: 4;
     
 }
 
 .body-login2{
+    z-index: 5;
+    bottom: 700px;
+}
+
+.body-login3{
     background-color: rgb(255, 255, 255);
-    height: 100%;
-    width:50%;
-    bottom: 500px;
+    position: static;
+    
     
 }
 .tombol-login{
@@ -1387,6 +1392,8 @@ g.d1 path.fill {
 
 .body-login3{
     background-color: white;
+    height: 1000px;
+    z-index: 3;
     
 }
 .bulat{
@@ -1396,8 +1403,29 @@ g.d1 path.fill {
     background-color: white;
     left:100%;
 }
+.bulat2{
+    position: absolute;
+    border-radius: 100%;
+    width:200px;
+    height:200px;
+    background-color: white;
+    margin-left:1300px;
+    margin-top: 700px;
+    z-index: -1  ;
+}
+
+.modal{
+    z-index: 5;
+}
+
+.daftar{
+    margin-left: 300px;
+}
+.atau{
+    margin-left: 150px;
+}
 .google{
-    margin-left: 130px;
+    margin-left: 250px;
 }
 
 

@@ -3,43 +3,38 @@
 @section('content')
 
 
+<div class="body-login2 col-12  ">
+    <div class="body-login3 col-7 rounded ">
+        <br>
+        <a href="#" class="ml-3">
+            Sudah punya akun?
+        </a>
+        <a href="{{ route('login') }}">
+            <button class="btn btn-outline-dark">{{ __('login') }}</button>
+        </a>
+        <center>
 
-<div class="body-login2 col-6 rounded  ">
-    <br>
-    <a href="#" class="ml-3">
-        Sudah punya akun?
-    </a>
-    <a href="{{ route('login') }}">
-        <button class="btn btn-outline-dark">{{ __('login') }}</button>
-    </a>
-    <center>
+            <div class="">
+                <img src="../img/logodomba.png" alt="" style="width: 77px; height: 77px;">
 
-        <div class="">
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
+                <h3 class="" style="color:black">CARIBI </h3>
+            </div>
 
-            <h3 class="" style="color:black">CARIBI </h3>
-        </div>
+            <h6 style="color:black"><b>Beli, Jual, dan Investasi Domba Online se-Indonesia</b></h6>
+            <div class="box-1">
+                <h2>
+                    <a style="color: Black;">Ayo Daftar Sekarang!</a>
+                </h2>
+            </div>
+        </center>
 
-        <h6 style="color:black"><b>Beli, Jual, dan Investasi Domba Online se-Indonesia</b></h6>
-        <div class="box-1">
-            <h2>
-                <a style="color: Black;">Ayo Daftar Sekarang!</a>
-            </h2>
-        </div>
-    </center>
-
-    <div class=" box-2 d-flex flex-column p-5">
-        <div class="mt-3">
-            <p class="text-center h-1">Create Account</p>
-            <div class="d-flex flex-column ">
-
-                <div class="text-center">
-                    <b><small> or use your account</small></b>
-                </div>
+        <div class=" box-2 d-flex flex-column p-5">
+            <div class="mt-3">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
 
                     <div class="mb-2">
+                        <label for="fullname">Nama Lengkap</label>
                         <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror"
                             name="fullname" value="{{ old('fullname') }}" required autocomplete="fullname"
                             placeholder="Name" autofocus>
@@ -51,7 +46,7 @@
                     </div>
 
                     <div class="mb-2">
-
+                        <label for="email">EMAIL</label>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
                             name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
                         @error('email')
@@ -63,6 +58,7 @@
 
 
                     <div class="mb-2">
+                        <label for="password">Password</label>
                         <input id="password" type="password"
                             class="form-control @error('password') is-invalid @enderror" name="password" required
                             autocomplete="new-password" placeholder="Password">
@@ -73,26 +69,26 @@
                         @enderror
                     </div>
                     <div class="mb-2">
-
+                        <label for="password-confirm">Konfirmasi Password</label>
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
                             required autocomplete="new-password" placeholder="Confirm Password">
                     </div><br>
-                    <div class="row mb-0">
-                        <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-primary">
-                                {{ __('Daftar') }}
+                    <div>
+                        <div class="col-md-12 daftar ">
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal1">
+                                {{ __('Daftar Sekarang') }}
                             </button>
                         </div>
                     </div>
-                    <div class="d-flex col-12  mt-5">
-                        <div class="garis-login mt-3"></div>
-                        <h4 class="ml-5">Atau</h4>
-                        <div class="garis-login mt-3 ml-5"></div>
-                    </div>
-                    <br>
-                    <div class="google ">
-                        <a href="{{ url('login/google') }}">
-                            <table class="border ">
+                    <center>
+                        <div class="d-flex col-12 atau mt-4 ">
+                            <div class="garis-login mt-3"></div>
+                            <h4 class="ml-5">Atau</h4>
+                            <div class="garis-login mt-3 ml-5"></div>
+                        </div>
+                        <a href="{{ url('login/google') }}" class="google">
+                            <table class="border col-md-4">
                                 <tr>
                                     <td>
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
@@ -117,13 +113,14 @@
                                 </tr>
                             </table>
                         </a>
-                    </div>
+
+                    </center>
             </div>
         </div>
 
 
     </div>
 </div>
-
+</div>
 
 @endsection
