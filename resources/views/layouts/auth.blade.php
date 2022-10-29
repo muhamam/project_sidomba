@@ -46,6 +46,9 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+
 
     <!---------------------------------------------------------------------------------------------------------->
 
@@ -54,13 +57,66 @@
     <!--[ <body> open ]-->
 
 <body class='body-login '>
+
     <div class="row">
         <div class="body-login11 mr-5 col-10">
+
         </div>
         <div class="bulat">
+        </div>
+        <div class="bulat2">
 
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <center>
+                                    <h5 class="text-dark">Lupa Password</h5>
+                                </center>
+                                <p>Link untuk mengubah password akan dikirimkan ke email yang telah
+                                    terdaftar pada akun SIDOMBA Anda :</p>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <center>
+                                <button type="submit" class="btn btn-primary">Kirim link</button>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <center>
+                                <iconify-icon icon="bi:envelope-check" width="25" height="25"></iconify-icon>
+                                <h5 class="text-dark">Verifikasi Email</h5>
+                            </center>
+                            <p>Harap verifikasi email Anda dengan membuka link yang telah dikirim pada email dibawah ini
+                                :</p>
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <center>
+                            <button type="submit" class="btn btn-secondary">Kirim Ulang (59s)</button>
+                            <button type="submit" class="btn btn-primary">Verifikasi</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     @yield('content')
 

@@ -1,8 +1,8 @@
 @extends('layouts.auth')
 
 @section('content')
-<div class="">
-    <div class="row justify-content-center">
+<div class="body-login2">
+    <div class="body-login3 row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
