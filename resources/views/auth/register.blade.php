@@ -75,10 +75,9 @@
                     </div><br>
                     <div>
                         <div class="col-md-12 daftar ">
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModal1">
+                            <a type="button" class="btn btn-primary" href="">
                                 {{ __('Daftar Sekarang') }}
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <center>
@@ -88,7 +87,7 @@
                             <div class="garis-login mt-3 ml-5"></div>
                         </div>
                         <a href="{{ url('login/google') }}" class="google">
-                            <table class="border col-md-4">
+                            <table class="border col-md-5">
                                 <tr>
                                     <td>
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
