@@ -75,7 +75,7 @@
                     </div><br>
                     <div>
                         <div class="col-md-12 daftar ">
-                            <a type="button" class="btn btn-primary" href="">
+                            <a type="button" class="btn btn-primary" href="{{('verifikasi') }}">
                                 {{ __('Daftar Sekarang') }}
                             </a>
                         </div>

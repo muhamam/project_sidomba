@@ -112,6 +112,10 @@ Route::get('/ubah', function () {
     return view('auth.ubah');
 });
 
+Route::get('/verifikasi', function () {
+    return view('auth.verifikasi');
+});
+
 //basic route
 
 // aman
