@@ -21,12 +21,9 @@
                             <iconify-icon icon="bi:envelope-check" width="25" height="25"></iconify-icon>
                             <h5 class="text-dark">Verifikasi Email</h5>
                         </center>
-                        <p>Harap verifikasi email Anda dengan membuka link yang telah dikirim pada email dibawah ini
-                            :</p>
                     </div>
                     <center>
                         <button type="submit" class="btn btn-secondary" id="mundur"></button>
-                        <button type="submit" class="btn btn-primary">Verifikasi</button>
                     </center>
                 </form>
             </div>
