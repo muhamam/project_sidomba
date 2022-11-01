@@ -23,11 +23,11 @@
                         </center>
                         <p>Harap verifikasi email Anda dengan membuka link yang telah dikirim pada email dibawah ini
                             :</p>
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="exampleInputEmail1">Kode OTP</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <center>
-                        <button type="submit" class="btn btn-secondary">Kirim Ulang (59s)</button>
+                        <button type="submit" class="btn btn-secondary" id="mundur"></button>
                         <button type="submit" class="btn btn-primary">Verifikasi</button>
                     </center>
                 </form>
@@ -35,4 +35,20 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+var url = "Expired"; // url tujuan
+var count = 180; // dalam detik
+function countDown() {
+    if (count > 0) {
+        count--;
+        var waktu = count + 1;
+        $('#mundur').html('<b>Kirim Ulang </b> ' + url + ' dalam ' + waktu + ' detik.');
+        setTimeout("countDown()", 1000);
+    } else {
+        window.location.href = url;
+    }
+}
+countDown();
+</script>
 @endsection
