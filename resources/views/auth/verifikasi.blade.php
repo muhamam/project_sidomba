@@ -37,7 +37,7 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-var url = "Expired"; // url tujuan
+var url = ""; // url tujuan
 var count = 180; // dalam detik
 function countDown() {
     if (count > 0) {
