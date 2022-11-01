@@ -23,8 +23,6 @@
                         </center>
                         <p>Harap verifikasi email Anda dengan membuka link yang telah dikirim pada email dibawah ini
                             :</p>
-                        <label for="exampleInputEmail1">Kode OTP</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <center>
                         <button type="submit" class="btn btn-secondary" id="mundur"></button>
