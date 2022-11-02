@@ -116,6 +116,9 @@ Route::get('/verifikasi', function () {
     return view('auth.verifikasi');
 });
 
+Route::get('/bikin', function () {
+    return view('auth.bikin');
+});
 //basic route
 
 // aman

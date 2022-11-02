@@ -5,9 +5,9 @@
 <!-- Modal1 -->
 
 <div class="body-login2 col-12 " aria-labelledby="exampleModalLabel">
-    <div class="body-login3 col-7 rounded">
+    <div class="body-login3  rounded">
         <center>
-            <div class="mb-5">
+            <div class="mb-5 mt-5">
                 <img src="../img/logodomba.png" alt="" style="width: 77px; height: 77px;">
 
                 <h3 class="" style="color:black">CARIBI </h3>

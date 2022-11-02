@@ -17,7 +17,7 @@
             <div class="box-1   mt-5">
                 <iconify-icon icon="ic:outline-password" width="25" height="25"></iconify-icon>
                 <h2>
-                    <a style="color: Black;">Ubah Password</a>
+                    <a style="color: Black;">Masukkan Password</a>
                 </h2>
             </div>
         </center>
@@ -33,7 +33,7 @@
                     @endif
 
                     <div class="mb-2">
-                        <h6 style="color:black">Password Baru</h6>
+                        <h6 style="color:black">Password</h6>
                         <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
                             aria-describedby="emailHelp" name="email" placeholder="Email">
 
