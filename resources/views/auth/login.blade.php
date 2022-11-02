@@ -92,13 +92,13 @@
                             </div>
                         </div>
                         <center>
-                            <div class="d-flex col-12 atau mt-4 ">
+                            <div class="atau-login d-flex col-10 atau mt-4 border  ">
                                 <div class="garis-login mt-3"></div>
                                 <h4 class="ml-5">Atau</h4>
                                 <div class="garis-login mt-3 ml-5"></div>
                             </div>
                             <a href="{{ url('login/google') }}" class="google">
-                                <table class="border col-md-4">
+                                <table class="border col-4">
                                     <tr>
                                         <td>
                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
@@ -118,7 +118,7 @@
                                             </svg>
                                         </td>
                                         <td>
-                                            <h5 class="mt-2" style="color:black">Masuk dengan Google</h5>
+                                            <h6 class="mt-2 ml-2" style="color:black">Masuk dengan Google</h6>
                                         </td>
                                     </tr>
                                 </table>

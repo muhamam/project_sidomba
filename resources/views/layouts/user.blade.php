@@ -514,7 +514,6 @@
             </div>
         </div>
     </footer>
-    </div>
     <!-- FUNSGIONAL JAVASCRIPT -->
     <script src="{{asset('js/sweet_alert.js')}}"></script>
     <script src="{{asset('js/fungsional.js')}}"></script>
@@ -522,7 +521,6 @@
     <script src="{{asset('js/main.js')}}"></script>
 
     <!-- BATAS FUNGSIONAL JAVASCRIPT -->
-
 </body>
 
 </html>

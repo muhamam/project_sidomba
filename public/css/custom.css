@@ -1372,7 +1372,7 @@ g.d1 path.fill {
 
 .body-login2{
     z-index: 5;
-    bottom: 700px;
+    bottom: 720px;
 }
 
 .body-login3{
@@ -1409,11 +1409,14 @@ g.d1 path.fill {
     width:200px;
     height:200px;
     background-color: white;
-    margin-left:1300px;
+    margin-left:1150px;
     margin-top: 700px;
     z-index: -1  ;
 }
 
+.atau-login{
+    margin-left: -200px;
+}
 .modal{
     z-index: 5;
 }
@@ -1801,7 +1804,7 @@ color: white;
 /* css-user-peternak start */
 
 .banner{
-    background-image: url(https://bit.ly/3S8h3y1);
+    background-image: url(ccc);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1818,6 +1821,28 @@ color: white;
     border-left: 2px solid white;
 }
 
+.head-peternak img {
+    border-right: 3px solid black;
+}
+
+.head-peternak h3 {
+    margin-top: 10px;
+    margin-left: 10px; 
+    height: 10px; 
+    color:black;
+}
+.head-peternak h4 {
+    margin-top: 40px; 
+    margin-left: -100px;
+}
+
+.form-pendaftaran{
+    margin-left: 50px;
+}
+.form-inti-peternakan{
+    margin-left: 120px;
+    border : 1px solid black;
+}
 /* css-user-peternak end */
 
 .blogContent .widget .title {
