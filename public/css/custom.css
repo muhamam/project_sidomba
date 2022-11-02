@@ -1378,6 +1378,7 @@ g.d1 path.fill {
 .body-login3{
     background-color: rgb(255, 255, 255);
     position: static;
+    width: 700px;
     
     
 }
@@ -1388,6 +1389,8 @@ g.d1 path.fill {
     width: 150px;
     height: 2px;
     background-color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .body-login3{
@@ -1415,23 +1418,69 @@ g.d1 path.fill {
 }
 
 .atau-login{
-    margin-left: -200px;
+    margin-left: 70px;
+    width: 90%;
 }
 .modal{
     z-index: 5;
 }
 
 .daftar{
-    margin-left: 300px;
-}
-.atau{
-    margin-left: 150px;
+    margin-left: 30%;
 }
 .google{
-    margin-left: 250px;
+    margin-left: -60px;
 }
 
-
+@media only screen and (max-width: 800px) {
+    .body-login{
+        background-color: #3A8BCD; 
+        height: 100px;
+    }
+    .body-login11{
+        height: 400px;
+        background-image: url(https://bit.ly/3wgqpzq);
+        background-size: cover;
+        
+    }
+    .body-login2{
+        z-index: 5;
+        bottom: 520px;
+        width: 300px;
+    }
+    .body-login3{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        
+        
+    }
+    .daftar{
+        margin-left: 25%;
+    }
+    .atau-login{
+        margin-left: 10%;
+        width: 100%;
+        font-size: 10px;
+    }
+    .atau-login h4{
+        font-size: 20px;
+    }
+    .garis-login{
+        width: 30%;
+        height: 2px;
+        background-color: #000;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .google{
+        width: 300px;
+        margin-top: 10px;
+    }
+    .google table{
+        width: 80%;
+        margin-left: 25%;
+    }
+}
 /* css login end */
 
 /* ini slide untuk header di dashboard utama  */
