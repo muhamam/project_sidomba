@@ -554,6 +554,7 @@ header {
     top: 0;
     padding: 5px 0px 5px 0px;
 }
+
 header a {
     color: inherit;
 }
@@ -1058,7 +1059,7 @@ header svg .line {
     list-style: none;
 }
 #mobile-menu .mobileMenu li {
-    width: 25%;
+    width: 95%;
     text-align: center;
 }
 #mobile-menu .mobileMenu li > * {
@@ -1426,13 +1427,15 @@ g.d1 path.fill {
 }
 
 .daftar{
-    margin-left: 30%;
+    margin-left: 32%;
+    
 }
 .google{
     margin-left: -60px;
 }
 
 @media only screen and (max-width: 800px) {
+    /* css login responsive start  */
     .body-login{
         background-color: #3A8BCD; 
         height: 100px;
@@ -1480,8 +1483,16 @@ g.d1 path.fill {
         width: 80%;
         margin-left: 25%;
     }
+/* css login responsive  end */
+/* css profil responsive start */
+    header{
+
+
+    }
+/* css profil responsive end */
+
 }
-/* css login end */
+
 
 /* ini slide untuk header di dashboard utama  */
 
@@ -1514,7 +1525,7 @@ color: white;
     background-image: url(https://bit.ly/3A7uvLz);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 290px;
+    width: 250px;
     height: 176px;
     margin-top: 30px;
 }
@@ -1540,7 +1551,7 @@ color: white;
 .slide-caption1 {
     background-color: rgba(190, 185, 150, 0.85);
     height: 100%;
-    width: 55%;
+    width: 65%;
     
 }
 .slide-caption2 {
@@ -1588,9 +1599,9 @@ color: white;
 /* slide-detail-beli start */
 .slide-detail-beli{
     border: 1px solid #000000; 
-    width: 300px;
-    height: 350px;
-    font-size: 11px;
+    width: 24%;
+    height:90%;
+    font-size: 9px;
 }
 
 .gambar-atas1{
@@ -1603,19 +1614,17 @@ color: white;
     background-image: url(https://bit.ly/3CmndGC);
     background-size: cover;
     
-    height:50%;
+    height:200px;
 }
 .gambar-atas3{
     background-image: url(https://bit.ly/3QDG04h);
     background-size: cover;
-    
-    height:50%;
+    height:200px;
 }
 .gambar-atas4{
     background-image: url(https://bit.ly/3wj5f3E);
     background-size: cover;
-    
-    height:50%;
+    height:200px;
 }
 
 .keterangan{
@@ -1636,25 +1645,25 @@ color: white;
     background-image: url(https://bit.ly/3AfJ3bQ);
     background-size: cover;
     width: 100%;
-    height:50%;
+    height:200px;
 }
 .gambar-peternakan2{
     background-image: url(https://bit.ly/3K9XzGQ);
     background-size: cover;
     width: 100%;
-    height:50%;
+    height:200px;
 }
 .gambar-peternakan3{
     background-image: url(https://bit.ly/3c787dp);
     background-size: cover;
     width: 100%;
-    height:50%;
+    height:200px;
 }
 
 .slide-peternakan-user {
     border: 1px solid #000000; 
-    width: 310px;
-    height: 480px;
+    width: 24%;
+    height: 80%;
     font-size: 12px;
 }
 
@@ -1713,8 +1722,8 @@ color: white;
     background-image: url(https://bit.ly/3POgNTu);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 176px;
+    width:24%;
+    height: 200px;
     margin-top: 30px;
 }
 
@@ -1722,8 +1731,8 @@ color: white;
     background-image: url(https://bit.ly/3wi5bRK);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 290px;
-    height: 176px;
+    width: 24%;
+    height: 200px;
     margin-top: 30px;
 }
 
@@ -1731,8 +1740,8 @@ color: white;
     background-image: url(https://bit.ly/3QTvUMk);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 290px;
-    height: 176px;
+    width: 24%;
+    height: 200px;
     margin-top: 30px;
 }
 
@@ -1780,7 +1789,7 @@ color: white;
     background-image: url(https://bit.ly/3S6FKuG);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 24%;
     height: 176px;
     margin-top: 30px;
 }
@@ -1789,7 +1798,7 @@ color: white;
     background-image: url(https://bit.ly/3wi5bRK);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 290px;
+    width: 24%;
     height: 176px;
     margin-top: 30px;
 }
@@ -1798,7 +1807,7 @@ color: white;
     background-image: url(https://bit.ly/3TnFfgQ);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 290px;
+    width: 24%;
     height: 176px;
     margin-top: 30px;
 }
@@ -1806,7 +1815,7 @@ color: white;
     background-image: url(https://bit.ly/3QTvUMk);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 290px;
+    width: 24%;
     height: 176px;
     margin-top: 30px;
 }

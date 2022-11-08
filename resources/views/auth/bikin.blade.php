@@ -15,7 +15,7 @@
                 <h3 class="" style="color:black">CARIBI </h3>
             </div>
             <div class="box-1   mt-5">
-                <iconify-icon icon="ic:outline-password" width="25" height="25"></iconify-icon>
+                <iconify-icon icon="ic:outline-password" width="25" height="25" style="color:green"></iconify-icon>
                 <h2>
                     <a style="color: Black;">Masukkan Password</a>
                 </h2>
@@ -34,8 +34,8 @@
 
                     <div class="mb-2">
                         <h6 style="color:black">Password</h6>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
-                            aria-describedby="emailHelp" name="email" placeholder="Email">
+                        <input type="password" class="form-control @error('password') is-invalid @enderror" id="email"
+                            aria-describedby="emailHelp" name="password" placeholder="Masukan Password Baru">
 
                         @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -47,7 +47,7 @@
                     <div class="mb-2">
                         <h6 style="color:black">Konfirmasi Password</h6>
                         <input type="password" class="form-control @error('password') is-invalid @enderror"
-                            id="password" name="password" placeholder="Password">
+                            id="password" name="password" placeholder="Konfirmasi Password">
 
                         @error('password')
                         <span class="invalid-feedback" role="alert">
@@ -58,13 +58,10 @@
 
 
                 </div>
-                <br>
-                <div>
-                    <div class="col-md-12 daftar ">
-                        <button type="submit" class="btn btn-primary tombol-login ">
-                            {{ __('Ubah Password') }}
-                        </button>
-                    </div>
+                <div class="daftar ">
+                    <a type="submit" class="btn btn-primary tombol-login " href="#" style="width:200px;">
+                        {{ __('Masukan Password') }}
+                    </a>
                 </div>
             </div>
         </div>
