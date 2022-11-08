@@ -17,7 +17,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('user.home');
+        if (Auth::user() && Auth::user()->email_verified_at === null) {
+           return redirect()->route('verification.notice');
+        // dd(Auth::user()->fullname);
+        } else {
+            return view('user.home');
+        }
+    
     }
 
     /**

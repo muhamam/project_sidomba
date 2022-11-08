@@ -15,15 +15,19 @@
         </center>
         <div class="modal-content">
             <div class="modal-body">
-                <form>
+                <form method="POST" action="{{ route('verification.send') }}">
+                    @csrf
                     <div class="form-group">
                         <center>
                             <iconify-icon icon="bi:envelope-check" width="25" height="25"></iconify-icon>
                             <h5 class="text-dark">Verifikasi Email</h5>
+                            @if (session('message'))
+                                <h6 class="text-success">{{session('message')}}</h6>
+                            @endif
                         </center>
                     </div>
                     <center>
-                        <button type="submit" class="btn btn-secondary" id="mundur"></button>
+                        <button type="submit" class="btn btn-primary" id="mundu">Kirim ulang link verifikasi</button>
                     </center>
                 </form>
             </div>
@@ -33,17 +37,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 var url = ""; // url tujuan
-var count = 180; // dalam detik
+var count = 60; // dalam detik
 function countDown() {
     if (count > 0) {
         count--;
         var waktu = count + 1;
-        $('#mundur').html('<b>Kirim Ulang </b> ' + url + ' dalam ' + waktu + ' detik.');
+        $('#mundur').html('<b>Kirim </b> ' + url + waktu + ' detik.');
         setTimeout("countDown()", 1000);
     } else {
         window.location.href = url;
     }
 }
-countDown();
+// countDown();
 </script>
 @endsection
