@@ -6,7 +6,7 @@
 
 <div class="body-login2 col-12  ">
 
-    <div class="body-login3 col-7 rounded ">
+    <div class="body-login3 mt-5 rounded ">
         <center>
 
             <div class="">

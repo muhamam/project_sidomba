@@ -24,16 +24,13 @@ use App\Http\Controllers\TransaksiUser;
 use App\Http\Controllers\AktivasiInvestor;
 use App\Http\Controllers\AktivasiPeternak;
 use App\Http\Controllers\KeranjangUser;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
-<<<<<<< HEAD
-| Web Routes test / MR
-=======
-| Web Routes test testv lgi
->>>>>>> 9113ed1ce48c3d769a9f20d9c28f2b61d9670e99
+| Web Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -61,7 +58,31 @@ All Normal Users Routes List
 Route::redirect('/', '/home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::middleware(['auth', 'user-access:user'])->group(function () {
+
+// verifikasi email
+Route::get('/email/verify', function () {
+    if (Auth::user() && Auth::user()->email_verified_at === null) {
+        return view('auth.verify-email');
+    } else {
+        return view('user.home');
+    }
+})->middleware('auth')->name('verification.notice');
+
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+ 
+    return redirect('/home');
+})->middleware(['auth', 'signed'])->name('verification.verify');
+
+Route::post('/email/verification-notification', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+ 
+    return redirect('/email/verify')->with('message', 'Link berhasil dikirim');
+})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+
+////
+
+Route::middleware(['auth', 'user-access:user', 'verified'])->group(function () {
     // tampilan awal menu akun
     Route::get('/user/akun', [AccountUser::class, 'index'])->name('account.index');
 
@@ -112,10 +133,17 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/user/aktivasi/peternak', [AktivasiPeternak::class, 'index'])->name('aktivasiPeternak.index');
 });
 
-Route::get('/ubah', function () {
-    return view('auth.ubah');
-});
+// Route::get('/ubah', function () {
+//     return view('auth.ubah');
+// });
 
+// Route::get('/verifikasi', function () {
+//     return view('auth.verifikasi');
+// });
+
+// Route::get('/bikin', function () {
+//     return view('auth.bikin');
+// });
 //basic route
 
 // aman
@@ -288,7 +316,7 @@ Route::get('/investasi_pengajuan_komplain', function () {
 // AKHIR PAGE INVESTOR
 
 
-// profil user biasa
+// profil user biasa //
 
 // // aman
 Route::get('/profil_user', function () {

@@ -4,7 +4,7 @@
 
 
 <div class="body-login2 col-12  ">
-    <div class="body-login3 col-7 rounded ">
+    <div class="body-login3  rounded ">
         <br>
         <a href="#" class="ml-3">
             Sudah punya akun?
@@ -32,7 +32,6 @@
             <div class="mt-3">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
-
                     <div class="mb-2">
                         <label for="fullname">Nama Lengkap</label>
                         <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror"
@@ -44,7 +43,6 @@
                         </span>
                         @enderror
                     </div>
-
                     <div class="mb-2">
                         <label for="email">EMAIL</label>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
@@ -55,8 +53,6 @@
                         </span>
                         @enderror
                     </div>
-
-
                     <div class="mb-2">
                         <label for="password">Password</label>
                         <input id="password" type="password"
@@ -75,24 +71,25 @@
                     </div><br>
                     <div>
                         <div class="col-md-12 daftar ">
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModal1">
+                            <button type="submit" class="btn btn-primary">
                                 {{ __('Daftar Sekarang') }}
                             </button>
                         </div>
                     </div>
-                    <center>
-                        <div class="d-flex col-12 atau mt-4 ">
-                            <div class="garis-login mt-3"></div>
-                            <h4 class="ml-5">Atau</h4>
-                            <div class="garis-login mt-3 ml-5"></div>
-                        </div>
-                        <a href="{{ url('login/google') }}" class="google">
-                            <table class="border col-md-4">
+                </form>
+                <center>
+                    <div class="atau-login d-flex  atau mt-4 ">
+                        <div class="garis-login mt-3"></div>
+                        <h4 class="">Atau</h4>
+                        <div class="garis-login mt-3 "></div>
+                    </div>
+                    <div class="google ">
+                        <a href="{{ url('login/google') }}">
+                            <table class="border ">
                                 <tr>
                                     <td>
-                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
-                                            viewBox="0 0 48 48" style=" fill:#000000;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                            height="100" viewBox="0 0 48 48" style=" fill:#000000;">
                                             <path fill="#FFC107"
                                                 d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
                                             </path>
@@ -108,19 +105,17 @@
                                         </svg>
                                     </td>
                                     <td>
-                                        <h5 class="mt-2" style="color:black">Masuk dengan Google</h5>
+                                        <h6 class="mt-2 ml-2" style="color:black">Masuk dengan Google</h6>
                                     </td>
                                 </tr>
                             </table>
                         </a>
-
-                    </center>
+                    </div>
+                </center>
             </div>
         </div>
-
-
     </div>
 </div>
-</div>
+
 
 @endsection

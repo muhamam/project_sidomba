@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('avatar')->nullable();
             $table->bigInteger('NIK')->nullable();
-            $table->string('username');
             $table->string('fullname')->nullable();
             $table->string('birth_date')->nullable();
             $table->string('address')->nullable();

@@ -62,14 +62,9 @@
     <input class='navInput hidden' id='offnav-input' type='checkbox' />
     <div class='mainWrapper'>
 
-        <!--[ Header section ]-->
-        <header class='header ' id='header'>
+        <header class="navbar navbar-expand-lg navbar-light  header">
             <!--[ Header Notification ]-->
             <div class='no-items section' id='header-notif'>
-            </div>
-            <!--[ Header content ]-->@auth
-
-            <div class='headerContent'>
                 <div class='headerDiv headerLeft'>
                     <!--[ Header button and icon ]-->
                     <div class='headerIcon'>
@@ -84,176 +79,164 @@
 
                     </div>
                 </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class='headerDiv headerRight'>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <!--[ Header Search ]-->
-                    <div class='headerSearch' style="background-color: white;">
-                        <!--[ Search Form ]-->
-                        <form class="input-group input-group-md">
-                            <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
-                                placeholder='Search...' type='text' />
-                            <button aria-label='Search button' class='searchButton' type='submit'>
-                                <svg class='linem' viewBox='0 0 24 24'>
-                                    <g transform='translate(2.000000, 2.000000)'>
-                                        <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'></circle>
-                                        <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'></line>
-                                    </g>
-                                </svg>
-                            </button>
+                <!--[ Header content ]-->@auth
 
-                            <button aria-label='Search close' class='close' type='reset'>
-                                <!--[ Close icon ]-->
-                                <svg class='line' viewBox='0 0 24 24'>
-                                    <line x1='18' x2='6' y1='6' y2='18'></line>
-                                    <line x1='6' x2='18' y1='6' y2='18'></line>
-                                </svg>
-                            </button>
-                            <span class='fullClose search'></span>
-                        </form>
-                    </div>
-                    <!--[ Dark mode button ]-->
-                    <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'>
-                        <svg class='linem icho' viewBox='0 0 24 24'>
-                            <g class='d2'>
-                                <path
-                                    d='M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z'
-                                    transform='translate(-169.3959 -166.45548)'></path>
-                            </g>
-                            <g class='d1'>
-                                <path class='fill'
-                                    d='M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z'>
-                                </path>
-                                <path
-                                    d='M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z'
-                                    stroke-width='2'></path>
-                            </g>
-                        </svg>
-                    </span>
-                    <!--[ Fullscreen ]-->
-                    <span class='noscript'><button aria-label='Mode Fullscreen' id='openfull'
-                            onclick='openFullscreen();' style='display: block;'><svg viewBox='0 0 24 24'>
-                                <path
-                                    d='M5,5H10V7H7V10H5V5M14,5H19V10H17V7H14V5M17,14H19V19H14V17H17V14M10,17V19H5V14H7V17H10Z'>
-                                </path>
-                            </svg></button>
-                        <button aria-label='Mode Tidak Fullscreen' id='exitfull' onclick='closeFullscreen();'
-                            style='display: none;'><svg viewBox='0 0 24 24'>
-                                <path
-                                    d='M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,8V10H14V5H16V8H19Z'>
-                                </path>
+                <div class='headerContent'>
 
-                            </svg></button></span> <small>ini kemanain ?</small>
 
-                    <!--[ Header button and icon ]-->
-                    <div class='headerIcon'>
+                    <div class='headerDiv headerRight'>
 
-                        <!-- MENU ICON -->
-                        <a href="javascript:void(0);" class="proses"><span class="iconify"
-                                data-icon="carbon:notification" data-width="22" data-height="25"></span>
-                        </a>
-                        <a href="{{route('chat.index')}}" class=""><span class="iconify" data-icon="ep:chat-round"
-                                data-width="22" data-height="25"></span>
-                        </a>
-                        <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify"
-                                data-icon="cil:cart" data-width="22" data-height="25"></span>
-                        </a>
-                        <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"
-                                data-width="22" data-height="25"></span>
-                        </a>
-                        <a class="peternakan mt-2 ms-2 me-2" href="javascript:void(0);"><i class="iconify d-inline mb-1"
-                                data-icon="maki:farm" data-width="20" data-height="20"></i>
-                            &nbsp;Peternakan</a>
-                        <a class="investasi mt-2 ms-2 me-2" href="javascript:void(0);"><i class="iconify d-inline mb-1"
-                                data-icon="fluent-emoji-high-contrast:money-bag" data-width="20" data-height="20"></i>
-                            &nbsp;Investasi</a>
-                        <label href="javascript:void(0);" aria-label='profile' class='navProfile mt-3 ms-2 me-2'
-                            for='offprofile-box' type="button">
-                            <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                                {{-- need redesign system --}} alt="" style="width: 20px; height: 20px; "
-                                class="rounded-circle d-inline mb-1 ms-2 me-2">
-                            &nbsp;{{ Auth::user()->fullname}}</label>
-                        <!------------------------------------------------------------------------------------------------->
+                        <!--[ Header Search ]-->
+                        <div class='headerSearch' style="background-color: white;">
+                            <!--[ Search Form ]-->
+                            <form class="input-group input-group-md">
+                                <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
+                                    placeholder='Search...' type='text' />
+                                <button aria-label='Search button' class='searchButton' type='submit'>
+                                    <svg class='linem' viewBox='0 0 24 24'>
+                                        <g transform='translate(2.000000, 2.000000)'>
+                                            <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'></circle>
+                                            <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'>
+                                            </line>
+                                        </g>
+                                    </svg>
+                                </button>
 
-                        <!--[ Profile widget ]-->
+                                <button aria-label='Search close' class='close' type='reset'>
+                                    <!--[ Close icon ]-->
+                                    <svg class='line' viewBox='0 0 24 24'>
+                                        <line x1='18' x2='6' y1='6' y2='18'></line>
+                                        <line x1='6' x2='18' y1='6' y2='18'></line>
+                                    </svg>
+                                </button>
+                                <span class='fullClose search'></span>
+                            </form>
+                        </div>
 
-                        <div class='headerProfile' style="color: #000;">
-                            <div class='section' id='profile-widget'>
-                                <div class='widget Profile' data-version='2' id='Profile00'>
-                                    <div class='profileHeader'>
-                                        <label data-text='Kembali' for='offprofile-box'>
-                                            <svg class='line' viewBox='0 0 24 24'>
-                                                <g
-                                                    transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
-                                                    <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                                                </g>
-                                            </svg>
-                                        </label>
-                                    </div>
-                                    <div class='widget-content solo hasLocation'>
-                                        <div class='profileImage' style='margin-bottom:1px'>
-                                            <div class='profileImg lazyloaded'>
-                                                <img src="
-                            {{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                                                    {{-- need redesign system --}} alt=""
-                                                    style="width: 50px; height: 50px; " class="rounded-circle d-inline">
+
+                        <!--[ Header button and icon ]-->
+                        <div class='headerIcon col-7'>
+
+                            <!-- MENU ICON -->
+                            <a href="javascript:void(0);" class="proses"><span class="iconify"
+                                    data-icon="carbon:notification" data-width="22" data-height="25"></span>
+                            </a>
+                            <a href="{{route('chat.index')}}" class=""><span class="iconify" data-icon="ep:chat-round"
+                                    data-width="22" data-height="25"></span>
+                            </a>
+                            <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify"
+                                    data-icon="cil:cart" data-width="22" data-height="25"></span>
+                            </a>
+                            <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"
+                                    data-width="22" data-height="25"></span>
+                            </a>
+                            <a class="peternakan mt-2 col-3" href="javascript:void(0);"><i class="iconify "
+                                    data-icon="maki:farm" data-width="20" data-height="20"></i>
+                                &nbsp;Peternakan</a>
+                            <a class="investasi mt-2 col-3" href="javascript:void(0);"><i class="iconify "
+                                    data-icon="fluent-emoji-high-contrast:money-bag" data-width="20"
+                                    data-height="20"></i>
+                                &nbsp;Investasi</a>
+                            <label href="javascript:void(0);" aria-label='profile' class='navProfile mt-3 col-5'
+                                for='offprofile-box' type="button">
+                                <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                    {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
+                                    class="rounded-circle ">
+                                &nbsp;{{ Auth::user()->fullname}}</label>
+                            <!------------------------------------------------------------------------------------------------->
+
+                            <!--[ Profile widget ]-->
+
+                            <div class='headerProfile' style="color: #000;">
+                                <div class='section' id='profile-widget'>
+                                    <div class='widget Profile' data-version='2' id='Profile00'>
+                                        <div class='profileHeader'>
+                                            <label data-text='Kembali' for='offprofile-box'>
+                                                <svg class='line' viewBox='0 0 24 24'>
+                                                    <g
+                                                        transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                                                    </g>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class='widget-content solo hasLocation'>
+                                            <div class='profileImage' style='margin-bottom:1px'>
+                                                <div class='profileImg lazyloaded'>
+                                                    <img src="
+                                                {{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                                        {{-- need redesign system --}} alt=""
+                                                        style="width: 50px; height: 50px; "
+                                                        class="rounded-circle d-inline">
+                                                </div>
+
+                                            </div>
+                                            <div class='profileInfo'>
+                                                <h6>{{ Auth::user()->fullname}}</h6>
+                                                <div class='profileLink'
+                                                    style='margin-bottom:5px;font-family:sans-serif'>
+                                                    Member</div>
+                                                <div class='profileText'><b>Username :</b>
+                                                    {{ Auth::user()->fullname}}<br />
+                                                    <b>Email :</b>
+                                                    {{ Auth::user()->email}}
+                                                </div>
+
+                                            </div>
+                                            <ul class='socialLink' style='display:flex;'>
+                                                <li>
+                                                    <a href="#" class="text-dark"><span class="iconify me-2"
+                                                            data-icon="icons8:buy" data-width="25"
+                                                            data-height="25"></span>
+                                                        Pembelian</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{route('wishlist.index')}}" class="text-dark"><span
+                                                            class="iconify me-2" data-icon="ant-design:star-outlined"
+                                                            data-width="25" data-height="25"></span>
+                                                        Wishlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href=" {{route('account.index')}}" class="text-dark"><span
+                                                            class="iconify me-2" data-icon="ic:outline-switch-account"
+                                                            data-width="25" data-height="25"
+                                                            data-flip="horizontal"></span>
+                                                        Akun</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('logout') }}" class="text-dark"><span
+                                                            class="iconify me-2" data-icon="ant-design:logout-outlined"
+                                                            data-width="25" data-height="25"></span>
+                                                        Keluar</a>
+                                                </li>
+
+                                            </ul>
+                                            <div class="row ml-1">
+                                                <iconify-icon icon="ph:coin-thin" width="40" height="40">
+                                                </iconify-icon>
+                                                <h5 class="mt-2 text-dark">Saldo</h5>
+                                                <a href="#" class="col-7 mt-2 text-dark pr-0">
+                                                    <h5 class="text-dark"> Rp100.000.000</h5>
+                                                </a>
                                             </div>
 
                                         </div>
-                                        <div class='profileInfo'>
-                                            <h6>{{ Auth::user()->fullname}}</h6>
-                                            <div class='profileLink' style='margin-bottom:5px;font-family:sans-serif'>
-                                                Member</div>
-                                            <div class='profileText'><b>Username :</b>
-                                                {{ Auth::user()->fullname}}<br />
-                                                <b>Email :</b>
-                                                {{ Auth::user()->email}}
-                                            </div>
-
-                                        </div>
-                                        <ul class='socialLink' style='display:flex;'>
-                                            <li>
-                                                <a href="#" class="text-dark"><span class="iconify me-2"
-                                                        data-icon="icons8:buy" data-width="25" data-height="25"></span>
-                                                    Pembelian</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{route('wishlist.index')}}" class="text-dark"><span
-                                                        class="iconify me-2" data-icon="ant-design:star-outlined"
-                                                        data-width="25" data-height="25"></span>
-                                                    Wishlist</a>
-                                            </li>
-                                            <li>
-                                                <a href=" {{route('account.index')}}" class="text-dark"><span
-                                                        class="iconify me-2" data-icon="ic:outline-switch-account"
-                                                        data-width="25" data-height="25" data-flip="horizontal"></span>
-                                                    Akun</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('logout') }}" class="text-dark"><span
-                                                        class="iconify me-2" data-icon="ant-design:logout-outlined"
-                                                        data-width="25" data-height="25"></span>
-                                                    Keluar</a>
-                                            </li>
-
-                                        </ul>
-                                        <div class="row ml-1">
-                                            <iconify-icon icon="ph:coin-thin" width="40" height="40">
-                                            </iconify-icon>
-                                            <h5 class="mt-2 text-dark">Saldo</h5>
-                                            <a href="#" class="col-7 mt-2 text-dark pr-0">
-                                                <h5 class="text-dark"> Rp100.000.000</h5>
-                                            </a>
-                                        </div>
+                                    </div>
+                                    <div class='widget LinkList' data-version='2' id='LinkList001'>
 
                                     </div>
-                                </div>
-                                <div class='widget LinkList' data-version='2' id='LinkList001'>
-
                                 </div>
                             </div>
+                            <label class='fullClose closeProfile' for='offprofile-box'></label>
                         </div>
-                        <label class='fullClose closeProfile' for='offprofile-box'></label>
                     </div>
                 </div>
             </div>
@@ -514,7 +497,6 @@
             </div>
         </div>
     </footer>
-    </div>
     <!-- FUNSGIONAL JAVASCRIPT -->
     <script src="{{asset('js/sweet_alert.js')}}"></script>
     <script src="{{asset('js/fungsional.js')}}"></script>
@@ -522,7 +504,6 @@
     <script src="{{asset('js/main.js')}}"></script>
 
     <!-- BATAS FUNGSIONAL JAVASCRIPT -->
-
 </body>
 
 </html>
