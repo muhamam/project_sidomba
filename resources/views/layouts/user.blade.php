@@ -351,7 +351,7 @@
                     </div>
                 </div>
                 <!--[ Header button and icon TIDAK LOGIN]-->
-                <div class='headerIcon col-6'>
+                <div class='headerIcon col-4'>
                     <!-- MENU ICON TIDAK LOGIN -->
                     <a href="{{ route('register') }}">
                         <i class="iconify mb-1" data-icon="line-md:account-add" data-width="25" data-height="25"></i>

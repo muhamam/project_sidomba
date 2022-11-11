@@ -1492,6 +1492,10 @@ g.d1 path.fill {
         width: 80%;
         margin-left: 25%;
     }
+
+    .headerIcon{
+        margin-left: 250px;
+    }
 /* css login responsive  end */
 /* css profil responsive start */
     header{
