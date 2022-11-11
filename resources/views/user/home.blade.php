@@ -15,7 +15,7 @@
                         <div class="d-flex d-flex justify-content-center">
                             <img src="{{ asset('img/logodomba.png')}}" alt="" width="70">
                             <div class="mt-3 ml-3" style="border-left: 2px solid black;">
-                                <h3 class="ml-2" style="color:black;"><b>CARIBI</b></h3>
+                                <h3 class="ml-2" style="color:black;"><b>sdasda</b></h3>
                             </div>
 
                         </div>
