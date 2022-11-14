@@ -20,7 +20,10 @@ class HomeController extends Controller
         if (Auth::user() && Auth::user()->email_verified_at === null) {
            return redirect()->route('verification.notice');
         // dd(Auth::user()->fullname);
-        } else {
+        } elseif (Auth::user() && Auth::user()->password == '') {
+            return redirect()->route('create-password');
+        }
+         else {
             return view('user.home');
         }
     

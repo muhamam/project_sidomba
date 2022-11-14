@@ -7,6 +7,8 @@ use App\Models\User;
 use Auth;
 use Str;
 use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
 
 class GoogleController extends Controller
 {
@@ -34,17 +36,48 @@ class GoogleController extends Controller
                     'fullname' => ucwords($google_user->name),
                     'email' => $google_user->email,
                     'email_verified_at' => now(),
-                    'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                    'password' => '', // password
                     'remember_token' => Str::random(10),
                 ]);
                 Auth::login($new_user);
-                return redirect('home');
+                return redirect('create-password');
             }
             
         } catch (\Throwable $th) {
            abort(404);
         }
     }
+
+    public function indexCreatePassword()
+    {
+        return view('auth.CreatePassword');
+    }
+
+    public function CreatePassword(Request $request)
+    {   
+
+            $validator = Validator::make($request->all(), [
+                'password' => ['required', 'string', 'min:8', 'confirmed'],
+            ]);
+     
+            if ($validator->fails()) {
+                return redirect('create-password')
+                            ->withErrors($validator)
+                            ->withInput();
+            }
+
+            $id = Auth::id();
+            $user = User::find($id);
+            $user->password = Hash::make($request['password']);
+            $user->save();
+
+        return redirect('home');
+    } 
+        
+
+        
+
+        
 
     public function logout()
     {

@@ -46,6 +46,8 @@ Route::get('login/google', [GoogleController::class, 'login']);
 Route::get('login/google/callback', [GoogleController::class, 'callback']);
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/create-password', [GoogleController::class, 'indexCreatePassword'])->name('create-password');
+    Route::post('/create-password', [GoogleController::class, 'CreatePassword']);
     Route::get('logout', [GoogleController::class, 'logout']);
     Route::get('user', [UserController::class, 'index']);
 });
@@ -141,9 +143,6 @@ Route::middleware(['auth', 'user-access:user', 'verified'])->group(function () {
 //     return view('auth.verifikasi');
 // });
 
-// Route::get('/bikin', function () {
-//     return view('auth.bikin');
-// });
 //basic route
 
 // aman
