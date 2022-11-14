@@ -24,45 +24,40 @@
         <div class=" box-2 d-flex flex-column ">
             <div class="mt-1">
                 <div class="semua-login d-flex flex-column p-5">
+                    <form action="" method="post">
+                        @csrf
+                        <div class="mb-2">
+                            <h6 style="color:black">Password</h6>
+                            <input type="password" class="form-control @error('password') is-invalid @enderror" id="email"
+                                aria-describedby="emailHelp" name="password" placeholder="Masukan Password Baru">
 
-                    @csrf
-                    @if (session()->has('error'))
-                    <div class="alert alert-danger text-center">
-                        {{ session()->get('error') }}
-                    </div>
-                    @endif
+                            @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
 
-                    <div class="mb-2">
-                        <h6 style="color:black">Password</h6>
-                        <input type="password" class="form-control @error('password') is-invalid @enderror" id="email"
-                            aria-describedby="emailHelp" name="password" placeholder="Masukan Password Baru">
+                        <div class="mb-2">
+                            <h6 style="color:black">Konfirmasi Password</h6>
+                            <input type="password" class="form-control @error('password') is-invalid @enderror"
+                                id="password" name="password_confirmation" placeholder="Konfirmasi Password">
 
-                        @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                    </div>
+                            @error('confirm-password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
 
-                    <div class="mb-2">
-                        <h6 style="color:black">Konfirmasi Password</h6>
-                        <input type="password" class="form-control @error('password') is-invalid @enderror"
-                            id="password" name="password" placeholder="Konfirmasi Password">
-
-                        @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                    </div>
-
-
+                        <div class="daftar ">
+                            <button type="submit" class="btn btn-primary tombol-login" style="width:200px;">
+                                {{ __('Masukan Password') }}
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="daftar ">
-                    <a type="submit" class="btn btn-primary tombol-login " href="#" style="width:200px;">
-                        {{ __('Masukan Password') }}
-                    </a>
-                </div>
+                
             </div>
         </div>
 
