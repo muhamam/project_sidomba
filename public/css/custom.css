@@ -599,7 +599,6 @@ header svg .line {
     display: block;
 }
 .headerContent {
-    position: relative;
     height: 45px;
     display: flex;
 }
@@ -615,21 +614,10 @@ header svg .line {
 .headerLeft .headerIcon {
     margin-right: 15px;
 }
-.headerRight {
-    padding-left: 25px;
-    padding-right: 25px;
-    flex: 1 0 auto;
-    width: calc(100% - var(--nav-width));
-}
-.headerRight .headerIcon {
-    margin-left: auto;
-    position: relative;
-}
+
 .headerSearch {
     width: 100%;
-    max-width: 350px;
     border-radius: 30px;
-    margin-right: 20px;
 }
 .headerSearch form {
     position: relative;
@@ -680,9 +668,64 @@ header svg .line {
     width: 16px;
     height: 16px;
 }
-.headerIcon {
+
+.headerSearch2 {
+    width: 100%;
+    border-radius: 30px;
+}
+.headerSearch2 form {
+    position: relative;
+    width: 100%;
+    font-size: 95%;
+    color: var(--font-white);
+}
+.headerSearch2 input[type="text"] {
+    color: var(--font-black);
+    display: block;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--transparent-bg);
+    padding: 10px 48px;
+}
+.headerSearch2 input[type="text"]:focus ~ .close {
+    opacity: 1;
+    visibility: visible;
+}
+.headerSearch2 button {
+    color: var(--font-white);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
+}
+.headerSearch2 button svg {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+.headerSearch2 button.close {
+    right: 12px;
+    left: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-4);
+}
+.headerSearch2 button.close svg {
+    width: 16px;
+    height: 16px;
+}
+
+.headerIcon {
+    display: flex;
+    width: 700px;
     font-size: 11px;
 }
 .headerIcon > * {
@@ -1443,6 +1486,7 @@ g.d1 path.fill {
     margin-left: -60px;
 }
 
+
 @media only screen and (max-width: 800px) {
     /* css login responsive start  */
     .body-login{
@@ -1493,18 +1537,37 @@ g.d1 path.fill {
         margin-left: 25%;
     }
 
-    .headerIcon{
-        margin-left: 250px;
+    .daftar_tidak_login{
+        margin-left: 30%;
+        width: 100%;
     }
-/* css login responsive  end */
+    
+    .navProfile{
+        width: 200px;
+    }
+      /* css login responsive  end */
 /* css profil responsive start */
-    header{
-
-
-    }
+    
 /* css profil responsive end */
 
 }
+
+@media only screen and (min-width: 800px){
+
+    .headerSearch{
+        width: 850px;
+    }
+    .headerSearch2{
+        width: 400px;
+    }
+    .headerIcon .headerProfile {
+        margin-right: 350px;
+    }
+    .daftar_tidak_login{
+        margin-left: 10%;
+    }
+}
+
 
 
 /* ini slide untuk header di dashboard utama  */
@@ -6030,11 +6093,12 @@ footer .toTop svg {
         display: none;
     }
 }
+
 @media screen and (max-width: 480px) {
     .headerIcon .headerProfile {
         position: fixed;
         left: 0;
-        margin: 0 auto auto;
+        margin-right:400px;
         width: calc(100vw - 40px);
         border: 0;
         border-radius: 15px;

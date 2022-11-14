@@ -67,7 +67,7 @@
             <div class='no-items section' id='header-notif'>
                 <div class='headerDiv headerLeft'>
                     <!--[ Header button and icon ]-->
-                    <div class='headerIcon'>
+                    <div class='headerIcon1'>
                         <a href="{{ route('home') }}"><img alt='CARIBI' src="{{ asset('img/logodombaputih.png')}}"
                                 title='CARIBI' alt="" width="50" />
                     </div>
@@ -90,154 +90,142 @@
                 <!--[ Header content ]-->@auth
 
                 <div class='headerContent'>
+                    <div class='headerSearch' style="background-color: white;">
+                        <form class="input-group input-group-md">
+                            <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
+                                placeholder='Search...' type='text' />
+                            <button aria-label='Search button' class='searchButton' type='submit'>
+                                <svg class='linem' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.000000, 2.000000)'>
+                                        <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'>
+                                        </circle>
+                                        <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'>
+                                        </line>
+                                    </g>
+                                </svg>
+                            </button>
 
+                            <button aria-label='Search close' class='close' type='reset'>
+                                <!--[ Close icon TIDAK LOGIN ]-->
+                                <svg class='line' viewBox='0 0 24 24'>
+                                    <line x1='18' x2='6' y1='6' y2='18'></line>
+                                    <line x1='6' x2='18' y1='6' y2='18'></line>
+                                </svg>
+                            </button>
+                            <span class='fullClose search'></span>
+                        </form>
+                    </div>
+                    <!--[ Header button and icon ]-->
+                    <div class='headerIcon  col-7 '>
 
-                    <div class='headerDiv headerRight'>
+                        <!-- MENU ICON -->
+                        <a href="javascript:void(0);" class="proses"><span class="iconify"
+                                data-icon="carbon:notification" data-width="22" data-height="25"></span>
+                        </a>
+                        <a href="{{route('chat.index')}}" class=""><span class="iconify" data-icon="ep:chat-round"
+                                data-width="22" data-height="25"></span>
+                        </a>
+                        <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify"
+                                data-icon="cil:cart" data-width="22" data-height="25"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"
+                                data-width="22" data-height="25"></span>
+                        </a>
+                        <a class="peternakan mt-2  " href="javascript:void(0);" style="width:130px;"><i class="iconify "
+                                data-icon="maki:farm" data-width="20" data-height="20"></i>
+                            &nbsp;Peternakan</a>
+                        <a class="investasi mt-2" href="javascript:void(0);" style="width:100px;"><i class="iconify "
+                                data-icon="fluent-emoji-high-contrast:money-bag" data-width="20" data-height="20"></i>
+                            &nbsp;Investasi</a>
+                        <label href="javascript:void(0);" aria-label='profile' class='navProfile mt-3 '
+                            for='offprofile-box' type="button">
+                            <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
+                                class="rounded-circle ">
+                            &nbsp;{{ Auth::user()->fullname}}</label>
+                        <!------------------------------------------------------------------------------------------------->
 
-                        <!--[ Header Search ]-->
-                        <div class='headerSearch' style="background-color: white;">
-                            <!--[ Search Form ]-->
-                            <form class="input-group input-group-md">
-                                <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
-                                    placeholder='Search...' type='text' />
-                                <button aria-label='Search button' class='searchButton' type='submit'>
-                                    <svg class='linem' viewBox='0 0 24 24'>
-                                        <g transform='translate(2.000000, 2.000000)'>
-                                            <circle class='fill' cx='9.76659044' cy='9.76659044' r='8.9885584'></circle>
-                                            <line x1='16.0183067' x2='19.5423342' y1='16.4851259' y2='20.0000001'>
-                                            </line>
-                                        </g>
-                                    </svg>
-                                </button>
+                        <!--[ Profile widget ]-->
 
-                                <button aria-label='Search close' class='close' type='reset'>
-                                    <!--[ Close icon ]-->
-                                    <svg class='line' viewBox='0 0 24 24'>
-                                        <line x1='18' x2='6' y1='6' y2='18'></line>
-                                        <line x1='6' x2='18' y1='6' y2='18'></line>
-                                    </svg>
-                                </button>
-                                <span class='fullClose search'></span>
-                            </form>
-                        </div>
-
-
-                        <!--[ Header button and icon ]-->
-                        <div class='headerIcon col-7'>
-
-                            <!-- MENU ICON -->
-                            <a href="javascript:void(0);" class="proses"><span class="iconify"
-                                    data-icon="carbon:notification" data-width="22" data-height="25"></span>
-                            </a>
-                            <a href="{{route('chat.index')}}" class=""><span class="iconify" data-icon="ep:chat-round"
-                                    data-width="22" data-height="25"></span>
-                            </a>
-                            <a href="{{route('keranjang.index')}}" class="proses3"><span class="iconify"
-                                    data-icon="cil:cart" data-width="22" data-height="25"></span>
-                            </a>
-                            <a href="javascript:void(0);" class="ms-2 me-2"><span class="iconify" data-icon="ci:line-xl"
-                                    data-width="22" data-height="25"></span>
-                            </a>
-                            <a class="peternakan mt-2 col-3" href="javascript:void(0);"><i class="iconify "
-                                    data-icon="maki:farm" data-width="20" data-height="20"></i>
-                                &nbsp;Peternakan</a>
-                            <a class="investasi mt-2 col-3" href="javascript:void(0);"><i class="iconify "
-                                    data-icon="fluent-emoji-high-contrast:money-bag" data-width="20"
-                                    data-height="20"></i>
-                                &nbsp;Investasi</a>
-                            <label href="javascript:void(0);" aria-label='profile' class='navProfile mt-3 col-5'
-                                for='offprofile-box' type="button">
-                                <img src="{{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                                    {{-- need redesign system --}} alt="" style="width: 25px; height: 25px; "
-                                    class="rounded-circle ">
-                                &nbsp;{{ Auth::user()->fullname}}</label>
-                            <!------------------------------------------------------------------------------------------------->
-
-                            <!--[ Profile widget ]-->
-
-                            <div class='headerProfile' style="color: #000;">
-                                <div class='section' id='profile-widget'>
-                                    <div class='widget Profile' data-version='2' id='Profile00'>
-                                        <div class='profileHeader'>
-                                            <label data-text='Kembali' for='offprofile-box'>
-                                                <svg class='line' viewBox='0 0 24 24'>
-                                                    <g
-                                                        transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
-                                                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                                                    </g>
-                                                </svg>
-                                            </label>
-                                        </div>
-                                        <div class='widget-content solo hasLocation'>
-                                            <div class='profileImage' style='margin-bottom:1px'>
-                                                <div class='profileImg lazyloaded'>
-                                                    <img src="
-                                                {{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
-                                                        {{-- need redesign system --}} alt=""
-                                                        style="width: 50px; height: 50px; "
-                                                        class="rounded-circle d-inline">
-                                                </div>
-
-                                            </div>
-                                            <div class='profileInfo'>
-                                                <h6>{{ Auth::user()->fullname}}</h6>
-                                                <div class='profileLink'
-                                                    style='margin-bottom:5px;font-family:sans-serif'>
-                                                    Member</div>
-                                                <div class='profileText'><b>Username :</b>
-                                                    {{ Auth::user()->fullname}}<br />
-                                                    <b>Email :</b>
-                                                    {{ Auth::user()->email}}
-                                                </div>
-
-                                            </div>
-                                            <ul class='socialLink' style='display:flex;'>
-                                                <li>
-                                                    <a href="#" class="text-dark"><span class="iconify me-2"
-                                                            data-icon="icons8:buy" data-width="25"
-                                                            data-height="25"></span>
-                                                        Pembelian</a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{route('wishlist.index')}}" class="text-dark"><span
-                                                            class="iconify me-2" data-icon="ant-design:star-outlined"
-                                                            data-width="25" data-height="25"></span>
-                                                        Wishlist</a>
-                                                </li>
-                                                <li>
-                                                    <a href=" {{route('account.index')}}" class="text-dark"><span
-                                                            class="iconify me-2" data-icon="ic:outline-switch-account"
-                                                            data-width="25" data-height="25"
-                                                            data-flip="horizontal"></span>
-                                                        Akun</a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ route('logout') }}" class="text-dark"><span
-                                                            class="iconify me-2" data-icon="ant-design:logout-outlined"
-                                                            data-width="25" data-height="25"></span>
-                                                        Keluar</a>
-                                                </li>
-
-                                            </ul>
-                                            <div class="row ml-1">
-                                                <iconify-icon icon="ph:coin-thin" width="40" height="40">
-                                                </iconify-icon>
-                                                <h5 class="mt-2 text-dark">Saldo</h5>
-                                                <a href="#" class="col-7 mt-2 text-dark pr-0">
-                                                    <h5 class="text-dark"> Rp100.000.000</h5>
-                                                </a>
-                                            </div>
-
-                                        </div>
+                        <div class='headerProfile' style="color: #000;  ">
+                            <div class='section' id='profile-widget'>
+                                <div class='widget Profile' data-version='2' id='Profile00'>
+                                    <div class='profileHeader'>
+                                        <label data-text='Kembali' for='offprofile-box'>
+                                            <svg class='line' viewBox='0 0 24 24'>
+                                                <g
+                                                    transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                                    <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                                                </g>
+                                            </svg>
+                                        </label>
                                     </div>
-                                    <div class='widget LinkList' data-version='2' id='LinkList001'>
+                                    <div class='widget-content solo hasLocation'>
+                                        <div class='profileImage' style='margin-bottom:1px'>
+                                            <div class='profileImg lazyloaded'>
+                                                <img src="
+                                                {{ Auth::user()->avatar === null ? asset('img/boy.png') : asset(Auth::user()->avatar) }}"
+                                                    {{-- need redesign system --}} alt=""
+                                                    style="width: 50px; height: 50px; " class="rounded-circle d-inline">
+                                            </div>
+
+                                        </div>
+                                        <div class='profileInfo'>
+                                            <h6>{{ Auth::user()->fullname}}</h6>
+                                            <div class='profileLink' style='margin-bottom:5px;font-family:sans-serif'>
+                                                Member</div>
+                                            <div class='profileText'><b>Username :</b>
+                                                {{ Auth::user()->fullname}}<br />
+                                                <b>Email :</b>
+                                                {{ Auth::user()->email}}
+                                            </div>
+
+                                        </div>
+                                        <ul class='socialLink' style='display:flex;'>
+                                            <li>
+                                                <a href="#" class="text-dark"><span class="iconify me-2"
+                                                        data-icon="icons8:buy" data-width="25" data-height="25"></span>
+                                                    Pembelian</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{route('wishlist.index')}}" class="text-dark"><span
+                                                        class="iconify me-2" data-icon="ant-design:star-outlined"
+                                                        data-width="25" data-height="25"></span>
+                                                    Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href=" {{route('account.index')}}" class="text-dark"><span
+                                                        class="iconify me-2" data-icon="ic:outline-switch-account"
+                                                        data-width="25" data-height="25" data-flip="horizontal"></span>
+                                                    Akun</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('logout') }}" class="text-dark"><span
+                                                        class="iconify me-2" data-icon="ant-design:logout-outlined"
+                                                        data-width="25" data-height="25"></span>
+                                                    Keluar</a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="row ml-1">
+                                            <iconify-icon icon="ph:coin-thin" width="40" height="40">
+                                            </iconify-icon>
+                                            <h5 class="mt-2 text-dark">Saldo</h5>
+                                            <a href="#" class="col-7 mt-2 text-dark pr-0">
+                                                <h5 class="text-dark"> Rp100.000.000</h5>
+                                            </a>
+                                        </div>
 
                                     </div>
                                 </div>
+                                <div class='widget LinkList' data-version='2' id='LinkList001'>
+
+                                </div>
                             </div>
-                            <label class='fullClose closeProfile' for='offprofile-box'></label>
                         </div>
+                        <label class='fullClose closeProfile' for='offprofile-box'></label>
                     </div>
+
                 </div>
             </div>
         </header>
@@ -323,7 +311,7 @@
                 <div class='headerDiv headerRight col-12'>
 
                     <!--[ Header Search TIDAK LOGIN ]-->
-                    <div class='headerSearch ' style="background-color: white;">
+                    <div class='headerSearch2' style="background-color: white;">
                         <!--[ Search Form TIDAK LOGIN ]-->
                         <form class="input-group input-group-md">
                             <input aria-label='Search' autocomplete='off' id='searchInput' name='q'
@@ -351,7 +339,7 @@
                     </div>
                 </div>
                 <!--[ Header button and icon TIDAK LOGIN]-->
-                <div class='headerIcon col-4'>
+                <div class='daftar_tidak_login col-8'>
                     <!-- MENU ICON TIDAK LOGIN -->
                     <a href="{{ route('register') }}">
                         <i class="iconify mb-1" data-icon="line-md:account-add" data-width="25" data-height="25"></i>
