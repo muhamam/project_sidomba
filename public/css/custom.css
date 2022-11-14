@@ -1555,7 +1555,7 @@ g.d1 path.fill {
 @media only screen and (min-width: 800px){
 
     .headerSearch{
-        width: 850px;
+        width: 950px;
     }
     .headerSearch2{
         width: 400px;
@@ -1565,6 +1565,9 @@ g.d1 path.fill {
     }
     .daftar_tidak_login{
         margin-left: 10%;
+    }
+    .headerIcon{
+        margin-left: 100px;
     }
 }
 
