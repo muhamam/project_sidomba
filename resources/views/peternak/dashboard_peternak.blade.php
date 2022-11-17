@@ -2,22 +2,21 @@
 
 @section('content')
 <!-- Banner Starts Here -->
-<div class="bannerd col-md-10 rounded" style="margin-top:30px ; ">
+<div class="bannerd col-md-10 rounded mt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <center>
-                    <div class="caption rounded ml-4">
+        <center>
+            <div class="d-flex justify-content-center ">
+                <div class="col-md-6">
+                    <div class="caption rounded ">
                         <h3>PETERNAKAN MUNDUR JAYA</h3>
 
                         <p>Selamat datang di SI DOMBA, sebuah aplikasi jual-beli serta pusat informasi mengenai
                             domba-domba dari seluruh peternak domba di Indonesia.</p>
-
-
                     </div>
-                </center>
+
+                </div>
             </div>
-        </div>
+        </center>
     </div>
 </div>
 <!-- Banner Ends Here -->
@@ -27,23 +26,21 @@
 <section class="ftco-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>DASHBOARD</h3>
-
+            <div class=" col-md-12 text-center mt-3">
+                <h1 style="color:black">DASHBOARD</h1>
             </div>
             <div class="col-md-12 row justify-content-center">
 
-                <div class=" col-md-5 row mr-5" style="border: 1px solid #000; margin-top: 10px; height: 230px; background:
-                    linear-gradient(180deg, #BADBFE 0%, #E3EFFC 100%); ">
+                <div class="kotak_peternak card  col-md-5 row mr-5" style="border : 1px solid #000; ">
 
-                    <div class="col">
+                    <div class="col" style="color:black">
                         <center>
-                            <h5>Daftar Domba</h5>
+                            <h5 style="color:black">Daftar Domba</h5>
                             <div class=" row">
                                 <div class="col">
 
-                                    <h6>Total Domba</h6>
-                                    <h6><b>100 Ekor</b></h6>
+                                    <h6 style="color:black">Total Domba</h6>
+                                    <h6 style="color:black"><b>100 Ekor</b></h6>
 
                                 </div>
 
@@ -51,45 +48,42 @@
 
                                 <div class="col">
 
-                                    <h6>Total Domba</h6>
-                                    <h6><b>100 Ekor</b></h6>
+                                    <h6 style="color:black">Total Domba</h6>
+                                    <h6 style="color:black"><b>100 Ekor</b></h6>
 
 
                                 </div>
                                 <div class="mt-5" style="width: 100%; height: 1px; background-color: #000; ">
                                 </div>
+                                <div class="row">
+                                    <a class="mt-5 col-9" href="#" style="">klik untuk info lebih
+                                        lanjut</a>
+                                    <img class="col-3" src="img/domba.png" alt="">
+                                </div>
 
-                                <a class="mt-5" href="#" style="">klik untuk info lebih
-                                    lanjut</a>
-                                <img src="img/domba.png" alt=""
-                                    style="width:80px; height:60px; margin-left:350px; margin-top:-50px;">
                             </div>
 
                         </center>
                     </div>
                 </div>
 
-                <div class=" col-md-5"
-                    style="border: 1px solid #000; margin-top: 10px; height: 230px; background: linear-gradient(180deg, #E3EFFC 0%, #BADBFE 100%);">
+                <div class="kotak_peternak card rounded col-md-5 car" style="border: 1px solid #000;">
 
                     <div class="col">
                         <center>
-                            <h5>Penjualan dan Investasi</h5>
-                            <div class="t row">
-                                <div class="col border">
+                            <h5 style="color:black">Penjualan dan Investasi</h5>
+                            <div class=" row">
+                                <div class="col-5 border">
 
-                                    <h6>Domba yang Dijual</h6>
+                                    <h6 style="color:black">Domba yang Dijual</h6>
 
-                                    <h6 class="mt-4"><b>1 Ekor </b></h6>
+                                    <h6 style="color:black"><b>1 Ekor </b></h6>
 
                                 </div>
+                                <div class="col-7">
 
-
-
-                                <div class="col">
-
-                                    <h6>Domba yang Di investasikan</h6>
-                                    <h6><b> 1 Ekor </b></h6>
+                                    <h6 style="color:black">Domba yang Di investasikan</h6>
+                                    <h6 style="color:black"><b> 1 Ekor </b></h6>
 
                                 </div>
                                 <div class="mt-4"
@@ -98,12 +92,12 @@
 
 
                             </div>
-                            <br>
-                            <br>
-                            <a href="#" style=""> klik untuk info lebih
-                                lanjut</a>
-                            <img src="img/rp.png" alt=""
-                                style="width:60px; height:60px; margin-left:350px; margin-top:-50px;">
+                            <div class="row">
+                                <a class="mt-5 col-9" href="#" style="">klik untuk info lebih
+                                    lanjut</a>
+                                <img class="col-3 mt-3" src="img/rp.png" alt="">
+                            </div>
+
                         </center>
                     </div>
                 </div>
@@ -112,13 +106,13 @@
             </div>
 
 
-            <table class="table " style="margin-top: 40px;">
+            <table class="table mt-5">
                 <thead style="background: #BADBFE;">
                     <tr>
                         <th scope="col"></th>
                         <th scope="col"></th>
                         <th>
-                            <h1>Profil Peternakan</h1>
+                            <h1 style="color:black">Profil Peternakan</h1>
                         </th>
                         <th scope="col">
 

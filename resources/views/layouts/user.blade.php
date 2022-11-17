@@ -17,7 +17,7 @@
 
     <!-- KHUSUS CSS -->
     <link rel="stylesheet" href="{{ asset('css/sidebar.css')}}">
-    <!-- <link rel="stylesheet" href="{{asset('css/style.css')}}"> TIDAK DIPANGGIL -->
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('css/akun-user.css')}}"> TIDAK DIPANGGIL -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -147,7 +147,7 @@
 
                         <!--[ Profile widget ]-->
 
-                        <div class='headerProfile' style="color: #000;  ">
+                        <div class='headerProfile ' style="color: #000;  ">
                             <div class='section' id='profile-widget'>
                                 <div class='widget Profile' data-version='2' id='Profile00'>
                                     <div class='profileHeader'>

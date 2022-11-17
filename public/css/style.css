@@ -32,11 +32,16 @@
 	width: 2184px;
 	height: 300px;
     margin-top: 20px;
-	background-image: url(../images/bg-1.jpeg);
+	background-image: url(../img/bg-1.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-left: 10%;
 
+}
+.bannerd .caption {
+	background-color: rgba(51, 50, 50, 0.9);
+    color: white;
+    margin-top: 80px;
 }
 
 .banner .caption {
@@ -47,6 +52,14 @@
     margin-left: -4%;
     width: 1000px;
    
+}
+
+
+.container .kotak_peternak{
+    
+    margin-top: 10px; 
+    /* height: 230px;  */
+    background: linear-gradient(180deg, #BADBFE 0%, #E3EFFC 100%);
 }
 
 .banner1 .caption {
