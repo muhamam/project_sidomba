@@ -839,7 +839,7 @@ header svg .line {
     display: block;
     position: absolute;
     top: -10px;
-    right: 0;
+    right: 200px;
     margin: 0;
     width: 290px;
     max-height: 500px;
@@ -1487,6 +1487,8 @@ g.d1 path.fill {
 }
 
 
+
+
 @media only screen and (max-width: 800px) {
     /* css login responsive start  */
     .body-login{
@@ -1939,6 +1941,7 @@ color: white;
 /* ----------------------------------------------------------------- */
 
 /* css-user-peternak start */
+
 
 .banner{
     background-image: url(ccc);

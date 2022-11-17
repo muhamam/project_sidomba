@@ -6,13 +6,9 @@
 
     @include('layouts.sidebarInvestor')
     <section class="ftco-section col" style="margin-top: 100px;">
-        <div class=" d-flex d-flex justify-content-center">
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-            <div class="garis"
-                style="width: 2px; height: 85px; background-color: black; margin-left: 10px; margin-right: 20px;">
-                <p></p>
-            </div>
-            <h3 class="" style="text-center">CARIBI <br>Investasi</h3>
+        <div class="mr-5 d-flex justify-content-center">
+            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px; border-right:2px solid black;">
+            <h3 class="ml-3" style="color:black">CARIBI <br>Investasi</h3>
         </div>
         <br>
         <div class="container">
