@@ -3,90 +3,27 @@
 @section('content')
 
 <div class="row">
-    <div class="col " style="margin-left: 30px; margin-top:180px; width: 300px;">
-        <div class=" bg-light ">
-            <center>
-                <table>
-                    <tr>
-                        <td> <span><img src="../img/about-us.jpg" alt="" style="width: 85px; height:85px; "
-                                    class="  ml-3 rounded-circle">
-                            </span></td>
-                        <td>
-                            <a href="#" class="  " style="color:#000000 ;">Muhammad
-                                anas
-                            </a>
-                            <a href="#" style="font-size:9px;color:#000000 ;">muhammadanasaiman0@gmail.com</a><br>
-                            <ul class="d-flex" style="list-style-type: disc; color:red; font-size:12px;">
-                                <li>
-                                    <span style="color: black;">Peternakan</span>
-                                </li>
-                                <li class="ml-4">
-                                    <span style="color: black;">Investasi</span>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
-                <div class="garis" style="width: 95%; height: 2px; background-color: black; margin-left: 5px; margin-right:
-                        5px;">
-                    <p></p>
-                </div>
-                <div class="dalam ">
-                    <span class="iconify" data-icon="ic:baseline-account-box" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="dashboard_investor.html" class="dropdown-item ">Akun</a>
-                    <span class="iconify" data-icon="bi:chat-text" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="pasar.html" class="dropdown-item ">Chat</a>
-                    <span class="iconify" data-icon="carbon:star-review" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="investasi_saya_semua.html" class="dropdown-item">Ulasan</a>
-                    <span class="iconify" data-icon="carbon:warning" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="investasi_riwayat.html" class="dropdown-item">Komplain</a>
-                    <span class="iconify" data-icon="bi:list-stars" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="#" class="dropdown-item ml-3">Wishlist</a>
-                    <span class="iconify" data-icon="carbon:money" data-width="25" data-height="25"
-                        style="margin-right: 130px; margin-bottom: -60px;"></span>
-                    <a href="#" class="dropdown-item ml-3 ">Transaksi</a>
-                </div>
 
-            </center>
-        </div>
-
-    </div>
-    <section class="ftco-section col " style="margin-top: 95px;">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
-
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-
-            <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-                <p></p>
+    @include('layouts.sidebarUser')
+    <section class="ftco-section col ">
+        <div class="d-flex d-flex justify-content-center">
+            <img src="{{ asset('img/logodomba.png')}}" alt="" width="70">
+            <div class="mt-3 ml-3" style="border-left: 2px solid black;">
+                <h3 class="ml-2" style="color:black;"><b>CARIBI</b></h3>
             </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">CARIBI</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
 
         </div>
         <div class="container " style="background-color: white; width: 994px;">
 
 
             <div class="d-flex flex-row " style=" margin-left:20px;">
-                 {{-- klo di edit href nya bawa --}}
-                 <a class="" href="{{route('ulasan.indexBelumDiulas')}}" style="color: #000;">
-                    <h5>Belum Diulas</h5>
+                {{-- klo di edit href nya bawa --}}
+                <a href="{{route('ulasan.indexBelumDiulas')}}">
+                    <h5 class="text-dark">Belum Diulas</h5>
                 </a>
                 {{-- klo di edit href nya bawa --}}
-                <a class="ml-4" href="{{route('ulasan.indexSudahDiulas')}}" style="color: #000;">
-                    <h5>Ulasan Saya</h5>
+                <a class="ml-4" href="{{route('ulasan.indexSudahDiulas')}}">
+                    <h5 class="text-dark">Ulasan Saya</h5>
                 </a>
             </div>
             <div class="pb-5 " style="border:1px solid black ; padding:20px;  border-radius:20px;">
@@ -124,7 +61,8 @@
                     </select>
                     <div class="row mb-5" style="border: 1px solid #000; margin-top: 10px;  background-color: white;">
                         <div class="col-2 " style="margin-left: 15px; padding:0; margin-top: 10px;">
-                            <img class="rounded" src="../img/slide-4.jpg" alt="" style="width:160px ;height :180px; ">
+                            <img class="rounded" src="{{ asset('img/slide-4.jpg')}}" alt=""
+                                style="width:160px ;height :180px; ">
                             <h6>Domba Suffolk</h6>
                             <h6>ID : DS111</h6>
                         </div>
@@ -133,30 +71,15 @@
                             <h5 style="margin-bottom: -25px; margin-left: 65px;">Peternakan Maju Jaya</h5>
                             <table>
                                 <tr>
-                                    <img class="rounded-circle" src="../img/5.jpg" alt=""
-                                        style="width:60px ;height :60px; ">
-                                    <th></th>
-
-                                    <span class="iconify ml-2" data-icon="flat-color-icons:rating" data-width="15"
-                                        data-height="15"></span>
-                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="15"
-                                        data-height="15"></span>
-                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="15"
-                                        data-height="15"></span>
-                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="15"
-                                        data-height="15"></span>
-                                    <span class="iconify" data-icon="flat-color-icons:rating" data-width="15"
-                                        data-height="15"></span>
-                                    <span class="iconify p-2" data-icon="flat-color-icons:rating" data-width="15"
-                                        data-height="15" style="border-right: 1px solid #3A8BCD;"></span>
-                                    <P style="margin-left: 23%; margin-top:-40px;">INVSETASI</P>
-
+                                    <div class="row">
+                                        <img class="rounded-circle" src="{{ asset('img/5.jpg')}}" alt=""
+                                            style="width:60px ;height :60px; ">
+                                        <P>INVSETASI</P>
+                                    </div>
                                     <p>Ngga nyesel beli domba Suffolk disini. Dombanya sehat, gemuk, dan sudah siap
                                         untuk dipotong. Harganya juga relatif murah jika kita lihat kualitas dombanya.
                                         Top mantap lah.</p>
-
-
-
+                                </tr>
 
                             </table>
 
@@ -168,7 +91,8 @@
 
                     <div class="row mb-5" style="border: 1px solid #000; margin-top: 10px;  background-color: white;">
                         <div class="col-2 " style="margin-left: 15px; padding:0; margin-top: 10px;">
-                            <img class="rounded" src="../img/slide-4.jpg" alt="" style="width:160px ;height :180px; ">
+                            <img class="rounded" src="{{ asset('img/5.jpg')}}" alt=""
+                                style="width:160px ;height :180px; ">
                             <h6>Domba Suffolk</h6>
                             <h6>ID : DS111</h6>
                         </div>
@@ -212,7 +136,8 @@
 
                     <div class="row mb-5" style="border: 1px solid #000; margin-top: 10px;  background-color: white;">
                         <div class="col-2 " style="margin-left: 15px; padding:0; margin-top: 10px;">
-                            <img class="rounded" src="../img/slide-4.jpg" alt="" style="width:160px ;height :180px; ">
+                            <img class="rounded" src="{{ asset('img/5.jpg')}}" alt=""
+                                style="width:160px ;height :180px; ">
                             <h6>Domba Suffolk</h6>
                             <h6>ID : DS111</h6>
                         </div>
@@ -221,7 +146,7 @@
                             <h5 style="margin-bottom: -25px; margin-left: 65px;">Aiman Farm</h5>
                             <table>
                                 <tr>
-                                    <img class="rounded-circle" src="../img/6.jpg" alt=""
+                                    <img class="rounded-circle" src="{{ asset('img/5.jpg')}}" alt=""
                                         style="width:60px ;height :60px; ">
                                     <th></th>
 

@@ -5,20 +5,11 @@
 <div class="row">
     @include('layouts.sidebarUser')
     <section class="ftco-section col " style="margin-top: 95px;">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
-
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-
-            <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-                <p></p>
+        <div class="d-flex d-flex justify-content-center">
+            <img src="{{ asset('img/logodomba.png')}}" alt="" width="70">
+            <div class="mt-3 ml-3" style="border-left: 2px solid black;">
+                <h3 class="ml-2" style="color:black;"><b>CARIBI</b></h3>
             </div>
-
-
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">CARIBI</h3>
-            <h4 class="" style="margin-top: 40px; margin-left: -120px;">Investasi</h4>
-
-
 
         </div>
         <div class="container " style="background-color: white; width: 994px;">

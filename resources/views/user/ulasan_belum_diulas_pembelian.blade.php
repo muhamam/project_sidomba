@@ -4,24 +4,23 @@
 
 <div class="row">
     @include('layouts.sidebarUser')
-    <section class="ftco-section col-8 " style="margin-top: 95px;">
-        <div class="tengah d-flex d-flex justify-content-center " style="margin-bottom: 20px; margin-top:-50px;">
-            <img src="../img/domba.png" alt="" style="width: 77px; height: 77px;">
-            <div class="garis"
-                style="width: 4px; height: 85px; background-color: black; margin-left: 5px; margin-right: 5px;">
-                <p></p>
+    <section class="ftco-section col-8 ">
+        <div class="d-flex d-flex justify-content-center">
+            <img src="{{ asset('img/logodomba.png')}}" alt="" width="70">
+            <div class="mt-3 ml-3" style="border-left: 2px solid black;">
+                <h3 class="ml-2" style="color:black;"><b>CARIBI</b></h3>
             </div>
-            <h3 class="" style="margin-top: 10px; margin-left: 10px; height: 10px;">CARIBI</h3>
+
         </div>
         <div class="container " style="background-color: white; width: 994px;">
             <div class="d-flex flex-row " style=" margin-left:20px;">
                 {{-- klo di edit href nya bawa --}}
-                <a class="" href="{{route('ulasan.indexBelumDiulas')}}" style="color: #000;">
-                    <h5>Belum Diulas</h5>
+                <a class="" href="{{route('ulasan.indexBelumDiulas')}}">
+                    <h5 class="text-dark">Belum Diulas</h5>
                 </a>
                 {{-- klo di edit href nya bawa --}}
-                <a class="ml-4" href="{{route('ulasan.indexSudahDiulas')}}" style="color: #000;">
-                    <h5>Ulasan Saya</h5>
+                <a class="ml-4" href="{{route('ulasan.indexSudahDiulas')}}">
+                    <h5 class="text-dark">Ulasan Saya</h5>
                 </a>
             </div>
             <div class="pb-5 " style="border:1px solid black ; padding:20px;  border-radius:20px;">
@@ -39,20 +38,20 @@
                     </div>
                     <div class=" mb-3" style="width: 100%; height:1px; background-color: #000000; "></div>
                     <div class="row ml-5">
-                        <h6 class="col-3">Peternakan Udin</h6>
+                        <h6 class="col-3 text-dark">Peternakan Udin</h6>
                         <a href="#" class="btn btn-outline-primary rounded col-2" style="font-size: 10px;"> Sedang
                             Berlangsung</a>
                     </div>
                     <div class="row gutters-sm mt-4 ml-1">
                         <div class=" col-md-2 ">
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
+                                <img class="rounded" src="{{ asset('img/logodomba.png')}}" width="160px" height="180px">
                             </a>
                             <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <img src="../img/1.jpg" alt="">
+                                        <img src="{{ asset('img/logodomba.png')}}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +134,8 @@
                                             style=" font-size:15px; color:rgb(60, 255, 0);">Rp1.450.000,00</a>
                                     </h3>
                                     <!-- Button trigger modal -->
-                                    <a type="button" href="{{route('ulasan.indexTulisUlasan')}}" class="btn btn-primary " style=" font-size:11px;">Ulas Sekarang</a>
+                                    <a type="button" href="{{route('ulasan.indexTulisUlasan')}}"
+                                        class="btn btn-primary " style=" font-size:11px;">Ulas Sekarang</a>
                                 </div>
 
                                 <!-- Modal -->
@@ -153,7 +153,8 @@
                                                                     <div class="">
                                                                         <a href="btn" data-bs-toggle="modal"
                                                                             data-bs-target="#exampleModalinti">
-                                                                            <img class="rounded" src="../img/1.jpg"
+                                                                            <img class="rounded"
+                                                                                src="{{ asset('img/logodomba.png')}}"
                                                                                 width="200px" height="200px">
                                                                         </a>
 
@@ -330,20 +331,20 @@
                     </div>
                     <div class=" mb-3" style="width: 100%; height:1px; background-color: #000000; "></div>
                     <div class="row ml-5">
-                        <h6 class="col-3">Peternakan Udin</h6>
+                        <h6 class="col-3 text-dark">Peternakan Udin</h6>
                         <a href="#" class="btn btn-outline-primary rounded col-2" style="font-size: 10px;"> Sedang
                             Berlangsung</a>
                     </div>
                     <div class="row gutters-sm mt-4 ml-1">
                         <div class=" col-md-2 ">
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
+                                <img class="rounded" src="{{ asset('img/logodomba.png')}}" width="160px" height="180px">
                             </a>
                             <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <img src="../img/1.jpg" alt="">
+                                        <img src="{{ asset('img/logodomba.png')}}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +446,8 @@
                                                                     <div class="">
                                                                         <a href="btn" data-bs-toggle="modal"
                                                                             data-bs-target="#exampleModalinti">
-                                                                            <img class="rounded" src="../img/1.jpg"
+                                                                            <img class="rounded"
+                                                                                src="{{ asset('img/logodomba.png')}}"
                                                                                 width="200px" height="200px">
                                                                         </a>
 
@@ -622,20 +624,20 @@
                     </div>
                     <div class=" mb-3" style="width: 100%; height:1px; background-color: #000000; "></div>
                     <div class="row ml-5">
-                        <h6 class="col-3">Peternakan Udin</h6>
+                        <h6 class="col-3 text-dark">Peternakan Udin</h6>
                         <a href="#" class="btn btn-outline-primary rounded col-2" style="font-size: 10px;"> Sedang
                             Berlangsung</a>
                     </div>
                     <div class="row gutters-sm mt-4 ml-1">
                         <div class=" col-md-2 ">
                             <a href="btn" data-bs-toggle="modal" data-bs-target="#exampleModalinti">
-                                <img class="rounded" src="../img/1.jpg" width="160px" height="180px">
+                                <img class="rounded" src="{{ asset('img/logodomba.png')}}" width="160px" height="180px">
                             </a>
                             <div class="modal fade mt-5" id="exampleModalinti" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <img src="../img/1.jpg" alt="">
+                                        <img src="{{ asset('img/logodomba.png')}}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -737,7 +739,8 @@
                                                                     <div class="">
                                                                         <a href="btn" data-bs-toggle="modal"
                                                                             data-bs-target="#exampleModalinti">
-                                                                            <img class="rounded" src="../img/1.jpg"
+                                                                            <img class="rounded"
+                                                                                src="{{ asset('img/logodomba.png')}}"
                                                                                 width="200px" height="200px">
                                                                         </a>
 
